@@ -4,7 +4,6 @@ package com.restassures.api;
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
-import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 import io.restassured.RestAssured;
@@ -13,18 +12,21 @@ import io.restassured.response.Response;
 
 public class RestAPIClass {
 
+	static JsonPath jp;
+	static Response resp;
+
 	public static void main(String[] args) {
-//		RestAPIClass.myFirstRESTMethod();
-		RestAPIClass.mySecondRESTMethod(0);
+		RestAPIClass.myFirstRESTMethod();
+//		RestAPIClass.mySecondRESTMethod(0);
 	}
 
 	public static void myFirstRESTMethod() {
 
 		// TODO Auto-generated method stub
 		String baseURI = "http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=439d4b804bc8187953eb36d2a8c26a02";
+		String guru99BaseURI = "http://demo.guru99.com/V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234!&Account_No=1";
 		RestAssured.baseURI = baseURI;
-		Response resp = RestAssured.get();
-//		System.out.println("given().baseUri(baseURI).get(): "+given().baseUri(baseURI).get().);
+		resp = RestAssured.get();
 
 		int code = resp.getStatusCode();
 
@@ -34,25 +36,24 @@ public class RestAPIClass {
 
 //		AssertJUnit.assertEquals(code, 200);
 
-		System.out.println("The data is " + data);
+		System.out.println("1. The data is " + data);
+		System.out.println("2. The response time is :" + resp.getTime());
+		System.out.println("3. contentType: " + resp.contentType());
+		System.out.println("4. getContentType: " + resp.getContentType());
+		System.out.println("5. getSessionId: " + resp.getSessionId());
+		System.out.println("6. getStatusLine: " + resp.getStatusLine());
+		System.out.println("7. getTime: " + resp.getTime());
+		System.out.println("8. prettyPrint: " + resp.prettyPrint());
+		System.out.println("9. headers: " + resp.headers());
+		System.out.println("10. header: " + resp.header("Connection"));
+		jp = resp.jsonPath();
+		System.out.println("11. resp pretty: " + resp.asString());
+		System.out.println("12. jp.get('cod'): " + jp.get("cod").toString());
+		System.out.println("13. jp.get('message'): " + jp.get("message").toString());
 
-		System.out.println("The response time is :" + resp.getTime());
-
-		System.out.println("contentType: " + resp.contentType());
-
-		System.out.println("getContentType: " + resp.getContentType());
-
-		System.out.println("getSessionId: " + resp.getSessionId());
-
-		System.out.println("getStatusLine: " + resp.getStatusLine());
-
-		System.out.println("getTime: " + resp.getTime());
-
-		System.out.println("prettyPrint: " + resp.prettyPrint());
-
-		System.out.println("headers: " + resp.headers());
-
-		System.out.println("header: " + resp.header("Connection"));
+		RestAssured.baseURI = guru99BaseURI;
+		resp = RestAssured.get();
+		System.out.println("\n\n\nURI: " + guru99BaseURI + "\nresponse:\n" + resp.asString());
 
 	}
 
@@ -89,15 +90,18 @@ public class RestAPIClass {
 //
 //		}
 		System.out.println("Sum of amounts: " + sumAmount);
-		
+
 		Response resp = given().when().get(baseURI1);
-		System.out.println("resp.asString(): "+resp);
-		System.out.println("resp.getBody(): "+resp.getBody());
-		System.out.println("resp.print(): "+resp.print());
-		
+		System.out.println("1. resp.asString(): " + resp);
+		System.out.println("2. resp.getBody(): " + resp.getBody().htmlPath());
+		System.out.println("3. resp.print(): " + resp.print());
+
+//		System.out.println("4. given().contentType(ContentType.JSON).log().all(): "+given().contentType(ContentType.JSON).log().all());
+		System.out.println("4. given().contentType(ContentType.JSON).log().all(): " + RestAssured.get());
+
 		JsonPath jpe = resp.jsonPath();
-		String amount = jpe.get("");
-		System.out.println("Amount : "+ amount);
+		String amount = jpe.prettyPrint();
+		System.out.println("Amount : " + amount);
 
 	}
 }
