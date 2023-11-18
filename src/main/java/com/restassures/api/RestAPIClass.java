@@ -4,6 +4,10 @@ package com.restassures.api;
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
 
 import io.restassured.RestAssured;
@@ -15,9 +19,33 @@ public class RestAPIClass {
 	static JsonPath jp;
 	static Response resp;
 
-	public static void main(String[] args) {
-		RestAPIClass.myFirstRESTMethod();
+	public static void main(String[] args) throws IOException {
+//		RestAPIClass.myFirstRESTMethod();
 //		RestAPIClass.mySecondRESTMethod(0);
+		RestAPIClass.myPOSTRESTMethod();
+	}
+
+	public static void myPOSTRESTMethod() throws IOException {
+
+		String reqBody = "src/test/resources/jsondemo.json";
+//		String reqBody = "src/test/resources/xmldemo.xml";
+		File file = new File(reqBody);
+		System.out.println(file.exists());
+
+		byte[] b = Files.readAllBytes(Paths.get(reqBody));
+
+		String jsonData = new String(b);
+
+		RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
+
+		Response response = given().headers("Content-type", "application/json").body(jsonData)
+
+//				.when().get("/users")
+				.when().post("/posts");
+
+		response.then().assertThat().statusCode(201).log().all();
+		System.out.println("Headers size: " + response.getHeaders().size());
+
 	}
 
 	public static void myFirstRESTMethod() {
