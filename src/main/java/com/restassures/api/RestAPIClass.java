@@ -10,6 +10,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.concurrent.TimeUnit;
 
+import groovy.lang.GroovyRuntimeException;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -18,6 +19,7 @@ public class RestAPIClass {
 
 	static JsonPath jp;
 	static Response resp;
+	static String dataPath = "src/test/resources/Data/JSON/";
 
 	public static void main(String[] args) throws IOException {
 //		RestAPIClass.myFirstRESTMethod();
@@ -27,8 +29,8 @@ public class RestAPIClass {
 
 	public static void myPOSTRESTMethod() throws IOException {
 
-		String reqBody = "src/test/resources/jsondemo.json";
-//		String reqBody = "src/test/resources/xmldemo.xml";
+//		String reqBody = dataPath + "jsondemo.json";
+		String reqBody = dataPath + "xmldemo.xml";
 		File file = new File(reqBody);
 		System.out.println(file.exists());
 
@@ -43,7 +45,17 @@ public class RestAPIClass {
 //				.when().get("/users")
 				.when().post("/posts");
 
-		response.then().assertThat().statusCode(201).log().all();
+		try {
+			response.then().assertThat().statusCode(201).log().all();
+		} catch (GroovyRuntimeException e) {
+			System.out.println("GroovyRuntimeException caught");
+			System.out.println(e.getLocalizedMessage().split("\n")[1]);
+//			e.printStackTrace();
+		} catch (Exception e) {
+			System.out.println("Exception caught");
+			System.out.println(e.getLocalizedMessage().split("\n")[1]);
+//			e.printStackTrace();
+		}
 		System.out.println("Headers size: " + response.getHeaders().size());
 
 	}

@@ -1,33 +1,82 @@
 package com.restassures.api;
 
-import org.json.JSONArray;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
 public class JsonPathRead {
 
+	public static String toolsQABookStoreUsername = "TOOLSQA-Test";
+
+	public static String toolsQABookStorePassword = "Test@@123";
+
+//	public static String toolsQABookStoreBearerToken;
+
+	public static String toolsQABookStoreBearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IlRPT0xTUUEtVGVzdCIsInBhc3N3b3JkIjoiVGVzdEBAMTIzIiwiaWF0IjoxNzAwMzM3MTkxfQ.CKAvm6nXXfjD8CzuCBOF-CAi-RVPefDUkaJ59bVjt_E";
+
+	public static long toolsQABookStoreISBN = 9781449325862L;
+
+	public static String baseURIToolsQABookStore = "https://bookstore.toolsqa.com";
+
 	public static void main(java.lang.String[] args) {
-		// TODO Auto-generated method stub
 
-		String jsonText = "{\"cod\":401, \"message\": \"Invalid API key. Please see http://openweathermap.org/faq#error401 for more info.\"}";
+//		JsonPathRead.weatherAPI();
+//		JsonPathRead.tokenizedAuthToolsQABookStore(baseURIToolsQABookStore, toolsQABookStoreUsername,
+//				toolsQABookStorePassword);
+		JsonPathRead.fetchBookToolsQABookStore("/Book/v1/BooksStore", toolsQABookStoreUsername);
 
-		System.out.println("jsonText: \n" + jsonText);
+	}
 
-		JSONParser jsonParser = new JSONParser();
-		Object obj;
+	public static void fetchBookToolsQABookStore(String pathParamQABookStore, String toolsQABookStoreUsername) {
 
-		try {
-			obj = jsonParser.parse(jsonText);
+		RestAssured.baseURI = baseURIToolsQABookStore;
 
-			JSONArray varJSONarray = (JSONArray) obj;
-		} catch (ParseException e) {
-			// TODO Trying to read from string value for JSONPath
-			e.printStackTrace();
-		}
+		RequestSpecification request = RestAssured.given();
+
+		String payLoad = "{\n" + "  \"userId\": \"" + toolsQABookStoreUsername + "\",\n"
+				+ "  \"collectionOfIsbns\": [\n" + "    {\n" + "      \"isbn\": \"" + toolsQABookStoreISBN + "\"\n"
+				+ "    }\n" + "  ]\n" + "}";
+
+		request.header("Content-Type", "application/json")
+				.header("Authorization", "Bearer " + toolsQABookStoreBearerToken).urlEncodingEnabled(false);
+
+//		Response bookDetails = request.body(payLoad).post(pathParamQABookStore);
+//		Response bookDetails = request.body(payLoad).redirects().follow(false).redirects().max(100).post(pathParamQABookStore);
+		Response bookDetails = request.body(payLoad).post(pathParamQABookStore);
+
+		bookDetails.prettyPrint();
+
+		String respBody = bookDetails.getBody().asString();
+
+		System.out.println("respBody: " + respBody + "; Status code: " + bookDetails.getStatusCode());
+
+	}
+
+	public static void tokenizedAuthToolsQABookStore(String baseURIToolsQABookStore, String username, String password) {
+
+		RestAssured.baseURI = baseURIToolsQABookStore;
+
+		RequestSpecification request = RestAssured.given();
+
+		String payLoad = "{\n" + "  \"userName\": \"" + username + "\",\n" + "  \"password\": \"" + password + "\"\n"
+				+ "}";
+
+		request.header("Content-Type", "application/json");
+
+		Response genTokenForAuth = request.body(payLoad).post("/Account/v1/GenerateToken");
+
+		genTokenForAuth.prettyPrint();
+
+		String respBody = genTokenForAuth.getBody().asString();
+
+		toolsQABookStoreBearerToken = JsonPath.from(respBody).get("token");
+
+		System.out.println("Token: >" + toolsQABookStoreBearerToken + "<");
+
+	}
+
+	public static void weatherAPI() {
 
 		Response response = RestAssured.given().get(
 				"http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=439d4b804bc8187953eb36d2a8c26a02");
@@ -60,10 +109,7 @@ public class JsonPathRead {
 		} else {
 			System.out.println("************ATC NOT Ok************");
 
-			// https://samples.openweathermap.org/
-
 		}
-
 	}
 
 }
