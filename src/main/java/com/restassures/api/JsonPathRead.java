@@ -11,9 +11,7 @@ public class JsonPathRead {
 
 	public static String toolsQABookStorePassword = "Test@@123";
 
-//	public static String toolsQABookStoreBearerToken;
-
-	public static String toolsQABookStoreBearerToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6IlRPT0xTUUEtVGVzdCIsInBhc3N3b3JkIjoiVGVzdEBAMTIzIiwiaWF0IjoxNzAwMzM3MTkxfQ.CKAvm6nXXfjD8CzuCBOF-CAi-RVPefDUkaJ59bVjt_E";
+	public static String toolsQABookStoreBearerToken;
 
 	public static long toolsQABookStoreISBN = 9781449325862L;
 
@@ -22,9 +20,9 @@ public class JsonPathRead {
 	public static void main(java.lang.String[] args) {
 
 //		JsonPathRead.weatherAPI();
-//		JsonPathRead.tokenizedAuthToolsQABookStore(baseURIToolsQABookStore, toolsQABookStoreUsername,
-//				toolsQABookStorePassword);
-		JsonPathRead.fetchBookToolsQABookStore("/Book/v1/BooksStore", toolsQABookStoreUsername);
+		JsonPathRead.tokenizedAuthToolsQABookStore(baseURIToolsQABookStore, toolsQABookStoreUsername,
+				toolsQABookStorePassword);
+//		JsonPathRead.fetchBookToolsQABookStore("/Book/v1/BooksStore", toolsQABookStoreUsername);
 
 	}
 
