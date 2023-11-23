@@ -20,23 +20,28 @@ public class udemyRest {
 
 	public static String placeID;
 
+	UtilMethods utils = new UtilMethods();
+	testDataPayloads data = new testDataPayloads();
+
 	public static final Logger log = LogManager.getFormatterLogger(udemyRest.class);
 
 	public static void main(String[] args) {
+
+		udemyRest objRest = new udemyRest();
 		long startTime = System.currentTimeMillis();
 		long endTime = 0;
 
-		for (int i = 0; i < 50; i++) {
-			
-			System.out.println("Iteration: "+i);
+		for (int i = 0; i < 2; i++) {
 
-			udemyRest.addPlace("OK");
-			udemyRest.getPlace(200);
-			udemyRest.deletePlace("OK");
-			udemyRest.getPlace(404);
-			udemyRest.addPlace("OK");
-			udemyRest.updatePlace("123, Street");
-			udemyRest.getPlace(200);
+			System.out.println("Iteration: " + i);
+
+			objRest.addPlace("OK");
+			objRest.getPlace(200);
+			objRest.deletePlace("OK");
+			objRest.getPlace(404);
+			objRest.addPlace("OK");
+			objRest.updatePlace("123, Street");
+			objRest.getPlace(200);
 			log.info("in add place method");
 		}
 		endTime = System.currentTimeMillis();
@@ -49,7 +54,7 @@ public class udemyRest {
 
 	}
 
-	public static void addPlace(String toVerify) {
+	public void addPlace(String toVerify) {
 		System.out.println(new Throwable().getStackTrace()[0].getMethodName());
 
 		log.info("in add place method");
@@ -76,12 +81,12 @@ public class udemyRest {
 
 		System.out.println("\n\nPlace ID(using get.path): " + placeID);
 
-		System.out.println("\n\nPlace ID(using JsonPath): " + UtilMethods.rawToJson(response).getString("place_id"));
+		System.out.println("\n\nPlace ID(using JsonPath): " + utils.rawToJson(response).getString("place_id"));
 
 		System.out.println("\naddPlace.statusCode: " + addPlaceResp.statusCode());
 	}
 
-	public static void getPlace(int toVerify) {
+	public void getPlace(int toVerify) {
 		System.out.println(new Throwable().getStackTrace()[0].getMethodName());
 
 		RestAssured.baseURI = baseURI;
@@ -99,14 +104,14 @@ public class udemyRest {
 				.asString();
 		System.out.println("\nGet Place Response: " + response);
 
-		System.out.println("Location - latitude : " + UtilMethods.rawToJson(response).getString("location.latitude"));
+		System.out.println("Location - latitude : " + utils.rawToJson(response).getString("location.latitude"));
 
-		System.out.println("Location - longitude: " + UtilMethods.rawToJson(response).getString("location.longitude"));
+		System.out.println("Location - longitude: " + utils.rawToJson(response).getString("location.longitude"));
 
-		System.out.println("Address             : " + UtilMethods.rawToJson(response).getString("address"));
+		System.out.println("Address             : " + utils.rawToJson(response).getString("address"));
 	}
 
-	public static void deletePlace(String toVerify) {
+	public void deletePlace(String toVerify) {
 		System.out.println(new Throwable().getStackTrace()[0].getMethodName());
 
 		RestAssured.baseURI = baseURI;
@@ -129,7 +134,7 @@ public class udemyRest {
 
 	}
 
-	public static void updatePlace(String newAddress) {
+	public void updatePlace(String newAddress) {
 		System.out.println(new Throwable().getStackTrace()[0].getMethodName());
 
 		RestAssured.baseURI = baseURI;
@@ -153,9 +158,9 @@ public class udemyRest {
 
 	}
 
-	public static void calcCourseFee() {
+	public void calcCourseFee() {
 
-		int courseSize = UtilMethods.rawToJson(testDataPayloads.courseBody).getInt("courses.size()");
+		int courseSize = utils.rawToJson(data.courseBody).getInt("courses.size()");
 
 		int coursesSum = 0;
 
@@ -165,8 +170,7 @@ public class udemyRest {
 
 		int coursesCopies = 0;
 
-		int coursesPurchaseAmount = UtilMethods.rawToJson(testDataPayloads.courseBody)
-				.getInt("dashboard.purchaseAmount");
+		int coursesPurchaseAmount = utils.rawToJson(data.courseBody).getInt("dashboard.purchaseAmount");
 
 		String coursesPriceLabel = "";
 
@@ -174,9 +178,9 @@ public class udemyRest {
 
 		for (int i = 0; i < courseSize; i++) {
 
-			coursesTitle = UtilMethods.rawToJson(testDataPayloads.courseBody).getString("courses[" + i + "].title");
-			coursesPrice = UtilMethods.rawToJson(testDataPayloads.courseBody).getInt("courses[" + i + "].price");
-			coursesCopies = UtilMethods.rawToJson(testDataPayloads.courseBody).getInt("courses[" + i + "].copies");
+			coursesTitle = utils.rawToJson(data.courseBody).getString("courses[" + i + "].title");
+			coursesPrice = utils.rawToJson(data.courseBody).getInt("courses[" + i + "].price");
+			coursesCopies = utils.rawToJson(data.courseBody).getInt("courses[" + i + "].copies");
 
 			coursesSum = coursesSum + coursesPrice * coursesCopies;
 
