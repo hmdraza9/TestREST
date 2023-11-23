@@ -3,8 +3,8 @@ package learn.udemy.site;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import java.util.HashSet;
+import java.util.Set;
 
 import com.restassures.api.testDataPayloads;
 import com.restassures.utils.UtilMethods;
@@ -20,14 +20,36 @@ public class udemyRest {
 
 	public static String placeID;
 
+	private static Set<String> placeSet;
+
 	UtilMethods utils = new UtilMethods();
 	testDataPayloads data = new testDataPayloads();
 
-	public static final Logger log = LogManager.getFormatterLogger(udemyRest.class);
-
 	public static void main(String[] args) {
 
+		placeSet = new HashSet<String>();
+
 		udemyRest objRest = new udemyRest();
+
+		for (int m : new UtilMethods().randBetween(100, 999, 2)) {
+
+			objRest.addPlace("OK", String.valueOf(m));
+			System.out.println("Place ID: " + placeID);
+//			objRest.getPlace(200);
+
+		}
+
+		for (String str : placeSet) {
+
+			placeID = str;
+
+			objRest.deletePlace("OK");
+			objRest.getPlace(404);
+
+		}
+
+		System.exit(1);
+
 		long startTime = System.currentTimeMillis();
 		long endTime = 0;
 
@@ -35,14 +57,13 @@ public class udemyRest {
 
 			System.out.println("Iteration: " + i);
 
-			objRest.addPlace("OK");
+			objRest.addPlace("OK", "123");
 			objRest.getPlace(200);
 			objRest.deletePlace("OK");
 			objRest.getPlace(404);
-			objRest.addPlace("OK");
+			objRest.addPlace("OK", "234");
 			objRest.updatePlace("123, Street");
 			objRest.getPlace(200);
-			log.info("in add place method");
 		}
 		endTime = System.currentTimeMillis();
 
@@ -54,32 +75,37 @@ public class udemyRest {
 
 	}
 
-	public void addPlace(String toVerify) {
+	public void addPlace(String toVerify, String addressValue) {
 		System.out.println(new Throwable().getStackTrace()[0].getMethodName());
-
-		log.info("in add place method");
 
 		RestAssured.baseURI = baseURI;
 
 		System.out.println("***************Request starts:***************");
 
-		Response addPlaceResp = given().log().all().queryParam("key", mapKey).header("Content-Type", "application/json")
-				.urlEncodingEnabled(false).body(testDataPayloads.addPlaceBody).when()
+		Response addPlaceResp = given()
+//				.log()
+//				.all()
+				.queryParam("key", mapKey).header("Content-Type", "application/json")
+				.urlEncodingEnabled(false).body(testDataPayloads.addPlaceBody.replace("#address#", addressValue)).when()
 				.post(testDataPayloads.uriAddPlace);
 
 		System.out.println("\n\n***************Response starts***************n\n\n");
 
-		addPlaceResp.then().log().all().assertThat().statusCode(200).body("scope", equalTo("APP")).body("status",
+		addPlaceResp.then()
+//		.log()
+//		.all()
+		.assertThat().statusCode(200).body("scope", equalTo("APP")).body("status",
 				equalTo(toVerify));
 
 		placeID = addPlaceResp.getBody().path("place_id");
+		placeSet.add(placeID);
 
 		String response = addPlaceResp.then().assertThat().statusCode(200).body("scope", equalTo("APP"))
 				.header("Server", "Apache/2.4.52 (Ubuntu)").extract().response().asString();
 
-		System.out.println("\nAdd Place Response: " + response);
+//		System.out.println("\nAdd Place Response: " + response);
 
-		System.out.println("\n\nPlace ID(using get.path): " + placeID);
+//		System.out.println("\n\nPlace ID(using get.path): " + placeID);
 
 		System.out.println("\n\nPlace ID(using JsonPath): " + utils.rawToJson(response).getString("place_id"));
 
@@ -93,20 +119,26 @@ public class udemyRest {
 
 		System.out.println("***************Request starts:***************");
 
-		Response getPlaceResp = given().log().all().queryParam("key", mapKey).header("Content-Type", "application/json")
+		Response getPlaceResp = given()
+//				.log()
+//				.all()
+				.queryParam("key", mapKey).header("Content-Type", "application/json")
 				.queryParam("place_id", placeID).urlEncodingEnabled(false).when().get(testDataPayloads.uriGetPlace);
 
 		System.out.println("\n\n***************Response starts***************n\n\n");
 
-		System.out.println("getPlaceResp.asString: " + getPlaceResp.asString());
+//		System.out.println("getPlaceResp.asString: " + getPlaceResp.asString());
 
-		String response = getPlaceResp.then().log().all().assertThat().statusCode(toVerify).extract().response()
+		String response = getPlaceResp.then()
+//				.log()
+//				.all()
+				.assertThat().statusCode(toVerify).extract().response()
 				.asString();
 		System.out.println("\nGet Place Response: " + response);
 
-		System.out.println("Location - latitude : " + utils.rawToJson(response).getString("location.latitude"));
+//		System.out.println("Location - latitude : " + utils.rawToJson(response).getString("location.latitude"));
 
-		System.out.println("Location - longitude: " + utils.rawToJson(response).getString("location.longitude"));
+//		System.out.println("Location - longitude: " + utils.rawToJson(response).getString("location.longitude"));
 
 		System.out.println("Address             : " + utils.rawToJson(response).getString("address"));
 	}
@@ -118,7 +150,10 @@ public class udemyRest {
 
 		System.out.println("***************Request starts:***************");
 
-		Response response = given().log().all().queryParam("key", "qaclick123")
+		Response response = given()
+//				.log()
+//				.all()
+				.queryParam("key", "qaclick123")
 				.header("Content-Type", "application/json").urlEncodingEnabled(false)
 				.body(testDataPayloads.deletePlaceBody.replace("$RunTimeVar1", placeID)).when()
 				.post(testDataPayloads.uriDeletePlace);
