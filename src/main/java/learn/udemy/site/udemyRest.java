@@ -120,7 +120,9 @@ public class udemyRest {
 		RequestSpecification addPlaceReqSpec = given()
 //				.log()
 //				.all()
-				.queryParam("key", mapKey).header("Content-Type", "application/json").urlEncodingEnabled(false);
+				.queryParam("key", mapKey)
+				.header("Content-Type", "application/json")
+				.urlEncodingEnabled(false);
 
 		byte[] tempBody = null;
 		try {
@@ -145,8 +147,15 @@ public class udemyRest {
 		placeID = addPlaceResp.getBody().path("place_id");
 		placeSet.add(placeID);
 
-		String response = addPlaceResp.then().assertThat().statusCode(200).body("scope", equalTo("APP"))
-				.header("Server", "Apache/2.4.52 (Ubuntu)").extract().response().asString();
+		String response = addPlaceResp
+				.then()
+				.assertThat()
+				.statusCode(200)
+				.body("scope", equalTo("APP"))
+				.header("Server", "Apache/2.4.52 (Ubuntu)")
+				.extract()
+				.response()
+				.asString();
 
 //		System.out.println("\nAdd Place Response: " + response);
 
@@ -167,8 +176,11 @@ public class udemyRest {
 		Response getPlaceResp = given()
 //				.log()
 //				.all()
-				.queryParam("key", mapKey).header("Content-Type", "application/json").queryParam("place_id", placeID)
-				.urlEncodingEnabled(false).when().get(testDataPayloads.uriGetPlace);
+				.queryParam("key", mapKey)
+				.header("Content-Type", "application/json")
+				.queryParam("place_id", placeID)
+				.urlEncodingEnabled(false).when()
+				.get(testDataPayloads.uriGetPlace);
 
 		System.out.println("\n\n***************Response starts***************n\n\n");
 
@@ -177,7 +189,11 @@ public class udemyRest {
 		String response = getPlaceResp.then()
 //				.log()
 //				.all()
-				.assertThat().statusCode(toVerify).extract().response().asString();
+				.assertThat()
+				.statusCode(toVerify)
+				.extract()
+				.response()
+				.asString();
 		System.out.println("\nGet Place Response: " + response);
 
 //		System.out.println("Location - latitude : " + utils.rawToJson(response).getString("location.latitude"));
@@ -197,14 +213,23 @@ public class udemyRest {
 		Response response = given()
 //				.log()
 //				.all()
-				.queryParam("key", "qaclick123").header("Content-Type", "application/json").urlEncodingEnabled(false)
-				.body(testDataPayloads.deletePlaceBody.replace("$RunTimeVar1", placeID)).when()
+				.queryParam("key", "qaclick123")
+				.header("Content-Type", "application/json")
+				.urlEncodingEnabled(false)
+				.body(testDataPayloads.deletePlaceBody.replace("$RunTimeVar1", placeID))
+				.when()
 				.post(testDataPayloads.uriDeletePlace);
 		System.out.println("\n\n***************Response starts***************n\n\n");
 
 		System.out.println("deletePlaceResp.asString: " + response.asString());
 
-		response.then().log().all().assertThat().statusCode(200).body("status", equalTo(toVerify));
+		response
+				.then()
+		//		.log()
+		//		.all()
+				.assertThat()
+				.statusCode(200)
+				.body("status", equalTo(toVerify));
 
 		System.out.println("***************Place deleted successfully!***************");
 
@@ -217,18 +242,29 @@ public class udemyRest {
 
 		System.out.println("***************Request starts:***************");
 
-		Response response = given().log().all().queryParam("key", mapKey).header("Content-Type", "application/json")
-				.queryParam("place_id", placeID).urlEncodingEnabled(false)
-				.body(testDataPayloads.updatePlaceBody.replace("$RunTimeVar1", placeID)
-						.replace("$RunTimeVar2", newAddress).replace("$RunTimeVar3", mapKey))
-				.when().put(testDataPayloads.uriUpdatePlace);
+		Response response = given()
+//				.log()
+//				.all()
+				.queryParam("key", mapKey)
+				.header("Content-Type", "application/json")
+				.queryParam("place_id", placeID)
+				.urlEncodingEnabled(false)
+				.body(testDataPayloads.updatePlaceBody.replace("$RunTimeVar1", placeID).replace("$RunTimeVar2", newAddress).replace("$RunTimeVar3", mapKey))
+				.when()
+				.put(testDataPayloads.uriUpdatePlace);
 
 		System.out.println("\n\n***************Response starts***************n\n\n");
 
 		System.out.println("getPlaceResp.asString: " + response.asString());
 
-		response.then().assertThat().statusCode(200).body("msg", equalTo("Address successfully updated")).extract()
-				.response().asString();
+		response
+				.then()
+				.assertThat()
+				.statusCode(200)
+				.body("msg", equalTo("Address successfully updated"))
+				.extract()
+				.response()
+				.asString();
 
 		System.out.println("\nUpdate Place Response: " + response);
 
