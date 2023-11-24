@@ -3,6 +3,8 @@ package learn.udemy.site;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -11,6 +13,7 @@ import com.restassures.utils.UtilMethods;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
 public class udemyRest {
 
@@ -23,15 +26,44 @@ public class udemyRest {
 	private static Set<String> placeSet;
 
 	UtilMethods utils = new UtilMethods();
+
 	testDataPayloads data = new testDataPayloads();
+
+	public static udemyRest objRest = new udemyRest();
 
 	public static void main(String[] args) {
 
 		placeSet = new HashSet<String>();
 
-		udemyRest objRest = new udemyRest();
+//		objRest.perfAPI(objRest);
 
-		for (int m : new UtilMethods().randBetween(100, 999, 2)) {
+		objRest.bulkAddressAddDelete(objRest, 4);
+
+		objRest.addPlace("OK");
+		objRest.deletePlace("OK");
+
+		// Course fee calculator
+//		System.out.println(testDataPayloads.courseBody);
+//		udemyRest.calcCourseFee();
+
+	}
+
+	// method overloading
+
+	public void addPlace(String toVerify) {
+
+		objRest.addPlace(toVerify, "999");
+
+	}
+
+	/*
+	 * This method adds place method with dynamic JSON request and then deletes
+	 * them. uses Set placeSet
+	 */
+
+	public void bulkAddressAddDelete(udemyRest objRest, int N) {
+
+		for (int m : new UtilMethods().randBetween(100, 999, N)) {
 
 			objRest.addPlace("OK", String.valueOf(m));
 			System.out.println("Place ID: " + placeID);
@@ -47,8 +79,15 @@ public class udemyRest {
 			objRest.getPlace(404);
 
 		}
+	}
 
-		System.exit(1);
+	/*
+	 * This method callsaddPlace/getPlace/DeletePlace/updatePlace N times and print
+	 * total time
+	 * 
+	 */
+
+	public void perfAPI(udemyRest objRest) {
 
 		long startTime = System.currentTimeMillis();
 		long endTime = 0;
@@ -68,34 +107,40 @@ public class udemyRest {
 		endTime = System.currentTimeMillis();
 
 		System.out.println("Total time taken: " + (endTime - startTime) / 1000 + " seconds");
-
-		// Course fee calculator
-//		System.out.println(testDataPayloads.courseBody);
-//		udemyRest.calcCourseFee();
-
 	}
+
+	// Adds place with the help of JSON Body request, saves place ID to global
+	// variable placeID
 
 	public void addPlace(String toVerify, String addressValue) {
 		System.out.println(new Throwable().getStackTrace()[0].getMethodName());
 
 		RestAssured.baseURI = baseURI;
 
-		System.out.println("***************Request starts:***************");
-
-		Response addPlaceResp = given()
+		RequestSpecification addPlaceReqSpec = given()
 //				.log()
 //				.all()
-				.queryParam("key", mapKey).header("Content-Type", "application/json")
-				.urlEncodingEnabled(false).body(testDataPayloads.addPlaceBody.replace("#address#", addressValue)).when()
-				.post(testDataPayloads.uriAddPlace);
+				.queryParam("key", mapKey).header("Content-Type", "application/json").urlEncodingEnabled(false);
+
+		byte[] tempBody = null;
+		try {
+			tempBody = Files.readAllBytes(Paths.get("src/test/resources/AddPlaceBody.json"));
+			addPlaceReqSpec.body(tempBody);
+		} catch (Exception e) {
+			e.printStackTrace();
+			addPlaceReqSpec.body(testDataPayloads.addPlaceBody.replace("#address#", addressValue));
+		}
+
+		System.out.println("***************Request starts:***************");
+
+		Response addPlaceResp = addPlaceReqSpec.when().post(testDataPayloads.uriAddPlace);
 
 		System.out.println("\n\n***************Response starts***************n\n\n");
 
 		addPlaceResp.then()
 //		.log()
 //		.all()
-		.assertThat().statusCode(200).body("scope", equalTo("APP")).body("status",
-				equalTo(toVerify));
+				.assertThat().statusCode(200).body("scope", equalTo("APP")).body("status", equalTo(toVerify));
 
 		placeID = addPlaceResp.getBody().path("place_id");
 		placeSet.add(placeID);
@@ -122,8 +167,8 @@ public class udemyRest {
 		Response getPlaceResp = given()
 //				.log()
 //				.all()
-				.queryParam("key", mapKey).header("Content-Type", "application/json")
-				.queryParam("place_id", placeID).urlEncodingEnabled(false).when().get(testDataPayloads.uriGetPlace);
+				.queryParam("key", mapKey).header("Content-Type", "application/json").queryParam("place_id", placeID)
+				.urlEncodingEnabled(false).when().get(testDataPayloads.uriGetPlace);
 
 		System.out.println("\n\n***************Response starts***************n\n\n");
 
@@ -132,8 +177,7 @@ public class udemyRest {
 		String response = getPlaceResp.then()
 //				.log()
 //				.all()
-				.assertThat().statusCode(toVerify).extract().response()
-				.asString();
+				.assertThat().statusCode(toVerify).extract().response().asString();
 		System.out.println("\nGet Place Response: " + response);
 
 //		System.out.println("Location - latitude : " + utils.rawToJson(response).getString("location.latitude"));
@@ -153,8 +197,7 @@ public class udemyRest {
 		Response response = given()
 //				.log()
 //				.all()
-				.queryParam("key", "qaclick123")
-				.header("Content-Type", "application/json").urlEncodingEnabled(false)
+				.queryParam("key", "qaclick123").header("Content-Type", "application/json").urlEncodingEnabled(false)
 				.body(testDataPayloads.deletePlaceBody.replace("$RunTimeVar1", placeID)).when()
 				.post(testDataPayloads.uriDeletePlace);
 		System.out.println("\n\n***************Response starts***************n\n\n");
@@ -162,8 +205,6 @@ public class udemyRest {
 		System.out.println("deletePlaceResp.asString: " + response.asString());
 
 		response.then().log().all().assertThat().statusCode(200).body("status", equalTo(toVerify));
-
-		System.out.println("\nDelete Place Response: " + response);
 
 		System.out.println("***************Place deleted successfully!***************");
 
