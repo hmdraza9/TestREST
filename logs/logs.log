@@ -1,0 +1,179 @@
+[INFO ] 2023-11-25 22:29:10.699 [main] udemyRest - Hellow
+[INFO ] 2023-11-25 22:29:48.334 [main] udemyRest - Hellow
+[INFO ] 2023-11-25 22:37:32.303 [main] udemyRest - addPlace
+[INFO ] 2023-11-25 22:37:32.876 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:37:34.498 [main] udemyRest - 
+
+###########Response starts###########n
+
+
+[INFO ] 2023-11-25 22:37:35.136 [main] udemyRest - 
+
+Place ID(using JsonPath): 1b89c0092cc725aa81e660c097e01dbe
+[INFO ] 2023-11-25 22:37:35.137 [main] udemyRest - 
+addPlace.statusCode: 200
+[INFO ] 2023-11-25 22:37:35.137 [main] udemyRest - Place ID: 1b89c0092cc725aa81e660c097e01dbe
+[INFO ] 2023-11-25 22:37:35.138 [main] udemyRest - addPlace
+[INFO ] 2023-11-25 22:37:35.140 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:37:35.289 [main] udemyRest - 
+
+###########Response starts###########n
+
+
+[INFO ] 2023-11-25 22:37:35.363 [main] udemyRest - 
+
+Place ID(using JsonPath): 83cd362b7e727fb8c07b030e61daeb56
+[INFO ] 2023-11-25 22:37:35.364 [main] udemyRest - 
+addPlace.statusCode: 200
+[INFO ] 2023-11-25 22:37:35.364 [main] udemyRest - Place ID: 83cd362b7e727fb8c07b030e61daeb56
+[INFO ] 2023-11-25 22:37:35.364 [main] udemyRest - addPlace
+[INFO ] 2023-11-25 22:37:35.367 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:37:35.650 [main] udemyRest - 
+
+###########Response starts###########n
+
+
+[INFO ] 2023-11-25 22:37:35.712 [main] udemyRest - 
+
+Place ID(using JsonPath): 984e74893c8e3c2f2839bb062134e8b6
+[INFO ] 2023-11-25 22:37:35.713 [main] udemyRest - 
+addPlace.statusCode: 200
+[INFO ] 2023-11-25 22:37:35.713 [main] udemyRest - Place ID: 984e74893c8e3c2f2839bb062134e8b6
+[INFO ] 2023-11-25 22:37:35.713 [main] udemyRest - addPlace
+[INFO ] 2023-11-25 22:37:35.715 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:37:35.849 [main] udemyRest - 
+
+###########Response starts###########n
+
+
+[INFO ] 2023-11-25 22:37:35.903 [main] udemyRest - 
+
+Place ID(using JsonPath): 2a43e2f423c499e9fc5c0414f9c1e353
+[INFO ] 2023-11-25 22:37:35.904 [main] udemyRest - 
+addPlace.statusCode: 200
+[INFO ] 2023-11-25 22:37:35.904 [main] udemyRest - Place ID: 2a43e2f423c499e9fc5c0414f9c1e353
+[INFO ] 2023-11-25 22:37:35.904 [main] udemyRest - deletePlace
+[INFO ] 2023-11-25 22:37:35.905 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:37:37.642 [main] udemyRest - 
+
+###########Response starts###########n
+
+
+[INFO ] 2023-11-25 22:37:37.642 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2023-11-25 22:37:37.650 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2023-11-25 22:37:37.650 [main] udemyRest - getPlace
+[INFO ] 2023-11-25 22:37:37.650 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:37:38.408 [main] udemyRest - 
+
+###########Response starts###########n
+
+
+[INFO ] 2023-11-25 22:37:38.410 [main] udemyRest - 
+Get Place Response: {"msg":"Get operation failed, looks like place_id  doesn't exists"}
+[INFO ] 2023-11-25 22:37:38.417 [main] udemyRest - Address             : null
+[INFO ] 2023-11-25 22:37:38.417 [main] udemyRest - deletePlace
+[INFO ] 2023-11-25 22:37:38.417 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:37:39.444 [main] udemyRest - 
+
+###########Response starts###########n
+
+
+[INFO ] 2023-11-25 22:37:39.444 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2023-11-25 22:37:39.452 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2023-11-25 22:37:39.452 [main] udemyRest - getPlace
+[INFO ] 2023-11-25 22:37:39.452 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:37:40.369 [main] udemyRest - 
+
+###########Response starts###########n
+
+
+[INFO ] 2023-11-25 22:37:40.369 [main] udemyRest - 
+Get Place Response: {"msg":"Get operation failed, looks like place_id  doesn't exists"}
+[INFO ] 2023-11-25 22:37:40.375 [main] udemyRest - Address             : null
+[INFO ] 2023-11-25 22:37:40.375 [main] udemyRest - deletePlace
+[INFO ] 2023-11-25 22:37:40.376 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:37:41.164 [main] udemyRest - 
+
+###########Response starts###########n
+
+
+[INFO ] 2023-11-25 22:37:41.165 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2023-11-25 22:37:41.173 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2023-11-25 22:37:41.173 [main] udemyRest - getPlace
+[INFO ] 2023-11-25 22:37:41.173 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:37:41.719 [main] udemyRest - 
+
+###########Response starts###########n
+
+
+[INFO ] 2023-11-25 22:37:41.720 [main] udemyRest - 
+Get Place Response: {"msg":"Get operation failed, looks like place_id  doesn't exists"}
+[INFO ] 2023-11-25 22:37:41.725 [main] udemyRest - Address             : null
+[INFO ] 2023-11-25 22:37:41.725 [main] udemyRest - deletePlace
+[INFO ] 2023-11-25 22:37:41.726 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:37:42.628 [main] udemyRest - 
+
+###########Response starts###########n
+
+
+[INFO ] 2023-11-25 22:37:42.628 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2023-11-25 22:37:42.638 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2023-11-25 22:37:42.639 [main] udemyRest - getPlace
+[INFO ] 2023-11-25 22:37:42.639 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:37:43.196 [main] udemyRest - 
+
+###########Response starts###########n
+
+
+[INFO ] 2023-11-25 22:37:43.198 [main] udemyRest - 
+Get Place Response: {"msg":"Get operation failed, looks like place_id  doesn't exists"}
+[INFO ] 2023-11-25 22:37:43.203 [main] udemyRest - Address             : null
+[INFO ] 2023-11-25 22:37:43.203 [main] udemyRest - Method overloading - addPlace
+[INFO ] 2023-11-25 22:37:43.204 [main] udemyRest - addPlace
+[INFO ] 2023-11-25 22:37:43.204 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:37:43.299 [main] udemyRest - 
+
+###########Response starts###########n
+
+
+[INFO ] 2023-11-25 22:37:43.332 [main] udemyRest - 
+
+Place ID(using JsonPath): cbedac57b76e20dd758445a75821fdbe
+[INFO ] 2023-11-25 22:37:43.332 [main] udemyRest - 
+addPlace.statusCode: 200
+[INFO ] 2023-11-25 22:37:43.332 [main] udemyRest - deletePlace
+[INFO ] 2023-11-25 22:37:43.332 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:37:44.218 [main] udemyRest - 
+
+###########Response starts###########n
+
+
+[INFO ] 2023-11-25 22:37:44.218 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2023-11-25 22:37:44.226 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2023-11-25 22:38:38.471 [main] udemyRest - addPlace
+[INFO ] 2023-11-25 22:38:39.068 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:38:40.786 [main] udemyRest - ###########Response starts###########
+[INFO ] 2023-11-25 22:38:41.494 [main] udemyRest - Place ID(using JsonPath): 4d13ea7df67296e7aa2da6f4a37bfee3
+[INFO ] 2023-11-25 22:38:41.495 [main] udemyRest - addPlace.statusCode: 200
+[INFO ] 2023-11-25 22:38:41.495 [main] udemyRest - Place ID: 4d13ea7df67296e7aa2da6f4a37bfee3
+[INFO ] 2023-11-25 22:38:41.496 [main] udemyRest - deletePlace
+[INFO ] 2023-11-25 22:38:41.496 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:38:42.440 [main] udemyRest - ###########Response starts###########n
+[INFO ] 2023-11-25 22:38:42.441 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2023-11-25 22:38:42.452 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2023-11-25 22:38:42.452 [main] udemyRest - getPlace
+[INFO ] 2023-11-25 22:38:42.453 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:38:43.093 [main] udemyRest - ###########Response starts###########n
+[INFO ] 2023-11-25 22:38:43.094 [main] udemyRest - Get Place Response: {"msg":"Get operation failed, looks like place_id  doesn't exists"}
+[INFO ] 2023-11-25 22:38:43.101 [main] udemyRest - Address             : null
+[INFO ] 2023-11-25 22:38:43.101 [main] udemyRest - Method overloading - addPlace
+[INFO ] 2023-11-25 22:38:43.101 [main] udemyRest - addPlace
+[INFO ] 2023-11-25 22:38:43.103 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:38:43.216 [main] udemyRest - ###########Response starts###########
+[INFO ] 2023-11-25 22:38:43.280 [main] udemyRest - Place ID(using JsonPath): 975f31e8dfbeb8b45075e7b15bfc8710
+[INFO ] 2023-11-25 22:38:43.280 [main] udemyRest - addPlace.statusCode: 200
+[INFO ] 2023-11-25 22:38:43.280 [main] udemyRest - deletePlace
+[INFO ] 2023-11-25 22:38:43.280 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-11-25 22:38:44.192 [main] udemyRest - ###########Response starts###########n
+[INFO ] 2023-11-25 22:38:44.192 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2023-11-25 22:38:44.203 [main] udemyRest - ###########Place deleted successfully!###########

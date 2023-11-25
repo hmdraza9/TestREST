@@ -8,6 +8,9 @@ import java.nio.file.Paths;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.restassures.api.testDataPayloads;
 import com.restassures.utils.UtilMethods;
 
@@ -16,6 +19,7 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class udemyRest {
+	private static final Logger log = LogManager.getLogger(udemyRest.class);
 
 	public static final String baseURI = "https://rahulshettyacademy.com";
 
@@ -35,23 +39,16 @@ public class udemyRest {
 
 		placeSet = new HashSet<String>();
 
-//		objRest.perfAPI(objRest);
-
-		objRest.bulkAddressAddDelete(objRest, 4);
+		objRest.bulkAddressAddDelete(objRest, 1);
 
 		objRest.addPlace("OK");
 		objRest.deletePlace("OK");
-
-		// Course fee calculator
-//		System.out.println(testDataPayloads.courseBody);
-//		udemyRest.calcCourseFee();
-
 	}
 
 	// method overloading
 
 	public void addPlace(String toVerify) {
-
+		log.info("Method overloading - " + new Throwable().getStackTrace()[0].getMethodName());
 		objRest.addPlace(toVerify, "999");
 
 	}
@@ -66,7 +63,7 @@ public class udemyRest {
 		for (int m : new UtilMethods().randBetween(100, 999, N)) {
 
 			objRest.addPlace("OK", String.valueOf(m));
-			System.out.println("Place ID: " + placeID);
+			log.info("Place ID: " + placeID);
 //			objRest.getPlace(200);
 
 		}
@@ -94,7 +91,7 @@ public class udemyRest {
 
 		for (int i = 0; i < 2; i++) {
 
-			System.out.println("Iteration: " + i);
+			log.info("Iteration: " + i);
 
 			objRest.addPlace("OK", "123");
 			objRest.getPlace(200);
@@ -106,23 +103,21 @@ public class udemyRest {
 		}
 		endTime = System.currentTimeMillis();
 
-		System.out.println("Total time taken: " + (endTime - startTime) / 1000 + " seconds");
+		log.info("Total time taken: " + (endTime - startTime) / 1000 + " seconds");
 	}
 
 	// Adds place with the help of JSON Body request, saves place ID to global
 	// variable placeID
 
 	public void addPlace(String toVerify, String addressValue) {
-		System.out.println(new Throwable().getStackTrace()[0].getMethodName());
+		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
 		RestAssured.baseURI = baseURI;
 
 		RequestSpecification addPlaceReqSpec = given()
 //				.log()
 //				.all()
-				.queryParam("key", mapKey)
-				.header("Content-Type", "application/json")
-				.urlEncodingEnabled(false);
+				.queryParam("key", mapKey).header("Content-Type", "application/json").urlEncodingEnabled(false);
 
 		byte[] tempBody = null;
 		try {
@@ -133,11 +128,11 @@ public class udemyRest {
 			addPlaceReqSpec.body(testDataPayloads.addPlaceBody.replace("#address#", addressValue));
 		}
 
-		System.out.println("***************Request starts:***************");
+		log.info("###########Request starts:###########");
 
 		Response addPlaceResp = addPlaceReqSpec.when().post(testDataPayloads.uriAddPlace);
 
-		System.out.println("\n\n***************Response starts***************n\n\n");
+		log.info("###########Response starts###########");
 
 		addPlaceResp.then()
 //		.log()
@@ -147,126 +142,98 @@ public class udemyRest {
 		placeID = addPlaceResp.getBody().path("place_id");
 		placeSet.add(placeID);
 
-		String response = addPlaceResp
-				.then()
-				.assertThat()
-				.statusCode(200)
-				.body("scope", equalTo("APP"))
-				.header("Server", "Apache/2.4.52 (Ubuntu)")
-				.extract()
-				.response()
-				.asString();
+		String response = addPlaceResp.then().assertThat().statusCode(200).body("scope", equalTo("APP"))
+				.header("Server", "Apache/2.4.52 (Ubuntu)").extract().response().asString();
 
-//		System.out.println("\nAdd Place Response: " + response);
+//		log.info("Add Place Response: " + response);
 
-//		System.out.println("\n\nPlace ID(using get.path): " + placeID);
+//		log.info("Place ID(using get.path): " + placeID);
 
-		System.out.println("\n\nPlace ID(using JsonPath): " + utils.rawToJson(response).getString("place_id"));
+		log.info("Place ID(using JsonPath): " + utils.rawToJson(response).getString("place_id"));
 
-		System.out.println("\naddPlace.statusCode: " + addPlaceResp.statusCode());
+		log.info("addPlace.statusCode: " + addPlaceResp.statusCode());
 	}
 
 	public void getPlace(int toVerify) {
-		System.out.println(new Throwable().getStackTrace()[0].getMethodName());
+		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
 		RestAssured.baseURI = baseURI;
 
-		System.out.println("***************Request starts:***************");
+		log.info("###########Request starts:###########");
 
 		Response getPlaceResp = given()
 //				.log()
 //				.all()
-				.queryParam("key", mapKey)
-				.header("Content-Type", "application/json")
-				.queryParam("place_id", placeID)
-				.urlEncodingEnabled(false).when()
-				.get(testDataPayloads.uriGetPlace);
+				.queryParam("key", mapKey).header("Content-Type", "application/json").queryParam("place_id", placeID)
+				.urlEncodingEnabled(false).when().get(testDataPayloads.uriGetPlace);
 
-		System.out.println("\n\n***************Response starts***************n\n\n");
+		log.info("###########Response starts###########n");
 
-//		System.out.println("getPlaceResp.asString: " + getPlaceResp.asString());
+//		log.info("getPlaceResp.asString: " + getPlaceResp.asString());
 
 		String response = getPlaceResp.then()
 //				.log()
 //				.all()
-				.assertThat()
-				.statusCode(toVerify)
-				.extract()
-				.response()
-				.asString();
-		System.out.println("\nGet Place Response: " + response);
+				.assertThat().statusCode(toVerify).extract().response().asString();
+		log.info("Get Place Response: " + response);
 
-//		System.out.println("Location - latitude : " + utils.rawToJson(response).getString("location.latitude"));
+//		log.info("Location - latitude : " + utils.rawToJson(response).getString("location.latitude"));
 
-//		System.out.println("Location - longitude: " + utils.rawToJson(response).getString("location.longitude"));
+//		log.info("Location - longitude: " + utils.rawToJson(response).getString("location.longitude"));
 
-		System.out.println("Address             : " + utils.rawToJson(response).getString("address"));
+		log.info("Address             : " + utils.rawToJson(response).getString("address"));
 	}
 
 	public void deletePlace(String toVerify) {
-		System.out.println(new Throwable().getStackTrace()[0].getMethodName());
+		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
 		RestAssured.baseURI = baseURI;
 
-		System.out.println("***************Request starts:***************");
+		log.info("###########Request starts:###########");
 
 		Response response = given()
 //				.log()
 //				.all()
-				.queryParam("key", "qaclick123")
-				.header("Content-Type", "application/json")
-				.urlEncodingEnabled(false)
-				.body(testDataPayloads.deletePlaceBody.replace("$RunTimeVar1", placeID))
-				.when()
+				.queryParam("key", "qaclick123").header("Content-Type", "application/json").urlEncodingEnabled(false)
+				.body(testDataPayloads.deletePlaceBody.replace("$RunTimeVar1", placeID)).when()
 				.post(testDataPayloads.uriDeletePlace);
-		System.out.println("\n\n***************Response starts***************n\n\n");
+		log.info("###########Response starts###########n");
 
-		System.out.println("deletePlaceResp.asString: " + response.asString());
+		log.info("deletePlaceResp.asString: " + response.asString());
 
-		response
-				.then()
-		//		.log()
-		//		.all()
-				.assertThat()
-				.statusCode(200)
-				.body("status", equalTo(toVerify));
+		response.then()
+				// .log()
+				// .all()
+				.assertThat().statusCode(200).body("status", equalTo(toVerify));
 
-		System.out.println("***************Place deleted successfully!***************");
+		log.info("###########Place deleted successfully!###########");
 
 	}
 
 	public void updatePlace(String newAddress) {
-		System.out.println(new Throwable().getStackTrace()[0].getMethodName());
+		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
 		RestAssured.baseURI = baseURI;
 
-		System.out.println("***************Request starts:***************");
+		log.info("###########Request starts:###########");
 
 		Response response = given()
 //				.log()
 //				.all()
-				.queryParam("key", mapKey)
-				.header("Content-Type", "application/json")
-				.queryParam("place_id", placeID)
+				.queryParam("key", mapKey).header("Content-Type", "application/json").queryParam("place_id", placeID)
 				.urlEncodingEnabled(false)
-				.body(testDataPayloads.updatePlaceBody.replace("$RunTimeVar1", placeID).replace("$RunTimeVar2", newAddress).replace("$RunTimeVar3", mapKey))
-				.when()
-				.put(testDataPayloads.uriUpdatePlace);
+				.body(testDataPayloads.updatePlaceBody.replace("$RunTimeVar1", placeID)
+						.replace("$RunTimeVar2", newAddress).replace("$RunTimeVar3", mapKey))
+				.when().put(testDataPayloads.uriUpdatePlace);
 
-		System.out.println("\n\n***************Response starts***************n\n\n");
+		log.info("###########Response starts###########");
 
-		System.out.println("getPlaceResp.asString: " + response.asString());
+		log.info("getPlaceResp.asString: " + response.asString());
 
-		response
-				.then()
-				.assertThat()
-				.statusCode(200)
-				.body("msg", equalTo("Address successfully updated"))
-				.extract()
-				.response()
-				.asString();
+		response.then().assertThat().statusCode(200).body("msg", equalTo("Address successfully updated")).extract()
+				.response().asString();
 
-		System.out.println("\nUpdate Place Response: " + response);
+		log.info("Update Place Response: " + response);
 
 	}
 
@@ -286,7 +253,7 @@ public class udemyRest {
 
 		String coursesPriceLabel = "";
 
-//		System.out.println(UtilMethods.rawToJson(testDataPayloads.courseBody).get("dashboard"));
+//		log.info(UtilMethods.rawToJson(testDataPayloads.courseBody).get("dashboard"));
 
 		for (int i = 0; i < courseSize; i++) {
 
@@ -306,12 +273,12 @@ public class udemyRest {
 
 			System.out.print("\t\tPrice: " + coursesPrice);
 
-			System.out.println("\t\tCopies: " + coursesCopies + " -- This course is " + coursesPriceLabel);
+			log.info("\t\tCopies: " + coursesCopies + " -- This course is " + coursesPriceLabel);
 
 		}
 
-		System.out.println("Total price: " + coursesSum);
-		System.out.println("Is sum equal: " + (coursesSum == coursesPurchaseAmount));
+		log.info("Total price: " + coursesSum);
+		log.info("Is sum equal: " + (coursesSum == coursesPurchaseAmount));
 
 	}
 }
