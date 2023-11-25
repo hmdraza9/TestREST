@@ -110,7 +110,7 @@ public class udemyRest {
 	// variable placeID
 
 	public void addPlace(String toVerify, String addressValue) {
-		log.info(new Throwable().getStackTrace()[0].getMethodName());
+		log.info("In " + (new Throwable().getStackTrace()[0].getMethodName()));
 
 		RestAssured.baseURI = baseURI;
 
@@ -155,7 +155,7 @@ public class udemyRest {
 	}
 
 	public void getPlace(int toVerify) {
-		log.info(new Throwable().getStackTrace()[0].getMethodName());
+		log.info("In " + (new Throwable().getStackTrace()[0].getMethodName()));
 
 		RestAssured.baseURI = baseURI;
 
@@ -185,7 +185,7 @@ public class udemyRest {
 	}
 
 	public void deletePlace(String toVerify) {
-		log.info(new Throwable().getStackTrace()[0].getMethodName());
+		log.info("In " + (new Throwable().getStackTrace()[0].getMethodName()));
 
 		RestAssured.baseURI = baseURI;
 
@@ -211,7 +211,7 @@ public class udemyRest {
 	}
 
 	public void updatePlace(String newAddress) {
-		log.info(new Throwable().getStackTrace()[0].getMethodName());
+		log.info("In " + (new Throwable().getStackTrace()[0].getMethodName()));
 
 		RestAssured.baseURI = baseURI;
 

@@ -1,11 +1,16 @@
 package com.restassures.api;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class JsonPathRead {
+
+	private static final Logger log = LogManager.getLogger(JsonPathRead.class);
 
 	public static String toolsQABookStoreUsername = "TOOLSQA-Test";
 
@@ -19,10 +24,13 @@ public class JsonPathRead {
 
 	public static void main(java.lang.String[] args) {
 
-//		JsonPathRead.weatherAPI();
+		JsonPathRead.weatherAPI();
+
+		log.info("In " + (new Throwable().getStackTrace()[0].getMethodName()));
+
 		JsonPathRead.tokenizedAuthToolsQABookStore(baseURIToolsQABookStore, toolsQABookStoreUsername,
 				toolsQABookStorePassword);
-//		JsonPathRead.fetchBookToolsQABookStore("/Book/v1/BooksStore", toolsQABookStoreUsername);
+		JsonPathRead.fetchBookToolsQABookStore("/Book/v1/BooksStore", toolsQABookStoreUsername);
 
 	}
 
@@ -53,6 +61,8 @@ public class JsonPathRead {
 
 	public static void tokenizedAuthToolsQABookStore(String baseURIToolsQABookStore, String username, String password) {
 
+		log.info("In " + (new Throwable().getStackTrace()[0].getMethodName()));
+
 		RestAssured.baseURI = baseURIToolsQABookStore;
 
 		RequestSpecification request = RestAssured.given();
@@ -75,6 +85,8 @@ public class JsonPathRead {
 	}
 
 	public static void weatherAPI() {
+
+		log.info("In " + (new Throwable().getStackTrace()[0].getMethodName()));
 
 		Response response = RestAssured.given().get(
 				"http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=439d4b804bc8187953eb36d2a8c26a02");

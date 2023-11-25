@@ -3,11 +3,18 @@ package com.restassures.utils;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import io.restassured.path.json.JsonPath;
 
 public class UtilMethods {
 
+	private static final Logger log = LogManager.getLogger(UtilMethods.class);
+
 	public JsonPath rawToJson(String response) {
+
+		log.info("In " + (new Throwable().getStackTrace()[0].getMethodName()));
 
 		JsonPath js1 = new JsonPath(response);
 

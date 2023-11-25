@@ -14,6 +14,21 @@ public class testDataPayloads {
 			+ "      \"title\": \"Appium\",\r\n" + "      \"price\": 36,\r\n" + "      \"copies\": 7\r\n" + "    }\r\n"
 			+ "    \r\n" + "    \r\n" + "    \r\n" + "  ]\r\n" + "}\r\n" + "";
 
+	public String JIRAJSessionReqBody = "{\"username\":\"hmdraza9\",\"password\":\"@fFe3m4R7364X$Y\"}";
+	
+	public String JIRACreateIssueReqBody = "{\r\n"
+			+ "    \"fields\": {\r\n"
+			+ "        \"project\": {\r\n"
+			+ "            \"key\": \"HMD\"\r\n"
+			+ "        },\r\n"
+			+ "        \"summary\": \"New task to modify logo\",\r\n"
+			+ "        \"description\": \"New task to modify logo\",\r\n"
+			+ "        \"issuetype\": {\r\n"
+			+ "            \"name\": \"Task\"\r\n"
+			+ "        }\r\n"
+			+ "    }\r\n"
+			+ "}";
+
 	public static final String uriGetPlace = "maps/api/place/get/json";
 
 	public static final String uriDeletePlace = "maps/api/place/delete/json";
@@ -21,5 +36,11 @@ public class testDataPayloads {
 	public static final String uriAddPlace = "maps/api/place/add/json";
 
 	public static final String uriUpdatePlace = "maps/api/place/update/json";
+
+	public final String baseUriJIRA = "http://localhost:8080";
+
+	public final String uriGetJIRAJSession = "rest/auth/1/session";
+
+	public final String uriJIRACreateIssue = "rest/api/1/issue/";
 
 }
