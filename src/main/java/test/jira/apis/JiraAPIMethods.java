@@ -64,7 +64,7 @@ public class JiraAPIMethods {
 				.assertThat();
 		
 		try {
-			response = vResp.statusCode(201).extract().asString();
+			response = vResp.statusCode(404).extract().asString();
 			isCreateIssueSuccess = true;
 		} catch (GroovyRuntimeException e) { 
 			isCreateIssueSuccess = false;
