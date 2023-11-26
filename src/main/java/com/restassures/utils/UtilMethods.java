@@ -1,5 +1,7 @@
 package com.restassures.utils;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -39,6 +41,13 @@ public class UtilMethods {
 		}
 		return randSet;
 
+	}
+
+	public static String getTime() {
+
+		Calendar cal = Calendar.getInstance();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HH-mm-ss-SSS");
+		return sdf.format(cal.getTime());
 	}
 
 }

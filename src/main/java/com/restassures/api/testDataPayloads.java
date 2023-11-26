@@ -1,5 +1,7 @@
 package com.restassures.api;
 
+import com.restassures.utils.UtilMethods;
+
 public class testDataPayloads {
 
 	public static String addPlaceBody = "{\"location\":{\"lat\":-38.383494,\"lng\":33.427362},\"accuracy\":50,\"name\":\"Frontlinea hous\",\"phone_number\":\"(+91) 983 893 3937\",\"address\":\"#address#, side layout, cohen 09\",\"types\":[\"shoe park\",\"shop\"],\"website\":\"http://google.com\",\"language\":\"French-IN\"}";
@@ -15,18 +17,35 @@ public class testDataPayloads {
 			+ "    \r\n" + "    \r\n" + "    \r\n" + "  ]\r\n" + "}\r\n" + "";
 
 	public String JIRAJSessionReqBody = "{\"username\":\"hmdraza9\",\"password\":\"@fFe3m4R7364X$Y\"}";
+
+	public String JIRACreateIssueTaskReqBody = "{\r\n" + "    \"fields\": {\r\n" + "        \"project\": {\r\n"
+			+ "            \"key\": \"AHR\"\r\n" + "        },\r\n" + "        \"summary\": \"New Issues for - "
+			+ UtilMethods.getTime() + "\",\r\n" + "        \"description\": \"New task to modify logo\",\r\n"
+			+ "        \"issuetype\": {\r\n" + "            \"name\": \"Task\"\r\n" + "        }\r\n" + "    }\r\n"
+			+ "}";
 	
-	public String JIRACreateIssueReqBody = "{\r\n"
-			+ "    \"fields\": {\r\n"
-			+ "        \"project\": {\r\n"
-			+ "            \"key\": \"AHR\"\r\n"
-			+ "        },\r\n"
-			+ "        \"summary\": \"Hello Jaaniya\",\r\n"
-			+ "        \"description\": \"New task to modify logo\",\r\n"
-			+ "        \"issuetype\": {\r\n"
-			+ "            \"name\": \"Task\"\r\n"
-			+ "        }\r\n"
-			+ "    }\r\n"
+	public String commentIssueReqBody = "{\r\n"
+			+ "\r\n"
+			+ "	\"body\": \"This is comment - "+UtilMethods.getTime()+"\",\r\n"
+			+ "	\"visibility\":{\r\n"
+			+ "	\r\n"
+			+ "		\"type\":\"role\",\r\n"
+			+ "		\"value\":\"Administrators\"\r\n"
+			+ "	\r\n"
+			+ "	}\r\n"
+			+ "\r\n"
+			+ "}";
+	
+	public String commentUpdateIssueReqBody = "{\r\n"
+			+ "\r\n"
+			+ "	\"body\": \"This is comment update - "+UtilMethods.getTime()+"\",\r\n"
+			+ "	\"visibility\":{\r\n"
+			+ "	\r\n"
+			+ "		\"type\":\"role\",\r\n"
+			+ "		\"value\":\"Administrators\"\r\n"
+			+ "	\r\n"
+			+ "	}\r\n"
+			+ "\r\n"
 			+ "}";
 
 	public static final String uriGetPlace = "maps/api/place/get/json";
@@ -42,5 +61,13 @@ public class testDataPayloads {
 	public final String uriGetJIRAJSession = "rest/auth/1/session";
 
 	public final String uriJIRACreateIssue = "rest/api/2/issue";
+
+	public final String uriJIRAGetIssue = "rest/api/2/issue/";
+
+	public final String uriJIRADeleteIssue = "rest/api/2/issue/#RunTimeVar";
+
+	public final String uriJIRACommentIssue = "rest/api/2/issue/#RunTimeVar/comment";
+
+	public final String uriJIRACommentUpdateIssue = "rest/api/2/issue/#issueID/comment/#commentID";
 
 }
