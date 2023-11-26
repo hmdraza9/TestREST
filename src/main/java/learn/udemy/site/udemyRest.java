@@ -22,7 +22,7 @@ public class udemyRest {
 	private static final Logger log = LogManager.getLogger(udemyRest.class);
 
 	public static final String baseURI = "https://rahulshettyacademy.com";
-
+	
 	public static final String mapKey = "qaclick123";
 
 	public static String placeID;

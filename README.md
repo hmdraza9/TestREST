@@ -13,4 +13,6 @@ this sets the env variable temporarily, save it properly in ENV variable session
 
 Added log, log works when you have given resource path is given at - resources/resource/directory in POM
 
+Wasting time due to small errors, URI incorrect, Cookie not set in correct format. Finally API Call success for Create Issue also. Also, JIRA Software gave me hard time as I didn't install it As An Administrator, rest all good.
+
 

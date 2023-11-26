@@ -28,49 +28,50 @@ public class JiraAPIMethods {
 	String response;
 	static boolean isCreateIssueSuccess = false;
 	static int countAttempted = 0;
-	static int countRetryLimit = 999;
+	static int countRetryLimit = 5;
 
 	public static void main(String[] args) {
 
 		objJira = new JiraAPIMethods();
+		
+
 		objJira.getJIRAJSession();
-		while(!isCreateIssueSuccess) {
-			objJira.jiraCreateIssue();
-			countAttempted++;
-			if(countAttempted>=countRetryLimit)
-				isCreateIssueSuccess = true;
-		}
+		objJira.jiraCreateIssue();
+		
+//		while (!isCreateIssueSuccess) {
+//			objJira.getJIRAJSession();
+//			objJira.jiraCreateIssue();
+//			countAttempted++;
+//			if (countAttempted >= countRetryLimit) {
+//				isCreateIssueSuccess = true;
+//			}
+//			log.info("isCreateIssueSuccess: " + isCreateIssueSuccess);
+//			log.info("countRetryLimit: " + countRetryLimit);
+//			log.info("countAttempted: " + countAttempted);
+//		}
 
 	}
 
 	public void jiraCreateIssue() {
 
 		RestAssured.baseURI = data.baseUriJIRA;
-		
-		RequestSpecification createJIRAIReqSpec = given()
-				.log()
-				.all()
-				.header("Content-Type", "application/json").header("Cookie","JSESSIONID="+jiraJSession)
-				.urlEncodingEnabled(false);
-		
-		Response getJIRAJSessionResp = createJIRAIReqSpec
-				.body(data.JIRACreateIssueReqBody)
-				.when().post(data.uriJIRACreateIssue);
-				
-		ValidatableResponse vResp = getJIRAJSessionResp
-				.then()
-				.log()
-				.all()
-				.assertThat();
-		
+
+		RequestSpecification createJIRAIReqSpec = given().log().all().header("Content-Type", "application/json")
+				.header("Cookie", "JSESSIONID=" + jiraJSession).urlEncodingEnabled(false);
+
+		Response getJIRAJSessionResp = createJIRAIReqSpec.body(data.JIRACreateIssueReqBody).when()
+				.post(data.uriJIRACreateIssue);
+
+		ValidatableResponse vResp = getJIRAJSessionResp.then().log().all().assertThat();
+
 		try {
-			response = vResp.statusCode(404).extract().asString();
+			response = vResp.statusCode(201).extract().asString();
 			isCreateIssueSuccess = true;
-		} catch (GroovyRuntimeException e) { 
+		} catch (GroovyRuntimeException e) {
 			isCreateIssueSuccess = false;
-			
+
 		}
-		
+
 	}
 
 	public void getJIRAJSession() {

@@ -19,9 +19,9 @@ public class testDataPayloads {
 	public String JIRACreateIssueReqBody = "{\r\n"
 			+ "    \"fields\": {\r\n"
 			+ "        \"project\": {\r\n"
-			+ "            \"key\": \"HMD\"\r\n"
+			+ "            \"key\": \"AHR\"\r\n"
 			+ "        },\r\n"
-			+ "        \"summary\": \"New task to modify logo\",\r\n"
+			+ "        \"summary\": \"Hello Jaaniya\",\r\n"
 			+ "        \"description\": \"New task to modify logo\",\r\n"
 			+ "        \"issuetype\": {\r\n"
 			+ "            \"name\": \"Task\"\r\n"
@@ -41,6 +41,6 @@ public class testDataPayloads {
 
 	public final String uriGetJIRAJSession = "rest/auth/1/session";
 
-	public final String uriJIRACreateIssue = "rest/api/1/issue/";
+	public final String uriJIRACreateIssue = "rest/api/2/issue";
 
 }
