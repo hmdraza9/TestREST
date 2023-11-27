@@ -4,6 +4,10 @@ import com.restassures.utils.UtilMethods;
 
 public class testDataPayloads {
 
+	/*
+	 * 			REQUEST BODY
+	 */
+	
 	public static String addPlaceBody = "{\"location\":{\"lat\":-38.383494,\"lng\":33.427362},\"accuracy\":50,\"name\":\"Frontlinea hous\",\"phone_number\":\"(+91) 983 893 3937\",\"address\":\"#address#, side layout, cohen 09\",\"types\":[\"shoe park\",\"shop\"],\"website\":\"http://google.com\",\"language\":\"French-IN\"}";
 	public static String updatePlaceBody = "{\"place_id\":\"$RunTimeVar1\",\"address\":\"$RunTimeVar2\",\"key\":\"$RunTimeVar3\"}";
 	public static String deletePlaceBody = "{\"place_id\":\"$RunTimeVar1\"}";
@@ -48,6 +52,8 @@ public class testDataPayloads {
 			+ "\r\n"
 			+ "}";
 
+	//				URIs
+	
 	public static final String uriGetPlace = "maps/api/place/get/json";
 
 	public static final String uriDeletePlace = "maps/api/place/delete/json";
@@ -64,10 +70,12 @@ public class testDataPayloads {
 
 	public final String uriJIRAGetIssue = "rest/api/2/issue/";
 
-	public final String uriJIRADeleteIssue = "rest/api/2/issue/#RunTimeVar";
+	public final String uriJIRADeleteIssue = "rest/api/2/issue/{key}";
 
-	public final String uriJIRACommentIssue = "rest/api/2/issue/#RunTimeVar/comment";
+	public final String uriJIRACommentIssue = "rest/api/2/issue/{key}/comment";
 
-	public final String uriJIRACommentUpdateIssue = "rest/api/2/issue/#issueID/comment/#commentID";
+	public final String uriJIRACommentUpdateIssue = "rest/api/2/issue/{issueID}/comment/{commentID}";
+
+	public final String uriJIRAIssueAttachment = "/rest/api/2/issue/{issueIdOrKey}/attachments";
 
 }
