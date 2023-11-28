@@ -8737,4 +8737,3 @@ created issue: AHR-57
 [INFO ] 2023-11-28 21:02:44.313 [main] JiraAPIMethods - created issue: AHR-87
 [INFO ] 2023-11-28 21:02:44.338 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
 [INFO ] 2023-11-28 21:02:44.341 [main] JiraAPIMethods - Destination file: C:\Users\hmdra_gnp5\Documents\repos_all\TestREST\src\test\resources\JIRAFiles\Archive\28-Nov-2023_21-02-44-338.log
-[INFO ] 2023-11-28 21:02:51.759 [main] JiraAPIMethods - File attached to issue: AHR-87; file ID: [10010]

@@ -8729,12 +8729,3 @@ created issue: AHR-57
 [INFO ] 2023-11-28 21:00:58.547 [main] JiraAPIMethods - created issue: AHR-86
 [INFO ] 2023-11-28 21:00:58.563 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
 [INFO ] 2023-11-28 21:00:58.570 [main] JiraAPIMethods - Destination file: C:\Users\hmdra_gnp5\Documents\repos_all\TestREST\src\test\resources\JIRAFiles\Archive\28-Nov-2023_21-00-58-563.log
-[INFO ] 2023-11-28 21:01:04.770 [main] JiraAPIMethods - File attached to issue: AHR-86; file ID: [10009]
-[INFO ] 2023-11-28 21:02:41.091 [main] JiraAPIMethods - getJIRAJSession
-[INFO ] 2023-11-28 21:02:43.060 [main] JiraAPIMethods - Jira JSession: >D22C2949622E4ED42CEA0F3F9E1F8D07<
-[INFO ] 2023-11-28 21:02:43.060 [main] JiraAPIMethods - jiraCreateIssue
-[INFO ] 2023-11-28 21:02:44.313 [main] JiraAPIMethods - Create issue response - {"id":"10086","key":"AHR-87","self":"http://localhost:8080/rest/api/2/issue/10086"}
-[INFO ] 2023-11-28 21:02:44.313 [main] JiraAPIMethods - created issue: AHR-87
-[INFO ] 2023-11-28 21:02:44.338 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
-[INFO ] 2023-11-28 21:02:44.341 [main] JiraAPIMethods - Destination file: C:\Users\hmdra_gnp5\Documents\repos_all\TestREST\src\test\resources\JIRAFiles\Archive\28-Nov-2023_21-02-44-338.log
-[INFO ] 2023-11-28 21:02:51.759 [main] JiraAPIMethods - File attached to issue: AHR-87; file ID: [10010]

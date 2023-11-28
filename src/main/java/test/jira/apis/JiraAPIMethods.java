@@ -65,7 +65,8 @@ public class JiraAPIMethods {
 
 		log.info("Home Path: " + homePath);
 
-		File srcFile = new File(homePath + "error.txt");
+//		File srcFile = new File(homePath + "error.txt");
+		File srcFile = new File("logs/logs.log");
 		File destFile = new File(
 				homePath+"/Archive/" + UtilMethods.getTime() + "." + FilenameUtils.getExtension(srcFile.getPath()));
 
