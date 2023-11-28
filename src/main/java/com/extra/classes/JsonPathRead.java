@@ -1,4 +1,4 @@
-package com.restassures.api;
+package com.extra.classes;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

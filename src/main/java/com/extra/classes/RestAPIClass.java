@@ -1,4 +1,4 @@
-package com.restassures.api;
+package com.extra.classes;
 //import org.testng.AssertJUnit;
 
 import static io.restassured.RestAssured.baseURI;

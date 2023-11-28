@@ -130,7 +130,7 @@ public class udemyRest {
 
 		log.info("###########Request starts:###########");
 
-		Response addPlaceResp = addPlaceReqSpec.when().post(testDataPayloads.uriAddPlace);
+		Response addPlaceResp = addPlaceReqSpec.when().post(testDataPayloads.uriMapAddPlace);
 
 		log.info("###########Response starts###########");
 
@@ -165,7 +165,7 @@ public class udemyRest {
 //				.log()
 //				.all()
 				.queryParam("key", mapKey).header("Content-Type", "application/json").queryParam("place_id", placeID)
-				.urlEncodingEnabled(false).when().get(testDataPayloads.uriGetPlace);
+				.urlEncodingEnabled(false).when().get(testDataPayloads.uriMapGetPlace);
 
 		log.info("###########Response starts###########n");
 
@@ -196,7 +196,7 @@ public class udemyRest {
 //				.all()
 				.queryParam("key", "qaclick123").header("Content-Type", "application/json").urlEncodingEnabled(false)
 				.body(testDataPayloads.deletePlaceBody.replace("$RunTimeVar1", placeID)).when()
-				.post(testDataPayloads.uriDeletePlace);
+				.post(testDataPayloads.uriMapDeletePlace);
 		log.info("###########Response starts###########n");
 
 		log.info("deletePlaceResp.asString: " + response.asString());
@@ -224,7 +224,7 @@ public class udemyRest {
 				.urlEncodingEnabled(false)
 				.body(testDataPayloads.updatePlaceBody.replace("$RunTimeVar1", placeID)
 						.replace("$RunTimeVar2", newAddress).replace("$RunTimeVar3", mapKey))
-				.when().put(testDataPayloads.uriUpdatePlace);
+				.when().put(testDataPayloads.uriMapUpdatePlace);
 
 		log.info("###########Response starts###########");
 

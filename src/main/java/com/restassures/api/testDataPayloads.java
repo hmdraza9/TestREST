@@ -54,17 +54,17 @@ public class testDataPayloads {
 
 	//				URIs
 	
-	public static final String uriGetPlace = "maps/api/place/get/json";
+	public static final String uriMapGetPlace = "maps/api/place/get/json";
 
-	public static final String uriDeletePlace = "maps/api/place/delete/json";
+	public static final String uriMapDeletePlace = "maps/api/place/delete/json";
 
-	public static final String uriAddPlace = "maps/api/place/add/json";
+	public static final String uriMapAddPlace = "maps/api/place/add/json";
 
-	public static final String uriUpdatePlace = "maps/api/place/update/json";
+	public static final String uriMapUpdatePlace = "maps/api/place/update/json";
 
-	public final String baseUriJIRA = "http://localhost:8080";
+	public final String uriJIRABaseUri = "http://localhost:8080";
 
-	public final String uriGetJIRAJSession = "rest/auth/1/session";
+	public final String uriJIRAGetJSession = "rest/auth/1/session";
 
 	public final String uriJIRACreateIssue = "rest/api/2/issue";
 
