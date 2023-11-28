@@ -46,7 +46,7 @@ public class UtilMethods {
 	public static String getTime() {
 
 		Calendar cal = Calendar.getInstance();
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd_HH-mm-ss-SSS");
+		SimpleDateFormat sdf = new SimpleDateFormat("dd-MMM-yyyy_HH-mm-ss-SSS");
 		return sdf.format(cal.getTime());
 	}
 

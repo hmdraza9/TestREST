@@ -8672,3 +8672,45 @@ created issue: AHR-57
 [INFO ] 2023-11-28 03:34:32.367 [main] JiraAPIMethods - Create issue response - {"id":"10081","key":"AHR-82","self":"http://localhost:8080/rest/api/2/issue/10081"}
 [INFO ] 2023-11-28 03:34:32.367 [main] JiraAPIMethods - created issue: AHR-82
 [INFO ] 2023-11-28 03:34:33.077 [main] JiraAPIMethods - File attached to issue: AHR-82; file ID: [10006]
+[INFO ] 2023-11-28 20:25:26.688 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
+[INFO ] 2023-11-28 20:25:26.788 [main] JiraAPIMethods - Destination file: C:\Users\hmdra_gnp5\Documents\repos_all\TestREST\src\test\resources\JIRAFiles\20231128_20-25-26-785.txt
+[INFO ] 2023-11-28 20:27:54.622 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
+[INFO ] 2023-11-28 20:27:54.628 [main] JiraAPIMethods - Destination file: C:\Users\hmdra_gnp5\Documents\repos_all\TestREST\src\test\resources\JIRAFiles\20231128_20-27-54-625.txt
+[INFO ] 2023-11-28 20:28:14.692 [main] JiraAPIMethods - File deleted : true
+[INFO ] 2023-11-28 20:29:26.804 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
+[INFO ] 2023-11-28 20:29:26.810 [main] JiraAPIMethods - Destination file: C:\Users\hmdra_gnp5\Documents\repos_all\TestREST\src\test\resources\JIRAFiles\20231128_20-29-26-808.txt
+[INFO ] 2023-11-28 20:29:46.830 [main] JiraAPIMethods - File '20231128_20-29-26-808.txt' deleted : true
+[INFO ] 2023-11-28 20:30:34.156 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
+[INFO ] 2023-11-28 20:30:34.160 [main] JiraAPIMethods - Destination file: C:\Users\hmdra_gnp5\Documents\repos_all\TestREST\src\test\resources\JIRAFiles\202311028_20-30-34-159.txt
+[INFO ] 2023-11-28 20:30:39.241 [main] JiraAPIMethods - File '202311028_20-30-34-159.txt' deleted : true
+[INFO ] 2023-11-28 20:30:54.578 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
+[INFO ] 2023-11-28 20:30:54.582 [main] JiraAPIMethods - Destination file: C:\Users\hmdra_gnp5\Documents\repos_all\TestREST\src\test\resources\JIRAFiles\2023Nov28_20-30-54-581.txt
+[INFO ] 2023-11-28 20:30:59.610 [main] JiraAPIMethods - File '2023Nov28_20-30-54-581.txt' deleted : true
+[INFO ] 2023-11-28 20:31:27.259 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
+[INFO ] 2023-11-28 20:31:27.264 [main] JiraAPIMethods - Destination file: C:\Users\hmdra_gnp5\Documents\repos_all\TestREST\src\test\resources\JIRAFiles\28-Nov-2023_20-31-27-262.txt
+[INFO ] 2023-11-28 20:31:32.285 [main] JiraAPIMethods - File '28-Nov-2023_20-31-27-262.txt' deleted : true
+[INFO ] 2023-11-28 20:33:33.363 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
+[INFO ] 2023-11-28 20:33:33.368 [main] JiraAPIMethods - Destination file: C:\Users\hmdra_gnp5\Documents\repos_all\TestREST\src\test\resources\JIRAFiles\Archive\28-Nov-2023_20-33-33-366.txt
+[INFO ] 2023-11-28 20:34:00.028 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
+[INFO ] 2023-11-28 20:34:00.032 [main] JiraAPIMethods - Destination file: C:\Users\hmdra_gnp5\Documents\repos_all\TestREST\src\test\resources\JIRAFiles\Archive\28-Nov-2023_20-34-00-030.txt
+[INFO ] 2023-11-28 20:39:17.590 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
+[INFO ] 2023-11-28 20:39:17.595 [main] JiraAPIMethods - Destination file: C:\Users\hmdra_gnp5\Documents\repos_all\TestREST\src\test\resources\JIRAFiles\Archive\28-Nov-2023_20-39-17-593.txt
+[INFO ] 2023-11-28 20:39:22.620 [main] JiraAPIMethods - File '28-Nov-2023_20-39-17-593.txt' deleted : true
+[INFO ] 2023-11-28 20:41:29.506 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
+[INFO ] 2023-11-28 20:41:29.509 [main] JiraAPIMethods - Destination file: C:\Users\hmdra_gnp5\Documents\repos_all\TestREST\src\test\resources\JIRAFiles\Archive\28-Nov-2023_20-41-29-508.txt
+[INFO ] 2023-11-28 20:41:34.531 [main] JiraAPIMethods - File '28-Nov-2023_20-41-29-508.txt' archived? : true
+[INFO ] 2023-11-28 20:45:37.064 [main] JiraAPIMethods - getJIRAJSession
+[INFO ] 2023-11-28 20:45:51.310 [main] JiraAPIMethods - Jira JSession: >FCB87439AD8392292D7F4C968CA86EF1<
+[INFO ] 2023-11-28 20:45:51.311 [main] JiraAPIMethods - jiraCreateIssue
+[INFO ] 2023-11-28 20:47:34.558 [main] JiraAPIMethods - Create issue response - {"id":"10082","key":"AHR-83","self":"http://localhost:8080/rest/api/2/issue/10082"}
+[INFO ] 2023-11-28 20:47:34.558 [main] JiraAPIMethods - created issue: AHR-83
+[INFO ] 2023-11-28 20:47:34.574 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
+[INFO ] 2023-11-28 20:47:34.576 [main] JiraAPIMethods - Destination file: C:\Users\hmdra_gnp5\Documents\repos_all\TestREST\src\test\resources\JIRAFiles\Archive\28-Nov-2023_20-47-34-575.txt
+[INFO ] 2023-11-28 20:51:22.397 [main] JiraAPIMethods - getJIRAJSession
+[INFO ] 2023-11-28 20:51:24.637 [main] JiraAPIMethods - Jira JSession: >7575E310E1DA26071E6CD23C64B7A824<
+[INFO ] 2023-11-28 20:51:24.637 [main] JiraAPIMethods - jiraCreateIssue
+[INFO ] 2023-11-28 20:51:27.349 [main] JiraAPIMethods - Create issue response - {"id":"10083","key":"AHR-84","self":"http://localhost:8080/rest/api/2/issue/10083"}
+[INFO ] 2023-11-28 20:51:27.349 [main] JiraAPIMethods - created issue: AHR-84
+[INFO ] 2023-11-28 20:51:27.370 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
+[INFO ] 2023-11-28 20:51:27.372 [main] JiraAPIMethods - Destination file: C:\Users\hmdra_gnp5\Documents\repos_all\TestREST\src\test\resources\JIRAFiles\Archive\28-Nov-2023_20-51-27-371.txt
+[INFO ] 2023-11-28 20:52:34.651 [main] JiraAPIMethods - File attached to issue: AHR-84; file ID: [10007]
