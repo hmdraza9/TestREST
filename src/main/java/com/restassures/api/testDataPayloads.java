@@ -68,7 +68,7 @@ public class testDataPayloads {
 
 	public final String uriJIRACreateIssue = "rest/api/2/issue";
 
-	public final String uriJIRAGetIssue = "rest/api/2/issue/";
+	public final String uriJIRAGetIssue = "rest/api/2/issue/{key}";
 
 	public final String uriJIRADeleteIssue = "rest/api/2/issue/{key}";
 

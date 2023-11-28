@@ -29,35 +29,41 @@ public class JiraAPIMethods {
 	
 	SessionFilter session = new SessionFilter();
 
-	public static String jiraIssue = "";
+	public static String jiraIssue = "AHR-85";//change it to blank, "" , after testing
 
 	public static String jiraIssueID = "";
 
-	public static String jiraIssueCommentID = "";
+	public static String jiraIssueCommentID = "10022";
 
 	public static String jiraJSession;
 
 	UtilMethods utils = new UtilMethods();
 
 	testDataPayloads data = new testDataPayloads();
+	
 	String response;
+	
 	static boolean isCreateIssueSuccess = false;
+	
+	
+	//##########################____MAIN____##########################
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 
 		objJira = new JiraAPIMethods();
 
-		objJira.sessionFilterExampleJIRA();
+//		objJira.sessionFilterExampleJIRA();
 
-		objJira.getJIRAJSession();
-		objJira.jiraCreateIssue();
-		Thread.sleep(5000);
+		objJira.getJIRAJSession(); // this have to be uncommented
+//		objJira.jiraCreateIssue();
+//		objJira.jiraCommentIssue();
+//		Thread.sleep(5000);
 		objJira.jiraGetIssue();
-		objJira.jiraDeleteIssue();//using path parameter to make URI dynamic
-		objJira.jiraCreateIssue();
-		objJira.jiraCommentIssue();
-		objJira.jiraUpdateCommentIssue();
-		objJira.jiraAttachToIssue();
+//		objJira.jiraDeleteIssue();
+//		objJira.jiraCreateIssue();
+//		objJira.jiraCommentIssue();
+//		objJira.jiraUpdateCommentIssue();
+//		objJira.jiraAttachToIssue();
 
 	}
 
@@ -92,7 +98,9 @@ public class JiraAPIMethods {
 
 		String response = attachJIRAResp.then().log().all().assertThat().statusCode(200).extract().asString();
 
-		log.info("File attached to issue: " + jiraIssue + "; file ID: " + utils.rawToJson(response).getString("id")+" and file size: "+(file.length()/1000)+"KB");
+		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
+		
+		log.info("File attached to issue: " + jiraIssue + "; file ID: " + utils.rawToJson(response).getString("id")+" and file size: "+(file.length()/1000)+" KB");
 	}
 
 	public void sessionFilterExampleJIRA() {
@@ -122,11 +130,12 @@ public class JiraAPIMethods {
 				// .all()
 				.assertThat().statusCode(201).extract().asString();
 
+		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
+		
 		jiraIssue = utils.rawToJson(response).getString("key");
 
 		jiraIssueID = utils.rawToJson(response).getString("id");
 
-		log.info("Create issue response - " + response);
 		log.info("created issue: " + jiraIssue);
 	}
 
@@ -146,6 +155,8 @@ public class JiraAPIMethods {
 		response = getJIRAJSessionResp.then().assertThat().statusCode(200).extract().asString();
 
 		jiraJSession = utils.rawToJson(response).getString("session.value");
+
+		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
 
 		log.info("Jira JSession: >" + jiraJSession + "<");
 	}
@@ -172,11 +183,12 @@ public class JiraAPIMethods {
 				// .all()
 				.assertThat().statusCode(201).extract().asString();
 
+		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
+
 		jiraIssue = utils.rawToJson(response).getString("key");
 
 		jiraIssueID = utils.rawToJson(response).getString("id");
 
-		log.info("Create issue response - " + response);
 		log.info("created issue: " + jiraIssue);
 
 	}
@@ -188,19 +200,42 @@ public class JiraAPIMethods {
 		RestAssured.baseURI = data.uriJIRABaseUri;
 
 		RequestSpecification getJIRAReqSpec = given()
-				// .log()
-				// .all()
-				.header("Content-Type", "application/json").header("Cookie", "JSESSIONID=" + jiraJSession)
+				 .log()
+				 .all()
+				.filter(session)
+				.header("Content-Type", "application/json")
+				.queryParam("fields", "comment")
 				.urlEncodingEnabled(false);
 
-		Response getJIRAJSessionResp = getJIRAReqSpec.when().get(data.uriJIRAGetIssue + jiraIssue);
+		Response getJIRAJSessionResp = getJIRAReqSpec
+				.when().pathParam("key", jiraIssue).get(data.uriJIRAGetIssue);
 
 		response = getJIRAJSessionResp.then()
-				// .log()
-				// .all()
+//				 .log()
+//				 .all()
 				.assertThat().statusCode(200).extract().asString();
+		
+				
+		int commentSize = utils.rawToJson(response).getInt("fields.comment.comments.size()");
+				boolean isCommFOund=false;
+		for(int i=0;i<commentSize;i++) {
+			
+			int commentIDTemp = utils.rawToJson(response).getInt("fields.comment.comments["+i+"].id");
+//			log.info("comment-matches??###### = "+(commentIDTemp == Integer.parseInt(jiraIssueCommentID)));
 
-		log.info("Get issue response - " + response);
+			
+			if(commentIDTemp == Integer.parseInt(jiraIssueCommentID)) {
+				log.info("Comment ID: "+commentIDTemp+" ; "+utils.rawToJson(response).getString("fields.comment.comments["+i+"]"));
+				isCommFOund = true;
+				break;
+			}
+		}
+		
+		System.out.println("Comment found? - "+isCommFOund);
+		
+		log.info("Comments size: "+commentSize);
+
+		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
 
 	}
 
@@ -224,7 +259,7 @@ public class JiraAPIMethods {
 //				 .all()
 				.assertThat().statusCode(204).extract().asString();
 
-		log.info("Delete issue response - " + response);
+		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
 
 	}
 
@@ -240,7 +275,8 @@ public class JiraAPIMethods {
 				.header("Content-Type", "application/json").header("Cookie", "JSESSIONID=" + jiraJSession)
 				.urlEncodingEnabled(false);
 
-		Response commentJIRAResp = commentJIRAReqSpec.body(data.commentIssueReqBody).when()
+		Response commentJIRAResp = commentJIRAReqSpec
+				.body(data.commentIssueReqBody).when()
 				.post(data.uriJIRACommentIssue);
 
 		response = commentJIRAResp.then()
@@ -248,7 +284,7 @@ public class JiraAPIMethods {
 //				 .all()
 				.assertThat().statusCode(201).extract().asString();
 
-		log.info("Comment issue response - " + response);
+		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
 
 		jiraIssueCommentID = utils.rawToJson(response).getString("id");
 
@@ -275,7 +311,7 @@ public class JiraAPIMethods {
 //				 .all()
 				.assertThat().statusCode(200).extract().asString();
 
-		log.info("Comment issue response - " + response);
+		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
 
 	}
 
