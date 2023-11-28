@@ -29,11 +29,13 @@ public class JiraAPIMethods {
 	
 	SessionFilter session = new SessionFilter();
 
-	public static String jiraIssue = "AHR-85";//change it to blank, "" , after testing
+	public static String jiraIssue = "";
 
 	public static String jiraIssueID = "";
 
-	public static String jiraIssueCommentID = "10022";
+	public static String jiraIssueCommentID = "";
+
+	public static String jiraIssueExpCommentID = "10022";
 
 	public static String jiraJSession;
 
@@ -58,7 +60,8 @@ public class JiraAPIMethods {
 //		objJira.jiraCreateIssue();
 //		objJira.jiraCommentIssue();
 //		Thread.sleep(5000);
-		objJira.jiraGetIssue();
+//		objJira.jiraGetIssue();
+		objJira.filterContentVerifyData();
 //		objJira.jiraDeleteIssue();
 //		objJira.jiraCreateIssue();
 //		objJira.jiraCommentIssue();
@@ -145,6 +148,7 @@ public class JiraAPIMethods {
 		RestAssured.baseURI = data.uriJIRABaseUri;
 
 		RequestSpecification getJIRAJSessionReqSpec = given()
+				.relaxedHTTPSValidation()
 				// .log()
 				// .all()
 				.filter(session).header("Content-Type", "application/json").urlEncodingEnabled(false);
@@ -204,41 +208,71 @@ public class JiraAPIMethods {
 				 .all()
 				.filter(session)
 				.header("Content-Type", "application/json")
-				.queryParam("fields", "comment")
 				.urlEncodingEnabled(false);
 
 		Response getJIRAJSessionResp = getJIRAReqSpec
 				.when().pathParam("key", jiraIssue).get(data.uriJIRAGetIssue);
 
 		response = getJIRAJSessionResp.then()
-//				 .log()
-//				 .all()
+				 .log()
+				 .all()
 				.assertThat().statusCode(200).extract().asString();
-		
-				
-		int commentSize = utils.rawToJson(response).getInt("fields.comment.comments.size()");
-				boolean isCommFOund=false;
-		for(int i=0;i<commentSize;i++) {
-			
-			int commentIDTemp = utils.rawToJson(response).getInt("fields.comment.comments["+i+"].id");
-//			log.info("comment-matches??###### = "+(commentIDTemp == Integer.parseInt(jiraIssueCommentID)));
-
-			
-			if(commentIDTemp == Integer.parseInt(jiraIssueCommentID)) {
-				log.info("Comment ID: "+commentIDTemp+" ; "+utils.rawToJson(response).getString("fields.comment.comments["+i+"]"));
-				isCommFOund = true;
-				break;
-			}
-		}
-		
-		System.out.println("Comment found? - "+isCommFOund);
-		
-		log.info("Comments size: "+commentSize);
 
 		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
 
 	}
+	
+	public void filterContentVerifyData() {
 
+			log.info(new Throwable().getStackTrace()[0].getMethodName());
+
+			RestAssured.baseURI = data.uriJIRABaseUri;
+
+			RequestSpecification getJIRAReqSpec = given()
+					 .log()
+					 .all()
+					.filter(session)
+					.header("Content-Type", "application/json")
+					.queryParam("fields", "comment")
+					.urlEncodingEnabled(false);
+
+			Response getJIRAJSessionResp = getJIRAReqSpec
+					.when().pathParam("key", "AHR-85").get(data.uriJIRAGetIssue);
+
+			response = getJIRAJSessionResp.then()
+//					 .log()
+//					 .all()
+					.assertThat().statusCode(200).extract().asString();
+			
+					
+			int commentSize = utils.rawToJson(response).getInt("fields.comment.comments.size()");
+					boolean isCommFound=false;
+			if(commentSize>0) {
+				for(int i=0;i<commentSize;i++) {
+					
+					int commentIDAct = utils.rawToJson(response).getInt("fields.comment.comments["+i+"].id");
+//					log.info("comment-matches??###### = "+(commentIDTemp == Integer.parseInt(jiraIssueCommentID)));
+
+					
+					if(commentIDAct == Integer.parseInt(jiraIssueExpCommentID)) {
+						log.info("Comment ID: "+commentIDAct+" ; "+utils.rawToJson(response).getString("fields.comment.comments["+i+"]"));
+						log.info("Comment Body: '"+utils.rawToJson(response).getString("fields.comment.comments["+i+"].body")+"'");
+						isCommFound = true;
+						log.error("Comment found? - "+isCommFound);
+						log.error("Total comments: "+commentSize);
+
+						break;
+					}
+				}
+			}
+			else {
+				log.error("No comments associated with this issue: "+jiraIssue);
+			}
+			
+			log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
+
+	}
+	
 	public void jiraDeleteIssue() {
 
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
