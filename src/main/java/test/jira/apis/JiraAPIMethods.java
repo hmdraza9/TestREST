@@ -23,8 +23,6 @@ public class JiraAPIMethods {
 
 	private static final Logger log = LogManager.getLogger(JiraAPIMethods.class);
 
-	public static JiraAPIMethods objJira;
-
 	public static final String homePath = "src/test/resources/JIRAFiles/";
 	
 	SessionFilter session = new SessionFilter();
@@ -42,31 +40,31 @@ public class JiraAPIMethods {
 	UtilMethods utils = new UtilMethods();
 
 	testDataPayloads data = new testDataPayloads();
+
+	public static JiraAPIMethods objJira = new JiraAPIMethods();
 	
 	String response;
 	
 	static boolean isCreateIssueSuccess = false;
 	
-	
 	//##########################____MAIN____##########################
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 
-		objJira = new JiraAPIMethods();
-
-//		objJira.sessionFilterExampleJIRA();
-
+		
+		
+		objJira.sessionFilterExampleJIRA();
 		objJira.getJIRAJSession(); // this have to be uncommented
-//		objJira.jiraCreateIssue();
-//		objJira.jiraCommentIssue();
-//		Thread.sleep(5000);
-//		objJira.jiraGetIssue();
+		objJira.jiraCreateIssue();
+		objJira.jiraCommentIssue();
+		Thread.sleep(5000);
+		objJira.jiraGetIssue();
 		objJira.filterContentVerifyData();
-//		objJira.jiraDeleteIssue();
-//		objJira.jiraCreateIssue();
-//		objJira.jiraCommentIssue();
-//		objJira.jiraUpdateCommentIssue();
-//		objJira.jiraAttachToIssue();
+		objJira.jiraDeleteIssue();
+		objJira.jiraCreateIssue();
+		objJira.jiraCommentIssue();
+		objJira.jiraUpdateCommentIssue();
+		objJira.jiraAttachToIssue();
 
 	}
 
@@ -74,7 +72,7 @@ public class JiraAPIMethods {
 
 		log.info("Home Path: " + homePath);
 
-//		File srcFile = new File(homePath + "error.txt");
+//		File srcFile = new File(homePath + "AttachmentJIRA.txt");
 		File srcFile = new File("logs/logs.log");
 		File destFile = new File(
 				homePath+"/Archive/" + UtilMethods.getTime() + "." + FilenameUtils.getExtension(srcFile.getPath()));
