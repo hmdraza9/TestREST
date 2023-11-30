@@ -19,3 +19,5 @@ Wasting time due to small errors, URI incorrect, Cookie not set in correct forma
 https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-attachments/#api-group-issue-attachments
 
 28 Nov 2023 - Filter out the contents of response using queryParam, using JsonPath to fetch the respective comment out of 5 of them
+
+1 Dec 2023 - Started scripting for OAuth. Docx file for help, Start from lecture 62

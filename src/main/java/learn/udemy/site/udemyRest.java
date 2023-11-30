@@ -5,7 +5,6 @@ import static org.hamcrest.Matchers.equalTo;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.HashSet;
 import java.util.Set;
 
 import org.apache.logging.log4j.LogManager;
@@ -17,6 +16,7 @@ import com.restassures.utils.UtilMethods;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import test.oauth.REST.TestOAuthRestAPI;
 
 public class udemyRest {
 	private static final Logger log = LogManager.getLogger(udemyRest.class);
@@ -36,13 +36,18 @@ public class udemyRest {
 	public static udemyRest objRest = new udemyRest();
 
 	public static void main(String[] args) {
+		
+		
+		TestOAuthRestAPI objOAuth = new TestOAuthRestAPI();
+		
+		objOAuth.testOAuthRestAssured();
 
-		placeSet = new HashSet<String>();
-
-		objRest.bulkAddressAddDelete(objRest, 1);
-
-		objRest.addPlace("OK");
-		objRest.deletePlace("OK");
+//		placeSet = new HashSet<String>();
+//
+//		objRest.bulkAddressAddDelete(objRest, 1);
+//
+//		objRest.addPlace("OK");
+//		objRest.deletePlace("OK");
 	}
 
 	// method overloading
@@ -115,8 +120,8 @@ public class udemyRest {
 		RestAssured.baseURI = baseURI;
 
 		RequestSpecification addPlaceReqSpec = given()
-//				.log()
-//				.all()
+				.log()
+				.all()
 				.queryParam("key", mapKey).header("Content-Type", "application/json").urlEncodingEnabled(false);
 
 		byte[] tempBody = null;

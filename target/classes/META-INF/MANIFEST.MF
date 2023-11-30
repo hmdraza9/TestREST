@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
-Built-By: hmdra_gnp5
-Build-Jdk: 17.0.4.1
+Built-By: hraza
+Build-Jdk: 20.0.1
 Class-Path: commons-io-2.13.0.jar rest-assured-3.3.0.jar groovy-2.4.15.j
  ar groovy-xml-2.4.15.jar httpclient-4.5.3.jar httpcore-4.4.6.jar common
  s-logging-1.2.jar commons-codec-1.9.jar httpmime-4.5.3.jar hamcrest-cor
