@@ -130,7 +130,7 @@ public class udemyRest {
 			addPlaceReqSpec.body(tempBody);
 		} catch (Exception e) {
 			e.printStackTrace();
-			addPlaceReqSpec.body(testDataPayloads.addPlaceBody.replace("#address#", addressValue));
+			addPlaceReqSpec.body(testDataPayloads.addPlaceBody.replace("#address#", addressValue)); 
 		}
 
 		log.info("###########Request starts:###########");
