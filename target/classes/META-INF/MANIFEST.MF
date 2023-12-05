@@ -1,15 +1,35 @@
 Manifest-Version: 1.0
 Built-By: hraza
 Build-Jdk: 20.0.1
-Class-Path: commons-io-2.13.0.jar rest-assured-3.3.0.jar groovy-2.4.15.j
- ar groovy-xml-2.4.15.jar httpclient-4.5.3.jar httpcore-4.4.6.jar common
- s-logging-1.2.jar commons-codec-1.9.jar httpmime-4.5.3.jar hamcrest-cor
- e-1.3.jar hamcrest-library-1.3.jar tagsoup-1.2.1.jar json-path-3.3.0.ja
- r groovy-json-2.4.15.jar rest-assured-common-3.3.0.jar xml-path-3.3.0.j
- ar commons-lang3-3.4.jar jaxb-api-2.2.12.jar jaxb-osgi-2.2.10.jar org.a
- pache.sling.javax.activation-0.1.0.jar activation-1.1.1.jar json-202310
- 13.jar json-simple-1.1.1.jar junit-4.10.jar log4j-core-2.17.1.jar log4j
- -api-2.17.1.jar slf4j-api-2.0.7.jar slf4j-simple-2.0.7.jar
+Class-Path: selenium-java-4.15.0.jar selenium-devtools-v117-4.15.0.jar s
+ elenium-devtools-v118-4.15.0.jar selenium-devtools-v119-4.15.0.jar sele
+ nium-devtools-v85-4.15.0.jar selenium-edge-driver-4.15.0.jar selenium-i
+ e-driver-4.15.0.jar selenium-remote-driver-4.15.0.jar opentelemetry-api
+ -1.28.0.jar opentelemetry-context-1.28.0.jar opentelemetry-exporter-log
+ ging-1.28.0.jar opentelemetry-sdk-metrics-1.28.0.jar opentelemetry-exte
+ nsion-incubator-1.28.0-alpha.jar opentelemetry-sdk-logs-1.28.0.jar open
+ telemetry-sdk-common-1.28.0.jar opentelemetry-sdk-extension-autoconfigu
+ re-spi-1.28.0.jar opentelemetry-sdk-extension-autoconfigure-1.28.0.jar 
+ opentelemetry-api-events-1.28.0-alpha.jar opentelemetry-sdk-trace-1.28.
+ 0.jar opentelemetry-sdk-1.28.0.jar opentelemetry-semconv-1.28.0-alpha.j
+ ar selenium-os-4.15.0.jar commons-exec-1.3.jar selenium-safari-driver-4
+ .15.0.jar selenium-api-4.15.0.jar selenium-support-4.15.0.jar auto-serv
+ ice-annotations-1.1.1.jar guava-32.1.2-jre.jar failureaccess-1.0.1.jar 
+ listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar jsr305-3
+ .0.2.jar checker-qual-3.33.0.jar error_prone_annotations-2.18.0.jar j2o
+ bjc-annotations-2.8.jar byte-buddy-1.14.5.jar selenium-json-4.15.0.jar 
+ selenium-chrome-driver-4.15.0.jar selenium-chromium-driver-4.15.0.jar s
+ elenium-manager-4.15.0.jar selenium-firefox-driver-4.15.0.jar selenium-
+ http-4.15.0.jar failsafe-3.3.2.jar commons-io-2.13.0.jar rest-assured-3
+ .3.0.jar groovy-2.4.15.jar groovy-xml-2.4.15.jar httpclient-4.5.3.jar h
+ ttpcore-4.4.6.jar commons-logging-1.2.jar commons-codec-1.9.jar httpmim
+ e-4.5.3.jar hamcrest-core-1.3.jar hamcrest-library-1.3.jar tagsoup-1.2.
+ 1.jar json-path-3.3.0.jar groovy-json-2.4.15.jar rest-assured-common-3.
+ 3.0.jar xml-path-3.3.0.jar commons-lang3-3.4.jar jaxb-api-2.2.12.jar ja
+ xb-osgi-2.2.10.jar org.apache.sling.javax.activation-0.1.0.jar activati
+ on-1.1.1.jar json-20231013.jar json-simple-1.1.1.jar junit-4.10.jar log
+ 4j-core-2.17.1.jar log4j-api-2.17.1.jar slf4j-api-2.0.7.jar slf4j-simpl
+ e-2.0.7.jar
 Main-Class: learn.udemy.site
 Created-By: Maven Integration for Eclipse
 

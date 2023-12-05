@@ -1,12 +1,18 @@
 package com.restassures.utils;
 
+import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 
 import io.restassured.path.json.JsonPath;
 
@@ -50,4 +56,11 @@ public class UtilMethods {
 		return sdf.format(cal.getTime());
 	}
 
+	
+	public void ts(WebDriver driver) throws IOException {
+
+		TakesScreenshot screenshot = (TakesScreenshot) driver;
+		File scrFile = screenshot.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(scrFile, new File("Screenshots/hello."+UtilMethods.getTime()+".png"));
+	}
 }

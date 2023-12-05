@@ -2,6 +2,16 @@ package test.oauth.REST;
 
 import static io.restassured.RestAssured.given;
 
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 import com.restassures.utils.UtilMethods;
 
 import io.restassured.RestAssured;
@@ -14,6 +24,20 @@ public class TestOAuthRestAPI {
 	
 	public static final String code = "4%2F0AfJohXneoPF9VEjq7g1r-y5L5vv_fw6t32V9nRQB4WR5akrPlPsaV6sH3iYB3o9Scr438A";
 	
+	public static final String client_id = "692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com";
+	
+	public static final String client_secret = "erZOWM9g3UtwNRj340YYaK_W";
+	
+	public static final String redirect_uri = "https://rahulshettyacademy.com/getCourse.php";
+	
+	public static final String grant_type = "authorization_code";
+	
+	public static final String scope = "https://www.googleapis.com/auth/userinfo.email";
+	
+	public static final String auth_url = "https://accounts.google.com/o/oauth2/v2/auth";
+	
+	public static final String response_type = "code";
+	
 	UtilMethods utils = new UtilMethods();
 
 	
@@ -24,10 +48,10 @@ public class TestOAuthRestAPI {
 		String response = given()
 				.urlEncodingEnabled(false)
 		.queryParam("code", code)
-		.queryParam("client_id", "692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com")
-		.queryParam("client_secret", "erZOWM9g3UtwNRj340YYaK_W")
-		.queryParam("redirect_uri", "https://rahulshettyacademy.com/getCourse.php")
-		.queryParam("grant_type", "authorization_code")
+		.queryParam("client_id", client_id)
+		.queryParam("client_secret", client_secret)
+		.queryParam("redirect_uri", redirect_uri)
+		.queryParam("grant_type", grant_type)
 		.when()
 		.log()
 		.all()
@@ -64,10 +88,58 @@ public class TestOAuthRestAPI {
 		
 	}
 
-	public static String getOAuthCode() {
+/*
+ * https://accounts.google.com/o/oauth2/v2/auth
+ * ?scope=https://www.googleapis.com/auth/userinfo.email
+ * &auth_url=https://accounts.google.com/o/oauth2/v2/auth
+ * &client_id=692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com
+ * &response_type=code
+ * &redirect_uri=https://rahulshettyacademy.com/getCourse.php	
+ */
+	
+	public String getOAuthCode() throws IOException {
 		
 		WebDriver driver = new ChromeDriver();
 		
+		StringBuilder getCodeURI = new StringBuilder();
+		
+		getCodeURI
+		.append(authURL)
+		.append("?")
+		.append("scope=").append(scope)
+		.append("&auth_url=").append(auth_url)
+		.append("&client_id=").append(client_id)
+		.append("&response_type=").append(response_type)
+		.append("&redirect_uri=").append(redirect_uri);
+		
+		System.out.println("getCodeURI: "+getCodeURI);
+		
+		try {
+			driver.get(getCodeURI.toString());
+			
+			driver.findElement(By.xpath("//input[@aria-label='Email or phone']")).sendKeys("johnedoe070@gmail.com");
+			
+			driver.findElement(By.xpath("//button/span[text()='Next']")).click();
+			
+			driver.findElement(By.xpath("//input[@aria-label='Enter your password']")).sendKeys("Test@123");
+			
+			driver.findElement(By.xpath("//button/span[text()='Next']")).click();
+			
+			String tempCode = driver.getCurrentUrl();
+			
+			System.out.println("Temp Code: " +tempCode);
+			
+
+			utils.ts(driver);
+			
+			
+			driver.quit();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			utils.ts(driver);
+			driver.quit();
+		}
 		
 		return "";
 		

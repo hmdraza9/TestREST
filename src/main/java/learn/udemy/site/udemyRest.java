@@ -3,6 +3,7 @@ package learn.udemy.site;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Set;
@@ -35,12 +36,12 @@ public class udemyRest {
 
 	public static udemyRest objRest = new udemyRest();
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		
 		TestOAuthRestAPI objOAuth = new TestOAuthRestAPI();
 		
-		objOAuth.testOAuthRestAssured();
+		objOAuth.getOAuthCode();
 
 //		placeSet = new HashSet<String>();
 //
