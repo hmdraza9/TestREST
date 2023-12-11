@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -117,6 +118,10 @@ public class TestOAuthRestAPI {
 		try {
 			driver.get(getCodeURI.toString());
 			
+			TakesScreenshot scr = (TakesScreenshot) driver;Assert.assertTrue(accessTokenURL, false);
+			File src = scr.getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(src, new File("//mlm.png"));
+			
 			driver.findElement(By.xpath("//input[@aria-label='Email or phone']")).sendKeys("johnedoe070@gmail.com");
 			
 			driver.findElement(By.xpath("//button/span[text()='Next']")).click();
@@ -129,7 +134,9 @@ public class TestOAuthRestAPI {
 			
 			System.out.println("Temp Code: " +tempCode);
 			
-
+			driver.navigate().to("delkdl");
+			
+			
 			utils.ts(driver);
 			
 			
