@@ -3,9 +3,13 @@ package test.oauth.REST;
 import static io.restassured.RestAssured.given;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.restassures.utils.UtilMethods;
@@ -13,15 +17,17 @@ import com.restassures.utils.UtilMethods;
 import io.restassured.RestAssured;
 import io.restassured.parsing.Parser;
 import io.restassured.response.Response;
-import test.pojo.clsses.CoursesMain;
+import test.pojo.classes.CoursesMain;
 
 public class TestOAuthRestAPI {
+	
+	private static final Logger log = LogManager.getLogger(TestOAuthRestAPI.class);
 	
 	public static final String authURL = "https://accounts.google.com/o/oauth2/v2/auth"; //code URL
 	
 	public static final String accessTokenURL = "https://www.googleapis.com/oauth2/v4/token";
 	
-	public static final String code = "4%2F0AfJohXl1NXktOGbzFOnSzbBf3kOm2RnEpaNm_9e3zDdUfGsMcPYSxQfmKBzSwXkzsKoU7g";
+	public static String code = "4%2F0AfJohXn7LCXlpZGgG9vHaGh5hBb6b7Z3OIfXPfPd2lq1C7p7uVQcEy_B6t9JFtYx1fmMkQ";
 	
 	public static final String client_id = "692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com";
 	
@@ -40,9 +46,75 @@ public class TestOAuthRestAPI {
 	UtilMethods utils = new UtilMethods();
 
 	
+	/*
+	 * https://accounts.google.com/o/oauth2/v2/auth
+	 * ?scope=https://www.googleapis.com/auth/userinfo.email
+	 * &auth_url=https://accounts.google.com/o/oauth2/v2/auth
+	 * &client_id=692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com
+	 * &response_type=code
+	 * &redirect_uri=https://rahulshettyacademy.com/getCourse.php	
+	 */
+		
+		public String getOAuthCode() throws IOException {
+			
+			StringBuilder getCodeURI = new StringBuilder();
+			
+			getCodeURI
+			.append(authURL)
+			.append("?")
+			.append("scope=").append(scope)
+			.append("&auth_url=").append(auth_url)
+			.append("&client_id=").append(client_id)
+			.append("&response_type=").append(response_type)
+			.append("&redirect_uri=").append(redirect_uri);
+			
+			log.info("getCodeURI: "+getCodeURI);
+			
+			WebDriver driver = new ChromeDriver();
+			
+	//		WebDriver driver = new FirefoxDriver();
+			
+	//		WebDriver driver = new HtmlUnitDriver();
+			
+			try {
+				driver.get(getCodeURI.toString());
+				
+	//			TakesScreenshot scr = (TakesScreenshot) driver;Assert.assertTrue(accessTokenURL, false);
+	//			File src = scr.getScreenshotAs(OutputType.FILE);
+	//			FileUtils.copyFile(src, new File("//mlm.png"));
+				
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				
+				driver.findElement(By.xpath("//input[@aria-label='Email or phone']")).sendKeys("johnedoe070@gmail.com");
+				
+				driver.findElement(By.xpath("//button/span[text()='Next']")).click();
+				
+				driver.findElement(By.xpath("//input[@aria-label='Enter your password']")).sendKeys("Test@123");
+				
+				driver.findElement(By.xpath("//button/span[text()='Next']")).click();
+				
+				String tempCode = driver.getCurrentUrl();
+				
+				log.info("Temp Code: " +tempCode);
+				
+				utils.ts(driver);
+				
+				
+				driver.quit();
+			} catch (Exception e) {
+				e.printStackTrace();
+				utils.ts(driver);
+				driver.quit();
+			}
+			
+			return "";
+			
+		}
+
 	public void getCourses() {
 		
 		RestAssured.baseURI = accessTokenURL;
+		code = "4%2F0AfJohXnNX0TZrCXC9RoOns5Y1SqV13yFgoI7SFW-rNLt2x4PTKB05rzduY9LITlmz_f5xQ";
 		
 		Response response = given()
 				.urlEncodingEnabled(false)
@@ -63,7 +135,7 @@ public class TestOAuthRestAPI {
 		
 		String token = utils.rawToJson(response.asString()).getString("access_token");
 		
-		System.out.println("Token: "+token);
+		log.info("Token: "+token);
 		
 		
 		
@@ -93,80 +165,27 @@ public class TestOAuthRestAPI {
 		.get("https://rahulshettyacademy.com/getCourse.php");
 		
 		CoursesMain cs = response.as(CoursesMain.class);
+		
+		log.info("Course API response: "+response.asString());
 
-		System.out.println("Total WebAutomation courses: "+cs.getCourses().getWebAutomation().size());
-		System.out.println("Total API courses: "+cs.getCourses().getApi().size());
-		System.out.println("Total Mobile courses: "+cs.getCourses().getMobile().size());
+		log.info("Total WebAutomation courses: "+cs.getCourses().getWebAutomation().size());
+		log.info("Total API courses: "+cs.getCourses().getApi().size());
+		log.info("Total Mobile courses: "+cs.getCourses().getMobile().size());
 		
-		System.out.println("Get Instructor: "+cs.getInstructor());
-		System.out.println("Get URL: "+cs.getUrl());
-		System.out.println("Get Services: "+cs.getServices());
-		System.out.println("Get Expertise: "+cs.getExpertise());
-		System.out.println("Get Course Mobile 0 Title: "+cs.getCourses().getMobile().get(0).getCourseTitle());
-		System.out.println("Get Course Mobile 0 Price: "+cs.getCourses().getMobile().get(0).getPrice());
-		System.out.println("Get Course API 1 Title: "+cs.getCourses().getApi().get(1).getCourseTitle());
-		System.out.println("Get Course API 1 Price: "+cs.getCourses().getApi().get(1).getPrice());
+		log.info("Get Instructor: "+cs.getInstructor());
+		log.info("Get URL: "+cs.getUrl());
+		log.info("Get Services: "+cs.getServices());
+		log.info("Get Expertise: "+cs.getExpertise());
+		log.info("Get Course Mobile 0 Title: "+cs.getCourses().getMobile().get(0).getCourseTitle());
+		log.info("Get Course Mobile 0 Price: "+cs.getCourses().getMobile().get(0).getPrice());
+		log.info("Get Course API 1 Title: "+cs.getCourses().getApi().get(1).getCourseTitle());
+		log.info("Get Course API 1 Price: "+cs.getCourses().getApi().get(1).getPrice());
 		
-		System.out.println("Course response: "+response.asString());
-		
-	}
-
-/*
- * https://accounts.google.com/o/oauth2/v2/auth
- * ?scope=https://www.googleapis.com/auth/userinfo.email
- * &auth_url=https://accounts.google.com/o/oauth2/v2/auth
- * &client_id=692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com
- * &response_type=code
- * &redirect_uri=https://rahulshettyacademy.com/getCourse.php	
- */
-	
-	public String getOAuthCode() throws IOException {
-		
-		StringBuilder getCodeURI = new StringBuilder();
-		
-		getCodeURI
-		.append(authURL)
-		.append("?")
-		.append("scope=").append(scope)
-		.append("&auth_url=").append(auth_url)
-		.append("&client_id=").append(client_id)
-		.append("&response_type=").append(response_type)
-		.append("&redirect_uri=").append(redirect_uri);
-		
-		System.out.println("getCodeURI: "+getCodeURI);
-		
-		WebDriver driver = new ChromeDriver();
-		
-		try {
-			driver.get(getCodeURI.toString());
+		for(int i =0;i< cs.getCourses().getWebAutomation().size();i++) {
 			
-//			TakesScreenshot scr = (TakesScreenshot) driver;Assert.assertTrue(accessTokenURL, false);
-//			File src = scr.getScreenshotAs(OutputType.FILE);
-//			FileUtils.copyFile(src, new File("//mlm.png"));
+			System.out.println("Web Automation course title: ["+i+"] "+cs.getCourses().getWebAutomation().get(i).getCourseTitle());
 			
-			driver.findElement(By.xpath("//input[@aria-label='Email or phone']")).sendKeys("johnedoe070@gmail.com");
-			
-			driver.findElement(By.xpath("//button/span[text()='Next']")).click();
-			
-			driver.findElement(By.xpath("//input[@aria-label='Enter your password']")).sendKeys("Test@123");
-			
-			driver.findElement(By.xpath("//button/span[text()='Next']")).click();
-			
-			String tempCode = driver.getCurrentUrl();
-			
-			System.out.println("Temp Code: " +tempCode);
-			
-			utils.ts(driver);
-			
-			
-			driver.quit();
-		} catch (Exception e) {
-			e.printStackTrace();
-			utils.ts(driver);
-			driver.quit();
 		}
-		
-		return "";
 		
 	}
 }

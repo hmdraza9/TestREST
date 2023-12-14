@@ -14,23 +14,29 @@ Class-Path: selenium-java-4.15.0.jar selenium-devtools-v117-4.15.0.jar s
  0.jar opentelemetry-sdk-1.28.0.jar opentelemetry-semconv-1.28.0-alpha.j
  ar selenium-os-4.15.0.jar commons-exec-1.3.jar selenium-safari-driver-4
  .15.0.jar gson-2.10.1.jar jackson-databind-2.16.0.jar jackson-annotatio
- ns-2.16.0.jar jackson-core-2.16.0.jar selenium-api-4.15.0.jar selenium-
- support-4.15.0.jar auto-service-annotations-1.1.1.jar guava-32.1.2-jre.
- jar failureaccess-1.0.1.jar listenablefuture-9999.0-empty-to-avoid-conf
- lict-with-guava.jar jsr305-3.0.2.jar checker-qual-3.33.0.jar error_pron
- e_annotations-2.18.0.jar j2objc-annotations-2.8.jar byte-buddy-1.14.5.j
- ar selenium-json-4.15.0.jar selenium-chrome-driver-4.15.0.jar selenium-
- chromium-driver-4.15.0.jar selenium-manager-4.15.0.jar selenium-firefox
- -driver-4.15.0.jar selenium-http-4.15.0.jar failsafe-3.3.2.jar commons-
- io-2.13.0.jar rest-assured-3.3.0.jar groovy-2.4.15.jar groovy-xml-2.4.1
- 5.jar httpclient-4.5.3.jar httpcore-4.4.6.jar commons-logging-1.2.jar c
- ommons-codec-1.9.jar httpmime-4.5.3.jar hamcrest-core-1.3.jar hamcrest-
- library-1.3.jar tagsoup-1.2.1.jar json-path-3.3.0.jar groovy-json-2.4.1
- 5.jar rest-assured-common-3.3.0.jar xml-path-3.3.0.jar commons-lang3-3.
- 4.jar jaxb-api-2.2.12.jar jaxb-osgi-2.2.10.jar org.apache.sling.javax.a
- ctivation-0.1.0.jar activation-1.1.1.jar json-20231013.jar json-simple-
- 1.1.1.jar junit-4.10.jar log4j-core-2.17.1.jar log4j-api-2.17.1.jar slf
- 4j-api-2.0.7.jar slf4j-simple-2.0.7.jar
+ ns-2.16.0.jar jackson-core-2.16.0.jar selenium-htmlunit-driver-2.52.0.j
+ ar htmlunit-2.18.jar xalan-2.7.2.jar serializer-2.7.2.jar commons-lang3
+ -3.4.jar commons-codec-1.10.jar htmlunit-core-js-2.17.jar xercesImpl-2.
+ 11.0.jar xml-apis-1.4.01.jar nekohtml-1.9.22.jar cssparser-0.9.16.jar s
+ ac-1.3.jar commons-logging-1.2.jar websocket-client-9.2.12.v20150709.ja
+ r jetty-util-9.2.12.v20150709.jar jetty-io-9.2.12.v20150709.jar websock
+ et-common-9.2.12.v20150709.jar websocket-api-9.2.12.v20150709.jar commo
+ ns-collections-3.2.2.jar httpclient-4.5.1.jar httpcore-4.4.3.jar seleni
+ um-api-4.15.0.jar selenium-support-4.15.0.jar auto-service-annotations-
+ 1.1.1.jar guava-32.1.2-jre.jar failureaccess-1.0.1.jar listenablefuture
+ -9999.0-empty-to-avoid-conflict-with-guava.jar jsr305-3.0.2.jar checker
+ -qual-3.33.0.jar error_prone_annotations-2.18.0.jar j2objc-annotations-
+ 2.8.jar byte-buddy-1.14.5.jar selenium-json-4.15.0.jar selenium-chrome-
+ driver-4.15.0.jar selenium-chromium-driver-4.15.0.jar selenium-manager-
+ 4.15.0.jar selenium-firefox-driver-4.15.0.jar selenium-http-4.15.0.jar 
+ failsafe-3.3.2.jar commons-io-2.13.0.jar rest-assured-3.3.0.jar groovy-
+ 2.4.15.jar groovy-xml-2.4.15.jar httpmime-4.5.3.jar hamcrest-core-1.3.j
+ ar hamcrest-library-1.3.jar tagsoup-1.2.1.jar json-path-3.3.0.jar groov
+ y-json-2.4.15.jar rest-assured-common-3.3.0.jar xml-path-3.3.0.jar jaxb
+ -api-2.2.12.jar jaxb-osgi-2.2.10.jar org.apache.sling.javax.activation-
+ 0.1.0.jar activation-1.1.1.jar json-20231013.jar json-simple-1.1.1.jar 
+ junit-4.10.jar log4j-core-2.17.1.jar log4j-api-2.17.1.jar slf4j-api-2.0
+ .7.jar slf4j-simple-2.0.7.jar
 Main-Class: learn.udemy.site
 Created-By: Maven Integration for Eclipse
 
