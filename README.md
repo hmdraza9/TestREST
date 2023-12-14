@@ -21,3 +21,5 @@ https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-atta
 28 Nov 2023 - Filter out the contents of response using queryParam, using JsonPath to fetch the respective comment out of 5 of them
 
 1 Dec 2023 - Started scripting for OAuth. Docx file for help, Start from lecture 62
+
+14 Dec 2023 - Added POJO classes and further required dependencies, need to implement in response capture
