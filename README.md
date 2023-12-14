@@ -23,3 +23,5 @@ https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-atta
 1 Dec 2023 - Started scripting for OAuth. Docx file for help, Start from lecture 62
 
 14 Dec 2023 - Added POJO classes and further required dependencies, need to implement in response capture, simple pojo methods implemented, working. output at: /TestREST/src/test/resources/Outputs/POJOResponse_14Dec2023.txt; Logger added in course class, iterated through the size of array length dynamically
+
+15 Dec 2023 - renamed pojo package, json body prepared with pojo class

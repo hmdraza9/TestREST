@@ -1,22 +1,22 @@
-package test.pojo.classes;
+package test.pojo.courses;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class WebAutomation {
+public class API {
 
-	private static final Logger log = LogManager.getLogger(WebAutomation.class);
-	
+	private static final Logger log = LogManager.getLogger(API.class);
+
 	private String courseTitle;
 	private String price;
 
 	public String getCourseTitle() {
-		log.info("Returned course Title: "+courseTitle);
+		log.info("Returned courseTitle: "+courseTitle);
 		return courseTitle;
 	}
 
 	public void setCourseTitle(String courseTitle) {
-		log.info("Set course Title: "+courseTitle);
+		log.info("Set courseTitle: "+courseTitle);
 		this.courseTitle = courseTitle;
 	}
 
@@ -29,5 +29,6 @@ public class WebAutomation {
 		log.info("Set price: "+price);
 		this.price = price;
 	}
+
 
 }

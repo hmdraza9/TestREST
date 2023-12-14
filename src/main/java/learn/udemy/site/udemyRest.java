@@ -6,6 +6,9 @@ import static org.hamcrest.Matchers.equalTo;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import org.apache.logging.log4j.LogManager;
@@ -18,6 +21,8 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import test.oauth.REST.TestOAuthRestAPI;
+import test.pojo.googleMap.AddPlace;
+import test.pojo.googleMap.Location;
 
 public class udemyRest {
 	private static final Logger log = LogManager.getLogger(udemyRest.class);
@@ -43,14 +48,15 @@ public class udemyRest {
 		
 //		objOAuth.getOAuthCode();
 		
-		objOAuth.getCourses();
+//		objOAuth.getCourses();
 
 //		placeSet = new HashSet<String>();
 //
 //		objRest.bulkAddressAddDelete(objRest, 1);
 //
-//		objRest.addPlace("OK");
+		objRest.addPlace("OK");
 //		objRest.deletePlace("OK");
+//		objRest.getPlace("4c7294835a65508cd746f666714a2944");
 	}
 
 	// method overloading
@@ -122,18 +128,22 @@ public class udemyRest {
 
 		RestAssured.baseURI = baseURI;
 
+
 		RequestSpecification addPlaceReqSpec = given()
 				.log()
 				.all()
 				.queryParam("key", mapKey).header("Content-Type", "application/json").urlEncodingEnabled(false);
-
+		
+		
 		byte[] tempBody = null;
 		try {
-			tempBody = Files.readAllBytes(Paths.get("src/test/resources/AddPlaceBody.json"));
+			tempBody = Files.readAllBytes(Paths.get("src/test/resources/aAddPlaceBody.json"));
 			addPlaceReqSpec.body(tempBody);
 		} catch (Exception e) {
 			e.printStackTrace();
-			addPlaceReqSpec.body(testDataPayloads.addPlaceBody.replace("#address#", addressValue)); 
+			log.error("Exception :: Reading body from test Data class");
+//			addPlaceReqSpec.body(testDataPayloads.addPlaceBodyPlaceholder.replace("#address#", addressValue)); 
+			addPlaceReqSpec.body(addPlaceBodySetUp());
 		}
 
 		log.info("###########Request starts:###########");
@@ -143,23 +153,29 @@ public class udemyRest {
 		log.info("###########Response starts###########");
 
 		addPlaceResp.then()
-//		.log()
-//		.all()
+		.log()
+		.all()
 				.assertThat().statusCode(200).body("scope", equalTo("APP")).body("status", equalTo(toVerify));
 
 		placeID = addPlaceResp.getBody().path("place_id");
+		log.info("Place ID: "+placeID);
+		placeSet = new HashSet<>();
 		placeSet.add(placeID);
 
 		String response = addPlaceResp.then().assertThat().statusCode(200).body("scope", equalTo("APP"))
 				.header("Server", "Apache/2.4.52 (Ubuntu)").extract().response().asString();
 
-//		log.info("Add Place Response: " + response);
-
-//		log.info("Place ID(using get.path): " + placeID);
 
 		log.info("Place ID(using JsonPath): " + utils.rawToJson(response).getString("place_id"));
 
-		log.info("addPlace.statusCode: " + addPlaceResp.statusCode());
+		log.info("AddPlace StatusCode: " + addPlaceResp.statusCode());
+		
+		log.info("Response: "+response.toString());
+	}
+	
+	public void getPlace(String placeID) {
+		udemyRest.placeID = placeID;
+		getPlace(200);
 	}
 
 	public void getPlace(int toVerify) {
@@ -288,5 +304,28 @@ public class udemyRest {
 		log.info("Total price: " + coursesSum);
 		log.info("Is sum equal: " + (coursesSum == coursesPurchaseAmount));
 
+	}
+
+	public AddPlace addPlaceBodySetUp(){
+
+		log.info("Add place body setup.");
+		AddPlace ap = new AddPlace();
+		Location apLoc = new Location();
+		apLoc.setLat(32.98977F);
+		apLoc.setLng(-32.98977F);
+		ap.setLocation(apLoc);
+		ap.setAccuracy("50");
+		ap.setName("Iqbal Villa");
+		ap.setPhone_number("+965 123123");
+		ap.setAddress("8-1-33, Toli Chowki");
+		List<String> typeList = new ArrayList<>();
+		typeList.add("Grocery");
+		typeList.add("Dairy");
+		typeList.add("Snack");
+		ap.setTypes(typeList);
+		ap.setWebsite("www.google.com");
+		ap.setLanguage("English-IN");
+		
+		return ap;
 	}
 }

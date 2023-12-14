@@ -1,4 +1,4 @@
-package test.pojo.classes;
+package test.pojo.courses;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -7,7 +7,7 @@ import test.oauth.REST.TestOAuthRestAPI;
 
 public class CoursesMain {
 
-	private static final Logger log = LogManager.getLogger(TestOAuthRestAPI.class);
+	private static final Logger log = LogManager.getLogger(CoursesMain.class);
 
 	private String instructor;
 	private String url;

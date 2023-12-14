@@ -3,10 +3,14 @@ package test.oauth.REST;
 import static io.restassured.RestAssured.given;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.htmlunit.HtmlUnitDriver;
@@ -17,11 +21,13 @@ import com.restassures.utils.UtilMethods;
 import io.restassured.RestAssured;
 import io.restassured.parsing.Parser;
 import io.restassured.response.Response;
-import test.pojo.classes.CoursesMain;
+import test.pojo.courses.CoursesMain;
 
 public class TestOAuthRestAPI {
 	
 	private static final Logger log = LogManager.getLogger(TestOAuthRestAPI.class);
+	
+	private String[] coursesExpArr = {"Selenium Webdriver Java","Cypress","Protractor"};
 	
 	public static final String authURL = "https://accounts.google.com/o/oauth2/v2/auth"; //code URL
 	
@@ -114,7 +120,7 @@ public class TestOAuthRestAPI {
 	public void getCourses() {
 		
 		RestAssured.baseURI = accessTokenURL;
-		code = "4%2F0AfJohXnNX0TZrCXC9RoOns5Y1SqV13yFgoI7SFW-rNLt2x4PTKB05rzduY9LITlmz_f5xQ";
+		code = "4%2F0AfJohXmZ3BJZ6qZnfiexSm-uY-3DOWrujjh3CkyzpqPbrqC2DHalquIUtLif3vS5d7UYRQ";
 		
 		Response response = given()
 				.urlEncodingEnabled(false)
@@ -181,11 +187,19 @@ public class TestOAuthRestAPI {
 		log.info("Get Course API 1 Title: "+cs.getCourses().getApi().get(1).getCourseTitle());
 		log.info("Get Course API 1 Price: "+cs.getCourses().getApi().get(1).getPrice());
 		
+		List<String> coursesAct = new ArrayList<>();
+		List<String> coursesExp = Arrays.asList(coursesExpArr);
+		
 		for(int i =0;i< cs.getCourses().getWebAutomation().size();i++) {
-			
-			System.out.println("Web Automation course title: ["+i+"] "+cs.getCourses().getWebAutomation().get(i).getCourseTitle());
+			String cTitle = cs.getCourses().getWebAutomation().get(i).getCourseTitle();
+			coursesAct.add(cTitle);
+			log.info("Added to actual course list: "+cTitle);
+			System.out.println("Web Automation course title: ["+i+"] "+cTitle);
 			
 		}
+		
+		log.info("Is course expected equal to actual?: "+coursesAct.equals(coursesExp));
+		Assert.assertTrue(coursesAct.equals(coursesExp));
 		
 	}
 }

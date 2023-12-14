@@ -1,4 +1,4 @@
-package test.pojo.classes;
+package test.pojo.courses;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import test.oauth.REST.TestOAuthRestAPI;
 
 public class Courses {
 
-	private static final Logger log = LogManager.getLogger(TestOAuthRestAPI.class);
+	private static final Logger log = LogManager.getLogger(Courses.class);
 
 	private List<WebAutomation> webAutomation;
 	private List<API> api;

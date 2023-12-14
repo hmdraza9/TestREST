@@ -9863,3 +9863,157 @@ created issue: AHR-57
 [INFO ] 2023-12-14 22:33:10.407 [main] TestOAuthRestAPI - Get Course Mobile 0 Price: 50
 [INFO ] 2023-12-14 22:33:10.407 [main] TestOAuthRestAPI - Get Course API 1 Title: SoapUI Webservices testing
 [INFO ] 2023-12-14 22:33:10.408 [main] TestOAuthRestAPI - Get Course API 1 Price: 40
+[INFO ] 2023-12-14 23:05:37.038 [main] TestOAuthRestAPI - Token: ya29.a0AfB_byCPVSnU7vFCK2ixXh0zbjRWWk_gPLK4p5TXkZDlW1MtUEJLLpg8M2YzMiOsjlZJaGu-FESFfWkYwfJcLWWbvXAkLHB1bzs_1w7QwfFnYfXrZzJqmv5Cd5vmdR_Thf8kKj6kIdNzxijhXRWSkqgPlDYZJSThw2caCgYKAR0SARISFQHGX2MiwxB-CIF6AP8UR2nxPWL6GA0170
+[INFO ] 2023-12-14 23:05:38.478 [main] TestOAuthRestAPI - Set instructor: RahulShetty
+[INFO ] 2023-12-14 23:05:38.479 [main] TestOAuthRestAPI - Set url: rahulshettycademy.com
+[INFO ] 2023-12-14 23:05:38.479 [main] TestOAuthRestAPI - Set services: projectSupport
+[INFO ] 2023-12-14 23:05:38.479 [main] TestOAuthRestAPI - Set expertise: Automation
+[INFO ] 2023-12-14 23:05:38.482 [main] TestOAuthRestAPI - Set webAutomation list: [test.pojo.classes.WebAutomation@27585351, test.pojo.classes.WebAutomation@2de6f1bc, test.pojo.classes.WebAutomation@5b35c7d]
+[INFO ] 2023-12-14 23:05:38.483 [main] TestOAuthRestAPI - Set API list: [test.pojo.classes.API@29d405e6, test.pojo.classes.API@4c731956]
+[INFO ] 2023-12-14 23:05:38.484 [main] TestOAuthRestAPI - Set mobile list: [test.pojo.classes.Mobile@56826a75]
+[INFO ] 2023-12-14 23:05:38.484 [main] TestOAuthRestAPI - Set linkedIn: https://www.linkedin.com/in/rahul-shetty-trainer/
+[INFO ] 2023-12-14 23:05:38.485 [main] TestOAuthRestAPI - Course API response: 
+{ "instructor": "RahulShetty", "url": "rahulshettycademy.com", "services": "projectSupport", "expertise": "Automation", "courses": { "webAutomation": [ { "courseTitle": "Selenium Webdriver Java", "price": "50" }, { "courseTitle": "Cypress",
+                "price": "40"
+            },
+            {
+                "courseTitle": "Protractor",
+                "price": "40"
+            }
+        ],
+        "api": [
+            {
+                "courseTitle": "Rest Assured Automation using Java",
+                "price": "50"
+            },
+            {
+                "courseTitle": "SoapUI Webservices testing",
+                "price": "40"
+            }
+        ],
+        "mobile": [
+            {
+                "courseTitle": "Appium-Mobile Automation using Java",
+                "price": "50"
+            }
+        ]
+    },
+    "linkedIn": "https://www.linkedin.com/in/rahul-shetty-trainer/"
+}
+
+[INFO ] 2023-12-14 23:05:38.485 [main] TestOAuthRestAPI - Returned webAutomation list: [test.pojo.classes.WebAutomation@27585351, test.pojo.classes.WebAutomation@2de6f1bc, test.pojo.classes.WebAutomation@5b35c7d]
+[INFO ] 2023-12-14 23:05:38.485 [main] TestOAuthRestAPI - Total WebAutomation courses: 3
+[INFO ] 2023-12-14 23:05:38.485 [main] TestOAuthRestAPI - Returned API list: [test.pojo.classes.API@29d405e6, test.pojo.classes.API@4c731956]
+[INFO ] 2023-12-14 23:05:38.485 [main] TestOAuthRestAPI - Total API courses: 2
+[INFO ] 2023-12-14 23:05:38.486 [main] TestOAuthRestAPI - Returned mobile list: [test.pojo.classes.Mobile@56826a75]
+[INFO ] 2023-12-14 23:05:38.486 [main] TestOAuthRestAPI - Total Mobile courses: 1
+[INFO ] 2023-12-14 23:05:38.486 [main] TestOAuthRestAPI - Returned instructor: RahulShetty
+[INFO ] 2023-12-14 23:05:38.486 [main] TestOAuthRestAPI - Get Instructor: RahulShetty
+[INFO ] 2023-12-14 23:05:38.486 [main] TestOAuthRestAPI - Returned url: rahulshettycademy.com
+[INFO ] 2023-12-14 23:05:38.486 [main] TestOAuthRestAPI - Get URL: rahulshettycademy.com
+[INFO ] 2023-12-14 23:05:38.486 [main] TestOAuthRestAPI - Returned services: projectSupport
+[INFO ] 2023-12-14 23:05:38.486 [main] TestOAuthRestAPI - Get Services: projectSupport
+[INFO ] 2023-12-14 23:05:38.486 [main] TestOAuthRestAPI - Returned expertise: Automation
+[INFO ] 2023-12-14 23:05:38.486 [main] TestOAuthRestAPI - Get Expertise: Automation
+[INFO ] 2023-12-14 23:05:38.487 [main] TestOAuthRestAPI - Returned mobile list: [test.pojo.classes.Mobile@56826a75]
+[INFO ] 2023-12-14 23:05:38.487 [main] TestOAuthRestAPI - Get Course Mobile 0 Title: Appium-Mobile Automation using Java
+[INFO ] 2023-12-14 23:05:38.487 [main] TestOAuthRestAPI - Returned mobile list: [test.pojo.classes.Mobile@56826a75]
+[INFO ] 2023-12-14 23:05:38.487 [main] TestOAuthRestAPI - Get Course Mobile 0 Price: 50
+[INFO ] 2023-12-14 23:05:38.487 [main] TestOAuthRestAPI - Returned API list: [test.pojo.classes.API@29d405e6, test.pojo.classes.API@4c731956]
+[INFO ] 2023-12-14 23:05:38.488 [main] TestOAuthRestAPI - Get Course API 1 Title: SoapUI Webservices testing
+[INFO ] 2023-12-14 23:05:38.488 [main] TestOAuthRestAPI - Returned API list: [test.pojo.classes.API@29d405e6, test.pojo.classes.API@4c731956]
+[INFO ] 2023-12-14 23:05:38.488 [main] TestOAuthRestAPI - Get Course API 1 Price: 40
+[INFO ] 2023-12-14 23:05:38.488 [main] TestOAuthRestAPI - Returned webAutomation list: [test.pojo.classes.WebAutomation@27585351, test.pojo.classes.WebAutomation@2de6f1bc, test.pojo.classes.WebAutomation@5b35c7d]
+[INFO ] 2023-12-14 23:05:38.488 [main] TestOAuthRestAPI - Returned webAutomation list: [test.pojo.classes.WebAutomation@27585351, test.pojo.classes.WebAutomation@2de6f1bc, test.pojo.classes.WebAutomation@5b35c7d]
+[INFO ] 2023-12-14 23:05:38.489 [main] TestOAuthRestAPI - Returned webAutomation list: [test.pojo.classes.WebAutomation@27585351, test.pojo.classes.WebAutomation@2de6f1bc, test.pojo.classes.WebAutomation@5b35c7d]
+[INFO ] 2023-12-14 23:05:38.489 [main] TestOAuthRestAPI - Returned webAutomation list: [test.pojo.classes.WebAutomation@27585351, test.pojo.classes.WebAutomation@2de6f1bc, test.pojo.classes.WebAutomation@5b35c7d]
+[INFO ] 2023-12-14 23:05:38.490 [main] TestOAuthRestAPI - Returned webAutomation list: [test.pojo.classes.WebAutomation@27585351, test.pojo.classes.WebAutomation@2de6f1bc, test.pojo.classes.WebAutomation@5b35c7d]
+[INFO ] 2023-12-14 23:05:38.490 [main] TestOAuthRestAPI - Returned webAutomation list: [test.pojo.classes.WebAutomation@27585351, test.pojo.classes.WebAutomation@2de6f1bc, test.pojo.classes.WebAutomation@5b35c7d]
+[INFO ] 2023-12-14 23:05:38.490 [main] TestOAuthRestAPI - Returned webAutomation list: [test.pojo.classes.WebAutomation@27585351, test.pojo.classes.WebAutomation@2de6f1bc, test.pojo.classes.WebAutomation@5b35c7d]
+[INFO ] 2023-12-14 23:33:10.390 [main] TestOAuthRestAPI - Token: ya29.a0AfB_byCrFRpnOlv_9ZknWeYSDRCqIUNL3EnAxeQR14c4c090AxugQWrAFwz8h_Tki10SmAMUzbJTZZZj93ybMRoXkqzgM_LszckayoMNbCozbttcBMm6ONrMlohKKV9TfKAe6TyLkBSUwFpkxzvQyj4zlF4vyYo9TZQaCgYKATsSARISFQHGX2MivCC9_FVHESRCQYkt7X31uQ0170
+[INFO ] 2023-12-14 23:33:12.431 [main] TestOAuthRestAPI - Course API response: 
+{ "instructor": "RahulShetty", "url": "rahulshettycademy.com", "services": "projectSupport", "expertise": "Automation", "courses": { "webAutomation": [ { "courseTitle": "Selenium Webdriver Java", "price": "50" }, { "courseTitle": "Cypress",
+                "price": "40"
+            },
+            {
+                "courseTitle": "Protractor",
+                "price": "40"
+            }
+        ],
+        "api": [
+            {
+                "courseTitle": "Rest Assured Automation using Java",
+                "price": "50"
+            },
+            {
+                "courseTitle": "SoapUI Webservices testing",
+                "price": "40"
+            }
+        ],
+        "mobile": [
+            {
+                "courseTitle": "Appium-Mobile Automation using Java",
+                "price": "50"
+            }
+        ]
+    },
+    "linkedIn": "https://www.linkedin.com/in/rahul-shetty-trainer/"
+}
+
+[INFO ] 2023-12-14 23:33:12.431 [main] TestOAuthRestAPI - Total WebAutomation courses: 3
+[INFO ] 2023-12-14 23:33:12.431 [main] TestOAuthRestAPI - Total API courses: 2
+[INFO ] 2023-12-14 23:33:12.432 [main] TestOAuthRestAPI - Total Mobile courses: 1
+[INFO ] 2023-12-14 23:33:12.432 [main] TestOAuthRestAPI - Get Instructor: RahulShetty
+[INFO ] 2023-12-14 23:33:12.433 [main] TestOAuthRestAPI - Get URL: rahulshettycademy.com
+[INFO ] 2023-12-14 23:33:12.434 [main] TestOAuthRestAPI - Get Services: projectSupport
+[INFO ] 2023-12-14 23:33:12.434 [main] TestOAuthRestAPI - Get Expertise: Automation
+[INFO ] 2023-12-14 23:33:12.435 [main] TestOAuthRestAPI - Get Course Mobile 0 Title: Appium-Mobile Automation using Java
+[INFO ] 2023-12-14 23:33:12.435 [main] TestOAuthRestAPI - Get Course Mobile 0 Price: 50
+[INFO ] 2023-12-14 23:33:12.435 [main] TestOAuthRestAPI - Get Course API 1 Title: SoapUI Webservices testing
+[INFO ] 2023-12-14 23:33:12.435 [main] TestOAuthRestAPI - Get Course API 1 Price: 40
+[INFO ] 2023-12-14 23:33:12.437 [main] TestOAuthRestAPI - Is course expected equal to actual?: true
+[INFO ] 2023-12-14 23:35:33.129 [main] TestOAuthRestAPI - Token: ya29.a0AfB_byBL2j78ux8VlLbRx3XGu2dvfC_TFP6Dr3w7crnJQljHo5yMDODgQG1hkLcCiZ7i58HSbqffj5RGxbo-s8NN3kUQJN-MlfJ-HGVDfmkA-l3ogZPknl_mI6-7JrX1sVlniwsaBptiXD1GUItAxLZ1HfA6vW8l4L4aCgYKATQSARISFQHGX2Mi346fJ__RXEkc9j60en1ryg0170
+[INFO ] 2023-12-14 23:35:34.200 [main] TestOAuthRestAPI - Course API response: 
+{ "instructor": "RahulShetty", "url": "rahulshettycademy.com", "services": "projectSupport", "expertise": "Automation", "courses": { "webAutomation": [ { "courseTitle": "Selenium Webdriver Java", "price": "50" }, { "courseTitle": "Cypress",
+                "price": "40"
+            },
+            {
+                "courseTitle": "Protractor",
+                "price": "40"
+            }
+        ],
+        "api": [
+            {
+                "courseTitle": "Rest Assured Automation using Java",
+                "price": "50"
+            },
+            {
+                "courseTitle": "SoapUI Webservices testing",
+                "price": "40"
+            }
+        ],
+        "mobile": [
+            {
+                "courseTitle": "Appium-Mobile Automation using Java",
+                "price": "50"
+            }
+        ]
+    },
+    "linkedIn": "https://www.linkedin.com/in/rahul-shetty-trainer/"
+}
+
+[INFO ] 2023-12-14 23:35:34.200 [main] TestOAuthRestAPI - Total WebAutomation courses: 3
+[INFO ] 2023-12-14 23:35:34.201 [main] TestOAuthRestAPI - Total API courses: 2
+[INFO ] 2023-12-14 23:35:34.201 [main] TestOAuthRestAPI - Total Mobile courses: 1
+[INFO ] 2023-12-14 23:35:34.201 [main] TestOAuthRestAPI - Get Instructor: RahulShetty
+[INFO ] 2023-12-14 23:35:34.202 [main] TestOAuthRestAPI - Get URL: rahulshettycademy.com
+[INFO ] 2023-12-14 23:35:34.202 [main] TestOAuthRestAPI - Get Services: projectSupport
+[INFO ] 2023-12-14 23:35:34.202 [main] TestOAuthRestAPI - Get Expertise: Automation
+[INFO ] 2023-12-14 23:35:34.203 [main] TestOAuthRestAPI - Get Course Mobile 0 Title: Appium-Mobile Automation using Java
+[INFO ] 2023-12-14 23:35:34.203 [main] TestOAuthRestAPI - Get Course Mobile 0 Price: 50
+[INFO ] 2023-12-14 23:35:34.204 [main] TestOAuthRestAPI - Get Course API 1 Title: SoapUI Webservices testing
+[INFO ] 2023-12-14 23:35:34.204 [main] TestOAuthRestAPI - Get Course API 1 Price: 40
+[INFO ] 2023-12-14 23:35:34.205 [main] TestOAuthRestAPI - Added to actual course list: Selenium Webdriver Java
+[INFO ] 2023-12-14 23:35:34.206 [main] TestOAuthRestAPI - Added to actual course list: Cypress
+[INFO ] 2023-12-14 23:35:34.206 [main] TestOAuthRestAPI - Added to actual course list: Protractor
+[INFO ] 2023-12-14 23:35:34.206 [main] TestOAuthRestAPI - Is course expected equal to actual?: true
