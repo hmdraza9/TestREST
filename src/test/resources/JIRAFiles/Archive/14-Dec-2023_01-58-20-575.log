@@ -9730,11 +9730,3 @@ created issue: AHR-57
 
 [INFO ] 2023-12-14 01:58:20.574 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
 [INFO ] 2023-12-14 01:58:20.577 [main] JiraAPIMethods - Destination file: C:\GitClonesNew\TestREST\src\test\resources\JIRAFiles\Archive\14-Dec-2023_01-58-20-575.log
-[INFO ] 2023-12-14 01:58:33.023 [main] JiraAPIMethods - Response: 
-@@@@@@@@@@@@@@
-[{"self":"http://localhost:8080/rest/api/2/attachment/10000","id":"10000","filename":"14-Dec-2023_01-58-20-575.log","author":{"self":"http://localhost:8080/rest/api/2/user?username=hmdraza9","name":"hmdraza9","key":"JIRAUSER10000","emailAddress":"hmdraza9@gmail.com","avatarUrls":{"48x48":"https://www.gravatar.com/avatar/789d048da8a60031854300e92ea7085e?d=mm&s=48","24x24":"https://www.gravatar.com/avatar/789d048da8a60031854300e92ea7085e?d=mm&s=24","16x16":"https://www.gravatar.com/avatar/789d048da8a60031854300e92ea7085e?d=mm&s=16","32x32":"https://www.gravatar.com/avatar/789d048da8a60031854300e92ea7085e?d=mm&s=32"},"displayName":"hmdraza9@gmail.com","active":true,"timeZone":"Asia/Calcutta"},"created":"2023-12-14T01:58:26.897+0530","size":1302616,"mimeType":"text/plain","content":"http://localhost:8080/secure/attachment/10000/14-Dec-2023_01-58-20-575.log"}]
-@@@@@@@@@@@@@@
-
-[INFO ] 2023-12-14 01:58:33.037 [main] JiraAPIMethods - File attached to issue: AHR-10; file ID: [10000] and file size: 1302 KB
-[INFO ] 2023-12-14 02:05:10.968 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
-[INFO ] 2023-12-14 02:05:10.975 [main] JiraAPIMethods - Destination file: C:\GitClonesNew\TestREST\src\test\resources\JIRAFiles\Archive\14-Dec-2023_02-05-10-973.png

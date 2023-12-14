@@ -2,14 +2,9 @@ package test.oauth.REST;
 
 import static io.restassured.RestAssured.given;
 
-import java.io.File;
 import java.io.IOException;
 
-import org.apache.commons.io.FileUtils;
-import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -23,7 +18,7 @@ public class TestOAuthRestAPI {
 	
 	public static final String accessTokenURL = "https://www.googleapis.com/oauth2/v4/token";
 	
-	public static final String code = "4%2F0AfJohXneoPF9VEjq7g1r-y5L5vv_fw6t32V9nRQB4WR5akrPlPsaV6sH3iYB3o9Scr438A";
+	public static final String code = "4%2F0AfJohXna3LaGBuNcTMOVeu4j1wl9IlN7Ch-OB0gmPsFPKF-pmoPTlN6xdvH-nvpd102u8w";
 	
 	public static final String client_id = "692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com";
 	
@@ -70,8 +65,6 @@ public class TestOAuthRestAPI {
 		
 		
 		
-		
-		
 //		given()
 //		.urlEncodingEnabled(false)
 //		.queryParam("scope", "https://www.googleapis.com/auth/userinfo.email")
@@ -80,12 +73,24 @@ public class TestOAuthRestAPI {
 //		.queryParam("response_type", "code")
 //		.queryParam("redirect_uri", "https://rahulshettyacademy.com/getCourse.php")
 //		.when()
-////		.log()
-////		.all()
+//		.log()
+//		.all()
 //		.post()
 //		.then()
 //		.log()
 //		.all();
+		
+		response = given().queryParam("access_token", token)
+				.when()
+				.log()
+				.all()
+				.get("https://rahulshettyacademy.com/getCourse.php")
+				.then()
+				.extract()
+				.response()
+				.asString();
+		
+		System.out.println("Course response: "+response);
 		
 	}
 
@@ -100,8 +105,6 @@ public class TestOAuthRestAPI {
 	
 	public String getOAuthCode() throws IOException {
 		
-		WebDriver driver = new ChromeDriver();
-		
 		StringBuilder getCodeURI = new StringBuilder();
 		
 		getCodeURI
@@ -115,12 +118,14 @@ public class TestOAuthRestAPI {
 		
 		System.out.println("getCodeURI: "+getCodeURI);
 		
+		WebDriver driver = new ChromeDriver();
+		
 		try {
 			driver.get(getCodeURI.toString());
 			
-			TakesScreenshot scr = (TakesScreenshot) driver;Assert.assertTrue(accessTokenURL, false);
-			File src = scr.getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(src, new File("//mlm.png"));
+//			TakesScreenshot scr = (TakesScreenshot) driver;Assert.assertTrue(accessTokenURL, false);
+//			File src = scr.getScreenshotAs(OutputType.FILE);
+//			FileUtils.copyFile(src, new File("//mlm.png"));
 			
 			driver.findElement(By.xpath("//input[@aria-label='Email or phone']")).sendKeys("johnedoe070@gmail.com");
 			
@@ -134,15 +139,11 @@ public class TestOAuthRestAPI {
 			
 			System.out.println("Temp Code: " +tempCode);
 			
-			driver.navigate().to("delkdl");
-			
-			
 			utils.ts(driver);
 			
 			
 			driver.quit();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			utils.ts(driver);
 			driver.quit();

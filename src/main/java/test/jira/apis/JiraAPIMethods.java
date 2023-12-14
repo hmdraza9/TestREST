@@ -53,18 +53,18 @@ public class JiraAPIMethods {
 
 		
 		
-		objJira.sessionFilterExampleJIRA();
-		objJira.getJIRAJSession(); // this have to be uncommented
-		objJira.jiraCreateIssue();
-		objJira.jiraCommentIssue();
-		Thread.sleep(5000);
-		objJira.jiraGetIssue();
+//		objJira.sessionFilterExampleJIRA();
+//		objJira.getJIRAJSession(); // this have to be uncommented
+//		objJira.jiraCreateIssue();
+//		objJira.jiraCommentIssue();
+//		Thread.sleep(5000);
+//		objJira.jiraGetIssue();
 		objJira.filterContentVerifyData();
-		objJira.jiraDeleteIssue();
-		objJira.jiraCreateIssue();
-		objJira.jiraCommentIssue();
-		objJira.jiraUpdateCommentIssue();
-		objJira.jiraAttachToIssue();
+//		objJira.jiraDeleteIssue();
+//		objJira.jiraCreateIssue();
+//		objJira.jiraCommentIssue();
+//		objJira.jiraUpdateCommentIssue();
+//		objJira.jiraAttachToIssue();
 
 	}
 
@@ -235,7 +235,7 @@ public class JiraAPIMethods {
 					.urlEncodingEnabled(false);
 
 			Response getJIRAJSessionResp = getJIRAReqSpec
-					.when().pathParam("key", "AHR-85").get(data.uriJIRAGetIssue);
+					.when().pathParam("key", "AHR-5").get(data.uriJIRAGetIssue);
 
 			response = getJIRAJSessionResp.then()
 //					 .log()

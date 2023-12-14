@@ -41,7 +41,9 @@ public class udemyRest {
 		
 		TestOAuthRestAPI objOAuth = new TestOAuthRestAPI();
 		
-		objOAuth.getOAuthCode();
+//		objOAuth.getOAuthCode();
+		
+		objOAuth.testOAuthRestAssured();
 
 //		placeSet = new HashSet<String>();
 //
