@@ -43,7 +43,7 @@ public class udemyRest {
 		
 //		objOAuth.getOAuthCode();
 		
-		objOAuth.testOAuthRestAssured();
+		objOAuth.getCourses();
 
 //		placeSet = new HashSet<String>();
 //

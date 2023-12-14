@@ -3,7 +3,6 @@ package test.pojo.clsses;
 public class API {
 
 	private String courseTitle;
-	private String coursePrice;
 
 	public String getCourseTitle() {
 		return courseTitle;
@@ -13,12 +12,14 @@ public class API {
 		this.courseTitle = courseTitle;
 	}
 
-	public String getCoursePrice() {
-		return coursePrice;
+	public String getPrice() {
+		return price;
 	}
 
-	public void setCoursePrice(String coursePrice) {
-		this.coursePrice = coursePrice;
+	public void setPrice(String price) {
+		this.price = price;
 	}
+
+	private String price;
 
 }

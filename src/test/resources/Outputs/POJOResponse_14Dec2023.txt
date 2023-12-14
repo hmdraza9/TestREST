@@ -1,0 +1,82 @@
+Request method:	POST
+Request URI:	https://www.googleapis.com/oauth2/v4/token?code=4%2F0AfJohXl1NXktOGbzFOnSzbBf3kOm2RnEpaNm_9e3zDdUfGsMcPYSxQfmKBzSwXkzsKoU7g&client_id=692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com&client_secret=erZOWM9g3UtwNRj340YYaK_W&redirect_uri=https://rahulshettyacademy.com/getCourse.php&grant_type=authorization_code
+Proxy:			<none>
+Request params:	<none>
+Query params:	code=4%2F0AfJohXl1NXktOGbzFOnSzbBf3kOm2RnEpaNm_9e3zDdUfGsMcPYSxQfmKBzSwXkzsKoU7g
+				client_id=692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com
+				client_secret=erZOWM9g3UtwNRj340YYaK_W
+				redirect_uri=https://rahulshettyacademy.com/getCourse.php
+				grant_type=authorization_code
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+Pragma: no-cache
+Date: Thu, 14 Dec 2023 06:47:39 GMT
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Content-Type: application/json; charset=utf-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Content-Encoding: gzip
+Server: scaffolding on HTTPServer2
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Transfer-Encoding: chunked
+
+{
+    "access_token": "ya29.a0AfB_byCyPsjib5B9sW6pBku9k7xWnevXJMzXSnndu2ITK2lAOTdFuYAfGu0-wluM-QwmxCMT51OSkGTgRikQsKLZlYMaK2UoDLKKLJdjXZkbqcRCwzHBqg7NH-fBencz9na5U0RqWqeifimfIdtPXJ0PSBxWHG4NqooaCgYKAbYSARISFQHGX2Mi_PyvEr_vHwbDxy5Osm4OVA0170",
+    "expires_in": 3574,
+    "scope": "openid https://www.googleapis.com/auth/userinfo.email",
+    "token_type": "Bearer",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjBhZDFmZWM3ODUwNGY0NDdiYWU2NWJjZjVhZmFlZGI2NWVlYzllODEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI2OTIxODMxMDMxMDctcDBtN2VudDJoazdzdWd1djR2cTIyaGpjZmhjcjQzcGouYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI2OTIxODMxMDMxMDctcDBtN2VudDJoazdzdWd1djR2cTIyaGpjZmhjcjQzcGouYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDM0NzIwMzUyNTk1Mzc3MTc4OTkiLCJlbWFpbCI6ImpvaG5lZG9lMDcwQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoicDBNWENGdzdTTjdFUlRoRUd6NWxMdyIsImlhdCI6MTcwMjUzNjQ1OSwiZXhwIjoxNzAyNTQwMDU5fQ.cUaKcPRZv2XXVzPG91kiiRY_bQQ6aoUPmCRw5Z5Ii0IwwFFVNzUk-oXGUj_KpajSxVVaf56uPGB--B46_FgM_Tm8kzocf5Wu_xHTrhWWmrrhFzpMz1fTKqvSEyrnASFy89Ndnmmy8XsYYDN0Wal2-NRimzqNN0nY95SErORen_Y_W33JeGIwLmUINn8oDmVsIhm-j8Vz1XJhDgXdnRLEsV02ldRLbtRiXBrNdqVMTt7IFluekgrwz42uTenVAK5GOKX2c4F9dWVWzn7fH2yMSpONgZ1FAj-TrunXd0_N27dpUZRU5QaBbApjJ1BgI6xPQczLaHmRM_4HpOZLjTWpRg"
+}
+[INFO ] 2023-12-14 12:17:39.725 [main] UtilMethods - In rawToJson
+Token: ya29.a0AfB_byCyPsjib5B9sW6pBku9k7xWnevXJMzXSnndu2ITK2lAOTdFuYAfGu0-wluM-QwmxCMT51OSkGTgRikQsKLZlYMaK2UoDLKKLJdjXZkbqcRCwzHBqg7NH-fBencz9na5U0RqWqeifimfIdtPXJ0PSBxWHG4NqooaCgYKAbYSARISFQHGX2Mi_PyvEr_vHwbDxy5Osm4OVA0170
+Total WebAutomation courses: 3
+Total API courses: 2
+Total Mobile courses: 1
+Get Instructor: RahulShetty
+Get URL: rahulshettycademy.com
+Get Services: projectSupport
+Get Expertise: Automation
+Get Course Mobile 0 Title: Appium-Mobile Automation using Java
+Get Course Mobile 0 Price: 50
+Get Course API 1 Title: SoapUI Webservices testing
+Get Course API 1 Price: 40
+Course response: 
+{ "instructor": "RahulShetty", "url": "rahulshettycademy.com", "services": "projectSupport", "expertise": "Automation", "courses": { "webAutomation": [ { "courseTitle": "Selenium Webdriver Java", "price": "50" }, { "courseTitle": "Cypress",
+                "price": "40"
+            },
+            {
+                "courseTitle": "Protractor",
+                "price": "40"
+            }
+        ],
+        "api": [
+            {
+                "courseTitle": "Rest Assured Automation using Java",
+                "price": "50"
+            },
+            {
+                "courseTitle": "SoapUI Webservices testing",
+                "price": "40"
+            }
+        ],
+        "mobile": [
+            {
+                "courseTitle": "Appium-Mobile Automation using Java",
+                "price": "50"
+            }
+        ]
+    },
+    "linkedIn": "https://www.linkedin.com/in/rahul-shetty-trainer/"
+}
+

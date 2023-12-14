@@ -3,7 +3,7 @@ package test.pojo.clsses;
 public class WebAutomation {
 
 	private String courseTitle;
-	private String coursePrice;
+	private String price;
 
 	public String getCourseTitle() {
 		return courseTitle;
@@ -13,12 +13,12 @@ public class WebAutomation {
 		this.courseTitle = courseTitle;
 	}
 
-	public String getCoursePrice() {
-		return coursePrice;
+	public String getPrice() {
+		return price;
 	}
 
-	public void setCoursePrice(String coursePrice) {
-		this.coursePrice = coursePrice;
+	public void setPrice(String price) {
+		this.price = price;
 	}
 
 }

@@ -11,6 +11,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import com.restassures.utils.UtilMethods;
 
 import io.restassured.RestAssured;
+import io.restassured.parsing.Parser;
+import io.restassured.response.Response;
+import test.pojo.clsses.CoursesMain;
 
 public class TestOAuthRestAPI {
 	
@@ -18,7 +21,7 @@ public class TestOAuthRestAPI {
 	
 	public static final String accessTokenURL = "https://www.googleapis.com/oauth2/v4/token";
 	
-	public static final String code = "4%2F0AfJohXna3LaGBuNcTMOVeu4j1wl9IlN7Ch-OB0gmPsFPKF-pmoPTlN6xdvH-nvpd102u8w";
+	public static final String code = "4%2F0AfJohXl1NXktOGbzFOnSzbBf3kOm2RnEpaNm_9e3zDdUfGsMcPYSxQfmKBzSwXkzsKoU7g";
 	
 	public static final String client_id = "692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com";
 	
@@ -37,11 +40,11 @@ public class TestOAuthRestAPI {
 	UtilMethods utils = new UtilMethods();
 
 	
-	public void testOAuthRestAssured() {
+	public void getCourses() {
 		
 		RestAssured.baseURI = accessTokenURL;
 		
-		String response = given()
+		Response response = given()
 				.urlEncodingEnabled(false)
 		.queryParam("code", code)
 		.queryParam("client_id", client_id)
@@ -56,10 +59,9 @@ public class TestOAuthRestAPI {
 		.log()
 		.all()
 		.extract()
-		.response()
-		.asString();
+		.response();
 		
-		String token = utils.rawToJson(response).getString("access_token");
+		String token = utils.rawToJson(response.asString()).getString("access_token");
 		
 		System.out.println("Token: "+token);
 		
@@ -80,17 +82,32 @@ public class TestOAuthRestAPI {
 //		.log()
 //		.all();
 		
-		response = given().queryParam("access_token", token)
-				.when()
-				.log()
-				.all()
-				.get("https://rahulshettyacademy.com/getCourse.php")
-				.then()
-				.extract()
-				.response()
-				.asString();
 		
-		System.out.println("Course response: "+response);
+		// Getting courses here
+		
+		response = 
+		given()
+		.queryParam("access_token", token)
+		.expect().defaultParser(Parser.JSON)
+		.when()
+		.get("https://rahulshettyacademy.com/getCourse.php");
+		
+		CoursesMain cs = response.as(CoursesMain.class);
+
+		System.out.println("Total WebAutomation courses: "+cs.getCourses().getWebAutomation().size());
+		System.out.println("Total API courses: "+cs.getCourses().getApi().size());
+		System.out.println("Total Mobile courses: "+cs.getCourses().getMobile().size());
+		
+		System.out.println("Get Instructor: "+cs.getInstructor());
+		System.out.println("Get URL: "+cs.getUrl());
+		System.out.println("Get Services: "+cs.getServices());
+		System.out.println("Get Expertise: "+cs.getExpertise());
+		System.out.println("Get Course Mobile 0 Title: "+cs.getCourses().getMobile().get(0).getCourseTitle());
+		System.out.println("Get Course Mobile 0 Price: "+cs.getCourses().getMobile().get(0).getPrice());
+		System.out.println("Get Course API 1 Title: "+cs.getCourses().getApi().get(1).getCourseTitle());
+		System.out.println("Get Course API 1 Price: "+cs.getCourses().getApi().get(1).getPrice());
+		
+		System.out.println("Course response: "+response.asString());
 		
 	}
 
