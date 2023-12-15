@@ -1,4 +1,4 @@
-package com.restassures.api;
+package com.restassured.payloads;
 
 import com.restassures.utils.UtilMethods;
 

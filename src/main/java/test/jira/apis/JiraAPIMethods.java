@@ -11,7 +11,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 
-import com.restassures.api.testDataPayloads;
+import com.restassured.payloads.testDataPayloads;
 import com.restassures.utils.UtilMethods;
 
 import io.restassured.RestAssured;

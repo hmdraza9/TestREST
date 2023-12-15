@@ -14,7 +14,7 @@ import java.util.Set;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.restassures.api.testDataPayloads;
+import com.restassured.payloads.testDataPayloads;
 import com.restassures.utils.UtilMethods;
 
 import io.restassured.RestAssured;
@@ -49,7 +49,7 @@ public class udemyRest {
 		
 //		objOAuth.getOAuthCode();
 		
-//		objOAuth.getCourses();
+		objOAuth.getCourses();
 
 //		placeSet = new HashSet<String>();
 //
