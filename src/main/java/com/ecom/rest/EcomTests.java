@@ -60,10 +60,10 @@ public class EcomTests {
 		vResponse = given().header("Content-Type", "application/json").header("Authorization", token).log().all()
 				.body(ecAd).when().post().then().log().all();
 
-		log.info("Response validation: " + vResponse.assertThat().statusCode(200));
+		vResponse.assertThat().statusCode(200);
 
-		log.info("Product Added To Cart: "+(new UtilMethods().rawToJson(vResponse.extract().response().toString()).get("message").toString()
-				.equalsIgnoreCase("Product Added To Cart")));
+		log.info("Product Added To Cart: " + (new UtilMethods().rawToJson(vResponse.extract().response().asString())
+				.getString("message").toString().equalsIgnoreCase("Product Added To Cart")));
 
 	}
 }
