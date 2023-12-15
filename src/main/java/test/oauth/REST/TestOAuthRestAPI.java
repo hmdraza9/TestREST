@@ -120,7 +120,7 @@ public class TestOAuthRestAPI {
 	public void getCourses() {
 		
 		RestAssured.baseURI = accessTokenURL;
-		code = "4%2F0AfJohXmZ3BJZ6qZnfiexSm-uY-3DOWrujjh3CkyzpqPbrqC2DHalquIUtLif3vS5d7UYRQ";
+		code = "4%2F0AfJohXl3NC28WLnGEZ83nkvqTrOzMKEbRE1CVmDHKeo5z8JTkLC5uEx6l1W4S-DGJldL0g";
 		
 		Response response = given()
 				.urlEncodingEnabled(false)

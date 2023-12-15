@@ -89,7 +89,7 @@ public class JiraAPIMethods {
 	public void jiraAttachToIssue() throws IOException, InterruptedException {
 
 		File file = JiraAPIMethods.getFileToJIRA();
-		RestAssured.baseURI = data.uriJIRABaseUri;
+		RestAssured.baseURI = data.uriJIRABase;
 		RequestSpecification attachJIRAReqSpec = given().filter(session).header("X-Atlassian-Token", "no-check")
 				.header("Content-Type", "multipart/form-data").pathParam("issueIdOrKey", jiraIssue)
 				.urlEncodingEnabled(false).log().all();
@@ -108,7 +108,7 @@ public class JiraAPIMethods {
 
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-		RestAssured.baseURI = data.uriJIRABaseUri;
+		RestAssured.baseURI = data.uriJIRABase;
 
 		RequestSpecification getJIRAJSessionReqSpec = given()
 				// .log()
@@ -143,7 +143,7 @@ public class JiraAPIMethods {
 	public void getJIRAJSession() {
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-		RestAssured.baseURI = data.uriJIRABaseUri;
+		RestAssured.baseURI = data.uriJIRABase;
 
 		RequestSpecification getJIRAJSessionReqSpec = given()
 				.relaxedHTTPSValidation()
@@ -167,7 +167,7 @@ public class JiraAPIMethods {
 
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-		RestAssured.baseURI = data.uriJIRABaseUri;
+		RestAssured.baseURI = data.uriJIRABase;
 
 		RequestSpecification createJIRAIReqSpec = given()
 				// .log()
@@ -199,7 +199,7 @@ public class JiraAPIMethods {
 
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-		RestAssured.baseURI = data.uriJIRABaseUri;
+		RestAssured.baseURI = data.uriJIRABase;
 
 		RequestSpecification getJIRAReqSpec = given()
 				 .log()
@@ -224,7 +224,7 @@ public class JiraAPIMethods {
 
 			log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-			RestAssured.baseURI = data.uriJIRABaseUri;
+			RestAssured.baseURI = data.uriJIRABase;
 
 			RequestSpecification getJIRAReqSpec = given()
 					 .log()
@@ -275,7 +275,7 @@ public class JiraAPIMethods {
 
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-		RestAssured.baseURI = data.uriJIRABaseUri;
+		RestAssured.baseURI = data.uriJIRABase;
 
 		RequestSpecification deleteJIRAReqSpec = given().pathParam("key", jiraIssue)
 //				 .log()
@@ -299,7 +299,7 @@ public class JiraAPIMethods {
 
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-		RestAssured.baseURI = data.uriJIRABaseUri;
+		RestAssured.baseURI = data.uriJIRABase;
 
 		RequestSpecification commentJIRAReqSpec = given().pathParam("key", jiraIssue)
 //				 .log()
@@ -326,7 +326,7 @@ public class JiraAPIMethods {
 
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-		RestAssured.baseURI = data.uriJIRABaseUri;
+		RestAssured.baseURI = data.uriJIRABase;
 
 		RequestSpecification commentJIRAReqSpec = given().pathParam("issueID", jiraIssue)
 				.pathParam("commentID", jiraIssueCommentID)

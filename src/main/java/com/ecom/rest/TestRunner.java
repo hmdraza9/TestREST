@@ -7,6 +7,7 @@ public class TestRunner {
 		EcomTests ec = new EcomTests();
 		ec.ecomGetToken();
 		ec.ecomAddToCart();
+		ec.ecomGetAllProducts();
 		
 	}
 

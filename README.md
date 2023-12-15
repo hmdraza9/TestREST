@@ -25,3 +25,4 @@ https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-atta
 14 Dec 2023 - Added POJO classes and further required dependencies, need to implement in response capture, simple pojo methods implemented, working. output at: /TestREST/src/test/resources/Outputs/POJOResponse_14Dec2023.txt; Logger added in course class, iterated through the size of array length dynamically
 
 15 Dec 2023 - renamed pojo package, json body prepared with pojo class
+16 Dec 2023 - #putting STDOUT instead of LOGFILE prints all log lines to log file, else prints only lines from mentioned package [appender.file.name = STDOUT]; added Data class file for get all products from ECOM site

@@ -5,7 +5,7 @@ import com.restassures.utils.UtilMethods;
 public class testDataPayloads {
 
 	/*
-	 * 			REQUEST BODY
+	 * REQUEST BODY
 	 */
 
 	public static String addPlaceBodyPlaceholder = "{\"location\":{\"lat\":-38.383494,\"lng\":33.427362},\"accuracy\":50,\"name\":\"Frontlinea hous\",\"phone_number\":\"(+91) 983 893 3937\",\"address\":\"#address#, side layout, cohen 09\",\"types\":[\"shoe park\",\"shop\"],\"website\":\"http://google.com\",\"language\":\"French-IN\"}";
@@ -28,33 +28,17 @@ public class testDataPayloads {
 			+ UtilMethods.getTime() + "\",\r\n" + "        \"description\": \"New task to modify logo\",\r\n"
 			+ "        \"issuetype\": {\r\n" + "            \"name\": \"Task\"\r\n" + "        }\r\n" + "    }\r\n"
 			+ "}";
-	
-	public String commentIssueReqBody = "{\r\n"
-			+ "\r\n"
-			+ "	\"body\": \"This is comment - "+UtilMethods.getTime()+"\",\r\n"
-			+ "	\"visibility\":{\r\n"
-			+ "	\r\n"
-			+ "		\"type\":\"role\",\r\n"
-			+ "		\"value\":\"Administrators\"\r\n"
-			+ "	\r\n"
-			+ "	}\r\n"
-			+ "\r\n"
-			+ "}";
-	
-	public String commentUpdateIssueReqBody = "{\r\n"
-			+ "\r\n"
-			+ "	\"body\": \"This is comment update - "+UtilMethods.getTime()+"\",\r\n"
-			+ "	\"visibility\":{\r\n"
-			+ "	\r\n"
-			+ "		\"type\":\"role\",\r\n"
-			+ "		\"value\":\"Administrators\"\r\n"
-			+ "	\r\n"
-			+ "	}\r\n"
-			+ "\r\n"
-			+ "}";
 
-	//				URIs
-	
+	public String commentIssueReqBody = "{\r\n" + "\r\n" + "	\"body\": \"This is comment - " + UtilMethods.getTime()
+			+ "\",\r\n" + "	\"visibility\":{\r\n" + "	\r\n" + "		\"type\":\"role\",\r\n"
+			+ "		\"value\":\"Administrators\"\r\n" + "	\r\n" + "	}\r\n" + "\r\n" + "}";
+
+	public String commentUpdateIssueReqBody = "{\r\n" + "\r\n" + "	\"body\": \"This is comment update - "
+			+ UtilMethods.getTime() + "\",\r\n" + "	\"visibility\":{\r\n" + "	\r\n" + "		\"type\":\"role\",\r\n"
+			+ "		\"value\":\"Administrators\"\r\n" + "	\r\n" + "	}\r\n" + "\r\n" + "}";
+
+	// URIs
+
 	public static final String uriMapGetPlace = "maps/api/place/get/json";
 
 	public static final String uriMapDeletePlace = "maps/api/place/delete/json";
@@ -63,7 +47,7 @@ public class testDataPayloads {
 
 	public static final String uriMapUpdatePlace = "maps/api/place/update/json";
 
-	public final String uriJIRABaseUri = "http://localhost:8080";
+	public final String uriJIRABase = "http://localhost:8080";
 
 	public final String uriJIRAGetJSession = "rest/auth/1/session";
 
@@ -79,4 +63,9 @@ public class testDataPayloads {
 
 	public final String uriJIRAIssueAttachment = "/rest/api/2/issue/{issueIdOrKey}/attachments";
 
+	public final String uriEcomAuth = "https://rahulshettyacademy.com/api/ecom/auth/login";
+
+	public final String uriEcomAdToCart = "https://rahulshettyacademy.com/api/ecom/user/add-to-cart";
+
+	public final String uriEcomGetAllProducts = "https://rahulshettyacademy.com/api/ecom/product/get-all-products";
 }

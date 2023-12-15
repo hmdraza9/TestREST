@@ -5,8 +5,6 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import test.oauth.REST.TestOAuthRestAPI;
-
 public class Courses {
 
 	private static final Logger log = LogManager.getLogger(Courses.class);

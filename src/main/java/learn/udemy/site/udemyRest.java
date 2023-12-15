@@ -44,6 +44,7 @@ public class udemyRest {
 
 	public static void main(String[] args) throws IOException {
 		
+		log.info("Hell Yeah!!");
 		
 		TestOAuthRestAPI objOAuth = new TestOAuthRestAPI();
 		

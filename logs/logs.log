@@ -10017,3 +10017,215 @@ created issue: AHR-57
 [INFO ] 2023-12-14 23:35:34.206 [main] TestOAuthRestAPI - Added to actual course list: Cypress
 [INFO ] 2023-12-14 23:35:34.206 [main] TestOAuthRestAPI - Added to actual course list: Protractor
 [INFO ] 2023-12-14 23:35:34.206 [main] TestOAuthRestAPI - Is course expected equal to actual?: true
+[INFO ] 2023-12-16 00:43:31.935 [main] TestOAuthRestAPI - Token: null
+[INFO ] 2023-12-16 00:44:36.732 [main] TestOAuthRestAPI - Token: null
+[INFO ] 2023-12-16 00:47:55.337 [main] udemyRest - Hell Yeah!!
+[INFO ] 2023-12-16 00:51:35.104 [main] TestOAuthRestAPI - Token: null
+[INFO ] 2023-12-16 00:57:12.474 [main] TestOAuthRestAPI - Token: null
+[INFO ] 2023-12-16 00:58:09.522 [main] TestOAuthRestAPI - Token: null
+[INFO ] 2023-12-16 01:03:27.407 [main] TestOAuthRestAPI - Token: null
+[INFO ] 2023-12-16 01:13:41.861 [main] TestOAuthRestAPI - Token: null
+[INFO ] 2023-12-16 01:14:03.844 [main] udemyRest - Hell Yeah!!
+[INFO ] 2023-12-16 01:14:05.537 [main] UtilMethods - In rawToJson
+[INFO ] 2023-12-16 01:14:05.761 [main] TestOAuthRestAPI - Token: null
+[INFO ] 2023-12-16 01:15:10.696 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzAyNjY5NTEwLCJleHAiOjE3MzQyMjcxMTB9.zDN6xAwGDdsjWAVH0N1klzYvhhLzfttoIxkVK35T3fw
+[INFO ] 2023-12-16 01:15:10.715 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
+[INFO ] 2023-12-16 01:15:10.715 [main] EcomTests - message: Login Successfully
+[INFO ] 2023-12-16 01:15:11.049 [main] UtilMethods - In rawToJson
+[INFO ] 2023-12-16 01:15:11.280 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2023-12-16 01:15:11.543 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2023-12-16 01:15:11.544 [main] EcomTests - ecGetAllProd.getCount() 3
+[INFO ] 2023-12-16 01:15:11.544 [main] EcomTests - ===========================1===========================
+[INFO ] 2023-12-16 01:15:11.544 [main] EcomTests - 6262e95ae26b7e1a10e89bf0
+[INFO ] 2023-12-16 01:15:11.544 [main] EcomTests - zara coat 3
+[INFO ] 2023-12-16 01:15:11.544 [main] EcomTests - fashion
+[INFO ] 2023-12-16 01:15:11.544 [main] EcomTests - shirts
+[INFO ] 2023-12-16 01:15:11.546 [main] EcomTests - 31500.0
+[INFO ] 2023-12-16 01:15:11.546 [main] EcomTests - zara coat 3
+[INFO ] 2023-12-16 01:15:11.546 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649434146.jpeg
+[INFO ] 2023-12-16 01:15:11.546 [main] EcomTests - 0
+[INFO ] 2023-12-16 01:15:11.546 [main] EcomTests - 0
+[INFO ] 2023-12-16 01:15:11.546 [main] EcomTests - true
+[INFO ] 2023-12-16 01:15:11.546 [main] EcomTests - women
+[INFO ] 2023-12-16 01:15:11.546 [main] EcomTests - admin@gmail.com
+[INFO ] 2023-12-16 01:15:11.547 [main] EcomTests - 0.0
+[INFO ] 2023-12-16 01:15:11.547 [main] EcomTests - ===========================2===========================
+[INFO ] 2023-12-16 01:15:11.547 [main] EcomTests - 6262e990e26b7e1a10e89bfa
+[INFO ] 2023-12-16 01:15:11.547 [main] EcomTests - adidas original
+[INFO ] 2023-12-16 01:15:11.547 [main] EcomTests - fashion
+[INFO ] 2023-12-16 01:15:11.547 [main] EcomTests - shirts
+[INFO ] 2023-12-16 01:15:11.547 [main] EcomTests - 31500.0
+[INFO ] 2023-12-16 01:15:11.547 [main] EcomTests - adidas original
+[INFO ] 2023-12-16 01:15:11.548 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649488046.jpg
+[INFO ] 2023-12-16 01:15:11.548 [main] EcomTests - 0
+[INFO ] 2023-12-16 01:15:11.548 [main] EcomTests - 0
+[INFO ] 2023-12-16 01:15:11.548 [main] EcomTests - true
+[INFO ] 2023-12-16 01:15:11.548 [main] EcomTests - men
+[INFO ] 2023-12-16 01:15:11.548 [main] EcomTests - admin@gmail.com
+[INFO ] 2023-12-16 01:15:11.548 [main] EcomTests - 0.0
+[INFO ] 2023-12-16 01:15:11.548 [main] EcomTests - ===========================3===========================
+[INFO ] 2023-12-16 01:15:11.548 [main] EcomTests - 6262e9d9e26b7e1a10e89c04
+[INFO ] 2023-12-16 01:15:11.548 [main] EcomTests - iphone 13 pro
+[INFO ] 2023-12-16 01:15:11.548 [main] EcomTests - electronics
+[INFO ] 2023-12-16 01:15:11.548 [main] EcomTests - shirts
+[INFO ] 2023-12-16 01:15:11.549 [main] EcomTests - 231500.0
+[INFO ] 2023-12-16 01:15:11.549 [main] EcomTests - iphone 13 pro
+[INFO ] 2023-12-16 01:15:11.549 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2023-12-16 01:15:11.549 [main] EcomTests - 0
+[INFO ] 2023-12-16 01:15:11.549 [main] EcomTests - 0
+[INFO ] 2023-12-16 01:15:11.549 [main] EcomTests - true
+[INFO ] 2023-12-16 01:15:11.549 [main] EcomTests - men
+[INFO ] 2023-12-16 01:15:11.549 [main] EcomTests - admin@gmail.com
+[INFO ] 2023-12-16 01:15:11.549 [main] EcomTests - 0.0
+[INFO ] 2023-12-16 01:17:31.807 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzAyNjY5NjUyLCJleHAiOjE3MzQyMjcyNTJ9.X-h-0VgLzPrHyqehuAvGYhD4EaOIxbzQGUNSq1g39ZQ
+[INFO ] 2023-12-16 01:17:31.809 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
+[INFO ] 2023-12-16 01:17:31.809 [main] EcomTests - message: Login Successfully
+[INFO ] 2023-12-16 01:17:31.966 [main] UtilMethods - In rawToJson
+[INFO ] 2023-12-16 01:17:32.200 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2023-12-16 01:17:32.320 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2023-12-16 01:17:32.320 [main] EcomTests - ecGetAllProd.getCount() 3
+[INFO ] 2023-12-16 01:17:32.320 [main] EcomTests - ===========================1===========================
+[INFO ] 2023-12-16 01:17:32.320 [main] EcomTests - 6262e95ae26b7e1a10e89bf0
+[INFO ] 2023-12-16 01:17:32.320 [main] EcomTests - zara coat 3
+[INFO ] 2023-12-16 01:17:32.320 [main] EcomTests - fashion
+[INFO ] 2023-12-16 01:17:32.320 [main] EcomTests - shirts
+[INFO ] 2023-12-16 01:17:32.320 [main] EcomTests - 31500.0
+[INFO ] 2023-12-16 01:17:32.320 [main] EcomTests - zara coat 3
+[INFO ] 2023-12-16 01:17:32.320 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649434146.jpeg
+[INFO ] 2023-12-16 01:17:32.320 [main] EcomTests - 0
+[INFO ] 2023-12-16 01:17:32.320 [main] EcomTests - 0
+[INFO ] 2023-12-16 01:17:32.320 [main] EcomTests - true
+[INFO ] 2023-12-16 01:17:32.320 [main] EcomTests - women
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - admin@gmail.com
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - 0.0
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - ===========================2===========================
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - 6262e990e26b7e1a10e89bfa
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - adidas original
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - fashion
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - shirts
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - 31500.0
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - adidas original
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649488046.jpg
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - 0
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - 0
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - true
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - men
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - admin@gmail.com
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - 0.0
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - ===========================3===========================
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - 6262e9d9e26b7e1a10e89c04
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - iphone 13 pro
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - electronics
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - shirts
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - 231500.0
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - iphone 13 pro
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2023-12-16 01:17:32.322 [main] EcomTests - 0
+[INFO ] 2023-12-16 01:17:32.323 [main] EcomTests - 0
+[INFO ] 2023-12-16 01:17:32.323 [main] EcomTests - true
+[INFO ] 2023-12-16 01:17:32.323 [main] EcomTests - men
+[INFO ] 2023-12-16 01:17:32.323 [main] EcomTests - admin@gmail.com
+[INFO ] 2023-12-16 01:17:32.323 [main] EcomTests - 0.0
+[INFO ] 2023-12-16 01:20:10.314 [main] udemyRest - Hell Yeah!!
+[INFO ] 2023-12-16 01:20:11.942 [main] UtilMethods - In rawToJson
+[INFO ] 2023-12-16 01:20:12.181 [main] TestOAuthRestAPI - Token: ya29.a0AfB_byBMqVJwXbACwMPKMYA7F6VlxJBPVRdkfCAJqnXe0t_qbBRSXrIn7L8NvENSda4OlV3BBBWQdYHIT57iWDiULrg2uMbAzIkTQP9SecNZBTq24ObHcOyf_ov7bX8_y-PHccy_EADPFXLe6bFtv5Qwp-UzWD1MAZkaCgYKAUISARISFQHGX2MiOU488WoE-Q455r24wtSGCw0170
+[INFO ] 2023-12-16 01:20:12.871 [main] CoursesMain - Set instructor: RahulShetty
+[INFO ] 2023-12-16 01:20:12.871 [main] CoursesMain - Set url: rahulshettycademy.com
+[INFO ] 2023-12-16 01:20:12.871 [main] CoursesMain - Set services: projectSupport
+[INFO ] 2023-12-16 01:20:12.871 [main] CoursesMain - Set expertise: Automation
+[INFO ] 2023-12-16 01:20:12.871 [main] WebAutomation - Set course Title: Selenium Webdriver Java
+[INFO ] 2023-12-16 01:20:12.872 [main] WebAutomation - Set price: 50
+[INFO ] 2023-12-16 01:20:12.872 [main] WebAutomation - Set course Title: Cypress
+[INFO ] 2023-12-16 01:20:12.872 [main] WebAutomation - Set price: 40
+[INFO ] 2023-12-16 01:20:12.872 [main] WebAutomation - Set course Title: Protractor
+[INFO ] 2023-12-16 01:20:12.872 [main] WebAutomation - Set price: 40
+[INFO ] 2023-12-16 01:20:12.872 [main] Courses - Set webAutomation list: [test.pojo.courses.WebAutomation@481b2f10, test.pojo.courses.WebAutomation@2b6c7012, test.pojo.courses.WebAutomation@31acfd4e]
+[INFO ] 2023-12-16 01:20:12.872 [main] API - Set courseTitle: Rest Assured Automation using Java
+[INFO ] 2023-12-16 01:20:12.872 [main] API - Set price: 50
+[INFO ] 2023-12-16 01:20:12.872 [main] API - Set courseTitle: SoapUI Webservices testing
+[INFO ] 2023-12-16 01:20:12.872 [main] API - Set price: 40
+[INFO ] 2023-12-16 01:20:12.872 [main] Courses - Set API list: [test.pojo.courses.API@5f726750, test.pojo.courses.API@4e80a001]
+[INFO ] 2023-12-16 01:20:12.872 [main] Mobile - Set course Title: Appium-Mobile Automation using Java
+[INFO ] 2023-12-16 01:20:12.873 [main] Mobile - Set price: 50
+[INFO ] 2023-12-16 01:20:12.873 [main] Courses - Set mobile list: [test.pojo.courses.Mobile@624b523]
+[INFO ] 2023-12-16 01:20:12.873 [main] CoursesMain - Set linkedIn: https://www.linkedin.com/in/rahul-shetty-trainer/
+[INFO ] 2023-12-16 01:20:12.873 [main] TestOAuthRestAPI - Course API response: 
+{ "instructor": "RahulShetty", "url": "rahulshettycademy.com", "services": "projectSupport", "expertise": "Automation", "courses": { "webAutomation": [ { "courseTitle": "Selenium Webdriver Java", "price": "50" }, { "courseTitle": "Cypress",
+                "price": "40"
+            },
+            {
+                "courseTitle": "Protractor",
+                "price": "40"
+            }
+        ],
+        "api": [
+            {
+                "courseTitle": "Rest Assured Automation using Java",
+                "price": "50"
+            },
+            {
+                "courseTitle": "SoapUI Webservices testing",
+                "price": "40"
+            }
+        ],
+        "mobile": [
+            {
+                "courseTitle": "Appium-Mobile Automation using Java",
+                "price": "50"
+            }
+        ]
+    },
+    "linkedIn": "https://www.linkedin.com/in/rahul-shetty-trainer/"
+}
+
+[INFO ] 2023-12-16 01:20:12.873 [main] Courses - Returned webAutomation list: [test.pojo.courses.WebAutomation@481b2f10, test.pojo.courses.WebAutomation@2b6c7012, test.pojo.courses.WebAutomation@31acfd4e]
+[INFO ] 2023-12-16 01:20:12.873 [main] TestOAuthRestAPI - Total WebAutomation courses: 3
+[INFO ] 2023-12-16 01:20:12.873 [main] Courses - Returned API list: [test.pojo.courses.API@5f726750, test.pojo.courses.API@4e80a001]
+[INFO ] 2023-12-16 01:20:12.873 [main] TestOAuthRestAPI - Total API courses: 2
+[INFO ] 2023-12-16 01:20:12.873 [main] Courses - Returned mobile list: [test.pojo.courses.Mobile@624b523]
+[INFO ] 2023-12-16 01:20:12.873 [main] TestOAuthRestAPI - Total Mobile courses: 1
+[INFO ] 2023-12-16 01:20:12.873 [main] CoursesMain - Returned instructor: RahulShetty
+[INFO ] 2023-12-16 01:20:12.873 [main] TestOAuthRestAPI - Get Instructor: RahulShetty
+[INFO ] 2023-12-16 01:20:12.873 [main] CoursesMain - Returned url: rahulshettycademy.com
+[INFO ] 2023-12-16 01:20:12.874 [main] TestOAuthRestAPI - Get URL: rahulshettycademy.com
+[INFO ] 2023-12-16 01:20:12.874 [main] CoursesMain - Returned services: projectSupport
+[INFO ] 2023-12-16 01:20:12.874 [main] TestOAuthRestAPI - Get Services: projectSupport
+[INFO ] 2023-12-16 01:20:12.874 [main] CoursesMain - Returned expertise: Automation
+[INFO ] 2023-12-16 01:20:12.874 [main] TestOAuthRestAPI - Get Expertise: Automation
+[INFO ] 2023-12-16 01:20:12.874 [main] Courses - Returned mobile list: [test.pojo.courses.Mobile@624b523]
+[INFO ] 2023-12-16 01:20:12.874 [main] Mobile - Returned course Title: Appium-Mobile Automation using Java
+[INFO ] 2023-12-16 01:20:12.874 [main] TestOAuthRestAPI - Get Course Mobile 0 Title: Appium-Mobile Automation using Java
+[INFO ] 2023-12-16 01:20:12.874 [main] Courses - Returned mobile list: [test.pojo.courses.Mobile@624b523]
+[INFO ] 2023-12-16 01:20:12.874 [main] Mobile - Returned price: 50
+[INFO ] 2023-12-16 01:20:12.874 [main] TestOAuthRestAPI - Get Course Mobile 0 Price: 50
+[INFO ] 2023-12-16 01:20:12.874 [main] Courses - Returned API list: [test.pojo.courses.API@5f726750, test.pojo.courses.API@4e80a001]
+[INFO ] 2023-12-16 01:20:12.874 [main] API - Returned courseTitle: SoapUI Webservices testing
+[INFO ] 2023-12-16 01:20:12.874 [main] TestOAuthRestAPI - Get Course API 1 Title: SoapUI Webservices testing
+[INFO ] 2023-12-16 01:20:12.874 [main] Courses - Returned API list: [test.pojo.courses.API@5f726750, test.pojo.courses.API@4e80a001]
+[INFO ] 2023-12-16 01:20:12.874 [main] API - Returned price: 40
+[INFO ] 2023-12-16 01:20:12.874 [main] TestOAuthRestAPI - Get Course API 1 Price: 40
+[INFO ] 2023-12-16 01:20:12.874 [main] Courses - Returned webAutomation list: [test.pojo.courses.WebAutomation@481b2f10, test.pojo.courses.WebAutomation@2b6c7012, test.pojo.courses.WebAutomation@31acfd4e]
+[INFO ] 2023-12-16 01:20:12.874 [main] Courses - Returned webAutomation list: [test.pojo.courses.WebAutomation@481b2f10, test.pojo.courses.WebAutomation@2b6c7012, test.pojo.courses.WebAutomation@31acfd4e]
+[INFO ] 2023-12-16 01:20:12.874 [main] WebAutomation - Returned course Title: Selenium Webdriver Java
+[INFO ] 2023-12-16 01:20:12.874 [main] TestOAuthRestAPI - Added to actual course list: Selenium Webdriver Java
+[INFO ] 2023-12-16 01:20:12.874 [main] Courses - Returned webAutomation list: [test.pojo.courses.WebAutomation@481b2f10, test.pojo.courses.WebAutomation@2b6c7012, test.pojo.courses.WebAutomation@31acfd4e]
+[INFO ] 2023-12-16 01:20:12.874 [main] Courses - Returned webAutomation list: [test.pojo.courses.WebAutomation@481b2f10, test.pojo.courses.WebAutomation@2b6c7012, test.pojo.courses.WebAutomation@31acfd4e]
+[INFO ] 2023-12-16 01:20:12.876 [main] WebAutomation - Returned course Title: Cypress
+[INFO ] 2023-12-16 01:20:12.876 [main] TestOAuthRestAPI - Added to actual course list: Cypress
+[INFO ] 2023-12-16 01:20:12.876 [main] Courses - Returned webAutomation list: [test.pojo.courses.WebAutomation@481b2f10, test.pojo.courses.WebAutomation@2b6c7012, test.pojo.courses.WebAutomation@31acfd4e]
+[INFO ] 2023-12-16 01:20:12.876 [main] Courses - Returned webAutomation list: [test.pojo.courses.WebAutomation@481b2f10, test.pojo.courses.WebAutomation@2b6c7012, test.pojo.courses.WebAutomation@31acfd4e]
+[INFO ] 2023-12-16 01:20:12.876 [main] WebAutomation - Returned course Title: Protractor
+[INFO ] 2023-12-16 01:20:12.876 [main] TestOAuthRestAPI - Added to actual course list: Protractor
+[INFO ] 2023-12-16 01:20:12.876 [main] Courses - Returned webAutomation list: [test.pojo.courses.WebAutomation@481b2f10, test.pojo.courses.WebAutomation@2b6c7012, test.pojo.courses.WebAutomation@31acfd4e]
+[INFO ] 2023-12-16 01:20:12.876 [main] TestOAuthRestAPI - Is course expected equal to actual?: true
+[INFO ] 2023-12-16 01:20:12.948 [main] udemyRest - Method overloading - addPlace
+[INFO ] 2023-12-16 01:20:12.948 [main] udemyRest - In addPlace
+[ERROR] 2023-12-16 01:20:12.968 [main] udemyRest - Exception :: Reading body from test Data class
+[INFO ] 2023-12-16 01:20:12.968 [main] udemyRest - Add place body setup.
+[INFO ] 2023-12-16 01:20:13.019 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2023-12-16 01:20:13.123 [main] udemyRest - ###########Response starts###########
+[INFO ] 2023-12-16 01:20:13.298 [main] udemyRest - Place ID: 627b41b71abcd80bd0a87032ed127be3
+[INFO ] 2023-12-16 01:20:13.315 [main] UtilMethods - In rawToJson
+[INFO ] 2023-12-16 01:20:13.320 [main] udemyRest - Place ID(using JsonPath): 627b41b71abcd80bd0a87032ed127be3
+[INFO ] 2023-12-16 01:20:13.320 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2023-12-16 01:20:13.321 [main] udemyRest - Response: {"status":"OK","place_id":"627b41b71abcd80bd0a87032ed127be3","scope":"APP","reference":"95443a49b207bc426e0d14944fc719f995443a49b207bc426e0d14944fc719f9","id":"95443a49b207bc426e0d14944fc719f9"}
