@@ -18,6 +18,7 @@ import com.restassures.api.testDataPayloads;
 import com.restassures.utils.UtilMethods;
 
 import io.restassured.RestAssured;
+import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import test.oauth.REST.TestOAuthRestAPI;
@@ -128,11 +129,14 @@ public class udemyRest {
 
 		RestAssured.baseURI = baseURI;
 
+		RequestSpecification req = new RequestSpecBuilder()
+		.setBaseUri(baseURI)
+		.addQueryParam("key", mapKey)
+		.addHeader("Content-Type", "application/json").setUrlEncodingEnabled(false).build();
 
 		RequestSpecification addPlaceReqSpec = given()
-				.log()
-				.all()
-				.queryParam("key", mapKey).header("Content-Type", "application/json").urlEncodingEnabled(false);
+				.spec(req)
+				;
 		
 		
 		byte[] tempBody = null;
