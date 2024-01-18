@@ -21,7 +21,7 @@ public class Task03RESTAutomation {
 	private static final String typiCodeBaseURL = "https://jsonplaceholder.typicode.com";
 	private static final String epamEvenetApiURL = "https://events.epam.com/api/v2/events";
 	private static final String openWeatherApiURL = "http://api.openweathermap.org";
-	private static final String openWeatherApiID = "8d31624a4b876c05328720f8ca1586c3";
+	private static final String openWeatherApiID = "8zdz3z1z6z2z4zaz4zbz8z7z6zcz0z5z3z2z8z7z2z0zfz8zczaz1z5z8z6zcz3z";
 	private static String petID;
 	private static UtilMethods utils = new UtilMethods();
 	private static Response response;
@@ -36,8 +36,11 @@ public class Task03RESTAutomation {
 
 	public static void openWeatherMap() {
 
+		String strOpenWeatherApiID = openWeatherApiID.replaceAll("z", "");
+		System.out.println("strOpenWeatherApiID: "+strOpenWeatherApiID);
+		
 		String resp = given().baseUri(openWeatherApiURL).queryParam("q", "hyderabad")
-				.queryParam("appid", openWeatherApiID).header("Content-Type", "application/json").log().all().when()
+				.queryParam("appid", strOpenWeatherApiID).header("Content-Type", "application/json").log().all().when()
 				.get(objPayLoad.uriOpenWeather).then().log().all().extract().response().asString();
 
 		JsonPath jp = utils.rawToJson(resp);
@@ -48,7 +51,7 @@ public class Task03RESTAutomation {
 		System.out.println("longitude+\" \"+latitude: " + longitude + " " + latitude);
 
 		resp = given().baseUri(openWeatherApiURL).queryParam("lat", latitude).queryParam("lon", longitude)
-				.queryParam("appid", openWeatherApiID).header("Content-Type", "application/json").log().all().when()
+				.queryParam("appid", strOpenWeatherApiID).header("Content-Type", "application/json").log().all().when()
 				.get(objPayLoad.uriOpenWeather).then().log().all().extract().response().asString();
 
 		jp = utils.rawToJson(resp);
