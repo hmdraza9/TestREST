@@ -37,6 +37,11 @@ public class testDataPayloads {
 			+ UtilMethods.getTime() + "\",\r\n" + "	\"visibility\":{\r\n" + "	\r\n" + "		\"type\":\"role\",\r\n"
 			+ "		\"value\":\"Administrators\"\r\n" + "	\r\n" + "	}\r\n" + "\r\n" + "}";
 
+	public String petStoreCreatePetBody = "{\r\n" + "  \"category\": {\r\n" + "    \"id\": 1,\r\n"
+			+ "    \"name\": \"dog\"\r\n" + "  },\r\n" + "  \"name\": \"$petName\",\r\n" + "  \"photoUrls\": [\r\n"
+			+ "    \"string\"\r\n" + "  ],\r\n" + "  \"tags\": [\r\n" + "    {\r\n" + "      \"id\": 0,\r\n"
+			+ "      \"name\": \"string\"\r\n" + "    }\r\n" + "  ],\r\n" + "  \"status\": \"pending\"\r\n" + "}";
+
 	// URIs
 
 	public static final String uriMapGetPlace = "maps/api/place/get/json";
@@ -68,4 +73,12 @@ public class testDataPayloads {
 	public final String uriEcomAdToCart = "https://rahulshettyacademy.com/api/ecom/user/add-to-cart";
 
 	public final String uriEcomGetAllProducts = "https://rahulshettyacademy.com/api/ecom/product/get-all-products";
+
+	public final String uriPetStoreCreate = "/v2/pet";
+
+	public final String uriPetStoreGet = "/v2/pet/{petID}";
+
+	public final String uriTypiCodeUsers = "/users";
+
+	public final String uriOpenWeather = "/data/2.5/weather";
 }
