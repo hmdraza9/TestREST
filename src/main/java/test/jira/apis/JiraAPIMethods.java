@@ -11,6 +11,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 
+import com.restassured.payloads.StatusCode;
 import com.restassured.payloads.testDataPayloads;
 import com.restassures.utils.UtilMethods;
 
@@ -24,7 +25,7 @@ public class JiraAPIMethods {
 	private static final Logger log = LogManager.getLogger(JiraAPIMethods.class);
 
 	public static final String homePath = "src/test/resources/JIRAFiles/";
-	
+
 	SessionFilter session = new SessionFilter();
 
 	public static String jiraIssue = "";
@@ -42,17 +43,15 @@ public class JiraAPIMethods {
 	testDataPayloads data = new testDataPayloads();
 
 	public static JiraAPIMethods objJira = new JiraAPIMethods();
-	
+
 	String response;
-	
+
 	static boolean isCreateIssueSuccess = false;
-	
-	//##########################____MAIN____##########################
+
+	// ##########################____MAIN____##########################
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 
-		
-		
 //		objJira.sessionFilterExampleJIRA();
 //		objJira.getJIRAJSession(); // this have to be uncommented
 //		objJira.jiraCreateIssue();
@@ -75,7 +74,7 @@ public class JiraAPIMethods {
 //		File srcFile = new File(homePath + "AttachmentJIRA.txt");
 		File srcFile = new File("logs/logs.log");
 		File destFile = new File(
-				homePath+"/Archive/" + UtilMethods.getTime() + "." + FilenameUtils.getExtension(srcFile.getPath()));
+				homePath + "/Archive/" + UtilMethods.getTime() + "." + FilenameUtils.getExtension(srcFile.getPath()));
 
 		log.info("Destination file: " + destFile.getAbsolutePath());
 		FileUtils.copyFile(srcFile, destFile);
@@ -97,11 +96,13 @@ public class JiraAPIMethods {
 		Response attachJIRAResp = attachJIRAReqSpec.multiPart("file", file).filter(session).when()
 				.post(data.uriJIRAIssueAttachment);
 
-		String response = attachJIRAResp.then().log().all().assertThat().statusCode(200).extract().asString();
+		String response = attachJIRAResp.then().log().all().assertThat().statusCode(StatusCode.OK200).extract()
+				.asString();
 
-		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
-		
-		log.info("File attached to issue: " + jiraIssue + "; file ID: " + utils.rawToJson(response).getString("id")+" and file size: "+(file.length()/1000)+" KB");
+		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
+
+		log.info("File attached to issue: " + jiraIssue + "; file ID: " + utils.rawToJson(response).getString("id")
+				+ " and file size: " + (file.length() / 1000) + " KB");
 	}
 
 	public void sessionFilterExampleJIRA() {
@@ -129,10 +130,10 @@ public class JiraAPIMethods {
 		response = getJIRAJSessionResp.then()
 				// .log()
 				// .all()
-				.assertThat().statusCode(201).extract().asString();
+				.assertThat().statusCode(StatusCode.OK201).extract().asString();
 
-		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
-		
+		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
+
 		jiraIssue = utils.rawToJson(response).getString("key");
 
 		jiraIssueID = utils.rawToJson(response).getString("id");
@@ -145,8 +146,7 @@ public class JiraAPIMethods {
 
 		RestAssured.baseURI = data.uriJIRABase;
 
-		RequestSpecification getJIRAJSessionReqSpec = given()
-				.relaxedHTTPSValidation()
+		RequestSpecification getJIRAJSessionReqSpec = given().relaxedHTTPSValidation()
 				// .log()
 				// .all()
 				.filter(session).header("Content-Type", "application/json").urlEncodingEnabled(false);
@@ -154,11 +154,11 @@ public class JiraAPIMethods {
 		Response getJIRAJSessionResp = getJIRAJSessionReqSpec.body(data.JIRAJSessionReqBody).when()
 				.post(data.uriJIRAGetJSession);
 
-		response = getJIRAJSessionResp.then().assertThat().statusCode(200).extract().asString();
+		response = getJIRAJSessionResp.then().assertThat().statusCode(StatusCode.OK200).extract().asString();
 
 		jiraJSession = utils.rawToJson(response).getString("session.value");
 
-		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
+		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
 
 		log.info("Jira JSession: >" + jiraJSession + "<");
 	}
@@ -172,8 +172,7 @@ public class JiraAPIMethods {
 		RequestSpecification createJIRAIReqSpec = given()
 				// .log()
 				// .all()
-				.header("Content-Type", "application/json")
-				.filter(session)
+				.header("Content-Type", "application/json").filter(session)
 //				.header("Cookie", "JSESSIONID=" + jiraJSession)
 				.urlEncodingEnabled(false);
 
@@ -183,9 +182,9 @@ public class JiraAPIMethods {
 		response = getJIRAJSessionResp.then()
 				// .log()
 				// .all()
-				.assertThat().statusCode(201).extract().asString();
+				.assertThat().statusCode(StatusCode.OK201).extract().asString();
 
-		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
+		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
 
 		jiraIssue = utils.rawToJson(response).getString("key");
 
@@ -201,76 +200,61 @@ public class JiraAPIMethods {
 
 		RestAssured.baseURI = data.uriJIRABase;
 
-		RequestSpecification getJIRAReqSpec = given()
-				 .log()
-				 .all()
-				.filter(session)
-				.header("Content-Type", "application/json")
-				.urlEncodingEnabled(false);
+		RequestSpecification getJIRAReqSpec = given().log().all().filter(session)
+				.header("Content-Type", "application/json").urlEncodingEnabled(false);
 
-		Response getJIRAJSessionResp = getJIRAReqSpec
-				.when().pathParam("key", jiraIssue).get(data.uriJIRAGetIssue);
+		Response getJIRAJSessionResp = getJIRAReqSpec.when().pathParam("key", jiraIssue).get(data.uriJIRAGetIssue);
 
-		response = getJIRAJSessionResp.then()
-				 .log()
-				 .all()
-				.assertThat().statusCode(200).extract().asString();
+		response = getJIRAJSessionResp.then().log().all().assertThat().statusCode(StatusCode.OK200).extract().asString();
 
-		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
+		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
 
 	}
-	
+
 	public void filterContentVerifyData() {
 
-			log.info(new Throwable().getStackTrace()[0].getMethodName());
+		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-			RestAssured.baseURI = data.uriJIRABase;
+		RestAssured.baseURI = data.uriJIRABase;
 
-			RequestSpecification getJIRAReqSpec = given()
-					 .log()
-					 .all()
-					.filter(session)
-					.header("Content-Type", "application/json")
-					.queryParam("fields", "comment")
-					.urlEncodingEnabled(false);
+		RequestSpecification getJIRAReqSpec = given().log().all().filter(session)
+				.header("Content-Type", "application/json").queryParam("fields", "comment").urlEncodingEnabled(false);
 
-			Response getJIRAJSessionResp = getJIRAReqSpec
-					.when().pathParam("key", "AHR-5").get(data.uriJIRAGetIssue);
+		Response getJIRAJSessionResp = getJIRAReqSpec.when().pathParam("key", "AHR-5").get(data.uriJIRAGetIssue);
 
-			response = getJIRAJSessionResp.then()
+		response = getJIRAJSessionResp.then()
 //					 .log()
 //					 .all()
-					.assertThat().statusCode(200).extract().asString();
-			
-					
-			int commentSize = utils.rawToJson(response).getInt("fields.comment.comments.size()");
-					boolean isCommFound=false;
-			if(commentSize>0) {
-				for(int i=0;i<commentSize;i++) {
-					
-					int commentIDAct = utils.rawToJson(response).getInt("fields.comment.comments["+i+"].id");
+				.assertThat().statusCode(StatusCode.OK200).extract().asString();
+
+		int commentSize = utils.rawToJson(response).getInt("fields.comment.comments.size()");
+		boolean isCommFound = false;
+		if (commentSize > 0) {
+			for (int i = 0; i < commentSize; i++) {
+
+				int commentIDAct = utils.rawToJson(response).getInt("fields.comment.comments[" + i + "].id");
 //					log.info("comment-matches??###### = "+(commentIDTemp == Integer.parseInt(jiraIssueCommentID)));
 
-					
-					if(commentIDAct == Integer.parseInt(jiraIssueExpCommentID)) {
-						log.info("Comment ID: "+commentIDAct+" ; "+utils.rawToJson(response).getString("fields.comment.comments["+i+"]"));
-						log.info("Comment Body: '"+utils.rawToJson(response).getString("fields.comment.comments["+i+"].body")+"'");
-						isCommFound = true;
-						log.error("Comment found? - "+isCommFound);
-						log.error("Total comments: "+commentSize);
+				if (commentIDAct == Integer.parseInt(jiraIssueExpCommentID)) {
+					log.info("Comment ID: " + commentIDAct + " ; "
+							+ utils.rawToJson(response).getString("fields.comment.comments[" + i + "]"));
+					log.info("Comment Body: '"
+							+ utils.rawToJson(response).getString("fields.comment.comments[" + i + "].body") + "'");
+					isCommFound = true;
+					log.error("Comment found? - " + isCommFound);
+					log.error("Total comments: " + commentSize);
 
-						break;
-					}
+					break;
 				}
 			}
-			else {
-				log.error("No comments associated with this issue: "+jiraIssue);
-			}
-			
-			log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
+		} else {
+			log.error("No comments associated with this issue: " + jiraIssue);
+		}
+
+		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
 
 	}
-	
+
 	public void jiraDeleteIssue() {
 
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
@@ -289,9 +273,9 @@ public class JiraAPIMethods {
 		response = deleteJIRAJSessionResp.then()
 //				 .log()
 //				 .all()
-				.assertThat().statusCode(204).extract().asString();
+				.assertThat().statusCode(StatusCode.OK204).extract().asString();
 
-		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
+		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
 
 	}
 
@@ -307,16 +291,15 @@ public class JiraAPIMethods {
 				.header("Content-Type", "application/json").header("Cookie", "JSESSIONID=" + jiraJSession)
 				.urlEncodingEnabled(false);
 
-		Response commentJIRAResp = commentJIRAReqSpec
-				.body(data.commentIssueReqBody).when()
+		Response commentJIRAResp = commentJIRAReqSpec.body(data.commentIssueReqBody).when()
 				.post(data.uriJIRACommentIssue);
 
 		response = commentJIRAResp.then()
 //				 .log()
 //				 .all()
-				.assertThat().statusCode(201).extract().asString();
+				.assertThat().statusCode(StatusCode.OK201).extract().asString();
 
-		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
+		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
 
 		jiraIssueCommentID = utils.rawToJson(response).getString("id");
 
@@ -341,9 +324,9 @@ public class JiraAPIMethods {
 		response = commentJIRAResp.then()
 //				 .log()
 //				 .all()
-				.assertThat().statusCode(200).extract().asString();
+				.assertThat().statusCode(StatusCode.OK200).extract().asString();
 
-		log.info("Response: \n@@@@@@@@@@@@@@\n"+response+"\n@@@@@@@@@@@@@@\n");
+		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
 
 	}
 

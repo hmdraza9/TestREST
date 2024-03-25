@@ -7,6 +7,7 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.restassured.payloads.StatusCode;
 import com.restassured.payloads.testDataPayloads;
 import com.restassures.utils.UtilMethods;
 
@@ -66,7 +67,7 @@ public class EcomTests {
 		vResponse = given().header("Content-Type", "application/json").header("Authorization", token).log().all()
 				.body(ecAd).when().post().then().log().all();
 
-		vResponse.assertThat().statusCode(200);
+		vResponse.assertThat().statusCode(StatusCode.OK200);
 
 		log.info("Product Added To Cart: " + (new UtilMethods().rawToJson(vResponse.extract().response().asString())
 				.getString("message").toString().equalsIgnoreCase("Product Added To Cart")));
@@ -107,7 +108,7 @@ public class EcomTests {
 			
 		}
 		
-		vResponse.assertThat().statusCode(200);
+		vResponse.assertThat().statusCode(StatusCode.OK200);
 		
 	}
 }

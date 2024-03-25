@@ -6,6 +6,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 
+import com.restassured.payloads.StatusCode;
 import com.restassured.payloads.testDataPayloads;
 import com.restassures.utils.UtilMethods;
 
@@ -37,8 +38,8 @@ public class Task03RESTAutomation {
 	public static void openWeatherMap() {
 
 		String strOpenWeatherApiID = openWeatherApiID.replaceAll("z", "");
-		System.out.println("strOpenWeatherApiID: "+strOpenWeatherApiID);
-		
+		System.out.println("strOpenWeatherApiID: " + strOpenWeatherApiID);
+
 		String resp = given().baseUri(openWeatherApiURL).queryParam("q", "hyderabad")
 				.queryParam("appid", strOpenWeatherApiID).header("Content-Type", "application/json").log().all().when()
 				.get(objPayLoad.uriOpenWeather).then().log().all().extract().response().asString();
@@ -81,10 +82,14 @@ public class Task03RESTAutomation {
 		response = given().header("Content-Type", "application/json").log().all().when()
 				.get(objPayLoad.uriTypiCodeUsers).then().log().all().extract().response();
 
-		Assert.assertTrue(response.getStatusCode() == 200);
+		Assert.assertTrue(response.getStatusCode() == StatusCode.OK200);
+
+		System.out.println("response.getStatusCode() == StatusCode.OK200: "
+				+ String.valueOf(response.getStatusCode() == StatusCode.OK200).toUpperCase());
 
 		JsonPath jp = utils.rawToJson(response.asString());
 		int userCount = jp.getInt("data.size()");
+		System.out.println("Response has more than 3 records: " + String.valueOf((userCount > 3)).toUpperCase());
 		Assert.assertTrue(userCount > 3);
 
 		boolean isUserExist = false;
@@ -92,7 +97,13 @@ public class Task03RESTAutomation {
 
 			isUserExist = jp.getString("name[" + i + "]").equals(userToSearch);
 			if (isUserExist) {
-				log.info("User exist at [" + i + "]");
+				log.info("User exist at index [" + i + "], and id = " + jp.getInt("[" + i + "].id"));
+				System.out.println("User exist at index [" + i + "], and id = " + jp.getInt("[" + i + "].id"));
+				System.out.println("User details: " + jp.getString("[" + i + "]"));
+				System.out.println("User details: " + jp.getString("[" + i + "].name"));
+				System.out.println("User details: " + jp.getString("[" + i + "].username"));
+				System.out.println("User details: " + jp.getString("[" + i + "].email"));
+				System.out.println("User details: " + jp.getString("[" + i + "].phone"));
 				break;
 			}
 		}
@@ -126,7 +137,7 @@ public class Task03RESTAutomation {
 		String statusOfPet = utils.rawToJson(response.asString()).getString("status");
 
 		petID = utils.rawToJson(response.asString()).getString("id");
-		Assert.assertTrue(statusCode == 200);
+		Assert.assertTrue(statusCode == StatusCode.OK200);
 		Assert.assertTrue(contenttype.contains("application/json"));
 		Assert.assertTrue(categoryOfPet.equals("dog"));
 		Assert.assertTrue(petName.equals(utils.rawToJson(response.asString()).getString("name")));

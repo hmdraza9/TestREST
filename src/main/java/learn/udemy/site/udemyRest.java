@@ -14,6 +14,7 @@ import java.util.Set;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.restassured.payloads.StatusCode;
 import com.restassured.payloads.testDataPayloads;
 import com.restassures.utils.UtilMethods;
 
@@ -80,7 +81,7 @@ public class udemyRest {
 
 			objRest.addPlace("OK", String.valueOf(m));
 			log.info("Place ID: " + placeID);
-//			objRest.getPlace(200);
+//			objRest.getPlace(StatusCode.OK200);
 
 		}
 
@@ -110,12 +111,12 @@ public class udemyRest {
 			log.info("Iteration: " + i);
 
 			objRest.addPlace("OK", "123");
-			objRest.getPlace(200);
+			objRest.getPlace(StatusCode.OK200);
 			objRest.deletePlace("OK");
-			objRest.getPlace(404);
+			objRest.getPlace(StatusCode.ClientError404);
 			objRest.addPlace("OK", "234");
 			objRest.updatePlace("123, Street");
-			objRest.getPlace(200);
+			objRest.getPlace(StatusCode.OK200);
 		}
 		endTime = System.currentTimeMillis();
 
@@ -160,14 +161,14 @@ public class udemyRest {
 		addPlaceResp.then()
 		.log()
 		.all()
-				.assertThat().statusCode(200).body("scope", equalTo("APP")).body("status", equalTo(toVerify));
+				.assertThat().statusCode(StatusCode.OK200).body("scope", equalTo("APP")).body("status", equalTo(toVerify));
 
 		placeID = addPlaceResp.getBody().path("place_id");
 		log.info("Place ID: "+placeID);
 		placeSet = new HashSet<>();
 		placeSet.add(placeID);
 
-		String response = addPlaceResp.then().assertThat().statusCode(200).body("scope", equalTo("APP"))
+		String response = addPlaceResp.then().assertThat().statusCode(StatusCode.OK200).body("scope", equalTo("APP"))
 				.header("Server", "Apache/2.4.52 (Ubuntu)").extract().response().asString();
 
 
@@ -180,7 +181,7 @@ public class udemyRest {
 	
 	public void getPlace(String placeID) {
 		udemyRest.placeID = placeID;
-		getPlace(200);
+		getPlace(StatusCode.OK200);
 	}
 
 	public void getPlace(int toVerify) {
@@ -196,7 +197,7 @@ public class udemyRest {
 				.queryParam("key", mapKey).header("Content-Type", "application/json").queryParam("place_id", placeID)
 				.urlEncodingEnabled(false).when().get(testDataPayloads.uriMapGetPlace);
 
-		log.info("###########Response starts###########n");
+		log.info("###########Response starts###########");
 
 //		log.info("getPlaceResp.asString: " + getPlaceResp.asString());
 
@@ -226,14 +227,14 @@ public class udemyRest {
 				.queryParam("key", "qaclick123").header("Content-Type", "application/json").urlEncodingEnabled(false)
 				.body(testDataPayloads.deletePlaceBody.replace("$RunTimeVar1", placeID)).when()
 				.post(testDataPayloads.uriMapDeletePlace);
-		log.info("###########Response starts###########n");
+		log.info("###########Response starts###########");
 
 		log.info("deletePlaceResp.asString: " + response.asString());
 
 		response.then()
 				// .log()
 				// .all()
-				.assertThat().statusCode(200).body("status", equalTo(toVerify));
+				.assertThat().statusCode(StatusCode.OK200).body("status", equalTo(toVerify));
 
 		log.info("###########Place deleted successfully!###########");
 
@@ -259,7 +260,7 @@ public class udemyRest {
 
 		log.info("getPlaceResp.asString: " + response.asString());
 
-		response.then().assertThat().statusCode(200).body("msg", equalTo("Address successfully updated")).extract()
+		response.then().assertThat().statusCode(StatusCode.OK200).body("msg", equalTo("Address successfully updated")).extract()
 				.response().asString();
 
 		log.info("Update Place Response: " + response);
