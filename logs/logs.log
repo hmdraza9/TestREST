@@ -11014,3 +11014,261 @@ created issue: AHR-57
 [INFO ] 2024-04-04 17:55:38.957 [main] Task03RESTAutomation - User exist at index [1], and id = 2
 [INFO ] 2024-04-04 17:55:39.369 [main] UtilMethods - In rawToJson
 [INFO ] 2024-04-04 17:55:39.723 [main] UtilMethods - In rawToJson
+[INFO ] 2024-04-05 11:22:07.925 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjk2MzI3LCJleHAiOjE3NDM4NTM5Mjd9.LgeccBpHsVMl5YAaMsNl_RJ1LHPvVGaA33AZQ4Pln5g
+[INFO ] 2024-04-05 11:22:07.927 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
+[INFO ] 2024-04-05 11:22:07.928 [main] EcomTests - message: Login Successfully
+[INFO ] 2024-04-05 11:22:08.073 [main] UtilMethods - In rawToJson
+[INFO ] 2024-04-05 11:22:08.260 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2024-04-05 11:22:38.722 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjk2MzU4LCJleHAiOjE3NDM4NTM5NTh9.-8ZvGcSdUOlb_CudosWhA5fhV8lC5fJkDjCuMbw8-_U
+[INFO ] 2024-04-05 11:22:38.723 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
+[INFO ] 2024-04-05 11:22:38.724 [main] EcomTests - message: Login Successfully
+[INFO ] 2024-04-05 11:23:18.940 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjk2Mzk4LCJleHAiOjE3NDM4NTM5OTh9.Qqz9Kr0344AJj8KeWPTAK8Iwe4dBSJFl8i7CSzOQuog
+[INFO ] 2024-04-05 11:23:18.942 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
+[INFO ] 2024-04-05 11:23:18.942 [main] EcomTests - message: Login Successfully
+[INFO ] 2024-04-05 11:23:19.315 [main] UtilMethods - In rawToJson
+[INFO ] 2024-04-05 11:23:19.325 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2024-04-05 11:23:42.672 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjk2NDIyLCJleHAiOjE3NDM4NTQwMjJ9.tEQSXsT-onbSXLBBvhwFvJ0HO4RSrCaIVrdZRhP9urc
+[INFO ] 2024-04-05 11:23:42.674 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
+[INFO ] 2024-04-05 11:23:42.674 [main] EcomTests - message: Login Successfully
+[INFO ] 2024-04-05 11:23:43.011 [main] UtilMethods - In rawToJson
+[INFO ] 2024-04-05 11:23:43.019 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2024-04-05 11:23:43.150 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2024-04-05 11:23:43.150 [main] EcomTests - ecGetAllProd.getCount() 3
+[INFO ] 2024-04-05 11:23:43.150 [main] EcomTests - ===========================1===========================
+[INFO ] 2024-04-05 11:23:43.150 [main] EcomTests - 6581ca399fd99c85e8ee7f45
+[INFO ] 2024-04-05 11:23:43.150 [main] EcomTests - ZARA COAT 3
+[INFO ] 2024-04-05 11:23:43.150 [main] EcomTests - fashion
+[INFO ] 2024-04-05 11:23:43.150 [main] EcomTests - shirts
+[INFO ] 2024-04-05 11:23:43.151 [main] EcomTests - 31500.0
+[INFO ] 2024-04-05 11:23:43.151 [main] EcomTests - Zara coat for Women and girls
+[INFO ] 2024-04-05 11:23:43.151 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649434146.jpeg
+[INFO ] 2024-04-05 11:23:43.151 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:23:43.151 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:23:43.151 [main] EcomTests - true
+[INFO ] 2024-04-05 11:23:43.151 [main] EcomTests - women
+[INFO ] 2024-04-05 11:23:43.151 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-04-05 11:23:43.151 [main] EcomTests - 0.0
+[INFO ] 2024-04-05 11:23:43.151 [main] EcomTests - ===========================2===========================
+[INFO ] 2024-04-05 11:23:43.152 [main] EcomTests - 6581ca979fd99c85e8ee7faf
+[INFO ] 2024-04-05 11:23:43.152 [main] EcomTests - ADIDAS ORIGINAL
+[INFO ] 2024-04-05 11:23:43.152 [main] EcomTests - household
+[INFO ] 2024-04-05 11:23:43.152 [main] EcomTests - shoes
+[INFO ] 2024-04-05 11:23:43.152 [main] EcomTests - 31500.0
+[INFO ] 2024-04-05 11:23:43.152 [main] EcomTests - Adidas shoes for Men
+[INFO ] 2024-04-05 11:23:43.152 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649488046.jpg
+[INFO ] 2024-04-05 11:23:43.152 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:23:43.152 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:23:43.152 [main] EcomTests - true
+[INFO ] 2024-04-05 11:23:43.152 [main] EcomTests - men
+[INFO ] 2024-04-05 11:23:43.153 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-04-05 11:23:43.153 [main] EcomTests - 0.0
+[INFO ] 2024-04-05 11:23:43.153 [main] EcomTests - ===========================3===========================
+[INFO ] 2024-04-05 11:23:43.153 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2024-04-05 11:23:43.153 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2024-04-05 11:23:43.153 [main] EcomTests - electronics
+[INFO ] 2024-04-05 11:23:43.154 [main] EcomTests - mobiles
+[INFO ] 2024-04-05 11:23:43.154 [main] EcomTests - 231500.0
+[INFO ] 2024-04-05 11:23:43.154 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2024-04-05 11:23:43.154 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2024-04-05 11:23:43.154 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:23:43.154 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:23:43.154 [main] EcomTests - true
+[INFO ] 2024-04-05 11:23:43.154 [main] EcomTests - men
+[INFO ] 2024-04-05 11:23:43.154 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-04-05 11:23:43.154 [main] EcomTests - 0.0
+[INFO ] 2024-04-05 11:26:07.715 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjk2NTY3LCJleHAiOjE3NDM4NTQxNjd9.KnVJuGQn5JWhbBYw5RDNYscupo_RwNMP7Yx9MEj14jw
+[INFO ] 2024-04-05 11:26:07.716 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
+[INFO ] 2024-04-05 11:26:07.716 [main] EcomTests - message: Login Successfully
+[INFO ] 2024-04-05 11:26:08.035 [main] UtilMethods - In rawToJson
+[INFO ] 2024-04-05 11:26:08.041 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2024-04-05 11:26:08.248 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2024-04-05 11:26:08.248 [main] EcomTests - ecGetAllProd.getCount() 3
+[INFO ] 2024-04-05 11:26:08.248 [main] EcomTests - ===========================1===========================
+[INFO ] 2024-04-05 11:26:08.248 [main] EcomTests - 6581ca399fd99c85e8ee7f45
+[INFO ] 2024-04-05 11:26:08.249 [main] EcomTests - ZARA COAT 3
+[INFO ] 2024-04-05 11:26:08.249 [main] EcomTests - fashion
+[INFO ] 2024-04-05 11:26:08.249 [main] EcomTests - shirts
+[INFO ] 2024-04-05 11:26:08.249 [main] EcomTests - 31500.0
+[INFO ] 2024-04-05 11:26:08.249 [main] EcomTests - Zara coat for Women and girls
+[INFO ] 2024-04-05 11:26:08.250 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649434146.jpeg
+[INFO ] 2024-04-05 11:26:08.250 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:26:08.250 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:26:08.250 [main] EcomTests - true
+[INFO ] 2024-04-05 11:26:08.250 [main] EcomTests - women
+[INFO ] 2024-04-05 11:26:08.250 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-04-05 11:26:08.250 [main] EcomTests - 0.0
+[INFO ] 2024-04-05 11:26:08.251 [main] EcomTests - ===========================2===========================
+[INFO ] 2024-04-05 11:26:08.251 [main] EcomTests - 6581ca979fd99c85e8ee7faf
+[INFO ] 2024-04-05 11:26:08.251 [main] EcomTests - ADIDAS ORIGINAL
+[INFO ] 2024-04-05 11:26:08.251 [main] EcomTests - household
+[INFO ] 2024-04-05 11:26:08.251 [main] EcomTests - shoes
+[INFO ] 2024-04-05 11:26:08.252 [main] EcomTests - 31500.0
+[INFO ] 2024-04-05 11:26:08.252 [main] EcomTests - Adidas shoes for Men
+[INFO ] 2024-04-05 11:26:08.252 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649488046.jpg
+[INFO ] 2024-04-05 11:26:08.252 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:26:08.252 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:26:08.252 [main] EcomTests - true
+[INFO ] 2024-04-05 11:26:08.252 [main] EcomTests - men
+[INFO ] 2024-04-05 11:26:08.252 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-04-05 11:26:08.253 [main] EcomTests - 0.0
+[INFO ] 2024-04-05 11:26:08.253 [main] EcomTests - ===========================3===========================
+[INFO ] 2024-04-05 11:26:08.253 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2024-04-05 11:26:08.254 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2024-04-05 11:26:08.254 [main] EcomTests - electronics
+[INFO ] 2024-04-05 11:26:08.254 [main] EcomTests - mobiles
+[INFO ] 2024-04-05 11:26:08.254 [main] EcomTests - 231500.0
+[INFO ] 2024-04-05 11:26:08.254 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2024-04-05 11:26:08.254 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2024-04-05 11:26:08.254 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:26:08.254 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:26:08.254 [main] EcomTests - true
+[INFO ] 2024-04-05 11:26:08.255 [main] EcomTests - men
+[INFO ] 2024-04-05 11:26:08.255 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-04-05 11:26:08.255 [main] EcomTests - 0.0
+[INFO ] 2024-04-05 11:26:31.796 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjk2NTkxLCJleHAiOjE3NDM4NTQxOTF9.90jk_fPp2pREWucnwqdl6npYCT3vs1SAVZD5YYxLR2s
+[INFO ] 2024-04-05 11:26:31.798 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
+[INFO ] 2024-04-05 11:26:31.798 [main] EcomTests - message: Login Successfully
+[INFO ] 2024-04-05 11:26:32.108 [main] UtilMethods - In rawToJson
+[INFO ] 2024-04-05 11:26:32.115 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2024-04-05 11:26:32.298 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2024-04-05 11:26:32.298 [main] EcomTests - ecGetAllProd.getCount() 3
+[INFO ] 2024-04-05 11:26:32.299 [main] EcomTests - ===========================1===========================
+[INFO ] 2024-04-05 11:26:32.299 [main] EcomTests - 6581ca399fd99c85e8ee7f45
+[INFO ] 2024-04-05 11:26:32.299 [main] EcomTests - ZARA COAT 3
+[INFO ] 2024-04-05 11:26:32.299 [main] EcomTests - fashion
+[INFO ] 2024-04-05 11:26:32.299 [main] EcomTests - shirts
+[INFO ] 2024-04-05 11:26:32.300 [main] EcomTests - 31500.0
+[INFO ] 2024-04-05 11:26:32.300 [main] EcomTests - Zara coat for Women and girls
+[INFO ] 2024-04-05 11:26:32.300 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649434146.jpeg
+[INFO ] 2024-04-05 11:26:32.300 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:26:32.300 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:26:32.300 [main] EcomTests - true
+[INFO ] 2024-04-05 11:26:32.300 [main] EcomTests - women
+[INFO ] 2024-04-05 11:26:32.300 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-04-05 11:26:32.300 [main] EcomTests - 0.0
+[INFO ] 2024-04-05 11:26:32.300 [main] EcomTests - ===========================2===========================
+[INFO ] 2024-04-05 11:26:32.300 [main] EcomTests - 6581ca979fd99c85e8ee7faf
+[INFO ] 2024-04-05 11:26:32.300 [main] EcomTests - ADIDAS ORIGINAL
+[INFO ] 2024-04-05 11:26:32.301 [main] EcomTests - household
+[INFO ] 2024-04-05 11:26:32.301 [main] EcomTests - shoes
+[INFO ] 2024-04-05 11:26:32.301 [main] EcomTests - 31500.0
+[INFO ] 2024-04-05 11:26:32.301 [main] EcomTests - Adidas shoes for Men
+[INFO ] 2024-04-05 11:26:32.301 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649488046.jpg
+[INFO ] 2024-04-05 11:26:32.301 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:26:32.301 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:26:32.301 [main] EcomTests - true
+[INFO ] 2024-04-05 11:26:32.301 [main] EcomTests - men
+[INFO ] 2024-04-05 11:26:32.301 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-04-05 11:26:32.301 [main] EcomTests - 0.0
+[INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - ===========================3===========================
+[INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - electronics
+[INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - mobiles
+[INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - 231500.0
+[INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - true
+[INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - men
+[INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - 0.0
+[INFO ] 2024-04-05 11:41:36.376 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjk3NDk2LCJleHAiOjE3NDM4NTUwOTZ9.CaEQAi7ArnTveD_hYRyvMko78tUGB4pOIR_mBEz5hNk
+[INFO ] 2024-04-05 11:41:36.395 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
+[INFO ] 2024-04-05 11:41:36.395 [main] EcomTests - message: Login Successfully
+[INFO ] 2024-04-05 11:41:53.275 [main] UtilMethods - In rawToJson
+[INFO ] 2024-04-05 11:41:53.295 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2024-04-05 11:42:00.416 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2024-04-05 11:42:00.416 [main] EcomTests - ecGetAllProd.getCount() 3
+[INFO ] 2024-04-05 11:42:00.416 [main] EcomTests - ===========================1===========================
+[INFO ] 2024-04-05 11:42:00.417 [main] EcomTests - 6581ca399fd99c85e8ee7f45
+[INFO ] 2024-04-05 11:42:00.417 [main] EcomTests - ZARA COAT 3
+[INFO ] 2024-04-05 11:42:00.417 [main] EcomTests - fashion
+[INFO ] 2024-04-05 11:42:00.417 [main] EcomTests - shirts
+[INFO ] 2024-04-05 11:42:00.418 [main] EcomTests - 31500.0
+[INFO ] 2024-04-05 11:42:00.418 [main] EcomTests - Zara coat for Women and girls
+[INFO ] 2024-04-05 11:42:00.418 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649434146.jpeg
+[INFO ] 2024-04-05 11:42:00.418 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:42:00.418 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:42:00.418 [main] EcomTests - true
+[INFO ] 2024-04-05 11:42:00.418 [main] EcomTests - women
+[INFO ] 2024-04-05 11:42:00.418 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-04-05 11:42:00.419 [main] EcomTests - 0.0
+[INFO ] 2024-04-05 11:42:00.419 [main] EcomTests - ===========================2===========================
+[INFO ] 2024-04-05 11:42:00.419 [main] EcomTests - 6581ca979fd99c85e8ee7faf
+[INFO ] 2024-04-05 11:42:00.420 [main] EcomTests - ADIDAS ORIGINAL
+[INFO ] 2024-04-05 11:42:00.420 [main] EcomTests - household
+[INFO ] 2024-04-05 11:42:00.420 [main] EcomTests - shoes
+[INFO ] 2024-04-05 11:42:00.420 [main] EcomTests - 31500.0
+[INFO ] 2024-04-05 11:42:00.420 [main] EcomTests - Adidas shoes for Men
+[INFO ] 2024-04-05 11:42:00.420 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649488046.jpg
+[INFO ] 2024-04-05 11:42:00.421 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:42:00.421 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:42:00.421 [main] EcomTests - true
+[INFO ] 2024-04-05 11:42:00.421 [main] EcomTests - men
+[INFO ] 2024-04-05 11:42:00.421 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-04-05 11:42:00.421 [main] EcomTests - 0.0
+[INFO ] 2024-04-05 11:42:00.422 [main] EcomTests - ===========================3===========================
+[INFO ] 2024-04-05 11:42:00.422 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2024-04-05 11:42:00.423 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2024-04-05 11:42:00.423 [main] EcomTests - electronics
+[INFO ] 2024-04-05 11:42:00.423 [main] EcomTests - mobiles
+[INFO ] 2024-04-05 11:42:00.423 [main] EcomTests - 231500.0
+[INFO ] 2024-04-05 11:42:00.423 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2024-04-05 11:42:00.423 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2024-04-05 11:42:00.423 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:42:00.424 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:42:00.424 [main] EcomTests - true
+[INFO ] 2024-04-05 11:42:00.424 [main] EcomTests - men
+[INFO ] 2024-04-05 11:42:00.424 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-04-05 11:42:00.424 [main] EcomTests - 0.0
+[INFO ] 2024-04-05 11:47:03.280 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjk3ODIzLCJleHAiOjE3NDM4NTU0MjN9.9QofkqUa7ZUqnVPTAjYMUQGRhFpm6_RcYdvVzO_vG0c
+[INFO ] 2024-04-05 11:47:03.282 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
+[INFO ] 2024-04-05 11:47:03.282 [main] EcomTests - message: Login Successfully
+[INFO ] 2024-04-05 11:47:03.607 [main] UtilMethods - In rawToJson
+[INFO ] 2024-04-05 11:47:03.613 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2024-04-05 11:47:03.755 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2024-04-05 11:47:03.755 [main] EcomTests - ecGetAllProd.getCount() 3
+[INFO ] 2024-04-05 11:47:03.755 [main] EcomTests - ===========================1===========================
+[INFO ] 2024-04-05 11:47:03.755 [main] EcomTests - 6581ca399fd99c85e8ee7f45
+[INFO ] 2024-04-05 11:47:03.755 [main] EcomTests - ZARA COAT 3
+[INFO ] 2024-04-05 11:47:03.755 [main] EcomTests - fashion
+[INFO ] 2024-04-05 11:47:03.755 [main] EcomTests - shirts
+[INFO ] 2024-04-05 11:47:03.755 [main] EcomTests - 31500.0
+[INFO ] 2024-04-05 11:47:03.755 [main] EcomTests - Zara coat for Women and girls
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649434146.jpeg
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - true
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - women
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - 0.0
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - ===========================2===========================
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - 6581ca979fd99c85e8ee7faf
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - ADIDAS ORIGINAL
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - household
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - shoes
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - 31500.0
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - Adidas shoes for Men
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649488046.jpg
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:47:03.756 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:47:03.757 [main] EcomTests - true
+[INFO ] 2024-04-05 11:47:03.757 [main] EcomTests - men
+[INFO ] 2024-04-05 11:47:03.757 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-04-05 11:47:03.757 [main] EcomTests - 0.0
+[INFO ] 2024-04-05 11:47:03.757 [main] EcomTests - ===========================3===========================
+[INFO ] 2024-04-05 11:47:03.757 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2024-04-05 11:47:03.757 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2024-04-05 11:47:03.757 [main] EcomTests - electronics
+[INFO ] 2024-04-05 11:47:03.757 [main] EcomTests - mobiles
+[INFO ] 2024-04-05 11:47:03.757 [main] EcomTests - 231500.0
+[INFO ] 2024-04-05 11:47:03.757 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2024-04-05 11:47:03.758 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2024-04-05 11:47:03.758 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:47:03.758 [main] EcomTests - 0
+[INFO ] 2024-04-05 11:47:03.758 [main] EcomTests - true
+[INFO ] 2024-04-05 11:47:03.758 [main] EcomTests - men
+[INFO ] 2024-04-05 11:47:03.758 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-04-05 11:47:03.758 [main] EcomTests - 0.0

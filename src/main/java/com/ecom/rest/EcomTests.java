@@ -68,6 +68,7 @@ public class EcomTests {
 				.body(ecAd).when().post().then().log().all();
 
 		vResponse.assertThat().statusCode(StatusCode.OK200);
+		System.out.println("Message: "+vResponse.extract().path("message"));
 
 		log.info("Product Added To Cart: " + (new UtilMethods().rawToJson(vResponse.extract().response().asString())
 				.getString("message").toString().equalsIgnoreCase("Product Added To Cart")));
@@ -82,6 +83,7 @@ public class EcomTests {
 				.post().then().log().all();
 
 		EcomGetAllProducts ecGetAllProd = vResponse.extract().response().as(EcomGetAllProducts.class);
+		System.out.println("******Prod name: "+vResponse.extract().path("data[1].productName"));
 
 		log.info("ecGetAllProd.getMessage(): " + ecGetAllProd.getMessage());
 
