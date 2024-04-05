@@ -1,4 +1,4 @@
-package com.extra.classes;
+package com.restAPI.practiceClasses;
 //import org.testng.AssertJUnit;
 
 import static io.restassured.RestAssured.baseURI;

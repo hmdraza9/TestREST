@@ -5,40 +5,40 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class Courses {
+public class AllCourses {
 
-	private static final Logger log = LogManager.getLogger(Courses.class);
+	private static final Logger log = LogManager.getLogger(AllCourses.class);
 
-	private List<WebAutomation> webAutomation;
-	private List<API> api;
-	private List<Mobile> mobile;
+	private List<CourseWebAutomation> webAutomation;
+	private List<CourseAPI> api;
+	private List<CourseMobile> mobile;
 
-	public List<WebAutomation> getWebAutomation() {
+	public List<CourseWebAutomation> getWebAutomation() {
 		log.info("Returned webAutomation list: " + webAutomation);
 		return webAutomation;
 	}
 
-	public void setWebAutomation(List<WebAutomation> webAutomation) {
+	public void setWebAutomation(List<CourseWebAutomation> webAutomation) {
 		log.info("Set webAutomation list: " + webAutomation);
 		this.webAutomation = webAutomation;
 	}
 
-	public List<API> getApi() {
+	public List<CourseAPI> getApi() {
 		log.info("Returned API list: " + api);
 		return api;
 	}
 
-	public void setApi(List<API> api) {
+	public void setApi(List<CourseAPI> api) {
 		log.info("Set API list: " + api);
 		this.api = api;
 	}
 
-	public List<Mobile> getMobile() {
+	public List<CourseMobile> getMobile() {
 		log.info("Returned mobile list: " + mobile);
 		return mobile;
 	}
 
-	public void setMobile(List<Mobile> mobile) {
+	public void setMobile(List<CourseMobile> mobile) {
 		log.info("Set mobile list: " + mobile);
 		this.mobile = mobile;
 	}

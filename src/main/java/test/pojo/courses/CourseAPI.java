@@ -3,9 +3,9 @@ package test.pojo.courses;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class API {
+public class CourseAPI {
 
-	private static final Logger log = LogManager.getLogger(API.class);
+	private static final Logger log = LogManager.getLogger(CourseAPI.class);
 
 	private String courseTitle;
 	private String price;

@@ -11,8 +11,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 
+import com.restassured.payloads.Payloads;
 import com.restassured.payloads.StatusCode;
-import com.restassured.payloads.testDataPayloads;
+import com.restassured.payloads.URIs;
+import com.restassured.payloads.URLs;
 import com.restassures.utils.UtilMethods;
 
 import io.restassured.RestAssured;
@@ -40,7 +42,11 @@ public class JiraAPIMethods {
 
 	UtilMethods utils = new UtilMethods();
 
-	testDataPayloads data = new testDataPayloads();
+	Payloads objPayLoad = new Payloads();
+
+	URIs objURI = new URIs();
+
+	URLs objURL = new URLs();
 
 	public static JiraAPIMethods objJira = new JiraAPIMethods();
 
@@ -52,18 +58,18 @@ public class JiraAPIMethods {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 
-//		objJira.sessionFilterExampleJIRA();
-//		objJira.getJIRAJSession(); // this have to be uncommented
-//		objJira.jiraCreateIssue();
-//		objJira.jiraCommentIssue();
-//		Thread.sleep(5000);
-//		objJira.jiraGetIssue();
+		objJira.sessionFilterExampleJIRA();
+		objJira.getJIRAJSession(); // this have to be uncommented
+		objJira.jiraCreateIssue();
+		objJira.jiraCommentIssue();
+		Thread.sleep(5000);
+		objJira.jiraGetIssue();
 		objJira.filterContentVerifyData();
-//		objJira.jiraDeleteIssue();
-//		objJira.jiraCreateIssue();
-//		objJira.jiraCommentIssue();
-//		objJira.jiraUpdateCommentIssue();
-//		objJira.jiraAttachToIssue();
+		objJira.jiraDeleteIssue();
+		objJira.jiraCreateIssue();
+		objJira.jiraCommentIssue();
+		objJira.jiraUpdateCommentIssue();
+		objJira.jiraAttachToIssue();
 
 	}
 
@@ -88,13 +94,13 @@ public class JiraAPIMethods {
 	public void jiraAttachToIssue() throws IOException, InterruptedException {
 
 		File file = JiraAPIMethods.getFileToJIRA();
-		RestAssured.baseURI = data.uriJIRABase;
+		RestAssured.baseURI = objURI.uriJIRABase;
 		RequestSpecification attachJIRAReqSpec = given().filter(session).header("X-Atlassian-Token", "no-check")
-				.header("Content-Type", "multipart/form-data").pathParam("issueIdOrKey", jiraIssue)
+				.header("Content-Type", "multipart/form-objPayLoad").pathParam("issueIdOrKey", jiraIssue)
 				.urlEncodingEnabled(false).log().all();
 
 		Response attachJIRAResp = attachJIRAReqSpec.multiPart("file", file).filter(session).when()
-				.post(data.uriJIRAIssueAttachment);
+				.post(objURI.uriJIRAIssueAttachment);
 
 		String response = attachJIRAResp.then().log().all().assertThat().statusCode(StatusCode.OK200).extract()
 				.asString();
@@ -109,23 +115,23 @@ public class JiraAPIMethods {
 
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-		RestAssured.baseURI = data.uriJIRABase;
+		RestAssured.baseURI = objURI.uriJIRABase;
 
 		RequestSpecification getJIRAJSessionReqSpec = given()
 				// .log()
 				// .all()
 				.filter(session).header("Content-Type", "application/json").urlEncodingEnabled(false);
 
-		Response getJIRAJSessionResp = getJIRAJSessionReqSpec.body(data.JIRAJSessionReqBody).when()
-				.post(data.uriJIRAGetJSession);
+		Response getJIRAJSessionResp = getJIRAJSessionReqSpec.body(objPayLoad.JIRAJSessionReqBody).when()
+				.post(objURI.uriJIRAGetJSession);
 
 		getJIRAJSessionReqSpec = given()
 				// .log()
 				// .all()
 				.header("Content-Type", "application/json").urlEncodingEnabled(false);
 
-		getJIRAJSessionResp = getJIRAJSessionReqSpec.body(data.JIRACreateIssueTaskReqBody).filter(session).when()
-				.post(data.uriJIRACreateIssue);
+		getJIRAJSessionResp = getJIRAJSessionReqSpec.body(objPayLoad.JIRACreateIssueTaskReqBody).filter(session).when()
+				.post(objURI.uriJIRACreateIssue);
 
 		response = getJIRAJSessionResp.then()
 				// .log()
@@ -144,15 +150,15 @@ public class JiraAPIMethods {
 	public void getJIRAJSession() {
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-		RestAssured.baseURI = data.uriJIRABase;
+		RestAssured.baseURI = objURI.uriJIRABase;
 
 		RequestSpecification getJIRAJSessionReqSpec = given().relaxedHTTPSValidation()
 				// .log()
 				// .all()
 				.filter(session).header("Content-Type", "application/json").urlEncodingEnabled(false);
 
-		Response getJIRAJSessionResp = getJIRAJSessionReqSpec.body(data.JIRAJSessionReqBody).when()
-				.post(data.uriJIRAGetJSession);
+		Response getJIRAJSessionResp = getJIRAJSessionReqSpec.body(objPayLoad.JIRAJSessionReqBody).when()
+				.post(objURI.uriJIRAGetJSession);
 
 		response = getJIRAJSessionResp.then().assertThat().statusCode(StatusCode.OK200).extract().asString();
 
@@ -167,7 +173,7 @@ public class JiraAPIMethods {
 
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-		RestAssured.baseURI = data.uriJIRABase;
+		RestAssured.baseURI = objURI.uriJIRABase;
 
 		RequestSpecification createJIRAIReqSpec = given()
 				// .log()
@@ -176,8 +182,8 @@ public class JiraAPIMethods {
 //				.header("Cookie", "JSESSIONID=" + jiraJSession)
 				.urlEncodingEnabled(false);
 
-		Response getJIRAJSessionResp = createJIRAIReqSpec.body(data.JIRACreateIssueTaskReqBody).when()
-				.post(data.uriJIRACreateIssue);
+		Response getJIRAJSessionResp = createJIRAIReqSpec.body(objPayLoad.JIRACreateIssueTaskReqBody).when()
+				.post(objURI.uriJIRACreateIssue);
 
 		response = getJIRAJSessionResp.then()
 				// .log()
@@ -198,14 +204,15 @@ public class JiraAPIMethods {
 
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-		RestAssured.baseURI = data.uriJIRABase;
+		RestAssured.baseURI = objURI.uriJIRABase;
 
 		RequestSpecification getJIRAReqSpec = given().log().all().filter(session)
 				.header("Content-Type", "application/json").urlEncodingEnabled(false);
 
-		Response getJIRAJSessionResp = getJIRAReqSpec.when().pathParam("key", jiraIssue).get(data.uriJIRAGetIssue);
+		Response getJIRAJSessionResp = getJIRAReqSpec.when().pathParam("key", jiraIssue).get(objURI.uriJIRAGetIssue);
 
-		response = getJIRAJSessionResp.then().log().all().assertThat().statusCode(StatusCode.OK200).extract().asString();
+		response = getJIRAJSessionResp.then().log().all().assertThat().statusCode(StatusCode.OK200).extract()
+				.asString();
 
 		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
 
@@ -215,12 +222,12 @@ public class JiraAPIMethods {
 
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-		RestAssured.baseURI = data.uriJIRABase;
+		RestAssured.baseURI = objURI.uriJIRABase;
 
 		RequestSpecification getJIRAReqSpec = given().log().all().filter(session)
 				.header("Content-Type", "application/json").queryParam("fields", "comment").urlEncodingEnabled(false);
 
-		Response getJIRAJSessionResp = getJIRAReqSpec.when().pathParam("key", "AHR-5").get(data.uriJIRAGetIssue);
+		Response getJIRAJSessionResp = getJIRAReqSpec.when().pathParam("key", "AHR-5").get(objURI.uriJIRAGetIssue);
 
 		response = getJIRAJSessionResp.then()
 //					 .log()
@@ -259,7 +266,7 @@ public class JiraAPIMethods {
 
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-		RestAssured.baseURI = data.uriJIRABase;
+		RestAssured.baseURI = objURI.uriJIRABase;
 
 		RequestSpecification deleteJIRAReqSpec = given().pathParam("key", jiraIssue)
 //				 .log()
@@ -267,8 +274,8 @@ public class JiraAPIMethods {
 				.header("Content-Type", "application/json").header("Cookie", "JSESSIONID=" + jiraJSession)
 				.urlEncodingEnabled(false);
 
-		Response deleteJIRAJSessionResp = deleteJIRAReqSpec.body(data.JIRACreateIssueTaskReqBody).when()
-				.delete(data.uriJIRADeleteIssue);
+		Response deleteJIRAJSessionResp = deleteJIRAReqSpec.body(objPayLoad.JIRACreateIssueTaskReqBody).when()
+				.delete(objURI.uriJIRADeleteIssue);
 
 		response = deleteJIRAJSessionResp.then()
 //				 .log()
@@ -283,7 +290,7 @@ public class JiraAPIMethods {
 
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-		RestAssured.baseURI = data.uriJIRABase;
+		RestAssured.baseURI = objURI.uriJIRABase;
 
 		RequestSpecification commentJIRAReqSpec = given().pathParam("key", jiraIssue)
 //				 .log()
@@ -291,8 +298,8 @@ public class JiraAPIMethods {
 				.header("Content-Type", "application/json").header("Cookie", "JSESSIONID=" + jiraJSession)
 				.urlEncodingEnabled(false);
 
-		Response commentJIRAResp = commentJIRAReqSpec.body(data.commentIssueReqBody).when()
-				.post(data.uriJIRACommentIssue);
+		Response commentJIRAResp = commentJIRAReqSpec.body(objPayLoad.commentIssueReqBody).when()
+				.post(objURI.uriJIRACommentIssue);
 
 		response = commentJIRAResp.then()
 //				 .log()
@@ -309,7 +316,7 @@ public class JiraAPIMethods {
 
 		log.info(new Throwable().getStackTrace()[0].getMethodName());
 
-		RestAssured.baseURI = data.uriJIRABase;
+		RestAssured.baseURI = objURI.uriJIRABase;
 
 		RequestSpecification commentJIRAReqSpec = given().pathParam("issueID", jiraIssue)
 				.pathParam("commentID", jiraIssueCommentID)
@@ -318,8 +325,8 @@ public class JiraAPIMethods {
 				.header("Content-Type", "application/json").header("Cookie", "JSESSIONID=" + jiraJSession)
 				.urlEncodingEnabled(false);
 
-		Response commentJIRAResp = commentJIRAReqSpec.body(data.commentUpdateIssueReqBody).when()
-				.put(data.uriJIRACommentUpdateIssue);
+		Response commentJIRAResp = commentJIRAReqSpec.body(objPayLoad.commentUpdateIssueReqBody).when()
+				.put(objURI.uriJIRACommentUpdateIssue);
 
 		response = commentJIRAResp.then()
 //				 .log()

@@ -14,8 +14,10 @@ import java.util.Set;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.restassured.payloads.Payloads;
 import com.restassured.payloads.StatusCode;
-import com.restassured.payloads.testDataPayloads;
+import com.restassured.payloads.URIs;
+import com.restassured.payloads.URLs;
 import com.restassures.utils.UtilMethods;
 
 import io.restassured.RestAssured;
@@ -30,7 +32,7 @@ public class udemyRest {
 	private static final Logger log = LogManager.getLogger(udemyRest.class);
 
 	public static final String baseURI = "https://rahulshettyacademy.com";
-	
+
 	public static final String mapKey = "qaclick123";
 
 	public static String placeID;
@@ -39,18 +41,22 @@ public class udemyRest {
 
 	UtilMethods utils = new UtilMethods();
 
-	testDataPayloads data = new testDataPayloads();
+	Payloads objPayLoad = new Payloads();
+
+	URIs objURI = new URIs();
+
+	URLs objURL = new URLs();
 
 	public static udemyRest objRest = new udemyRest();
 
 	public static void main(String[] args) throws IOException {
-		
+
 		log.info("Hell Yeah!!");
-		
+
 		TestOAuthRestAPI objOAuth = new TestOAuthRestAPI();
-		
+
 //		objOAuth.getOAuthCode();
-		
+
 		objOAuth.getCourses();
 
 //		placeSet = new HashSet<String>();
@@ -131,16 +137,11 @@ public class udemyRest {
 
 		RestAssured.baseURI = baseURI;
 
-		RequestSpecification req = new RequestSpecBuilder()
-		.setBaseUri(baseURI)
-		.addQueryParam("key", mapKey)
-		.addHeader("Content-Type", "application/json").setUrlEncodingEnabled(false).build();
+		RequestSpecification req = new RequestSpecBuilder().setBaseUri(baseURI).addQueryParam("key", mapKey)
+				.addHeader("Content-Type", "application/json").setUrlEncodingEnabled(false).build();
 
-		RequestSpecification addPlaceReqSpec = given()
-				.spec(req)
-				;
-		
-		
+		RequestSpecification addPlaceReqSpec = given().spec(req);
+
 		byte[] tempBody = null;
 		try {
 			tempBody = Files.readAllBytes(Paths.get("src/test/resources/aAddPlaceBody.json"));
@@ -154,31 +155,28 @@ public class udemyRest {
 
 		log.info("###########Request starts:###########");
 
-		Response addPlaceResp = addPlaceReqSpec.when().post(testDataPayloads.uriMapAddPlace);
+		Response addPlaceResp = addPlaceReqSpec.when().post(objURI.uriMapAddPlace);
 
 		log.info("###########Response starts###########");
 
-		addPlaceResp.then()
-		.log()
-		.all()
-				.assertThat().statusCode(StatusCode.OK200).body("scope", equalTo("APP")).body("status", equalTo(toVerify));
+		addPlaceResp.then().log().all().assertThat().statusCode(StatusCode.OK200).body("scope", equalTo("APP"))
+				.body("status", equalTo(toVerify));
 
 		placeID = addPlaceResp.getBody().path("place_id");
-		log.info("Place ID: "+placeID);
+		log.info("Place ID: " + placeID);
 		placeSet = new HashSet<>();
 		placeSet.add(placeID);
 
 		String response = addPlaceResp.then().assertThat().statusCode(StatusCode.OK200).body("scope", equalTo("APP"))
 				.header("Server", "Apache/2.4.52 (Ubuntu)").extract().response().asString();
 
-
 		log.info("Place ID(using JsonPath): " + utils.rawToJson(response).getString("place_id"));
 
 		log.info("AddPlace StatusCode: " + addPlaceResp.statusCode());
-		
-		log.info("Response: "+response.toString());
+
+		log.info("Response: " + response.toString());
 	}
-	
+
 	public void getPlace(String placeID) {
 		udemyRest.placeID = placeID;
 		getPlace(StatusCode.OK200);
@@ -195,7 +193,7 @@ public class udemyRest {
 //				.log()
 //				.all()
 				.queryParam("key", mapKey).header("Content-Type", "application/json").queryParam("place_id", placeID)
-				.urlEncodingEnabled(false).when().get(testDataPayloads.uriMapGetPlace);
+				.urlEncodingEnabled(false).when().get(objURI.uriMapGetPlace);
 
 		log.info("###########Response starts###########");
 
@@ -225,8 +223,7 @@ public class udemyRest {
 //				.log()
 //				.all()
 				.queryParam("key", "qaclick123").header("Content-Type", "application/json").urlEncodingEnabled(false)
-				.body(testDataPayloads.deletePlaceBody.replace("$RunTimeVar1", placeID)).when()
-				.post(testDataPayloads.uriMapDeletePlace);
+				.body(Payloads.deletePlaceBody.replace("$RunTimeVar1", placeID)).when().post(objURI.uriMapDeletePlace);
 		log.info("###########Response starts###########");
 
 		log.info("deletePlaceResp.asString: " + response.asString());
@@ -251,17 +248,16 @@ public class udemyRest {
 //				.log()
 //				.all()
 				.queryParam("key", mapKey).header("Content-Type", "application/json").queryParam("place_id", placeID)
-				.urlEncodingEnabled(false)
-				.body(testDataPayloads.updatePlaceBody.replace("$RunTimeVar1", placeID)
+				.urlEncodingEnabled(false).body(Payloads.updatePlaceBody.replace("$RunTimeVar1", placeID)
 						.replace("$RunTimeVar2", newAddress).replace("$RunTimeVar3", mapKey))
-				.when().put(testDataPayloads.uriMapUpdatePlace);
+				.when().put(objURI.uriMapUpdatePlace);
 
 		log.info("###########Response starts###########");
 
 		log.info("getPlaceResp.asString: " + response.asString());
 
-		response.then().assertThat().statusCode(StatusCode.OK200).body("msg", equalTo("Address successfully updated")).extract()
-				.response().asString();
+		response.then().assertThat().statusCode(StatusCode.OK200).body("msg", equalTo("Address successfully updated"))
+				.extract().response().asString();
 
 		log.info("Update Place Response: " + response);
 
@@ -269,7 +265,7 @@ public class udemyRest {
 
 	public void calcCourseFee() {
 
-		int courseSize = utils.rawToJson(data.courseBody).getInt("courses.size()");
+		int courseSize = utils.rawToJson(objPayLoad.courseBody).getInt("courses.size()");
 
 		int coursesSum = 0;
 
@@ -279,7 +275,7 @@ public class udemyRest {
 
 		int coursesCopies = 0;
 
-		int coursesPurchaseAmount = utils.rawToJson(data.courseBody).getInt("dashboard.purchaseAmount");
+		int coursesPurchaseAmount = utils.rawToJson(objPayLoad.courseBody).getInt("dashboard.purchaseAmount");
 
 		String coursesPriceLabel = "";
 
@@ -287,9 +283,9 @@ public class udemyRest {
 
 		for (int i = 0; i < courseSize; i++) {
 
-			coursesTitle = utils.rawToJson(data.courseBody).getString("courses[" + i + "].title");
-			coursesPrice = utils.rawToJson(data.courseBody).getInt("courses[" + i + "].price");
-			coursesCopies = utils.rawToJson(data.courseBody).getInt("courses[" + i + "].copies");
+			coursesTitle = utils.rawToJson(objPayLoad.courseBody).getString("courses[" + i + "].title");
+			coursesPrice = utils.rawToJson(objPayLoad.courseBody).getInt("courses[" + i + "].price");
+			coursesCopies = utils.rawToJson(objPayLoad.courseBody).getInt("courses[" + i + "].copies");
 
 			coursesSum = coursesSum + coursesPrice * coursesCopies;
 
@@ -312,7 +308,7 @@ public class udemyRest {
 
 	}
 
-	public AddPlace addPlaceBodySetUp(){
+	public AddPlace addPlaceBodySetUp() {
 
 		log.info("Add place body setup.");
 		AddPlace ap = new AddPlace();
@@ -331,7 +327,7 @@ public class udemyRest {
 		ap.setTypes(typeList);
 		ap.setWebsite("www.google.com");
 		ap.setLanguage("English-IN");
-		
+
 		return ap;
 	}
 }

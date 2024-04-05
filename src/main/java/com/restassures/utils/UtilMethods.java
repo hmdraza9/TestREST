@@ -41,9 +41,7 @@ public class UtilMethods {
 			i = (int) (Math.random() * 1000 / 1);
 			if (i >= min && i <= max) {
 				randSet.add(i);
-//				System.out.println(i);
 			}
-//			System.out.println("randSet.size(): " + randSet.size());
 		}
 		return randSet;
 
@@ -56,11 +54,10 @@ public class UtilMethods {
 		return sdf.format(cal.getTime());
 	}
 
-	
 	public void ts(WebDriver driver) throws IOException {
 
 		TakesScreenshot screenshot = (TakesScreenshot) driver;
 		File scrFile = screenshot.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(scrFile, new File("Screenshots/hello."+UtilMethods.getTime()+".png"));
+		FileUtils.copyFile(scrFile, new File("Screenshots/hello." + UtilMethods.getTime() + ".png"));
 	}
 }

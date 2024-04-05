@@ -7,8 +7,9 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.restassured.payloads.Payloads;
 import com.restassured.payloads.StatusCode;
-import com.restassured.payloads.testDataPayloads;
+import com.restassured.payloads.URLs;
 import com.restassures.utils.UtilMethods;
 
 import io.restassured.RestAssured;
@@ -23,7 +24,8 @@ import test.pojo.ecom.EcomTokenPojo;
 public class EcomTests {
 
 	private static final Logger log = LogManager.getLogger(EcomTests.class);
-	testDataPayloads reqBody = new testDataPayloads();
+	Payloads objPayLoad = new Payloads();
+	private static URLs objURLs = new URLs();
 	private String token;
 	private String userId;
 	private String message;
@@ -40,7 +42,7 @@ public class EcomTests {
 		pojoReqEctk.setUserEmail("johnedoe070@gmail.com");
 		pojoReqEctk.setUserPassword("Test@123");
 
-		RestAssured.baseURI = reqBody.urlEcomAuth;
+		RestAssured.baseURI = objURLs.urlEcomAuth;
 		vResponse = given().header("Content-Type", "application/json").log().all().body(pojoReqEctk).when().post()
 				.then().log().all();
 
@@ -63,12 +65,12 @@ public class EcomTests {
 		ecAd.set_id(userId);
 		ecAd.setProduct(ecAdProd);
 
-		RestAssured.baseURI = reqBody.urlEcomAdToCart;
+		RestAssured.baseURI = objURLs.urlEcomAdToCart;
 		vResponse = given().header("Content-Type", "application/json").header("Authorization", token).log().all()
 				.body(ecAd).when().post().then().log().all();
 
 		vResponse.assertThat().statusCode(StatusCode.OK200);
-		System.out.println("Message: "+vResponse.extract().path("message"));
+		System.out.println("Message: " + vResponse.extract().path("message"));
 
 		log.info("Product Added To Cart: " + (new UtilMethods().rawToJson(vResponse.extract().response().asString())
 				.getString("message").toString().equalsIgnoreCase("Product Added To Cart")));
@@ -77,13 +79,13 @@ public class EcomTests {
 
 	public void ecomGetAllProducts() {
 
-		RestAssured.baseURI = reqBody.urlEcomGetAllProducts;
+		RestAssured.baseURI = objURLs.urlEcomGetAllProducts;
 
 		vResponse = given().header("Content-Type", "application/json").header("Authorization", token).log().all().when()
 				.post().then().log().all();
 
 		EcomGetAllProducts ecGetAllProd = vResponse.extract().response().as(EcomGetAllProducts.class);
-		System.out.println("******Prod name: "+vResponse.extract().path("data[1].productName"));
+		System.out.println("******Prod name: " + vResponse.extract().path("data[1].productName"));
 
 		log.info("ecGetAllProd.getMessage(): " + ecGetAllProd.getMessage());
 

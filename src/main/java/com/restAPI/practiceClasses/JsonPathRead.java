@@ -1,4 +1,4 @@
-package com.extra.classes;
+package com.restAPI.practiceClasses;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

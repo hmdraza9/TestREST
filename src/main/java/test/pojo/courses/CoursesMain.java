@@ -3,8 +3,6 @@ package test.pojo.courses;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import test.oauth.REST.TestOAuthRestAPI;
-
 public class CoursesMain {
 
 	private static final Logger log = LogManager.getLogger(CoursesMain.class);
@@ -14,7 +12,7 @@ public class CoursesMain {
 	private String services;
 	private String expertise;
 	private String linkedIn;
-	private Courses courses;
+	private AllCourses courses;
 
 	public String getInstructor() {
 		log.info("Returned instructor: " + instructor);
@@ -66,11 +64,11 @@ public class CoursesMain {
 		this.linkedIn = linkedIn;
 	}
 
-	public void setCourses(Courses courses) {
+	public void setCourses(AllCourses courses) {
 		this.courses = courses;
 	}
 
-	public Courses getCourses() {
+	public AllCourses getCourses() {
 		return courses;
 	}
 
