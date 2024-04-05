@@ -11,26 +11,22 @@ import com.restassured.payloads.testDataPayloads;
 import com.restassures.utils.UtilMethods;
 
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 
 public class Task03RESTAutomation {
 
+	private static testDataPayloads objPayLoad = new testDataPayloads();
 	private static final Logger log = LogManager.getLogger(Task03RESTAutomation.class);
-	private static final String petStoreBaseURL = "https://petstore.swagger.io";
-	private static final String typiCodeBaseURL = "https://jsonplaceholder.typicode.com";
-	private static final String epamEvenetApiURL = "https://events.epam.com/api/v2/events";
-	private static final String openWeatherApiURL = "http://api.openweathermap.org";
 	private static final String openWeatherApiID = "8zdz3z1z6z2z4zaz4zbz8z7z6zcz0z5z3z2z8z7z2z0zfz8zczaz1z5z8z6zcz3z";
+	// encrypted the API ID so that Git don't raise any concern
 	private static String petID;
 	private static UtilMethods utils = new UtilMethods();
 	private static Response response;
 	private static ValidatableResponse vResponse;
-	private static testDataPayloads objPayLoad = new testDataPayloads();
 	private static String petName = "Snoopie_" + UtilMethods.getTime();
-	private static int statusCode;
-	private static String contenttype;
 	private static final String userToSearch = "Ervin Howell";
 
 	testDataPayloads reqBody = new testDataPayloads();
@@ -40,7 +36,7 @@ public class Task03RESTAutomation {
 		String strOpenWeatherApiID = openWeatherApiID.replaceAll("z", "");
 		System.out.println("strOpenWeatherApiID: " + strOpenWeatherApiID);
 
-		String resp = given().baseUri(openWeatherApiURL).queryParam("q", "hyderabad")
+		String resp = given().baseUri(objPayLoad.urlopenWeatherApiURL).queryParam("q", "hyderabad")
 				.queryParam("appid", strOpenWeatherApiID).header("Content-Type", "application/json").log().all().when()
 				.get(objPayLoad.uriOpenWeather).then().log().all().extract().response().asString();
 
@@ -51,7 +47,7 @@ public class Task03RESTAutomation {
 
 		System.out.println("longitude+\" \"+latitude: " + longitude + " " + latitude);
 
-		resp = given().baseUri(openWeatherApiURL).queryParam("lat", latitude).queryParam("lon", longitude)
+		resp = given().baseUri(objPayLoad.urlopenWeatherApiURL).queryParam("lat", latitude).queryParam("lon", longitude)
 				.queryParam("appid", strOpenWeatherApiID).header("Content-Type", "application/json").log().all().when()
 				.get(objPayLoad.uriOpenWeather).then().log().all().extract().response().asString();
 
@@ -68,8 +64,8 @@ public class Task03RESTAutomation {
 	}
 
 	public static void epamEventsInEnglish() {
-		String resp = given().baseUri(epamEvenetApiURL).header("Content-Type", "application/json").log().all().when()
-				.get().then().log().all().extract().response().asString();
+		String resp = given().baseUri(objPayLoad.urlepamEvenetApiURL).header("Content-Type", "application/json").log()
+				.all().when().get().then().log().all().extract().response().asString();
 
 		JsonPath jp = utils.rawToJson(resp);
 
@@ -78,7 +74,7 @@ public class Task03RESTAutomation {
 
 	public static void typicodeUser() {
 
-		RestAssured.baseURI = typiCodeBaseURL;
+		RestAssured.baseURI = objPayLoad.urltypiCodeBaseURL;
 		response = given().header("Content-Type", "application/json").log().all().when()
 				.get(objPayLoad.uriTypiCodeUsers).then().log().all().extract().response();
 
@@ -113,35 +109,35 @@ public class Task03RESTAutomation {
 
 	public static void createPet() {
 
-		RestAssured.baseURI = petStoreBaseURL;
+		RestAssured.baseURI = objPayLoad.urlpetStoreBaseURL;
 		response = given().header("Content-Type", "application/json").log().all()
 				.body(objPayLoad.petStoreCreatePetBody.replace("$petName", petName)).when()
 				.post(new testDataPayloads().uriPetStoreCreate).then().log().all().extract().response();
 
 		petID = utils.rawToJson(response.asString()).getString("id");
 
-		// POST complete here
-		// GET follows
+		// POST END
+		// GET STARTS
 
 		vResponse = given().header("Content-Type", "application/json").pathParam("petID", petID).log().all()
 				.get(objPayLoad.uriPetStoreGet).then().log().all();
 
+		ValidatableResponse v2 = vResponse;
+
+		v2.assertThat().contentType(ContentType.JSON).statusCode(Integer.valueOf(StatusCode.OK200));
+
 		response = vResponse.extract().response();
-
-		statusCode = response.getStatusCode();
-
-		contenttype = response.getContentType();
 
 		String categoryOfPet = utils.rawToJson(response.asString()).getString("category.name");
 
 		String statusOfPet = utils.rawToJson(response.asString()).getString("status");
 
 		petID = utils.rawToJson(response.asString()).getString("id");
-		Assert.assertTrue(statusCode == StatusCode.OK200);
-		Assert.assertTrue(contenttype.contains("application/json"));
-		Assert.assertTrue(categoryOfPet.equals("dog"));
-		Assert.assertTrue(petName.equals(utils.rawToJson(response.asString()).getString("name")));
-		Assert.assertTrue(statusOfPet.equals(utils.rawToJson(response.asString()).getString("status")));
+//		Assert.assertTrue(statusCode == StatusCode.OK200);
+//		Assert.assertTrue(contenttype.contains("application/json"));
+		Assert.assertEquals(categoryOfPet, "dog");
+		Assert.assertEquals(petName, utils.rawToJson(response.asString()).getString("name"));
+		Assert.assertEquals(statusOfPet, utils.rawToJson(response.asString()).getString("status"));
 
 		System.out.println("Pet name: " + petName + ", Pet ID: " + petID);
 

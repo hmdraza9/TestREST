@@ -19,6 +19,7 @@ public class Data {
 	// Getter Methods
 
 	public String get_id() {
+		System.out.print("ID: ");
 		return _id;
 	}
 
