@@ -38,7 +38,7 @@ public class UtilMethods {
 
 		while (randSet.size() < size) {
 
-			i = (int) (Math.random() * 1000 / 1);
+			i = (int) (Math.random() * 1000);
 			if (i >= min && i <= max) {
 				randSet.add(i);
 			}

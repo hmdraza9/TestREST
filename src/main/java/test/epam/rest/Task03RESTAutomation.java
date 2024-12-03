@@ -17,6 +17,8 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 
+import java.util.Optional;
+
 public class Task03RESTAutomation {
 
 	private static Payloads objPayLoad = new Payloads();
@@ -62,7 +64,7 @@ public class Task03RESTAutomation {
 		response = given().baseUri(objURL.urlepamEvenetApiURL).header("Content-Type", "application/json").log().all()
 				.when().get().then().log().all().extract().response();
 
-		System.out.println(response.path("data.size()"));
+		System.out.println(Optional.ofNullable(response.path("data.size()")));
 	}
 
 	public static void typicodeUser() {

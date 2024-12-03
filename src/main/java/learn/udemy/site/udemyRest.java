@@ -3,6 +3,7 @@ package learn.udemy.site;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -51,21 +52,20 @@ public class udemyRest {
 
 	public static void main(String[] args) throws IOException {
 
-		log.info("Hell Yeah!!");
 
-		TestOAuthRestAPI objOAuth = new TestOAuthRestAPI();
+//		TestOAuthRestAPI objOAuth = new TestOAuthRestAPI();
 
 //		objOAuth.getOAuthCode();
 
-		objOAuth.getCourses();
+//		objOAuth.getCourses();
 
-//		placeSet = new HashSet<String>();
+		placeSet = new HashSet<>();
 //
-//		objRest.bulkAddressAddDelete(objRest, 1);
+		objRest.bulkAddressAddDelete(objRest, 1);
 //
 		objRest.addPlace("OK");
-//		objRest.deletePlace("OK");
-//		objRest.getPlace("4c7294835a65508cd746f666714a2944");
+		objRest.deletePlace("OK");
+		objRest.getPlace("4c7294835a65508cd746f666714a2944");
 	}
 
 	// method overloading
@@ -142,9 +142,9 @@ public class udemyRest {
 
 		RequestSpecification addPlaceReqSpec = given().spec(req);
 
-		byte[] tempBody = null;
+		byte[] tempBody;
 		try {
-			tempBody = Files.readAllBytes(Paths.get("src/test/resources/aAddPlaceBody.json"));
+			tempBody = Files.readAllBytes(Paths.get("src/test/resources/AddPlaceBody.json"));
 			addPlaceReqSpec.body(tempBody);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -190,8 +190,8 @@ public class udemyRest {
 		log.info("###########Request starts:###########");
 
 		Response getPlaceResp = given()
-//				.log()
-//				.all()
+				.log()
+				.all()
 				.queryParam("key", mapKey).header("Content-Type", "application/json").queryParam("place_id", placeID)
 				.urlEncodingEnabled(false).when().get(objURI.uriMapGetPlace);
 
@@ -200,14 +200,14 @@ public class udemyRest {
 //		log.info("getPlaceResp.asString: " + getPlaceResp.asString());
 
 		String response = getPlaceResp.then()
-//				.log()
-//				.all()
+				.log()
+				.all()
 				.assertThat().statusCode(toVerify).extract().response().asString();
 		log.info("Get Place Response: " + response);
 
-//		log.info("Location - latitude : " + utils.rawToJson(response).getString("location.latitude"));
+		log.info("Location - latitude : " + utils.rawToJson(response).getString("location.latitude"));
 
-//		log.info("Location - longitude: " + utils.rawToJson(response).getString("location.longitude"));
+		log.info("Location - longitude: " + utils.rawToJson(response).getString("location.longitude"));
 
 		log.info("Address             : " + utils.rawToJson(response).getString("address"));
 	}

@@ -11467,3 +11467,341 @@ created issue: AHR-57
 [INFO ] 2024-04-06 00:06:52.915 [main] EcomTests - men
 [INFO ] 2024-04-06 00:06:52.915 [main] EcomTests - admin@gmail.com
 [INFO ] 2024-04-06 00:06:52.915 [main] EcomTests - 0.0
+[INFO ] 2024-12-03 22:38:02.790 [main] udemyRest - Hell Yeah!!
+[INFO ] 2024-12-03 22:38:03.853 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:38:03.981 [main] TestOAuthRestAPI - Token: null
+[INFO ] 2024-12-03 22:42:18.474 [main] TestOAuthRestAPI - getCodeURI: https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.email&auth_url=https://accounts.google.com/o/oauth2/v2/auth&client_id=692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com&response_type=code&redirect_uri=https://rahulshettyacademy.com/getCourse.php
+[INFO ] 2024-12-03 22:42:36.298 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:42:36.423 [main] TestOAuthRestAPI - Token: null
+[INFO ] 2024-12-03 22:42:57.026 [main] udemyRest - In addPlace
+[ERROR] 2024-12-03 22:42:57.357 [main] udemyRest - Exception :: Reading body from test Data class
+[INFO ] 2024-12-03 22:42:57.357 [main] udemyRest - Add place body setup.
+[INFO ] 2024-12-03 22:42:57.490 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:42:57.980 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:42:58.144 [main] udemyRest - Place ID: f1605a3c5aad2118363715a441ed5ea9
+[INFO ] 2024-12-03 22:42:58.151 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:42:58.155 [main] udemyRest - Place ID(using JsonPath): f1605a3c5aad2118363715a441ed5ea9
+[INFO ] 2024-12-03 22:42:58.155 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:42:58.155 [main] udemyRest - Response: {"status":"OK","place_id":"f1605a3c5aad2118363715a441ed5ea9","scope":"APP","reference":"67e4e68a737e5323a2414ae9d617cb7667e4e68a737e5323a2414ae9d617cb76","id":"67e4e68a737e5323a2414ae9d617cb76"}
+[INFO ] 2024-12-03 22:42:58.155 [main] udemyRest - Place ID: f1605a3c5aad2118363715a441ed5ea9
+[INFO ] 2024-12-03 22:42:58.156 [main] udemyRest - In deletePlace
+[INFO ] 2024-12-03 22:42:58.156 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:43:00.283 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:43:00.284 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2024-12-03 22:43:00.303 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2024-12-03 22:43:00.303 [main] udemyRest - In getPlace
+[INFO ] 2024-12-03 22:43:00.303 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:43:02.434 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:43:02.435 [main] udemyRest - Get Place Response: {"msg":"Get operation failed, looks like place_id  doesn't exists"}
+[INFO ] 2024-12-03 22:43:02.436 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:43:02.447 [main] udemyRest - Address             : null
+[INFO ] 2024-12-03 22:43:02.447 [main] udemyRest - Method overloading - addPlace
+[INFO ] 2024-12-03 22:43:02.447 [main] udemyRest - In addPlace
+[ERROR] 2024-12-03 22:43:02.450 [main] udemyRest - Exception :: Reading body from test Data class
+[INFO ] 2024-12-03 22:43:02.450 [main] udemyRest - Add place body setup.
+[INFO ] 2024-12-03 22:43:02.453 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:43:02.554 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:43:02.565 [main] udemyRest - Place ID: 85fd49ce28a4b0724c679f7f4f854ff6
+[INFO ] 2024-12-03 22:43:02.569 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:43:02.572 [main] udemyRest - Place ID(using JsonPath): 85fd49ce28a4b0724c679f7f4f854ff6
+[INFO ] 2024-12-03 22:43:02.572 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:43:02.572 [main] udemyRest - Response: {"status":"OK","place_id":"85fd49ce28a4b0724c679f7f4f854ff6","scope":"APP","reference":"ecac4b6f6d1ae1470ee6ffc82375f471ecac4b6f6d1ae1470ee6ffc82375f471","id":"ecac4b6f6d1ae1470ee6ffc82375f471"}
+[INFO ] 2024-12-03 22:46:01.202 [main] udemyRest - In addPlace
+[ERROR] 2024-12-03 22:46:01.543 [main] udemyRest - Exception :: Reading body from test Data class
+[INFO ] 2024-12-03 22:46:01.543 [main] udemyRest - Add place body setup.
+[INFO ] 2024-12-03 22:46:01.680 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:46:02.220 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:46:02.387 [main] udemyRest - Place ID: ff9e55c3de1b80965b4f991f223789ed
+[INFO ] 2024-12-03 22:46:02.394 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:46:02.398 [main] udemyRest - Place ID(using JsonPath): ff9e55c3de1b80965b4f991f223789ed
+[INFO ] 2024-12-03 22:46:02.399 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:46:02.399 [main] udemyRest - Response: {"status":"OK","place_id":"ff9e55c3de1b80965b4f991f223789ed","scope":"APP","reference":"439f035d9ec280568d07f54da15c6643439f035d9ec280568d07f54da15c6643","id":"439f035d9ec280568d07f54da15c6643"}
+[INFO ] 2024-12-03 22:46:02.399 [main] udemyRest - Place ID: ff9e55c3de1b80965b4f991f223789ed
+[INFO ] 2024-12-03 22:46:02.399 [main] udemyRest - In deletePlace
+[INFO ] 2024-12-03 22:46:02.399 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:46:04.706 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:46:04.707 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2024-12-03 22:46:04.723 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2024-12-03 22:46:04.723 [main] udemyRest - In getPlace
+[INFO ] 2024-12-03 22:46:04.723 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:46:06.031 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:46:06.032 [main] udemyRest - Get Place Response: {"msg":"Get operation failed, looks like place_id  doesn't exists"}
+[INFO ] 2024-12-03 22:46:06.032 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:46:06.041 [main] udemyRest - Address             : null
+[INFO ] 2024-12-03 22:46:06.041 [main] udemyRest - Method overloading - addPlace
+[INFO ] 2024-12-03 22:46:06.041 [main] udemyRest - In addPlace
+[ERROR] 2024-12-03 22:46:06.045 [main] udemyRest - Exception :: Reading body from test Data class
+[INFO ] 2024-12-03 22:46:06.045 [main] udemyRest - Add place body setup.
+[INFO ] 2024-12-03 22:46:06.049 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:46:06.159 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:46:06.171 [main] udemyRest - Place ID: c8b1c41d01e2c6aec9fc2c5864e5052a
+[INFO ] 2024-12-03 22:46:06.174 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:46:06.177 [main] udemyRest - Place ID(using JsonPath): c8b1c41d01e2c6aec9fc2c5864e5052a
+[INFO ] 2024-12-03 22:46:06.177 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:46:06.177 [main] udemyRest - Response: {"status":"OK","place_id":"c8b1c41d01e2c6aec9fc2c5864e5052a","scope":"APP","reference":"ede869460174211d9171ebfafba84d49ede869460174211d9171ebfafba84d49","id":"ede869460174211d9171ebfafba84d49"}
+[INFO ] 2024-12-03 22:46:30.625 [main] udemyRest - In addPlace
+[ERROR] 2024-12-03 22:46:31.003 [main] udemyRest - Exception :: Reading body from test Data class
+[INFO ] 2024-12-03 22:46:31.003 [main] udemyRest - Add place body setup.
+[INFO ] 2024-12-03 22:46:31.151 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:46:31.624 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:46:31.800 [main] udemyRest - Place ID: e66fc6ff8ef76384c659c8b23d05f84e
+[INFO ] 2024-12-03 22:46:31.809 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:46:31.813 [main] udemyRest - Place ID(using JsonPath): e66fc6ff8ef76384c659c8b23d05f84e
+[INFO ] 2024-12-03 22:46:31.813 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:46:31.813 [main] udemyRest - Response: {"status":"OK","place_id":"e66fc6ff8ef76384c659c8b23d05f84e","scope":"APP","reference":"75bfc45f8e68b5c36ee978cf8b84b18d75bfc45f8e68b5c36ee978cf8b84b18d","id":"75bfc45f8e68b5c36ee978cf8b84b18d"}
+[INFO ] 2024-12-03 22:46:31.813 [main] udemyRest - Place ID: e66fc6ff8ef76384c659c8b23d05f84e
+[INFO ] 2024-12-03 22:46:31.813 [main] udemyRest - In deletePlace
+[INFO ] 2024-12-03 22:46:31.814 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:46:33.599 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:46:33.601 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2024-12-03 22:46:33.617 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2024-12-03 22:46:33.617 [main] udemyRest - In getPlace
+[INFO ] 2024-12-03 22:46:33.617 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:46:34.929 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:46:34.930 [main] udemyRest - Get Place Response: {"msg":"Get operation failed, looks like place_id  doesn't exists"}
+[INFO ] 2024-12-03 22:46:34.931 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:46:34.944 [main] udemyRest - Address             : null
+[INFO ] 2024-12-03 22:46:34.944 [main] udemyRest - Method overloading - addPlace
+[INFO ] 2024-12-03 22:46:34.944 [main] udemyRest - In addPlace
+[ERROR] 2024-12-03 22:46:34.946 [main] udemyRest - Exception :: Reading body from test Data class
+[INFO ] 2024-12-03 22:46:34.947 [main] udemyRest - Add place body setup.
+[INFO ] 2024-12-03 22:46:34.949 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:46:35.053 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:46:35.069 [main] udemyRest - Place ID: 06367514d3573d514606c35767f64cda
+[INFO ] 2024-12-03 22:46:35.074 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:46:35.078 [main] udemyRest - Place ID(using JsonPath): 06367514d3573d514606c35767f64cda
+[INFO ] 2024-12-03 22:46:35.078 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:46:35.078 [main] udemyRest - Response: {"status":"OK","place_id":"06367514d3573d514606c35767f64cda","scope":"APP","reference":"5243d63ed97ff9e07ffb33fe7087e25a5243d63ed97ff9e07ffb33fe7087e25a","id":"5243d63ed97ff9e07ffb33fe7087e25a"}
+[INFO ] 2024-12-03 22:46:41.460 [main] udemyRest - In addPlace
+[ERROR] 2024-12-03 22:46:41.738 [main] udemyRest - Exception :: Reading body from test Data class
+[INFO ] 2024-12-03 22:46:41.738 [main] udemyRest - Add place body setup.
+[INFO ] 2024-12-03 22:46:41.886 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:46:42.344 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:46:42.523 [main] udemyRest - Place ID: 29451f196d972899528b119f83e98557
+[INFO ] 2024-12-03 22:46:42.531 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:46:42.537 [main] udemyRest - Place ID(using JsonPath): 29451f196d972899528b119f83e98557
+[INFO ] 2024-12-03 22:46:42.537 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:46:42.537 [main] udemyRest - Response: {"status":"OK","place_id":"29451f196d972899528b119f83e98557","scope":"APP","reference":"1df50021f18bfee4cccc5dfaf33afb7f1df50021f18bfee4cccc5dfaf33afb7f","id":"1df50021f18bfee4cccc5dfaf33afb7f"}
+[INFO ] 2024-12-03 22:46:42.537 [main] udemyRest - Place ID: 29451f196d972899528b119f83e98557
+[INFO ] 2024-12-03 22:46:42.537 [main] udemyRest - In deletePlace
+[INFO ] 2024-12-03 22:46:42.537 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:46:44.334 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:46:44.335 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2024-12-03 22:46:44.350 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2024-12-03 22:46:44.351 [main] udemyRest - In getPlace
+[INFO ] 2024-12-03 22:46:44.351 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:46:45.564 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:46:45.566 [main] udemyRest - Get Place Response: {"msg":"Get operation failed, looks like place_id  doesn't exists"}
+[INFO ] 2024-12-03 22:46:45.566 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:46:45.576 [main] udemyRest - Address             : null
+[INFO ] 2024-12-03 22:46:45.577 [main] udemyRest - Method overloading - addPlace
+[INFO ] 2024-12-03 22:46:45.577 [main] udemyRest - In addPlace
+[ERROR] 2024-12-03 22:46:45.579 [main] udemyRest - Exception :: Reading body from test Data class
+[INFO ] 2024-12-03 22:46:45.580 [main] udemyRest - Add place body setup.
+[INFO ] 2024-12-03 22:46:45.583 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:46:45.684 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:46:45.697 [main] udemyRest - Place ID: 5642c1e7408b04e1b22471fb792f6443
+[INFO ] 2024-12-03 22:46:45.702 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:46:45.705 [main] udemyRest - Place ID(using JsonPath): 5642c1e7408b04e1b22471fb792f6443
+[INFO ] 2024-12-03 22:46:45.705 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:46:45.705 [main] udemyRest - Response: {"status":"OK","place_id":"5642c1e7408b04e1b22471fb792f6443","scope":"APP","reference":"e6f42feea89f4a3013c039c2e2e97dbce6f42feea89f4a3013c039c2e2e97dbc","id":"e6f42feea89f4a3013c039c2e2e97dbc"}
+[INFO ] 2024-12-03 22:47:42.545 [main] udemyRest - In addPlace
+[INFO ] 2024-12-03 22:47:42.881 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:47:44.386 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:47:44.562 [main] udemyRest - Place ID: 4e45048fce741eef8aa4de671c79bfd4
+[INFO ] 2024-12-03 22:47:44.569 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:47:44.574 [main] udemyRest - Place ID(using JsonPath): 4e45048fce741eef8aa4de671c79bfd4
+[INFO ] 2024-12-03 22:47:44.574 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:47:44.574 [main] udemyRest - Response: {"status":"OK","place_id":"4e45048fce741eef8aa4de671c79bfd4","scope":"APP","reference":"510452f4846e6288788c9ce5595811d9510452f4846e6288788c9ce5595811d9","id":"510452f4846e6288788c9ce5595811d9"}
+[INFO ] 2024-12-03 22:47:44.574 [main] udemyRest - Place ID: 4e45048fce741eef8aa4de671c79bfd4
+[INFO ] 2024-12-03 22:47:44.574 [main] udemyRest - In deletePlace
+[INFO ] 2024-12-03 22:47:44.575 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:47:46.388 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:47:46.389 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2024-12-03 22:47:46.402 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2024-12-03 22:47:46.402 [main] udemyRest - In getPlace
+[INFO ] 2024-12-03 22:47:46.402 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:47:47.620 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:47:47.621 [main] udemyRest - Get Place Response: {"msg":"Get operation failed, looks like place_id  doesn't exists"}
+[INFO ] 2024-12-03 22:47:47.622 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:47:47.631 [main] udemyRest - Address             : null
+[INFO ] 2024-12-03 22:47:47.632 [main] udemyRest - Method overloading - addPlace
+[INFO ] 2024-12-03 22:47:47.632 [main] udemyRest - In addPlace
+[INFO ] 2024-12-03 22:47:47.635 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:47:47.719 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:47:47.732 [main] udemyRest - Place ID: 86f2fec0ad6e2d6a353864b18b233141
+[INFO ] 2024-12-03 22:47:47.736 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:47:47.739 [main] udemyRest - Place ID(using JsonPath): 86f2fec0ad6e2d6a353864b18b233141
+[INFO ] 2024-12-03 22:47:47.739 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:47:47.739 [main] udemyRest - Response: {"status":"OK","place_id":"86f2fec0ad6e2d6a353864b18b233141","scope":"APP","reference":"ebc09e28cb8d69434222cf959dbe81b7ebc09e28cb8d69434222cf959dbe81b7","id":"ebc09e28cb8d69434222cf959dbe81b7"}
+[INFO ] 2024-12-03 22:47:58.496 [main] udemyRest - In addPlace
+[INFO ] 2024-12-03 22:47:58.835 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:47:59.347 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:47:59.520 [main] udemyRest - Place ID: 0ae6f3e1f99e958c14a0a15681f756ab
+[INFO ] 2024-12-03 22:47:59.527 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:47:59.531 [main] udemyRest - Place ID(using JsonPath): 0ae6f3e1f99e958c14a0a15681f756ab
+[INFO ] 2024-12-03 22:47:59.531 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:47:59.531 [main] udemyRest - Response: {"status":"OK","place_id":"0ae6f3e1f99e958c14a0a15681f756ab","scope":"APP","reference":"4caf74ad2105c5e060c0f34cd12837134caf74ad2105c5e060c0f34cd1283713","id":"4caf74ad2105c5e060c0f34cd1283713"}
+[INFO ] 2024-12-03 22:47:59.531 [main] udemyRest - Place ID: 0ae6f3e1f99e958c14a0a15681f756ab
+[INFO ] 2024-12-03 22:47:59.532 [main] udemyRest - In deletePlace
+[INFO ] 2024-12-03 22:47:59.532 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:48:01.526 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:48:01.527 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2024-12-03 22:48:01.540 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2024-12-03 22:48:01.540 [main] udemyRest - In getPlace
+[INFO ] 2024-12-03 22:48:01.541 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:48:03.795 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:48:03.797 [main] udemyRest - Get Place Response: {"msg":"Get operation failed, looks like place_id  doesn't exists"}
+[INFO ] 2024-12-03 22:48:03.797 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:48:03.803 [main] udemyRest - Address             : null
+[INFO ] 2024-12-03 22:48:03.804 [main] udemyRest - Method overloading - addPlace
+[INFO ] 2024-12-03 22:48:03.804 [main] udemyRest - In addPlace
+[INFO ] 2024-12-03 22:48:03.807 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:48:03.920 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:48:03.932 [main] udemyRest - Place ID: b7ef92d6acffb435e0e668285e5448a2
+[INFO ] 2024-12-03 22:48:03.936 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:48:03.939 [main] udemyRest - Place ID(using JsonPath): b7ef92d6acffb435e0e668285e5448a2
+[INFO ] 2024-12-03 22:48:03.939 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:48:03.939 [main] udemyRest - Response: {"status":"OK","place_id":"b7ef92d6acffb435e0e668285e5448a2","scope":"APP","reference":"da447e57ecfb8bccd55093f49c9b9bc0da447e57ecfb8bccd55093f49c9b9bc0","id":"da447e57ecfb8bccd55093f49c9b9bc0"}
+[INFO ] 2024-12-03 22:49:24.326 [main] TestOAuthRestAPI - getCodeURI: https://accounts.google.com/o/oauth2/v2/auth?scope=https://www.googleapis.com/auth/userinfo.email&auth_url=https://accounts.google.com/o/oauth2/v2/auth&client_id=692183103107-p0m7ent2hk7suguv4vq22hjcfhcr43pj.apps.googleusercontent.com&response_type=code&redirect_uri=https://rahulshettyacademy.com/getCourse.php
+[INFO ] 2024-12-03 22:49:40.182 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:49:40.309 [main] TestOAuthRestAPI - Token: null
+[INFO ] 2024-12-03 22:49:49.023 [main] udemyRest - In addPlace
+[INFO ] 2024-12-03 22:49:49.409 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:49:49.902 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:49:50.070 [main] udemyRest - Place ID: a26e8be5400d2f305841fc71616105dd
+[INFO ] 2024-12-03 22:49:50.077 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:49:50.081 [main] udemyRest - Place ID(using JsonPath): a26e8be5400d2f305841fc71616105dd
+[INFO ] 2024-12-03 22:49:50.081 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:49:50.081 [main] udemyRest - Response: {"status":"OK","place_id":"a26e8be5400d2f305841fc71616105dd","scope":"APP","reference":"8d94e868398dd42042419f0f64b336e98d94e868398dd42042419f0f64b336e9","id":"8d94e868398dd42042419f0f64b336e9"}
+[INFO ] 2024-12-03 22:49:50.082 [main] udemyRest - Place ID: a26e8be5400d2f305841fc71616105dd
+[INFO ] 2024-12-03 22:49:50.082 [main] udemyRest - In deletePlace
+[INFO ] 2024-12-03 22:49:50.082 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:49:51.828 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:49:51.829 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2024-12-03 22:49:51.835 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2024-12-03 22:49:51.835 [main] udemyRest - In getPlace
+[INFO ] 2024-12-03 22:49:51.835 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:49:53.261 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:49:53.262 [main] udemyRest - Get Place Response: {"msg":"Get operation failed, looks like place_id  doesn't exists"}
+[INFO ] 2024-12-03 22:49:53.262 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:49:53.267 [main] udemyRest - Address             : null
+[INFO ] 2024-12-03 22:49:53.267 [main] udemyRest - Method overloading - addPlace
+[INFO ] 2024-12-03 22:49:53.267 [main] udemyRest - In addPlace
+[INFO ] 2024-12-03 22:49:53.269 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:49:53.368 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:49:53.380 [main] udemyRest - Place ID: 9071d5a4a5b3add1986b0a2d1e5ff24a
+[INFO ] 2024-12-03 22:49:53.383 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:49:53.387 [main] udemyRest - Place ID(using JsonPath): 9071d5a4a5b3add1986b0a2d1e5ff24a
+[INFO ] 2024-12-03 22:49:53.387 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:49:53.387 [main] udemyRest - Response: {"status":"OK","place_id":"9071d5a4a5b3add1986b0a2d1e5ff24a","scope":"APP","reference":"3b31042fc844c7a9009e418fc883a9053b31042fc844c7a9009e418fc883a905","id":"3b31042fc844c7a9009e418fc883a905"}
+[INFO ] 2024-12-03 22:50:07.067 [main] udemyRest - In addPlace
+[INFO ] 2024-12-03 22:50:07.360 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:50:07.817 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:50:07.982 [main] udemyRest - Place ID: 0f1d7ff04d00865e819bbf015038c5a7
+[INFO ] 2024-12-03 22:50:07.989 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:50:07.994 [main] udemyRest - Place ID(using JsonPath): 0f1d7ff04d00865e819bbf015038c5a7
+[INFO ] 2024-12-03 22:50:07.994 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:50:07.994 [main] udemyRest - Response: {"status":"OK","place_id":"0f1d7ff04d00865e819bbf015038c5a7","scope":"APP","reference":"846d20e5eefd32b9d1963aeb16f4eff1846d20e5eefd32b9d1963aeb16f4eff1","id":"846d20e5eefd32b9d1963aeb16f4eff1"}
+[INFO ] 2024-12-03 22:50:07.994 [main] udemyRest - Place ID: 0f1d7ff04d00865e819bbf015038c5a7
+[INFO ] 2024-12-03 22:50:07.994 [main] udemyRest - In deletePlace
+[INFO ] 2024-12-03 22:50:07.994 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:50:09.647 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:50:09.648 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2024-12-03 22:50:09.658 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2024-12-03 22:50:09.658 [main] udemyRest - In getPlace
+[INFO ] 2024-12-03 22:50:09.658 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:50:11.185 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:50:11.187 [main] udemyRest - Get Place Response: {"msg":"Get operation failed, looks like place_id  doesn't exists"}
+[INFO ] 2024-12-03 22:50:11.188 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:50:11.199 [main] udemyRest - Address             : null
+[INFO ] 2024-12-03 22:50:11.199 [main] udemyRest - Method overloading - addPlace
+[INFO ] 2024-12-03 22:50:11.199 [main] udemyRest - In addPlace
+[INFO ] 2024-12-03 22:50:11.201 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:50:11.285 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:50:11.297 [main] udemyRest - Place ID: 1f68250630c4dc3438565f1132643102
+[INFO ] 2024-12-03 22:50:11.300 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:50:11.302 [main] udemyRest - Place ID(using JsonPath): 1f68250630c4dc3438565f1132643102
+[INFO ] 2024-12-03 22:50:11.302 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:50:11.302 [main] udemyRest - Response: {"status":"OK","place_id":"1f68250630c4dc3438565f1132643102","scope":"APP","reference":"344bae884f3dac0e8897210da83185fe344bae884f3dac0e8897210da83185fe","id":"344bae884f3dac0e8897210da83185fe"}
+[INFO ] 2024-12-03 22:50:11.302 [main] udemyRest - In deletePlace
+[INFO ] 2024-12-03 22:50:11.302 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:50:12.934 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:50:12.935 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2024-12-03 22:50:12.948 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2024-12-03 22:50:12.949 [main] udemyRest - In getPlace
+[INFO ] 2024-12-03 22:50:12.949 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:50:14.119 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:50:14.121 [main] udemyRest - Get Place Response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Iqbal Villa","phone_number":"+965 123123","address":"8-1-33, Toli Chowki","types":"Grocery,Dairy,Snack","website":"www.google.com","language":"English-IN"}
+[INFO ] 2024-12-03 22:50:14.121 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:50:14.132 [main] udemyRest - Address             : 8-1-33, Toli Chowki
+[INFO ] 2024-12-03 22:52:19.311 [main] udemyRest - In addPlace
+[INFO ] 2024-12-03 22:52:19.633 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:52:23.425 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:52:23.661 [main] udemyRest - Place ID: 4771db98422bac55cd8dfc60039a682e
+[INFO ] 2024-12-03 22:52:23.672 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:52:23.679 [main] udemyRest - Place ID(using JsonPath): 4771db98422bac55cd8dfc60039a682e
+[INFO ] 2024-12-03 22:52:23.679 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:52:23.679 [main] udemyRest - Response: {"status":"OK","place_id":"4771db98422bac55cd8dfc60039a682e","scope":"APP","reference":"015e065abae169f811433658e5d0b222015e065abae169f811433658e5d0b222","id":"015e065abae169f811433658e5d0b222"}
+[INFO ] 2024-12-03 22:52:23.679 [main] udemyRest - Place ID: 4771db98422bac55cd8dfc60039a682e
+[INFO ] 2024-12-03 22:52:23.679 [main] udemyRest - In deletePlace
+[INFO ] 2024-12-03 22:52:23.679 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:52:28.009 [main] udemyRest - In addPlace
+[INFO ] 2024-12-03 22:52:28.293 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:52:28.769 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:52:28.939 [main] udemyRest - Place ID: 28d26e4747e89f3a6aeb33325cbfacbe
+[INFO ] 2024-12-03 22:52:28.946 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:52:28.950 [main] udemyRest - Place ID(using JsonPath): 28d26e4747e89f3a6aeb33325cbfacbe
+[INFO ] 2024-12-03 22:52:28.951 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:52:28.951 [main] udemyRest - Response: {"status":"OK","place_id":"28d26e4747e89f3a6aeb33325cbfacbe","scope":"APP","reference":"7a1d19505970914fb4543bf04e1d7e847a1d19505970914fb4543bf04e1d7e84","id":"7a1d19505970914fb4543bf04e1d7e84"}
+[INFO ] 2024-12-03 22:52:28.951 [main] udemyRest - Place ID: 28d26e4747e89f3a6aeb33325cbfacbe
+[INFO ] 2024-12-03 22:52:28.951 [main] udemyRest - In deletePlace
+[INFO ] 2024-12-03 22:52:28.951 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:52:33.094 [main] udemyRest - In addPlace
+[INFO ] 2024-12-03 22:52:33.363 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:52:33.821 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:52:33.979 [main] udemyRest - Place ID: 5f1273393d2cad05877c0a62e741d4c6
+[INFO ] 2024-12-03 22:52:33.986 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:52:33.990 [main] udemyRest - Place ID(using JsonPath): 5f1273393d2cad05877c0a62e741d4c6
+[INFO ] 2024-12-03 22:52:33.990 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:52:33.991 [main] udemyRest - Response: {"status":"OK","place_id":"5f1273393d2cad05877c0a62e741d4c6","scope":"APP","reference":"02b91feeee4261e965c485d21b018c6d02b91feeee4261e965c485d21b018c6d","id":"02b91feeee4261e965c485d21b018c6d"}
+[INFO ] 2024-12-03 22:52:33.991 [main] udemyRest - Place ID: 5f1273393d2cad05877c0a62e741d4c6
+[INFO ] 2024-12-03 22:52:33.991 [main] udemyRest - In deletePlace
+[INFO ] 2024-12-03 22:52:33.991 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:52:35.568 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:52:35.569 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2024-12-03 22:52:35.586 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2024-12-03 22:52:35.586 [main] udemyRest - In getPlace
+[INFO ] 2024-12-03 22:52:35.586 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:52:37.002 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:52:37.004 [main] udemyRest - Get Place Response: {"msg":"Get operation failed, looks like place_id  doesn't exists"}
+[INFO ] 2024-12-03 22:52:37.006 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:52:37.022 [main] udemyRest - Location - latitude : null
+[INFO ] 2024-12-03 22:52:37.022 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:52:37.027 [main] udemyRest - Location - longitude: null
+[INFO ] 2024-12-03 22:52:37.027 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:52:37.031 [main] udemyRest - Address             : null
+[INFO ] 2024-12-03 22:52:37.031 [main] udemyRest - Method overloading - addPlace
+[INFO ] 2024-12-03 22:52:37.031 [main] udemyRest - In addPlace
+[INFO ] 2024-12-03 22:52:37.032 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:52:37.122 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:52:37.133 [main] udemyRest - Place ID: 70600740834f3def0547b07713f90f82
+[INFO ] 2024-12-03 22:52:37.136 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:52:37.139 [main] udemyRest - Place ID(using JsonPath): 70600740834f3def0547b07713f90f82
+[INFO ] 2024-12-03 22:52:37.139 [main] udemyRest - AddPlace StatusCode: 200
+[INFO ] 2024-12-03 22:52:37.139 [main] udemyRest - Response: {"status":"OK","place_id":"70600740834f3def0547b07713f90f82","scope":"APP","reference":"12cdedca9e6d42c9cd0eaee4cf862e1d12cdedca9e6d42c9cd0eaee4cf862e1d","id":"12cdedca9e6d42c9cd0eaee4cf862e1d"}
+[INFO ] 2024-12-03 22:52:37.139 [main] udemyRest - In deletePlace
+[INFO ] 2024-12-03 22:52:37.139 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:52:39.053 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:52:39.055 [main] udemyRest - deletePlaceResp.asString: {"status":"OK"}
+[INFO ] 2024-12-03 22:52:39.069 [main] udemyRest - ###########Place deleted successfully!###########
+[INFO ] 2024-12-03 22:52:39.069 [main] udemyRest - In getPlace
+[INFO ] 2024-12-03 22:52:39.069 [main] udemyRest - ###########Request starts:###########
+[INFO ] 2024-12-03 22:52:40.381 [main] udemyRest - ###########Response starts###########
+[INFO ] 2024-12-03 22:52:40.388 [main] udemyRest - Get Place Response: {"location":{"latitude":"32.98977","longitude":"-32.98977"},"accuracy":"50","name":"Iqbal Villa","phone_number":"+965 123123","address":"8-1-33, Toli Chowki","types":"Grocery,Dairy,Snack","website":"www.google.com","language":"English-IN"}
+[INFO ] 2024-12-03 22:52:40.388 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:52:40.397 [main] udemyRest - Location - latitude : 32.98977
+[INFO ] 2024-12-03 22:52:40.397 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:52:40.403 [main] udemyRest - Location - longitude: -32.98977
+[INFO ] 2024-12-03 22:52:40.404 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-03 22:52:40.409 [main] udemyRest - Address             : 8-1-33, Toli Chowki

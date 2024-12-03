@@ -1,28 +1,50 @@
-# TestREST
+# **TestREST**
 
-given().baseUri(baseURI).get(): "+given().baseUri(baseURI).get()
+***given().baseUri(baseURI).get(): "+given().baseUri(baseURI).get()***
 
-Added token auth scenario
+---
 
-Added shorter way to read JSON values
+**Added token auth scenario**
 
-Added JIRA Software bypassing JAVA versions restriction, JIRA runs on java version below 20, but with setting temporary env variable, byopass is achiveable
+**Added shorter way to read JSON values**
 
-export ignore_jvm_version=true
-this sets the env variable temporarily, save it properly in ENV variable session so that it is permanent
+**Added JIRA Software bypassing JAVA versions restriction:**
+- JIRA runs on Java versions below 20. By setting a temporary environment variable, the bypass is achievable:
+  ```bash
+  export ignore_jvm_version=true
+Save this in the environment variables session to make it permanent.
+Added logging:
 
-Added log, log works when you have given resource path is given at - resources/resource/directory in POM
+Logging works when the resource path is set in resources/resource/directory in the POM file.
+Notes:
 
-Wasting time due to small errors, URI incorrect, Cookie not set in correct format. Finally API Call success for Create Issue also. Also, JIRA Software gave me hard time as I didn't install it As An Administrator, rest all good.
+Avoid common errors: Ensure the URI is correct and cookies are set in the proper format. API calls (e.g., Create Issue) will succeed if these are correct.
+JIRA Software troubleshooting: Install JIRA as an Administrator to avoid setup issues.
+API Documentation:
+View all APIs
 
-#URL for all APIs
-https://developer.atlassian.com/cloud/jira/platform/rest/v3/api-group-issue-attachments/#api-group-issue-attachments
+# **Development Log**
 
-28 Nov 2023 - Filter out the contents of response using queryParam, using JsonPath to fetch the respective comment out of 5 of them
+- **28 Nov 2023**:  
+  - Filtered response content using `queryParam`.  
+  - Used `JsonPath` to fetch specific comments from the response.
 
-1 Dec 2023 - Started scripting for OAuth. Docx file for help, Start from lecture 62
+- **1 Dec 2023**:  
+  - Started scripting for OAuth.  
+  - Refer to the accompanying Docx file for help (start from lecture 62).
 
-14 Dec 2023 - Added POJO classes and further required dependencies, need to implement in response capture, simple pojo methods implemented, working. output at: /TestREST/src/test/resources/Outputs/POJOResponse_14Dec2023.txt; Logger added in course class, iterated through the size of array length dynamically
+- **14 Dec 2023**:  
+  - Added POJO classes and required dependencies.  
+  - Implemented response capture using POJOs.  
+  - Output available at: `/TestREST/src/test/resources/Outputs/POJOResponse_14Dec2023.txt`.  
+  - Logger added for the course class; iterated dynamically through the array size.
 
-15 Dec 2023 - renamed pojo package, json body prepared with pojo class
-16 Dec 2023 - #putting STDOUT instead of LOGFILE prints all log lines to log file, else prints only lines from mentioned package [appender.file.name = STDOUT]; added Data class file for get all products from ECOM site
+- **15 Dec 2023**:  
+  - Renamed POJO package.  
+  - Prepared JSON body using POJO classes.
+
+- **16 Dec 2023**:  
+  - Updated logging configuration:  
+    - **STDOUT**: Prints all log lines to the log file.  
+    - Restricts to specific package logs using: `appender.file.name = STDOUT`.  
+  - Added `Data` class for fetching all products from an E-commerce site.
