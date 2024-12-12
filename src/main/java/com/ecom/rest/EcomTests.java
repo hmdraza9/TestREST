@@ -4,6 +4,7 @@ import static io.restassured.RestAssured.given;
 
 import java.util.List;
 
+import Utils.EncryptionUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -56,9 +57,13 @@ public class EcomTests {
 		userId = pojoRespEctk.getUserId();
 		message = pojoRespEctk.getMessage();
 
-		log.info("token: " + token);
-		log.info("userId: " + userId);
-		log.info("message: " + message);
+		try {
+			System.out.println(("Token: " + EncryptionUtil.encrypt(token, "token")));
+			System.out.println(("userId: " + EncryptionUtil.encrypt(token, "userId")));
+			System.out.println(("message: " + EncryptionUtil.encrypt(token, "message")));
+		} catch(Exception ex){
+			ex.getLocalizedMessage();
+		}
 	}
 
 	public void ecomAddToCart() {

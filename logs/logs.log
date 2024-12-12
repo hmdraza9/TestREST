@@ -9739,7 +9739,6 @@ created issue: AHR-57
 [INFO ] 2023-12-14 02:05:10.968 [main] JiraAPIMethods - Home Path: src/test/resources/JIRAFiles/
 [INFO ] 2023-12-14 02:05:10.975 [main] JiraAPIMethods - Destination file: C:\GitClonesNew\TestREST\src\test\resources\JIRAFiles\Archive\14-Dec-2023_02-05-10-973.png
 [INFO ] 2023-12-14 22:21:30.302 [main] TestOAuthRestAPI - Token: null
-[INFO ] 2023-12-14 22:22:54.009 [main] TestOAuthRestAPI - Token: ya29.a0AfB_byCH0wM7dOJxGNEpPjmkSSY1MxQ9h2TiVpEKiBC3_W6u_4Zi6axytNJvHFXpdlB5sn04tRcfZ0HA95GoCE6IoLp86Ay8P-qmaAVZKTppCv4ruWa1SroLPaKRrfXRoAhua40C5g935aHJyvDTtmdgOg469ipif7YaCgYKAYESARISFQHGX2MiTJ2v1H0JK-r2dA9Y4y2HXw0170
 [INFO ] 2023-12-14 22:22:54.832 [main] TestOAuthRestAPI - Total WebAutomation courses: 3
 [INFO ] 2023-12-14 22:22:54.832 [main] TestOAuthRestAPI - Total API courses: 2
 [INFO ] 2023-12-14 22:22:54.832 [main] TestOAuthRestAPI - Total Mobile courses: 1
@@ -9781,8 +9780,7 @@ created issue: AHR-57
 }
 
 [INFO ] 2023-12-14 22:31:00.262 [main] TestOAuthRestAPI - Token: null
-[INFO ] 2023-12-14 22:31:54.602 [main] TestOAuthRestAPI - Token: ya29.a0AfB_byDGiTeOS6ZqZXeYliuux-tDqME7JY1PZEu0R7-1R5GoofiT5tjPlPbi7TE6Ii9dtqNQ5lPdpbXPFR-QXri1HbJoFg8KczfgLJ60ham4gEraMu3bsVPKZXMYKHSWv_UAXd1DLClLA7bLXRB_pejMO7m8eyCgHGgaCgYKAVYSARISFQHGX2Mi-xLh_vq4j3nz_hgnW_z5TA0170
-[INFO ] 2023-12-14 22:31:55.857 [main] TestOAuthRestAPI - Course API response: 
+[INFO ] 2023-12-14 22:31:55.857 [main] TestOAuthRestAPI - Course API response:
 { "instructor": "RahulShetty", "url": "rahulshettycademy.com", "services": "projectSupport", "expertise": "Automation", "courses": { "webAutomation": [ { "courseTitle": "Selenium Webdriver Java", "price": "50" }, { "courseTitle": "Cypress",
                 "price": "40"
             },
@@ -9822,8 +9820,7 @@ created issue: AHR-57
 [INFO ] 2023-12-14 22:31:55.858 [main] TestOAuthRestAPI - Get Course Mobile 0 Price: 50
 [INFO ] 2023-12-14 22:31:55.858 [main] TestOAuthRestAPI - Get Course API 1 Title: SoapUI Webservices testing
 [INFO ] 2023-12-14 22:31:55.858 [main] TestOAuthRestAPI - Get Course API 1 Price: 40
-[INFO ] 2023-12-14 22:33:09.661 [main] TestOAuthRestAPI - Token: ya29.a0AfB_byDD_BwYlygfwF9Nnu2xphFMuw9J6j3s7lQ6rabCv9zhq-9OljU5CqDYqtJUEYFBoGZ6imSywnX_tGX6bRFYGD144wyTUdeCQNir2uI7lIzjZs8vkIbFdYAPw0NKFrEmxVOX7Ihbe9cySrbOtaExs_yAXlkmttAaCgYKAZQSARISFQHGX2Miq7iredzvkJTs1FypIEKtrQ0170
-[INFO ] 2023-12-14 22:33:10.406 [main] TestOAuthRestAPI - Course API response: 
+[INFO ] 2023-12-14 22:33:10.406 [main] TestOAuthRestAPI - Course API response:
 { "instructor": "RahulShetty", "url": "rahulshettycademy.com", "services": "projectSupport", "expertise": "Automation", "courses": { "webAutomation": [ { "courseTitle": "Selenium Webdriver Java", "price": "50" }, { "courseTitle": "Cypress",
                 "price": "40"
             },
@@ -9863,7 +9860,6 @@ created issue: AHR-57
 [INFO ] 2023-12-14 22:33:10.407 [main] TestOAuthRestAPI - Get Course Mobile 0 Price: 50
 [INFO ] 2023-12-14 22:33:10.407 [main] TestOAuthRestAPI - Get Course API 1 Title: SoapUI Webservices testing
 [INFO ] 2023-12-14 22:33:10.408 [main] TestOAuthRestAPI - Get Course API 1 Price: 40
-[INFO ] 2023-12-14 23:05:37.038 [main] TestOAuthRestAPI - Token: ya29.a0AfB_byCPVSnU7vFCK2ixXh0zbjRWWk_gPLK4p5TXkZDlW1MtUEJLLpg8M2YzMiOsjlZJaGu-FESFfWkYwfJcLWWbvXAkLHB1bzs_1w7QwfFnYfXrZzJqmv5Cd5vmdR_Thf8kKj6kIdNzxijhXRWSkqgPlDYZJSThw2caCgYKAR0SARISFQHGX2MiwxB-CIF6AP8UR2nxPWL6GA0170
 [INFO ] 2023-12-14 23:05:38.478 [main] TestOAuthRestAPI - Set instructor: RahulShetty
 [INFO ] 2023-12-14 23:05:38.479 [main] TestOAuthRestAPI - Set url: rahulshettycademy.com
 [INFO ] 2023-12-14 23:05:38.479 [main] TestOAuthRestAPI - Set services: projectSupport
@@ -9872,7 +9868,7 @@ created issue: AHR-57
 [INFO ] 2023-12-14 23:05:38.483 [main] TestOAuthRestAPI - Set API list: [test.pojo.classes.API@29d405e6, test.pojo.classes.API@4c731956]
 [INFO ] 2023-12-14 23:05:38.484 [main] TestOAuthRestAPI - Set mobile list: [test.pojo.classes.Mobile@56826a75]
 [INFO ] 2023-12-14 23:05:38.484 [main] TestOAuthRestAPI - Set linkedIn: https://www.linkedin.com/in/rahul-shetty-trainer/
-[INFO ] 2023-12-14 23:05:38.485 [main] TestOAuthRestAPI - Course API response: 
+[INFO ] 2023-12-14 23:05:38.485 [main] TestOAuthRestAPI - Course API response:
 { "instructor": "RahulShetty", "url": "rahulshettycademy.com", "services": "projectSupport", "expertise": "Automation", "courses": { "webAutomation": [ { "courseTitle": "Selenium Webdriver Java", "price": "50" }, { "courseTitle": "Cypress",
                 "price": "40"
             },
@@ -9930,8 +9926,7 @@ created issue: AHR-57
 [INFO ] 2023-12-14 23:05:38.490 [main] TestOAuthRestAPI - Returned webAutomation list: [test.pojo.classes.WebAutomation@27585351, test.pojo.classes.WebAutomation@2de6f1bc, test.pojo.classes.WebAutomation@5b35c7d]
 [INFO ] 2023-12-14 23:05:38.490 [main] TestOAuthRestAPI - Returned webAutomation list: [test.pojo.classes.WebAutomation@27585351, test.pojo.classes.WebAutomation@2de6f1bc, test.pojo.classes.WebAutomation@5b35c7d]
 [INFO ] 2023-12-14 23:05:38.490 [main] TestOAuthRestAPI - Returned webAutomation list: [test.pojo.classes.WebAutomation@27585351, test.pojo.classes.WebAutomation@2de6f1bc, test.pojo.classes.WebAutomation@5b35c7d]
-[INFO ] 2023-12-14 23:33:10.390 [main] TestOAuthRestAPI - Token: ya29.a0AfB_byCrFRpnOlv_9ZknWeYSDRCqIUNL3EnAxeQR14c4c090AxugQWrAFwz8h_Tki10SmAMUzbJTZZZj93ybMRoXkqzgM_LszckayoMNbCozbttcBMm6ONrMlohKKV9TfKAe6TyLkBSUwFpkxzvQyj4zlF4vyYo9TZQaCgYKATsSARISFQHGX2MivCC9_FVHESRCQYkt7X31uQ0170
-[INFO ] 2023-12-14 23:33:12.431 [main] TestOAuthRestAPI - Course API response: 
+[INFO ] 2023-12-14 23:33:12.431 [main] TestOAuthRestAPI - Course API response:
 { "instructor": "RahulShetty", "url": "rahulshettycademy.com", "services": "projectSupport", "expertise": "Automation", "courses": { "webAutomation": [ { "courseTitle": "Selenium Webdriver Java", "price": "50" }, { "courseTitle": "Cypress",
                 "price": "40"
             },
@@ -9972,8 +9967,7 @@ created issue: AHR-57
 [INFO ] 2023-12-14 23:33:12.435 [main] TestOAuthRestAPI - Get Course API 1 Title: SoapUI Webservices testing
 [INFO ] 2023-12-14 23:33:12.435 [main] TestOAuthRestAPI - Get Course API 1 Price: 40
 [INFO ] 2023-12-14 23:33:12.437 [main] TestOAuthRestAPI - Is course expected equal to actual?: true
-[INFO ] 2023-12-14 23:35:33.129 [main] TestOAuthRestAPI - Token: ya29.a0AfB_byBL2j78ux8VlLbRx3XGu2dvfC_TFP6Dr3w7crnJQljHo5yMDODgQG1hkLcCiZ7i58HSbqffj5RGxbo-s8NN3kUQJN-MlfJ-HGVDfmkA-l3ogZPknl_mI6-7JrX1sVlniwsaBptiXD1GUItAxLZ1HfA6vW8l4L4aCgYKATQSARISFQHGX2Mi346fJ__RXEkc9j60en1ryg0170
-[INFO ] 2023-12-14 23:35:34.200 [main] TestOAuthRestAPI - Course API response: 
+[INFO ] 2023-12-14 23:35:34.200 [main] TestOAuthRestAPI - Course API response:
 { "instructor": "RahulShetty", "url": "rahulshettycademy.com", "services": "projectSupport", "expertise": "Automation", "courses": { "webAutomation": [ { "courseTitle": "Selenium Webdriver Java", "price": "50" }, { "courseTitle": "Cypress",
                 "price": "40"
             },
@@ -10028,7 +10022,6 @@ created issue: AHR-57
 [INFO ] 2023-12-16 01:14:03.844 [main] udemyRest - Hell Yeah!!
 [INFO ] 2023-12-16 01:14:05.537 [main] UtilMethods - In rawToJson
 [INFO ] 2023-12-16 01:14:05.761 [main] TestOAuthRestAPI - Token: null
-[INFO ] 2023-12-16 01:15:10.696 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzAyNjY5NTEwLCJleHAiOjE3MzQyMjcxMTB9.zDN6xAwGDdsjWAVH0N1klzYvhhLzfttoIxkVK35T3fw
 [INFO ] 2023-12-16 01:15:10.715 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2023-12-16 01:15:10.715 [main] EcomTests - message: Login Successfully
 [INFO ] 2023-12-16 01:15:11.049 [main] UtilMethods - In rawToJson
@@ -10077,7 +10070,6 @@ created issue: AHR-57
 [INFO ] 2023-12-16 01:15:11.549 [main] EcomTests - men
 [INFO ] 2023-12-16 01:15:11.549 [main] EcomTests - admin@gmail.com
 [INFO ] 2023-12-16 01:15:11.549 [main] EcomTests - 0.0
-[INFO ] 2023-12-16 01:17:31.807 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzAyNjY5NjUyLCJleHAiOjE3MzQyMjcyNTJ9.X-h-0VgLzPrHyqehuAvGYhD4EaOIxbzQGUNSq1g39ZQ
 [INFO ] 2023-12-16 01:17:31.809 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2023-12-16 01:17:31.809 [main] EcomTests - message: Login Successfully
 [INFO ] 2023-12-16 01:17:31.966 [main] UtilMethods - In rawToJson
@@ -10128,7 +10120,6 @@ created issue: AHR-57
 [INFO ] 2023-12-16 01:17:32.323 [main] EcomTests - 0.0
 [INFO ] 2023-12-16 01:20:10.314 [main] udemyRest - Hell Yeah!!
 [INFO ] 2023-12-16 01:20:11.942 [main] UtilMethods - In rawToJson
-[INFO ] 2023-12-16 01:20:12.181 [main] TestOAuthRestAPI - Token: ya29.a0AfB_byBMqVJwXbACwMPKMYA7F6VlxJBPVRdkfCAJqnXe0t_qbBRSXrIn7L8NvENSda4OlV3BBBWQdYHIT57iWDiULrg2uMbAzIkTQP9SecNZBTq24ObHcOyf_ov7bX8_y-PHccy_EADPFXLe6bFtv5Qwp-UzWD1MAZkaCgYKAUISARISFQHGX2MiOU488WoE-Q455r24wtSGCw0170
 [INFO ] 2023-12-16 01:20:12.871 [main] CoursesMain - Set instructor: RahulShetty
 [INFO ] 2023-12-16 01:20:12.871 [main] CoursesMain - Set url: rahulshettycademy.com
 [INFO ] 2023-12-16 01:20:12.871 [main] CoursesMain - Set services: projectSupport
@@ -10149,7 +10140,7 @@ created issue: AHR-57
 [INFO ] 2023-12-16 01:20:12.873 [main] Mobile - Set price: 50
 [INFO ] 2023-12-16 01:20:12.873 [main] Courses - Set mobile list: [test.pojo.courses.Mobile@624b523]
 [INFO ] 2023-12-16 01:20:12.873 [main] CoursesMain - Set linkedIn: https://www.linkedin.com/in/rahul-shetty-trainer/
-[INFO ] 2023-12-16 01:20:12.873 [main] TestOAuthRestAPI - Course API response: 
+[INFO ] 2023-12-16 01:20:12.873 [main] TestOAuthRestAPI - Course API response:
 { "instructor": "RahulShetty", "url": "rahulshettycademy.com", "services": "projectSupport", "expertise": "Automation", "courses": { "webAutomation": [ { "courseTitle": "Selenium Webdriver Java", "price": "50" }, { "courseTitle": "Cypress",
                 "price": "40"
             },
@@ -10291,7 +10282,6 @@ created issue: AHR-57
 [INFO ] 2024-01-18 17:22:26.687 [main] UtilMethods - In rawToJson
 [INFO ] 2024-01-18 17:26:29.811 [main] UtilMethods - In rawToJson
 [INFO ] 2024-01-18 17:26:30.108 [main] Task03RESTAutomation - User exist at [1]
-[INFO ] 2024-01-18 17:34:50.919 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzA1NTc5NDg5LCJleHAiOjE3MzcxMzcwODl9.iXscZlQ8yox8Ypnucjz0OmIhjzgSiAwUZIW6BYus3BI
 [INFO ] 2024-01-18 17:34:50.921 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-01-18 17:34:50.921 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-01-18 17:34:51.065 [main] UtilMethods - In rawToJson
@@ -10344,7 +10334,6 @@ created issue: AHR-57
 [INFO ] 2024-01-18 17:34:54.492 [main] UtilMethods - In rawToJson
 [INFO ] 2024-01-18 17:34:54.505 [main] UtilMethods - In rawToJson
 [INFO ] 2024-01-18 17:34:54.510 [main] UtilMethods - In rawToJson
-[INFO ] 2024-01-18 17:36:50.481 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzA1NTc5NjA4LCJleHAiOjE3MzcxMzcyMDh9.i5Srv667qW5OO41mzbbVh_l7DXpkhpav9EoP_UvH5gk
 [INFO ] 2024-01-18 17:36:50.483 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-01-18 17:36:50.483 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-01-18 17:36:50.604 [main] UtilMethods - In rawToJson
@@ -10401,7 +10390,6 @@ created issue: AHR-57
 [INFO ] 2024-01-18 17:36:54.013 [main] UtilMethods - In rawToJson
 [INFO ] 2024-01-18 17:36:54.866 [main] UtilMethods - In rawToJson
 [INFO ] 2024-01-18 17:36:54.896 [main] Task03RESTAutomation - User exist at [1]
-[INFO ] 2024-01-18 21:25:32.294 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzA1NTkzMzMwLCJleHAiOjE3MzcxNTA5MzB9.PzbAgAqgBSs2135NDTNk4fEzP18BrdJxemzqXU5Ozqg
 [INFO ] 2024-01-18 21:25:32.296 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-01-18 21:25:32.296 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-01-18 21:25:32.426 [main] UtilMethods - In rawToJson
@@ -10458,7 +10446,6 @@ created issue: AHR-57
 [INFO ] 2024-01-18 21:25:36.069 [main] UtilMethods - In rawToJson
 [INFO ] 2024-01-18 21:25:37.031 [main] UtilMethods - In rawToJson
 [INFO ] 2024-01-18 21:25:37.060 [main] Task03RESTAutomation - User exist at [1]
-[INFO ] 2024-01-18 21:26:34.769 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzA1NTkzMzkyLCJleHAiOjE3MzcxNTA5OTJ9.BxdATotVS3vljkTf4yVIOnpRqwgkQZcYulp7AfCRJlQ
 [INFO ] 2024-01-18 21:26:34.772 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-01-18 21:26:34.772 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-01-18 21:26:34.939 [main] UtilMethods - In rawToJson
@@ -10511,7 +10498,6 @@ created issue: AHR-57
 [INFO ] 2024-01-18 21:26:38.406 [main] UtilMethods - In rawToJson
 [INFO ] 2024-01-18 21:26:38.413 [main] UtilMethods - In rawToJson
 [INFO ] 2024-01-18 21:26:38.425 [main] UtilMethods - In rawToJson
-[INFO ] 2024-01-18 21:27:04.578 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzA1NTkzNDIyLCJleHAiOjE3MzcxNTEwMjJ9.N3DeJP8nDyMEujUwORahIUREtTHnJzq-6xIfOjBz6ck
 [INFO ] 2024-01-18 21:27:04.580 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-01-18 21:27:04.580 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-01-18 21:27:04.732 [main] UtilMethods - In rawToJson
@@ -10569,7 +10555,6 @@ created issue: AHR-57
 [INFO ] 2024-01-18 21:27:09.112 [main] UtilMethods - In rawToJson
 [INFO ] 2024-01-18 21:27:09.154 [main] Task03RESTAutomation - User exist at [1]
 [INFO ] 2024-01-18 21:27:09.302 [main] UtilMethods - In rawToJson
-[INFO ] 2024-01-18 21:27:55.509 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzA1NTkzNDczLCJleHAiOjE3MzcxNTEwNzN9.2KUcZRL53AFgv9rULtTlIwu-CTd5-xOyne-KOVJ7M6o
 [INFO ] 2024-01-18 21:27:55.510 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-01-18 21:27:55.510 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-01-18 21:27:55.669 [main] UtilMethods - In rawToJson
@@ -10716,15 +10701,12 @@ created issue: AHR-57
 [INFO ] 2024-03-24 21:57:55.634 [main] Task03RESTAutomation - User exist at index [1], and id = 2
 [INFO ] 2024-03-24 21:58:58.926 [main] UtilMethods - In rawToJson
 [INFO ] 2024-03-24 21:58:59.151 [main] Task03RESTAutomation - User exist at index [1], and id = 2
-[INFO ] 2024-04-04 17:08:56.552 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjMwNzM0LCJleHAiOjE3NDM3ODgzMzR9.JbBywdClBuyH-uPoirKqhhfsuZek4TRV23sVwChvJgk
 [INFO ] 2024-04-04 17:08:56.555 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-04 17:08:56.555 [main] EcomTests - message: Login Successfully
-[INFO ] 2024-04-04 17:09:15.869 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjMwNzU0LCJleHAiOjE3NDM3ODgzNTR9.BE3-V0IlWei4bv7GrFpzqFiWY398JZ5ivviX-SvMg-I
 [INFO ] 2024-04-04 17:09:15.871 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-04 17:09:15.871 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-04-04 17:09:16.057 [main] UtilMethods - In rawToJson
 [INFO ] 2024-04-04 17:09:16.255 [main] EcomTests - Product Added To Cart: true
-[INFO ] 2024-04-04 17:22:46.945 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjMxNTY1LCJleHAiOjE3NDM3ODkxNjV9.goWap-kUT880USiiIJ7BNprLpFs-mQ3uryrSnwKTMMk
 [INFO ] 2024-04-04 17:22:46.948 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-04 17:22:46.948 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-04-04 17:22:47.117 [main] UtilMethods - In rawToJson
@@ -10773,7 +10755,6 @@ created issue: AHR-57
 [INFO ] 2024-04-04 17:22:47.547 [main] EcomTests - men
 [INFO ] 2024-04-04 17:22:47.547 [main] EcomTests - admin@gmail.com
 [INFO ] 2024-04-04 17:22:47.547 [main] EcomTests - 0.0
-[INFO ] 2024-04-04 17:24:16.909 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjMxNjU1LCJleHAiOjE3NDM3ODkyNTV9.pFP5tBdWamx0v5yyffHo-jL__1tzr-S7AJ-7gl7Ot1I
 [INFO ] 2024-04-04 17:24:16.910 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-04 17:24:16.911 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-04-04 17:24:17.090 [main] UtilMethods - In rawToJson
@@ -10822,7 +10803,6 @@ created issue: AHR-57
 [INFO ] 2024-04-04 17:24:17.485 [main] EcomTests - men
 [INFO ] 2024-04-04 17:24:17.485 [main] EcomTests - admin@gmail.com
 [INFO ] 2024-04-04 17:24:17.485 [main] EcomTests - 0.0
-[INFO ] 2024-04-04 17:26:01.713 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjMxNzU5LCJleHAiOjE3NDM3ODkzNTl9.p9nJI3pGS9On_WxfxU_3zU3OeJDeuvsFAmyofNpZ8_E
 [INFO ] 2024-04-04 17:26:01.715 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-04 17:26:01.715 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-04-04 17:26:01.851 [main] UtilMethods - In rawToJson
@@ -10871,7 +10851,6 @@ created issue: AHR-57
 [INFO ] 2024-04-04 17:26:02.225 [main] EcomTests - men
 [INFO ] 2024-04-04 17:26:02.225 [main] EcomTests - admin@gmail.com
 [INFO ] 2024-04-04 17:26:02.225 [main] EcomTests - 0.0
-[INFO ] 2024-04-04 17:28:45.873 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjMxOTIzLCJleHAiOjE3NDM3ODk1MjN9.jc8dkGNEkaa2hqHl-fnXW9o-KbBIA8I386fwY3WT9DI
 [INFO ] 2024-04-04 17:28:45.879 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-04 17:28:45.879 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-04-04 17:28:46.038 [main] UtilMethods - In rawToJson
@@ -10955,7 +10934,6 @@ created issue: AHR-57
 [INFO ] 2024-04-04 17:55:12.948 [main] Task03RESTAutomation - User exist at index [1], and id = 2
 [INFO ] 2024-04-04 17:55:13.404 [main] UtilMethods - In rawToJson
 [INFO ] 2024-04-04 17:55:13.769 [main] UtilMethods - In rawToJson
-[INFO ] 2024-04-04 17:55:35.043 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjMzNTMzLCJleHAiOjE3NDM3OTExMzN9.SDVBvb2FkezfbTIf1oSGYRyK6F3iJ2qrrtWQsNiw5ic
 [INFO ] 2024-04-04 17:55:35.045 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-04 17:55:35.046 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-04-04 17:55:35.215 [main] UtilMethods - In rawToJson
@@ -11014,20 +10992,16 @@ created issue: AHR-57
 [INFO ] 2024-04-04 17:55:38.957 [main] Task03RESTAutomation - User exist at index [1], and id = 2
 [INFO ] 2024-04-04 17:55:39.369 [main] UtilMethods - In rawToJson
 [INFO ] 2024-04-04 17:55:39.723 [main] UtilMethods - In rawToJson
-[INFO ] 2024-04-05 11:22:07.925 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjk2MzI3LCJleHAiOjE3NDM4NTM5Mjd9.LgeccBpHsVMl5YAaMsNl_RJ1LHPvVGaA33AZQ4Pln5g
 [INFO ] 2024-04-05 11:22:07.927 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-05 11:22:07.928 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-04-05 11:22:08.073 [main] UtilMethods - In rawToJson
 [INFO ] 2024-04-05 11:22:08.260 [main] EcomTests - Product Added To Cart: true
-[INFO ] 2024-04-05 11:22:38.722 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjk2MzU4LCJleHAiOjE3NDM4NTM5NTh9.-8ZvGcSdUOlb_CudosWhA5fhV8lC5fJkDjCuMbw8-_U
 [INFO ] 2024-04-05 11:22:38.723 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-05 11:22:38.724 [main] EcomTests - message: Login Successfully
-[INFO ] 2024-04-05 11:23:18.940 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjk2Mzk4LCJleHAiOjE3NDM4NTM5OTh9.Qqz9Kr0344AJj8KeWPTAK8Iwe4dBSJFl8i7CSzOQuog
 [INFO ] 2024-04-05 11:23:18.942 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-05 11:23:18.942 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-04-05 11:23:19.315 [main] UtilMethods - In rawToJson
 [INFO ] 2024-04-05 11:23:19.325 [main] EcomTests - Product Added To Cart: true
-[INFO ] 2024-04-05 11:23:42.672 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjk2NDIyLCJleHAiOjE3NDM4NTQwMjJ9.tEQSXsT-onbSXLBBvhwFvJ0HO4RSrCaIVrdZRhP9urc
 [INFO ] 2024-04-05 11:23:42.674 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-05 11:23:42.674 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-04-05 11:23:43.011 [main] UtilMethods - In rawToJson
@@ -11076,7 +11050,6 @@ created issue: AHR-57
 [INFO ] 2024-04-05 11:23:43.154 [main] EcomTests - men
 [INFO ] 2024-04-05 11:23:43.154 [main] EcomTests - admin@gmail.com
 [INFO ] 2024-04-05 11:23:43.154 [main] EcomTests - 0.0
-[INFO ] 2024-04-05 11:26:07.715 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjk2NTY3LCJleHAiOjE3NDM4NTQxNjd9.KnVJuGQn5JWhbBYw5RDNYscupo_RwNMP7Yx9MEj14jw
 [INFO ] 2024-04-05 11:26:07.716 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-05 11:26:07.716 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-04-05 11:26:08.035 [main] UtilMethods - In rawToJson
@@ -11125,7 +11098,6 @@ created issue: AHR-57
 [INFO ] 2024-04-05 11:26:08.255 [main] EcomTests - men
 [INFO ] 2024-04-05 11:26:08.255 [main] EcomTests - admin@gmail.com
 [INFO ] 2024-04-05 11:26:08.255 [main] EcomTests - 0.0
-[INFO ] 2024-04-05 11:26:31.796 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjk2NTkxLCJleHAiOjE3NDM4NTQxOTF9.90jk_fPp2pREWucnwqdl6npYCT3vs1SAVZD5YYxLR2s
 [INFO ] 2024-04-05 11:26:31.798 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-05 11:26:31.798 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-04-05 11:26:32.108 [main] UtilMethods - In rawToJson
@@ -11174,7 +11146,6 @@ created issue: AHR-57
 [INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - men
 [INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - admin@gmail.com
 [INFO ] 2024-04-05 11:26:32.302 [main] EcomTests - 0.0
-[INFO ] 2024-04-05 11:41:36.376 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjk3NDk2LCJleHAiOjE3NDM4NTUwOTZ9.CaEQAi7ArnTveD_hYRyvMko78tUGB4pOIR_mBEz5hNk
 [INFO ] 2024-04-05 11:41:36.395 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-05 11:41:36.395 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-04-05 11:41:53.275 [main] UtilMethods - In rawToJson
@@ -11223,7 +11194,6 @@ created issue: AHR-57
 [INFO ] 2024-04-05 11:42:00.424 [main] EcomTests - men
 [INFO ] 2024-04-05 11:42:00.424 [main] EcomTests - admin@gmail.com
 [INFO ] 2024-04-05 11:42:00.424 [main] EcomTests - 0.0
-[INFO ] 2024-04-05 11:47:03.280 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMjk3ODIzLCJleHAiOjE3NDM4NTU0MjN9.9QofkqUa7ZUqnVPTAjYMUQGRhFpm6_RcYdvVzO_vG0c
 [INFO ] 2024-04-05 11:47:03.282 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-05 11:47:03.282 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-04-05 11:47:03.607 [main] UtilMethods - In rawToJson
@@ -11369,7 +11339,6 @@ created issue: AHR-57
 [INFO ] 2024-04-05 23:53:00.303 [main] Task03RESTAutomation - User exist at index [1], and id = 2
 [INFO ] 2024-04-05 23:53:44.595 [main] Task03RESTAutomation - User exist at index [1], and id = 2
 [INFO ] 2024-04-05 23:55:17.282 [main] Task03RESTAutomation - User exist at index [1], and id = 2
-[INFO ] 2024-04-06 00:06:07.730 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMzQyMTY3LCJleHAiOjE3NDM4OTk3Njd9.uzgQPRS_pWXrXiPiqARbqDxY_0lHlSYkRl3Caov0Igs
 [INFO ] 2024-04-06 00:06:07.732 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-06 00:06:07.732 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-04-06 00:06:08.147 [main] UtilMethods - In rawToJson
@@ -11418,7 +11387,6 @@ created issue: AHR-57
 [INFO ] 2024-04-06 00:06:08.310 [main] EcomTests - men
 [INFO ] 2024-04-06 00:06:08.310 [main] EcomTests - admin@gmail.com
 [INFO ] 2024-04-06 00:06:08.310 [main] EcomTests - 0.0
-[INFO ] 2024-04-06 00:06:52.297 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzEyMzQyMjExLCJleHAiOjE3NDM4OTk4MTF9.vJiB0i-kyGq-pC0TW3wUkkw-NwzczX1_1WtZS9qpBys
 [INFO ] 2024-04-06 00:06:52.299 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-04-06 00:06:52.300 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-04-06 00:06:52.736 [main] UtilMethods - In rawToJson
@@ -11805,7 +11773,6 @@ created issue: AHR-57
 [INFO ] 2024-12-03 22:52:40.403 [main] udemyRest - Location - longitude: -32.98977
 [INFO ] 2024-12-03 22:52:40.404 [main] UtilMethods - In rawToJson
 [INFO ] 2024-12-03 22:52:40.409 [main] udemyRest - Address             : 8-1-33, Toli Chowki
-[INFO ] 2024-12-12 18:04:42.935 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzM0MDA2ODgzLCJleHAiOjE3NjU1NjQ0ODN9.8Kc3xJQyAEQU0r_x1jMeoPW-8HEQN8gZczkPtZrkWM0
 [INFO ] 2024-12-12 18:04:42.936 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-12-12 18:04:42.937 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-12-12 18:04:43.112 [main] UtilMethods - In rawToJson
@@ -11873,7 +11840,6 @@ created issue: AHR-57
 [INFO ] 2024-12-12 18:04:46.060 [main] UtilMethods - In rawToJson
 [INFO ] 2024-12-12 18:04:46.062 [main] UtilMethods - In rawToJson
 [INFO ] 2024-12-12 18:04:46.905 [main] Task03RESTAutomation - User exist at index [1], and id = 2
-[INFO ] 2024-12-12 19:19:39.049 [main] EcomTests - token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTdiY2Q1MTlmZDk5Yzg1ZThlYTFkMzkiLCJ1c2VyRW1haWwiOiJqb2huZWRvZTA3MEBnbWFpbC5jb20iLCJ1c2VyTW9iaWxlIjo5OTk5OTk5OTk5LCJ1c2VyUm9sZSI6ImN1c3RvbWVyIiwiaWF0IjoxNzM0MDExMzc5LCJleHAiOjE3NjU1Njg5Nzl9.fyr3bnLDMZzwI7Xi00iVTxDYLWEolNrRC7ZZNeEI7a0
 [INFO ] 2024-12-12 19:19:39.050 [main] EcomTests - userId: 657bcd519fd99c85e8ea1d39
 [INFO ] 2024-12-12 19:19:39.050 [main] EcomTests - message: Login Successfully
 [INFO ] 2024-12-12 19:19:39.224 [main] UtilMethods - In rawToJson
@@ -11941,3 +11907,195 @@ created issue: AHR-57
 [INFO ] 2024-12-12 19:19:42.055 [main] UtilMethods - In rawToJson
 [INFO ] 2024-12-12 19:19:42.059 [main] UtilMethods - In rawToJson
 [INFO ] 2024-12-12 19:19:43.051 [main] Task03RESTAutomation - User exist at index [1], and id = 2
+[INFO ] 2024-12-12 19:56:00.948 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-12 19:56:00.952 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2024-12-12 19:56:01.067 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2024-12-12 19:56:01.067 [main] EcomTests - ecGetAllProd.getCount() 4
+[INFO ] 2024-12-12 19:56:01.067 [main] EcomTests - ===========================1===========================
+[INFO ] 2024-12-12 19:56:01.067 [main] EcomTests - 6581ca399fd99c85e8ee7f45
+[INFO ] 2024-12-12 19:56:01.067 [main] EcomTests - ZARA COAT 3
+[INFO ] 2024-12-12 19:56:01.067 [main] EcomTests - fashion
+[INFO ] 2024-12-12 19:56:01.067 [main] EcomTests - shirts
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - 31500.0
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - Zara coat for Women and girls
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649434146.jpeg
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - 0
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - 0
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - true
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - women
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - 0.0
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - ===========================2===========================
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - 6581ca979fd99c85e8ee7faf
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - ADIDAS ORIGINAL
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - household
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - shoes
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - 31500.0
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - Adidas shoes for Men
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649488046.jpg
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - 0
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - 0
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - true
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - men
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - 0.0
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - ===========================3===========================
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - electronics
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - mobiles
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - 231500.0
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - 0
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - 0
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - true
+[INFO ] 2024-12-12 19:56:01.068 [main] EcomTests - men
+[INFO ] 2024-12-12 19:56:01.069 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-12 19:56:01.069 [main] EcomTests - 0.0
+[INFO ] 2024-12-12 19:56:01.069 [main] EcomTests - ===========================4===========================
+[INFO ] 2024-12-12 19:56:01.069 [main] EcomTests - 6701364cae2afd4c0b90113c
+[INFO ] 2024-12-12 19:56:01.069 [main] EcomTests - qwerty
+[INFO ] 2024-12-12 19:56:01.069 [main] EcomTests - fashion
+[INFO ] 2024-12-12 19:56:01.069 [main] EcomTests - shirts
+[INFO ] 2024-12-12 19:56:01.069 [main] EcomTests - 11500.0
+[INFO ] 2024-12-12 19:56:01.069 [main] EcomTests - Addias Originals
+[INFO ] 2024-12-12 19:56:01.069 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1728132684377.jpg
+[INFO ] 2024-12-12 19:56:01.069 [main] EcomTests - 0
+[INFO ] 2024-12-12 19:56:01.069 [main] EcomTests - 0
+[INFO ] 2024-12-12 19:56:01.069 [main] EcomTests - true
+[INFO ] 2024-12-12 19:56:01.069 [main] EcomTests - women
+[INFO ] 2024-12-12 19:56:01.069 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-12 19:56:01.069 [main] EcomTests - 0.0
+[INFO ] 2024-12-12 19:56:02.724 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-12 19:56:04.226 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-12 19:56:04.231 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-12 19:56:04.234 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-12 19:56:05.222 [main] Task03RESTAutomation - User exist at index [1], and id = 2
+[INFO ] 2024-12-12 19:58:16.984 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-12 19:58:16.987 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2024-12-12 19:58:17.105 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - ecGetAllProd.getCount() 4
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - ===========================1===========================
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - 6581ca399fd99c85e8ee7f45
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - ZARA COAT 3
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - fashion
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - shirts
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - 31500.0
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - Zara coat for Women and girls
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649434146.jpeg
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - 0
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - 0
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - true
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - women
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - 0.0
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - ===========================2===========================
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - 6581ca979fd99c85e8ee7faf
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - ADIDAS ORIGINAL
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - household
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - shoes
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - 31500.0
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - Adidas shoes for Men
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649488046.jpg
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - 0
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - 0
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - true
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - men
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-12 19:58:17.106 [main] EcomTests - 0.0
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - ===========================3===========================
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - electronics
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - mobiles
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - 231500.0
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - 0
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - 0
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - true
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - men
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - 0.0
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - ===========================4===========================
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - 6701364cae2afd4c0b90113c
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - qwerty
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - fashion
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - shirts
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - 11500.0
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - Addias Originals
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1728132684377.jpg
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - 0
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - 0
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - true
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - women
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-12 19:58:17.107 [main] EcomTests - 0.0
+[INFO ] 2024-12-12 19:58:18.465 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-12 19:58:19.960 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-12 20:02:43.318 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-12 20:02:43.321 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2024-12-12 20:02:43.437 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2024-12-12 20:02:43.437 [main] EcomTests - ecGetAllProd.getCount() 4
+[INFO ] 2024-12-12 20:02:43.437 [main] EcomTests - ===========================1===========================
+[INFO ] 2024-12-12 20:02:43.437 [main] EcomTests - 6581ca399fd99c85e8ee7f45
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - ZARA COAT 3
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - fashion
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - shirts
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - 31500.0
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - Zara coat for Women and girls
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649434146.jpeg
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - 0
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - 0
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - true
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - women
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - 0.0
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - ===========================2===========================
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - 6581ca979fd99c85e8ee7faf
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - ADIDAS ORIGINAL
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - household
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - shoes
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - 31500.0
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - Adidas shoes for Men
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649488046.jpg
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - 0
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - 0
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - true
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - men
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - 0.0
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - ===========================3===========================
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - electronics
+[INFO ] 2024-12-12 20:02:43.438 [main] EcomTests - mobiles
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - 231500.0
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - 0
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - 0
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - true
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - men
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - 0.0
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - ===========================4===========================
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - 6701364cae2afd4c0b90113c
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - qwerty
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - fashion
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - shirts
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - 11500.0
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - Addias Originals
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1728132684377.jpg
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - 0
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - 0
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - true
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - women
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-12 20:02:43.439 [main] EcomTests - 0.0
+[INFO ] 2024-12-12 20:02:47.004 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-12 20:02:48.374 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-12 20:02:48.379 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-12 20:02:48.409 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-12 20:02:49.295 [main] Task03RESTAutomation - User exist at index [1], and id = 2

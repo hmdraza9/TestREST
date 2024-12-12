@@ -8,6 +8,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
+import Utils.EncryptionUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
@@ -118,12 +119,20 @@ public class TestOAuthRestAPI {
 
 		Response response = given().urlEncodingEnabled(false).queryParam("code", code)
 				.queryParam("client_id", client_id).queryParam("client_secret", client_secret)
-				.queryParam("redirect_uri", redirect_uri).queryParam("grant_type", grant_type).when().log().all()
-				.post(accessTokenURL).then().log().all().extract().response();
+				.queryParam("redirect_uri", redirect_uri).queryParam("grant_type", grant_type).when()
+				.log()
+				.all()
+				.post(accessTokenURL).then()
+				.log()
+				.all().extract().response();
 
 		String token = utils.rawToJson(response.asString()).getString("access_token");
 
-		log.info("Token: " + token);
+		try {
+			System.out.println(("Token: " + EncryptionUtil.encrypt(token, "token")));
+		} catch(Exception ex){
+			ex.getLocalizedMessage();
+		}
 
 //		given()
 //		.urlEncodingEnabled(false)
