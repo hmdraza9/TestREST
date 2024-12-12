@@ -43,8 +43,13 @@ public class EcomTests {
 		pojoReqEctk.setUserPassword("Test@123");
 
 		RestAssured.baseURI = objURLs.urlEcomAuth;
-		vResponse = given().header("Content-Type", "application/json").log().all().body(pojoReqEctk).when().post()
-				.then().log().all();
+		vResponse = given().header("Content-Type", "application/json")
+				.log()
+				.all()
+				.body(pojoReqEctk).when().post()
+				.then()
+				.log()
+				.all();
 
 		EcomTokenPojo pojoRespEctk = vResponse.extract().response().as(EcomTokenPojo.class);
 		token = pojoRespEctk.getToken();
@@ -66,8 +71,12 @@ public class EcomTests {
 		ecAd.setProduct(ecAdProd);
 
 		RestAssured.baseURI = objURLs.urlEcomAdToCart;
-		vResponse = given().header("Content-Type", "application/json").header("Authorization", token).log().all()
-				.body(ecAd).when().post().then().log().all();
+		vResponse = given().header("Content-Type", "application/json").header("Authorization", token).
+				log()
+				.all()
+				.body(ecAd).when().post().then()
+				.log()
+				.all();
 
 		vResponse.assertThat().statusCode(StatusCode.OK200);
 		System.out.println("Message: " + vResponse.extract().path("message"));
@@ -81,7 +90,9 @@ public class EcomTests {
 
 		RestAssured.baseURI = objURLs.urlEcomGetAllProducts;
 
-		vResponse = given().header("Content-Type", "application/json").header("Authorization", token).log().all().when()
+		vResponse = given().header("Content-Type", "application/json").header("Authorization", token)
+				.log()
+				.all().when()
 				.post().then().log().all();
 
 		EcomGetAllProducts ecGetAllProd = vResponse.extract().response().as(EcomGetAllProducts.class);
