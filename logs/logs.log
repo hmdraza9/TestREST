@@ -12164,3 +12164,184 @@ created issue: AHR-57
 [INFO ] 2024-12-12 21:55:26.729 [main] UtilMethods - In rawToJson
 [INFO ] 2024-12-12 21:55:26.732 [main] UtilMethods - In rawToJson
 [INFO ] 2024-12-12 21:55:27.427 [main] Task03RESTAutomation - User exist at index [1], and id = 2
+[INFO ] 2024-12-14 00:50:02.413 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:50:02.416 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2024-12-14 00:50:02.547 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2024-12-14 00:50:02.547 [main] EcomTests - ecGetAllProd.getCount() 4
+[INFO ] 2024-12-14 00:50:02.547 [main] EcomTests - ===========================1===========================
+[INFO ] 2024-12-14 00:50:02.547 [main] EcomTests - 6581ca399fd99c85e8ee7f45
+[INFO ] 2024-12-14 00:50:02.547 [main] EcomTests - ZARA COAT 3
+[INFO ] 2024-12-14 00:50:02.547 [main] EcomTests - fashion
+[INFO ] 2024-12-14 00:50:02.547 [main] EcomTests - shirts
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - 31500.0
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - Zara coat for Women and girls
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649434146.jpeg
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - 0
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - 0
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - true
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - women
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - 0.0
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - ===========================2===========================
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - 6581ca979fd99c85e8ee7faf
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - ADIDAS ORIGINAL
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - household
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - shoes
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - 31500.0
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - Adidas shoes for Men
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649488046.jpg
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - 0
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - 0
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - true
+[INFO ] 2024-12-14 00:50:02.548 [main] EcomTests - men
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - 0.0
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - ===========================3===========================
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - electronics
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - mobiles
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - 231500.0
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - 0
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - 0
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - true
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - men
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - 0.0
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - ===========================4===========================
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - 6701364cae2afd4c0b90113c
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - qwerty
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - fashion
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - shirts
+[INFO ] 2024-12-14 00:50:02.549 [main] EcomTests - 11500.0
+[INFO ] 2024-12-14 00:50:02.550 [main] EcomTests - Addias Originals
+[INFO ] 2024-12-14 00:50:02.550 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1728132684377.jpg
+[INFO ] 2024-12-14 00:50:02.550 [main] EcomTests - 0
+[INFO ] 2024-12-14 00:50:02.550 [main] EcomTests - 0
+[INFO ] 2024-12-14 00:50:02.550 [main] EcomTests - true
+[INFO ] 2024-12-14 00:50:02.550 [main] EcomTests - women
+[INFO ] 2024-12-14 00:50:02.550 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-14 00:50:02.550 [main] EcomTests - 0.0
+[INFO ] 2024-12-14 00:50:06.332 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:50:07.468 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:50:07.472 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:50:07.475 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:50:08.099 [main] Task03RESTAutomation - User exist at index [1], and id = 2
+[INFO ] 2024-12-14 00:50:22.830 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:50:22.834 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2024-12-14 00:50:22.953 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2024-12-14 00:50:22.954 [main] EcomTests - ecGetAllProd.getCount() 4
+[INFO ] 2024-12-14 00:50:22.954 [main] EcomTests - ===========================1===========================
+[INFO ] 2024-12-14 00:50:22.954 [main] EcomTests - 6581ca399fd99c85e8ee7f45
+[INFO ] 2024-12-14 00:50:22.954 [main] EcomTests - ZARA COAT 3
+[INFO ] 2024-12-14 00:50:22.954 [main] EcomTests - fashion
+[INFO ] 2024-12-14 00:50:22.954 [main] EcomTests - shirts
+[INFO ] 2024-12-14 00:50:22.954 [main] EcomTests - 31500.0
+[INFO ] 2024-12-14 00:50:22.954 [main] EcomTests - Zara coat for Women and girls
+[INFO ] 2024-12-14 00:50:22.954 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649434146.jpeg
+[INFO ] 2024-12-14 00:50:22.954 [main] EcomTests - 0
+[INFO ] 2024-12-14 00:50:22.954 [main] EcomTests - 0
+[INFO ] 2024-12-14 00:50:22.954 [main] EcomTests - true
+[INFO ] 2024-12-14 00:50:22.954 [main] EcomTests - women
+[INFO ] 2024-12-14 00:50:22.954 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - 0.0
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - ===========================2===========================
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - 6581ca979fd99c85e8ee7faf
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - ADIDAS ORIGINAL
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - household
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - shoes
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - 31500.0
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - Adidas shoes for Men
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649488046.jpg
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - 0
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - 0
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - true
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - men
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - 0.0
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - ===========================3===========================
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - electronics
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - mobiles
+[INFO ] 2024-12-14 00:50:22.955 [main] EcomTests - 231500.0
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - 0
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - 0
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - true
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - men
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - 0.0
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - ===========================4===========================
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - 6701364cae2afd4c0b90113c
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - qwerty
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - fashion
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - shirts
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - 11500.0
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - Addias Originals
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1728132684377.jpg
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - 0
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - 0
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - true
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - women
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - admin@gmail.com
+[INFO ] 2024-12-14 00:50:22.956 [main] EcomTests - 0.0
+[INFO ] 2024-12-14 00:50:24.215 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:50:25.572 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:50:25.578 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:50:25.582 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:50:26.192 [main] Task03RESTAutomation - User exist at index [1], and id = 2
+[INFO ] 2024-12-14 00:58:41.319 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:58:42.535 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:58:42.539 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:58:42.541 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:58:43.215 [main] Task03RESTAutomation - User exist at index [1], and id = 2
+[INFO ] 2024-12-14 00:59:09.777 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:59:11.326 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:59:11.330 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 00:59:11.333 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:02:00.182 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:02:01.631 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:02:01.635 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:02:01.637 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:02:32.972 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:02:34.217 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:03:57.948 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:03:59.391 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:03:59.395 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:03:59.399 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:04:49.367 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:04:50.571 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:04:50.573 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:04:50.576 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:05:19.453 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:05:20.899 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:05:20.902 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 01:05:20.905 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:02:49.310 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:02:50.618 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:02:50.621 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:02:50.624 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:04:12.076 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:04:13.730 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:04:13.732 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:04:13.735 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:04:51.806 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:04:53.163 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:04:53.165 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:04:53.168 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:05:16.880 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:05:18.226 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:05:18.229 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:05:34.094 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:05:35.471 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:05:35.475 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:05:35.478 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:06:38.881 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:06:58.152 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:06:59.469 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:06:59.471 [main] UtilMethods - In rawToJson
+[INFO ] 2024-12-14 02:06:59.474 [main] UtilMethods - In rawToJson

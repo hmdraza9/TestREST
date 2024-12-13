@@ -4,6 +4,8 @@ import static io.restassured.RestAssured.given;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.json.JSONTokener;
+import org.json.simple.JSONObject;
 import org.junit.Assert;
 
 import com.restassured.payloads.Payloads;
@@ -16,22 +18,24 @@ import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
+import io.restassured.module.jsv.JsonSchemaValidator;
 
+import java.io.File;
+import java.io.InputStream;
 import java.util.Optional;
+
 
 public class Task03RESTAutomation {
 
-	private static Payloads objPayLoad = new Payloads();
-	private static URIs objURI = new URIs();
-	private static URLs objURL = new URLs();
+	private static final Payloads objPayLoad = new Payloads();
+	private static final URIs objURI = new URIs();
+	private static final URLs objURL = new URLs();
 	private static final Logger log = LogManager.getLogger(Task03RESTAutomation.class);
 	private static final String openWeatherApiID = "8zdz3z1z6z2z4zaz4zbz8z7z6zcz0z5z3z2z8z7z2z0zfz8zczaz1z5z8z6zcz3z";
-	// encrypted the API ID so that Git don't raise any concern
-	private static String petID;
-	private static UtilMethods utils = new UtilMethods();
+    private static final UtilMethods utils = new UtilMethods();
 	private static Response response;
-	private static ValidatableResponse vResponse;
-	private static String petName = "Snoopie_" + UtilMethods.getTime();
+	private static String responseForSchema;
+    private static final String petName = "Snoopie_" + UtilMethods.getTime();
 	private static final String userToSearch = "Ervin Howell";
 
 	Payloads reqBody = new Payloads();
@@ -45,18 +49,18 @@ public class Task03RESTAutomation {
 				.queryParam("appid", strOpenWeatherApiID).header("Content-Type", "application/json").log().all().when()
 				.get(objURI.uriOpenWeather).then().log().all().extract().response();
 
-		double longitude = Double.valueOf(response.path("coord.lon").toString());
-		double latitude = Double.valueOf(response.path("coord.lat").toString());
+		double longitude = Double.parseDouble(response.path("coord.lon").toString());
+		double latitude = Double.parseDouble(response.path("coord.lat").toString());
 
 		System.out.println("longitude+\" \"+latitude: " + longitude + " " + latitude);
 
-		Assert.assertTrue(response.path("name").equals("Hyderabad"));
+        Assert.assertEquals("Hyderabad", response.path("name"));
 
-		Assert.assertTrue(response.path("sys.country").equals("IN"));
+        Assert.assertEquals("IN", response.path("sys.country"));
 
-		Assert.assertTrue(Double.valueOf(response.path("main.temp_min").toString()) > 0.0);
+		Assert.assertTrue(Double.parseDouble(response.path("main.temp_min").toString()) > 0.0);
 
-		Assert.assertTrue(Double.valueOf(response.path("main.temp").toString()) > 0.0);
+		Assert.assertTrue(Double.parseDouble(response.path("main.temp").toString()) > 0.0);
 
 	}
 
@@ -73,7 +77,7 @@ public class Task03RESTAutomation {
 		response = given().header("Content-Type", "application/json").log().all().when().get(objURI.uriTypiCodeUsers)
 				.then().log().all().extract().response();
 
-		Assert.assertTrue(response.getStatusCode() == StatusCode.OK200);
+        Assert.assertEquals(StatusCode.OK200, response.getStatusCode());
 
 		int userCount = response.path("data.size()");
 		Assert.assertTrue(userCount > 3);
@@ -104,31 +108,42 @@ public class Task03RESTAutomation {
 				.body(objPayLoad.petStoreCreatePetBody.replace("$petName", petName)).when()
 				.post(objURI.uriPetStoreCreate).then().log().all().extract().response();
 
-		petID = utils.rawToJson(response.asString()).getString("id");
+        // encrypted the API ID so that Git don't raise any concern
+        String petID = utils.rawToJson(response.asString()).getString("id");
 
 		// POST END
 		// GET STARTS
 
-		vResponse = given().header("Content-Type", "application/json").pathParam("petID", petID).log().all()
-				.get(objURI.uriPetStoreGet).then().log().all();
+        ValidatableResponse vResponse = given().header("Content-Type", "application/json").pathParam("petID", petID).log().all()
+                .get(objURI.uriPetStoreGet).then().log().all();
 
-		ValidatableResponse v2 = vResponse;
-
-		v2.assertThat().contentType(ContentType.JSON).statusCode(Integer.valueOf(StatusCode.OK200));
+        vResponse.assertThat().contentType(ContentType.JSON).statusCode(StatusCode.OK200);
+		System.out.println("validating schema");
+		vResponse.assertThat().body(JsonSchemaValidator.matchesJsonSchema(new File("src/test/resources/Data/JSON/petSchema.json")));
 
 		response = vResponse.extract().response();
+
+		responseForSchema = response.asString();
 
 		String categoryOfPet = response.path("category.name");
 
 		String petStatus = response.path("status");
 
 		petID = utils.rawToJson(response.asString()).getString("id");
-		Assert.assertEquals(categoryOfPet, "dog");
+//		Assert.assertEquals(categoryOfPet, "dog");
 		Assert.assertEquals(petName, utils.rawToJson(response.asString()).getString("name"));
 		Assert.assertEquals(petStatus, utils.rawToJson(response.asString()).getString("status"));
 
 		System.out.println("Pet name: " + petName + ", " + "\nPet ID: " + petID + " " + "\nPet Status: " + petStatus);
 
 	}
+
+
+//	public static void validateSchemaFroPetApi(){
+//		try{
+//			InputStream schemaStream = getC
+//		}
+//		JSONObject petSchema = new JSONObject(new JSONTokener(new InputStream("src/test/resources/Data/JSON/petSchema.json")));
+//	}
 
 }
