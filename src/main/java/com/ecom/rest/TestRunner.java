@@ -8,12 +8,12 @@ public class TestRunner {
 	public static void main(String[] args) {
 
 		EcomTests ec = new EcomTests();
-//		System.out.println("1. ec.ecomGetToken();: ");
-//		ec.ecomGetToken();
-//		System.out.println("2. ec.ecomAddToCart()");
-//		ec.ecomAddToCart();
-//		System.out.println("3. ec.ecomGetAllProducts()");
-//		ec.ecomGetAllProducts();
+		System.out.println("1. ec.ecomGetToken();: ");
+		ec.ecomGetToken();
+		System.out.println("2. ec.ecomAddToCart()");
+		ec.ecomAddToCart();
+		System.out.println("3. ec.ecomGetAllProducts()");
+		ec.ecomGetAllProducts();
 		System.out.println("4. Task03RESTAutomation.createPet();");
 		Task03RESTAutomation.createPet();
 //		Task03RESTAutomation.validateSchemaFroPetApi();

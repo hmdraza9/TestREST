@@ -12348,3 +12348,1014 @@ created issue: AHR-57
 [INFO ] 2025-01-11 23:17:34.294 [main] JsonPathRead - In weatherAPI
 [INFO ] 2025-01-11 23:17:35.772 [main] JsonPathRead - In main
 [INFO ] 2025-01-11 23:17:35.772 [main] JsonPathRead - In tokenizedAuthToolsQABookStore
+[INFO ] 2025-01-15 00:46:35.895 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:46:35.899 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2025-01-15 00:46:36.016 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2025-01-15 00:46:36.016 [main] EcomTests - ecGetAllProd.getCount() 6
+[INFO ] 2025-01-15 00:46:36.016 [main] EcomTests - ===========================1===========================
+[INFO ] 2025-01-15 00:46:36.016 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2025-01-15 00:46:36.016 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2025-01-15 00:46:36.016 [main] EcomTests - electronics
+[INFO ] 2025-01-15 00:46:36.016 [main] EcomTests - mobiles
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - true
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - men
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - ===========================2===========================
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - 6701364cae2afd4c0b90113c
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - fashion
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - shirts
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1728132684377.jpg
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - true
+[INFO ] 2025-01-15 00:46:36.017 [main] EcomTests - women
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - ===========================3===========================
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - 676a631fe2b5443b1f004a20
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - Banarsi Saree
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - Cloths
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - Women Cloths
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735025439009.jpg
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - true
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - Women
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - ===========================4===========================
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - 676a6619e2b5443b1f004fff
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - Fride
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735026201323.png
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:46:36.018 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - true
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - family
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - ===========================5===========================
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - 676a9421e2b5443b1f00a1b2
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - Fride
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735037985643.png
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - true
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - family
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:46:36.019 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:46:36.020 [main] EcomTests - ===========================6===========================
+[INFO ] 2025-01-15 00:46:36.020 [main] EcomTests - 678522b5e2b5443b1f218601
+[INFO ] 2025-01-15 00:46:36.020 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 00:46:36.020 [main] EcomTests - fashion
+[INFO ] 2025-01-15 00:46:36.020 [main] EcomTests - shirts
+[INFO ] 2025-01-15 00:46:36.020 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 00:46:36.020 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 00:46:36.020 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1736778421457.png
+[INFO ] 2025-01-15 00:46:36.020 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:46:36.020 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:46:36.020 [main] EcomTests - true
+[INFO ] 2025-01-15 00:46:36.020 [main] EcomTests - women
+[INFO ] 2025-01-15 00:46:36.020 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:46:36.020 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:46:37.580 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:46:39.246 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:46:39.248 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:46:39.251 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:47:01.320 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:47:01.324 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2025-01-15 00:47:01.449 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2025-01-15 00:47:01.449 [main] EcomTests - ecGetAllProd.getCount() 6
+[INFO ] 2025-01-15 00:47:01.449 [main] EcomTests - ===========================1===========================
+[INFO ] 2025-01-15 00:47:01.449 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2025-01-15 00:47:01.449 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2025-01-15 00:47:01.449 [main] EcomTests - electronics
+[INFO ] 2025-01-15 00:47:01.449 [main] EcomTests - mobiles
+[INFO ] 2025-01-15 00:47:01.449 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 00:47:01.449 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2025-01-15 00:47:01.449 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - true
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - men
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - ===========================2===========================
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - 6701364cae2afd4c0b90113c
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - fashion
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - shirts
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1728132684377.jpg
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - true
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - women
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:47:01.450 [main] EcomTests - ===========================3===========================
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - 676a631fe2b5443b1f004a20
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - Banarsi Saree
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - Cloths
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - Women Cloths
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735025439009.jpg
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - true
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - Women
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - ===========================4===========================
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - 676a6619e2b5443b1f004fff
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - Fride
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735026201323.png
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - true
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - family
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:47:01.451 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - ===========================5===========================
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - 676a9421e2b5443b1f00a1b2
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - Fride
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735037985643.png
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - true
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - family
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - ===========================6===========================
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - 678522b5e2b5443b1f218601
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - fashion
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - shirts
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1736778421457.png
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - true
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - women
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:47:01.452 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:47:02.828 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:47:04.499 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:47:04.501 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:47:04.504 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:53:50.552 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:53:50.556 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2025-01-15 00:53:50.667 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2025-01-15 00:53:50.667 [main] EcomTests - ecGetAllProd.getCount() 6
+[INFO ] 2025-01-15 00:53:50.667 [main] EcomTests - ===========================1===========================
+[INFO ] 2025-01-15 00:53:50.667 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2025-01-15 00:53:50.667 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2025-01-15 00:53:50.667 [main] EcomTests - electronics
+[INFO ] 2025-01-15 00:53:50.667 [main] EcomTests - mobiles
+[INFO ] 2025-01-15 00:53:50.667 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 00:53:50.667 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2025-01-15 00:53:50.667 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2025-01-15 00:53:50.667 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:53:50.667 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - true
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - men
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - ===========================2===========================
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - 6701364cae2afd4c0b90113c
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - fashion
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - shirts
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1728132684377.jpg
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - true
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - women
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - ===========================3===========================
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - 676a631fe2b5443b1f004a20
+[INFO ] 2025-01-15 00:53:50.668 [main] EcomTests - Banarsi Saree
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - Cloths
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - Women Cloths
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735025439009.jpg
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - true
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - Women
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - ===========================4===========================
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - 676a6619e2b5443b1f004fff
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - Fride
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735026201323.png
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - true
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - family
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - ===========================5===========================
+[INFO ] 2025-01-15 00:53:50.669 [main] EcomTests - 676a9421e2b5443b1f00a1b2
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - Fride
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735037985643.png
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - true
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - family
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - ===========================6===========================
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - 678522b5e2b5443b1f218601
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - fashion
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - shirts
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1736778421457.png
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - true
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - women
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:53:50.670 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:53:52.277 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:53:53.938 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:53:53.940 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:53:53.943 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:56:21.847 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:56:21.851 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2025-01-15 00:56:21.979 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2025-01-15 00:56:21.979 [main] EcomTests - ecGetAllProd.getCount() 6
+[INFO ] 2025-01-15 00:56:21.980 [main] EcomTests - ===========================1===========================
+[INFO ] 2025-01-15 00:56:21.980 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2025-01-15 00:56:21.980 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2025-01-15 00:56:21.980 [main] EcomTests - electronics
+[INFO ] 2025-01-15 00:56:21.980 [main] EcomTests - mobiles
+[INFO ] 2025-01-15 00:56:21.980 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 00:56:21.980 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2025-01-15 00:56:21.980 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2025-01-15 00:56:21.980 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:56:21.980 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:56:21.980 [main] EcomTests - true
+[INFO ] 2025-01-15 00:56:21.981 [main] EcomTests - men
+[INFO ] 2025-01-15 00:56:21.981 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:56:21.981 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:56:21.981 [main] EcomTests - ===========================2===========================
+[INFO ] 2025-01-15 00:56:21.981 [main] EcomTests - 6701364cae2afd4c0b90113c
+[INFO ] 2025-01-15 00:56:21.981 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 00:56:21.981 [main] EcomTests - fashion
+[INFO ] 2025-01-15 00:56:21.981 [main] EcomTests - shirts
+[INFO ] 2025-01-15 00:56:21.981 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 00:56:21.981 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 00:56:21.981 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1728132684377.jpg
+[INFO ] 2025-01-15 00:56:21.981 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:56:21.981 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:56:21.981 [main] EcomTests - true
+[INFO ] 2025-01-15 00:56:21.981 [main] EcomTests - women
+[INFO ] 2025-01-15 00:56:21.981 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - ===========================3===========================
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - 676a631fe2b5443b1f004a20
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - Banarsi Saree
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - Cloths
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - Women Cloths
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735025439009.jpg
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - true
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - Women
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - ===========================4===========================
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - 676a6619e2b5443b1f004fff
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - Fride
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 00:56:21.982 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735026201323.png
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - true
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - family
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - ===========================5===========================
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - 676a9421e2b5443b1f00a1b2
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - Fride
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735037985643.png
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - true
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - family
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - ===========================6===========================
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - 678522b5e2b5443b1f218601
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 00:56:21.983 [main] EcomTests - fashion
+[INFO ] 2025-01-15 00:56:21.984 [main] EcomTests - shirts
+[INFO ] 2025-01-15 00:56:21.984 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 00:56:21.984 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 00:56:21.984 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1736778421457.png
+[INFO ] 2025-01-15 00:56:21.984 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:56:21.984 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:56:21.984 [main] EcomTests - true
+[INFO ] 2025-01-15 00:56:21.984 [main] EcomTests - women
+[INFO ] 2025-01-15 00:56:21.984 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:56:21.984 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:56:23.363 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:56:24.853 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:56:24.855 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:56:24.857 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:58:49.395 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:58:49.399 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2025-01-15 00:58:49.514 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2025-01-15 00:58:49.514 [main] EcomTests - ecGetAllProd.getCount() 6
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - ===========================1===========================
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - electronics
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - mobiles
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - true
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - men
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - ===========================2===========================
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - 6701364cae2afd4c0b90113c
+[INFO ] 2025-01-15 00:58:49.515 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - fashion
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - shirts
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1728132684377.jpg
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - true
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - women
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - ===========================3===========================
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - 676a631fe2b5443b1f004a20
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - Banarsi Saree
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - Cloths
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - Women Cloths
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735025439009.jpg
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - true
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - Women
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:58:49.516 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - ===========================4===========================
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - 676a6619e2b5443b1f004fff
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - Fride
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735026201323.png
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - true
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - family
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - ===========================5===========================
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - 676a9421e2b5443b1f00a1b2
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - Fride
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735037985643.png
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - true
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - family
+[INFO ] 2025-01-15 00:58:49.517 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:58:49.518 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:58:49.518 [main] EcomTests - ===========================6===========================
+[INFO ] 2025-01-15 00:58:49.518 [main] EcomTests - 678522b5e2b5443b1f218601
+[INFO ] 2025-01-15 00:58:49.518 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 00:58:49.518 [main] EcomTests - fashion
+[INFO ] 2025-01-15 00:58:49.518 [main] EcomTests - shirts
+[INFO ] 2025-01-15 00:58:49.518 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 00:58:49.518 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 00:58:49.518 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1736778421457.png
+[INFO ] 2025-01-15 00:58:49.518 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:58:49.518 [main] EcomTests - 0
+[INFO ] 2025-01-15 00:58:49.518 [main] EcomTests - true
+[INFO ] 2025-01-15 00:58:49.518 [main] EcomTests - women
+[INFO ] 2025-01-15 00:58:49.518 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 00:58:49.518 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 00:58:50.879 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:58:52.523 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:58:52.525 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 00:58:52.527 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:09:47.019 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:09:47.023 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2025-01-15 01:09:47.142 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2025-01-15 01:09:47.142 [main] EcomTests - ecGetAllProd.getCount() 6
+[INFO ] 2025-01-15 01:09:47.142 [main] EcomTests - ===========================1===========================
+[INFO ] 2025-01-15 01:09:47.142 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2025-01-15 01:09:47.142 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2025-01-15 01:09:47.142 [main] EcomTests - electronics
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - mobiles
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - true
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - men
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - ===========================2===========================
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - 6701364cae2afd4c0b90113c
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - fashion
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - shirts
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1728132684377.jpg
+[INFO ] 2025-01-15 01:09:47.143 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - true
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - women
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - ===========================3===========================
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - 676a631fe2b5443b1f004a20
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - Banarsi Saree
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - Cloths
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - Women Cloths
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735025439009.jpg
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - true
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - Women
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - ===========================4===========================
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - 676a6619e2b5443b1f004fff
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - Fride
+[INFO ] 2025-01-15 01:09:47.144 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735026201323.png
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - true
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - family
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - ===========================5===========================
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - 676a9421e2b5443b1f00a1b2
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - Fride
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735037985643.png
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - true
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - family
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:09:47.145 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:09:47.146 [main] EcomTests - ===========================6===========================
+[INFO ] 2025-01-15 01:09:47.146 [main] EcomTests - 678522b5e2b5443b1f218601
+[INFO ] 2025-01-15 01:09:47.146 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 01:09:47.146 [main] EcomTests - fashion
+[INFO ] 2025-01-15 01:09:47.146 [main] EcomTests - shirts
+[INFO ] 2025-01-15 01:09:47.146 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 01:09:47.146 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 01:09:47.146 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1736778421457.png
+[INFO ] 2025-01-15 01:09:47.146 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:09:47.146 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:09:47.146 [main] EcomTests - true
+[INFO ] 2025-01-15 01:09:47.146 [main] EcomTests - women
+[INFO ] 2025-01-15 01:09:47.146 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:09:47.146 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:09:50.336 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:09:52.000 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:09:52.002 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:09:52.006 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:10:21.797 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:10:21.801 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2025-01-15 01:10:21.923 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2025-01-15 01:10:21.923 [main] EcomTests - ecGetAllProd.getCount() 6
+[INFO ] 2025-01-15 01:10:21.923 [main] EcomTests - ===========================1===========================
+[INFO ] 2025-01-15 01:10:21.923 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2025-01-15 01:10:21.923 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2025-01-15 01:10:21.923 [main] EcomTests - electronics
+[INFO ] 2025-01-15 01:10:21.923 [main] EcomTests - mobiles
+[INFO ] 2025-01-15 01:10:21.923 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 01:10:21.923 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2025-01-15 01:10:21.923 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2025-01-15 01:10:21.923 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:10:21.923 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:10:21.923 [main] EcomTests - true
+[INFO ] 2025-01-15 01:10:21.923 [main] EcomTests - men
+[INFO ] 2025-01-15 01:10:21.923 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:10:21.923 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - ===========================2===========================
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - 6701364cae2afd4c0b90113c
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - fashion
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - shirts
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1728132684377.jpg
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - true
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - women
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - ===========================3===========================
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - 676a631fe2b5443b1f004a20
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - Banarsi Saree
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - Cloths
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - Women Cloths
+[INFO ] 2025-01-15 01:10:21.924 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735025439009.jpg
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - true
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - Women
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - ===========================4===========================
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - 676a6619e2b5443b1f004fff
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - Fride
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735026201323.png
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - true
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - family
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:10:21.925 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - ===========================5===========================
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - 676a9421e2b5443b1f00a1b2
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - Fride
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735037985643.png
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - true
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - family
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - ===========================6===========================
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - 678522b5e2b5443b1f218601
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - fashion
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - shirts
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 01:10:21.926 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 01:10:21.927 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1736778421457.png
+[INFO ] 2025-01-15 01:10:21.927 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:10:21.927 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:10:21.927 [main] EcomTests - true
+[INFO ] 2025-01-15 01:10:21.927 [main] EcomTests - women
+[INFO ] 2025-01-15 01:10:21.927 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:10:21.927 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:10:23.316 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:10:24.889 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:10:24.897 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:10:24.903 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:12:19.672 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:12:19.676 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2025-01-15 01:12:19.801 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2025-01-15 01:12:19.801 [main] EcomTests - ecGetAllProd.getCount() 6
+[INFO ] 2025-01-15 01:12:19.801 [main] EcomTests - ===========================1===========================
+[INFO ] 2025-01-15 01:12:19.801 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2025-01-15 01:12:19.801 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2025-01-15 01:12:19.801 [main] EcomTests - electronics
+[INFO ] 2025-01-15 01:12:19.801 [main] EcomTests - mobiles
+[INFO ] 2025-01-15 01:12:19.801 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 01:12:19.801 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2025-01-15 01:12:19.801 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2025-01-15 01:12:19.801 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:12:19.801 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:12:19.801 [main] EcomTests - true
+[INFO ] 2025-01-15 01:12:19.801 [main] EcomTests - men
+[INFO ] 2025-01-15 01:12:19.801 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - ===========================2===========================
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - 6701364cae2afd4c0b90113c
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - fashion
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - shirts
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1728132684377.jpg
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - true
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - women
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - ===========================3===========================
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - 676a631fe2b5443b1f004a20
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - Banarsi Saree
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - Cloths
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - Women Cloths
+[INFO ] 2025-01-15 01:12:19.802 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735025439009.jpg
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - true
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - Women
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - ===========================4===========================
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - 676a6619e2b5443b1f004fff
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - Fride
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735026201323.png
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - true
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - family
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - ===========================5===========================
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - 676a9421e2b5443b1f00a1b2
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 01:12:19.803 [main] EcomTests - Fride
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735037985643.png
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - true
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - family
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - ===========================6===========================
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - 678522b5e2b5443b1f218601
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - fashion
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - shirts
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1736778421457.png
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - true
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - women
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:12:19.804 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:12:21.229 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:12:22.776 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:12:22.778 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:12:22.781 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:14:45.458 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:14:45.462 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2025-01-15 01:14:45.580 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2025-01-15 01:14:45.580 [main] EcomTests - ecGetAllProd.getCount() 6
+[INFO ] 2025-01-15 01:14:45.580 [main] EcomTests - ===========================1===========================
+[INFO ] 2025-01-15 01:14:45.580 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2025-01-15 01:14:45.580 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2025-01-15 01:14:45.580 [main] EcomTests - electronics
+[INFO ] 2025-01-15 01:14:45.580 [main] EcomTests - mobiles
+[INFO ] 2025-01-15 01:14:45.580 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 01:14:45.580 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2025-01-15 01:14:45.580 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2025-01-15 01:14:45.580 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:14:45.580 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:14:45.580 [main] EcomTests - true
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - men
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - ===========================2===========================
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - 6701364cae2afd4c0b90113c
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - fashion
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - shirts
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1728132684377.jpg
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - true
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - women
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - ===========================3===========================
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - 676a631fe2b5443b1f004a20
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - Banarsi Saree
+[INFO ] 2025-01-15 01:14:45.581 [main] EcomTests - Cloths
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - Women Cloths
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735025439009.jpg
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - true
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - Women
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - ===========================4===========================
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - 676a6619e2b5443b1f004fff
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - Fride
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735026201323.png
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - true
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - family
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:14:45.582 [main] EcomTests - ===========================5===========================
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - 676a9421e2b5443b1f00a1b2
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - Fride
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735037985643.png
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - true
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - family
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - ===========================6===========================
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - 678522b5e2b5443b1f218601
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - fashion
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - shirts
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1736778421457.png
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - true
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - women
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:14:45.583 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:14:47.198 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:14:48.734 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:14:48.735 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:14:48.738 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:15:17.593 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:15:17.598 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2025-01-15 01:15:17.710 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2025-01-15 01:15:17.711 [main] EcomTests - ecGetAllProd.getCount() 6
+[INFO ] 2025-01-15 01:15:17.711 [main] EcomTests - ===========================1===========================
+[INFO ] 2025-01-15 01:15:17.711 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2025-01-15 01:15:17.711 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2025-01-15 01:15:17.711 [main] EcomTests - electronics
+[INFO ] 2025-01-15 01:15:17.711 [main] EcomTests - mobiles
+[INFO ] 2025-01-15 01:15:17.711 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 01:15:17.711 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2025-01-15 01:15:17.711 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2025-01-15 01:15:17.711 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:15:17.711 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:15:17.711 [main] EcomTests - true
+[INFO ] 2025-01-15 01:15:17.711 [main] EcomTests - men
+[INFO ] 2025-01-15 01:15:17.711 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:15:17.711 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - ===========================2===========================
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - 6701364cae2afd4c0b90113c
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - fashion
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - shirts
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1728132684377.jpg
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - true
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - women
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - ===========================3===========================
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - 676a631fe2b5443b1f004a20
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - Banarsi Saree
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - Cloths
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - Women Cloths
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735025439009.jpg
+[INFO ] 2025-01-15 01:15:17.712 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - true
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - Women
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - ===========================4===========================
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - 676a6619e2b5443b1f004fff
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - Fride
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735026201323.png
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - true
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - family
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - ===========================5===========================
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - 676a9421e2b5443b1f00a1b2
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - Fride
+[INFO ] 2025-01-15 01:15:17.713 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735037985643.png
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - true
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - family
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - ===========================6===========================
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - 678522b5e2b5443b1f218601
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - fashion
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - shirts
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1736778421457.png
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - true
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - women
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:15:17.714 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:15:19.120 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:15:20.630 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:15:20.632 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:16:44.449 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:16:44.453 [main] EcomTests - Product Added To Cart: true
+[INFO ] 2025-01-15 01:16:44.565 [main] EcomTests - ecGetAllProd.getMessage(): All Products fetched Successfully
+[INFO ] 2025-01-15 01:16:44.565 [main] EcomTests - ecGetAllProd.getCount() 6
+[INFO ] 2025-01-15 01:16:44.565 [main] EcomTests - ===========================1===========================
+[INFO ] 2025-01-15 01:16:44.565 [main] EcomTests - 6581cade9fd99c85e8ee7ff5
+[INFO ] 2025-01-15 01:16:44.565 [main] EcomTests - IPHONE 13 PRO
+[INFO ] 2025-01-15 01:16:44.566 [main] EcomTests - electronics
+[INFO ] 2025-01-15 01:16:44.566 [main] EcomTests - mobiles
+[INFO ] 2025-01-15 01:16:44.566 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 01:16:44.566 [main] EcomTests - Latest Apple Iphone13 pro with 200mp front camera
+[INFO ] 2025-01-15 01:16:44.566 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1650649561326.jpg
+[INFO ] 2025-01-15 01:16:44.566 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:16:44.566 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:16:44.566 [main] EcomTests - true
+[INFO ] 2025-01-15 01:16:44.566 [main] EcomTests - men
+[INFO ] 2025-01-15 01:16:44.566 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:16:44.566 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:16:44.566 [main] EcomTests - ===========================2===========================
+[INFO ] 2025-01-15 01:16:44.566 [main] EcomTests - 6701364cae2afd4c0b90113c
+[INFO ] 2025-01-15 01:16:44.566 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - fashion
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - shirts
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1728132684377.jpg
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - true
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - women
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - ===========================3===========================
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - 676a631fe2b5443b1f004a20
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - Banarsi Saree
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - Cloths
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - Women Cloths
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - 231500.0
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735025439009.jpg
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - true
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - Women
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:16:44.567 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - ===========================4===========================
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - 676a6619e2b5443b1f004fff
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - Fride
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735026201323.png
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - true
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - family
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - ===========================5===========================
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - 676a9421e2b5443b1f00a1b2
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - LG Refrigerator
+[INFO ] 2025-01-15 01:16:44.568 [main] EcomTests - Fride
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - Electronics
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - 25000.0
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - Latest Design in 2024
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1735037985643.png
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - true
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - family
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - ===========================6===========================
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - 678522b5e2b5443b1f218601
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - qwerty
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - fashion
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - shirts
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - 11500.0
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - Addias Originals
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - https://rahulshettyacademy.com/api/ecom/uploads/productImage_1736778421457.png
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - 0
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - true
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - women
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - admin@gmail.com
+[INFO ] 2025-01-15 01:16:44.569 [main] EcomTests - 0.0
+[INFO ] 2025-01-15 01:16:46.185 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:16:47.691 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:16:47.693 [main] UtilMethods - In rawToJson
+[INFO ] 2025-01-15 01:16:47.695 [main] UtilMethods - In rawToJson
