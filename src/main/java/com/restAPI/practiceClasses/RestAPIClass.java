@@ -22,28 +22,27 @@ public class RestAPIClass {
 	static String dataPath = "src/test/resources/Data/JSON/";
 
 	public static void main(String[] args) throws IOException {
-//		RestAPIClass.myFirstRESTMethod();
-//		RestAPIClass.mySecondRESTMethod(0);
-		RestAPIClass.myPOSTRESTMethod();
+		RestAPIClass.myFirstRESTMethod();
+		RestAPIClass.mySecondRESTMethod(0);
+		RestAPIClass.myPOSTRESTMethod("json", "users");
 	}
 
-	public static void myPOSTRESTMethod() throws IOException {
-
-//		String reqBody = dataPath + "jsondemo.json";
-		String reqBody = dataPath + "xmldemo.xml";
-		File file = new File(reqBody);
+	public static void myPOSTRESTMethod(String jsonORxml, String usersORposts) throws IOException {
+		//format should be 'xml' or 'json'
+		System.out.println("Change of variable and dynamism working properly!");
+		String reqString = dataPath + jsonORxml+"demo."+jsonORxml;
+		File file = new File(reqString);
 		System.out.println(file.exists());
 
-		byte[] b = Files.readAllBytes(Paths.get(reqBody));
+		byte[] b = Files.readAllBytes(Paths.get(reqString));
 
-		String jsonData = new String(b);
+		String reqBody = new String(b);
 
 		RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
 
-		Response response = given().headers("Content-type", "application/json").body(jsonData)
+		Response response = given().headers("Content-type", "application/json").body(reqBody)
 
-//				.when().get("/users")
-				.when().post("/posts");
+				.when().post("/"+usersORposts);
 
 		try {
 			response.then().assertThat().statusCode(201).log().all();
