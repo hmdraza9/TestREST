@@ -8,9 +8,9 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class JsonPathRead {
+public class BookStoreOperations {
 
-	private static final Logger log = LogManager.getLogger(JsonPathRead.class);
+	private static final Logger log = LogManager.getLogger(BookStoreOperations.class);
 
 	public static String toolsQABookStoreUsername = "TOOLSQA-Test";
 
@@ -24,17 +24,17 @@ public class JsonPathRead {
 
 	public static void main(java.lang.String[] args) {
 
-		JsonPathRead.weatherAPI();
+		BookStoreOperations.fetchWeatherDetails();
 
 		log.info("In " + (new Throwable().getStackTrace()[0].getMethodName()));
 
-		JsonPathRead.tokenizedAuthToolsQABookStore(baseURIToolsQABookStore, toolsQABookStoreUsername,
+		BookStoreOperations.generateAuthToken(baseURIToolsQABookStore, toolsQABookStoreUsername,
 				toolsQABookStorePassword);
-		JsonPathRead.fetchBookToolsQABookStore("/Book/v1/BooksStore", toolsQABookStoreUsername);
+		BookStoreOperations.fetchUserBooks("/Book/v1/BooksStore", toolsQABookStoreUsername);
 
 	}
 
-	public static void fetchBookToolsQABookStore(String pathParamQABookStore, String toolsQABookStoreUsername) {
+	public static void fetchUserBooks(String pathParamQABookStore, String toolsQABookStoreUsername) {
 
 		RestAssured.baseURI = baseURIToolsQABookStore;
 
@@ -59,7 +59,7 @@ public class JsonPathRead {
 
 	}
 
-	public static void tokenizedAuthToolsQABookStore(String baseURIToolsQABookStore, String username, String password) {
+	public static void generateAuthToken(String baseURIToolsQABookStore, String username, String password) {
 
 		log.info("In " + (new Throwable().getStackTrace()[0].getMethodName()));
 
@@ -84,7 +84,7 @@ public class JsonPathRead {
 
 	}
 
-	public static void weatherAPI() {
+	public static void fetchWeatherDetails() {
 
 		log.info("In " + (new Throwable().getStackTrace()[0].getMethodName()));
 

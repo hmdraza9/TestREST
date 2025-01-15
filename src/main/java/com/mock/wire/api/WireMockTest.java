@@ -56,7 +56,7 @@ public class WireMockTest {
 
             JsonPath jp = new JsonPath(vResp);
 
-//            System.out.println(jp.getString("message"));
+            System.out.println(jp.getString("message"));
         }
         catch(Exception ex){
             ex.getLocalizedMessage();

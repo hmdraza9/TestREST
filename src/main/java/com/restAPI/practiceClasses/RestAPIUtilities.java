@@ -15,19 +15,19 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-public class RestAPIClass {
+public class RestAPIUtilities {
 
 	static JsonPath jp;
 	static Response resp;
 	static String dataPath = "src/test/resources/Data/JSON/";
 
 	public static void main(String[] args) throws IOException {
-		RestAPIClass.myFirstRESTMethod();
-		RestAPIClass.mySecondRESTMethod(0);
-		RestAPIClass.myPOSTRESTMethod("json", "users");
+		RestAPIUtilities.fetchWeatherAndAccountDetails();
+		RestAPIUtilities.fetchAccountDetailsWithParams(0);
+		RestAPIUtilities.postDataUsingDynamicPayload("json", "users");
 	}
 
-	public static void myPOSTRESTMethod(String jsonORxml, String usersORposts) throws IOException {
+	public static void postDataUsingDynamicPayload(String jsonORxml, String usersORposts) throws IOException {
 		//format should be 'xml' or 'json'
 		System.out.println("Change of variable and dynamism working properly!");
 		String reqString = dataPath + jsonORxml+"demo."+jsonORxml;
@@ -59,9 +59,8 @@ public class RestAPIClass {
 
 	}
 
-	public static void myFirstRESTMethod() {
+	public static void fetchWeatherAndAccountDetails() {
 
-		// TODO Auto-generated method stub
 		String baseURI = "http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=439d4b804bc8187953eb36d2a8c26a02";
 		String guru99BaseURI = "http://demo.guru99.com/V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234!&Account_No=1";
 		RestAssured.baseURI = baseURI;
@@ -96,7 +95,7 @@ public class RestAPIClass {
 
 	}
 
-	public static void mySecondRESTMethod(int count) {
+	public static void fetchAccountDetailsWithParams(int count) {
 
 		// without query parameter
 		String baseURI1 = "http://demo.guru99.com/V4/sinkministatement.php?CUSTOMER_ID=68195&PASSWORD=1234!&Account_No=1";
@@ -128,6 +127,7 @@ public class RestAPIClass {
 //			sumAmount = sumAmount + Integer.valueOf(str);
 //
 //		}
+
 		System.out.println("Sum of amounts: " + sumAmount);
 
 		Response resp = given().when().get(baseURI1);
