@@ -1,37 +1,67 @@
 package com.mock.wire.api;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
+import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.response.ValidatableResponse;
-import io.restassured.specification.RequestSpecification;
-//import org.junit.jupiter.api.AfterEach;
-//import org.junit.jupiter.api.BeforeEach;
-//import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 import java.util.Map;
 
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+
 import static com.github.tomakehurst.wiremock.client.WireMock.*;
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
-
 
 public class WireMockTest {
 
     private static WireMockServer wireMockServer;
+    private static final String credUrl = "https://pastebin.com/hbkZ1467";
 
     public static void main(String[] args) {
+//        runWireMockTest();
+        getCredentials(credUrl);
+    }
 
+    private static void getCredentials(String url){
+        // Make the HTTP GET request using RestAssured
+        // The URL of the page to fetch
+
+        // Send a GET request using RestAssured
+        Response response = RestAssured.given().get(url);
+
+        // Get the response body as a string
+        String htmlContent = response.getBody().asString();
+
+        // Parse the HTML using Jsoup
+        Document document = Jsoup.parse(htmlContent);
+
+        // Find the element with class 'de1'
+        Element de1Element = document.select(".de1").first();
+
+        // Extract and print the text from the element
+        if (de1Element != null) {
+            String dataText = de1Element.text();
+            System.out.println("Text inside 'de1' element: >\n" + dataText+"\n<");
+            System.out.println(">"+dataText.split(" ")[0]+"<");
+            System.out.println(">"+dataText.split(" ")[1]+"<");
+            System.out.println(">"+dataText.split(" ")[2]+"<");
+        } else {
+            System.out.println("Element with class 'de1' not found.");
+        }
+    }
+
+    private static void runWireMockTest() {
         Map<String, String> req = new HashMap<>();
         req.put("message", "Hello, WireMock!");
 
         wireMockServer = new WireMockServer(8080);
         wireMockServer.start();
 
-        try{
-
-
+        try {
+            // Stub configuration
             wireMockServer.stubFor(get(urlEqualTo("/api/resource"))
                     .willReturn(aResponse()
                             .withStatus(500)
@@ -40,34 +70,25 @@ public class WireMockTest {
 
             System.out.println("Mock server is running...");
 
-
+            // Sending the request and receiving the response
             Response res = given()
                     .baseUri("http://localhost:8080")
                     .when()
                     .get("/api/resource");
 
-            System.out.println("res.asString(): "+res.asString());
+            System.out.println("res.asString(): " + res.asString());
 
             String vResp = res.then().extract().response().asString();
-//            res.then().statusCode(500)
-//                    .body("message", equalTo("Hello, WireMock!"));
-
-            System.out.println("vResp: "+vResp);
+            System.out.println("vResp: " + vResp);
 
             JsonPath jp = new JsonPath(vResp);
-
-            System.out.println(jp.getString("message"));
-        }
-        catch(Exception ex){
-            ex.getLocalizedMessage();
+            System.out.println("Message from response: " + jp.getString("message"));
+        } catch (Exception ex) {
+            System.err.println("Exception occurred: " + ex.getLocalizedMessage());
             ex.printStackTrace();
-        }
-        finally {
+        } finally {
             wireMockServer.stop();
             System.out.println("Mock server stopped!");
         }
-
-
-
     }
 }
