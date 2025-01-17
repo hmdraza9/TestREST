@@ -16,7 +16,6 @@ import static io.restassured.RestAssured.given;
 
 public class PayPalOAuth {
 
-
     private static String[] creds = new String[3];
     private static final String configPropertyFile = "src/test/resources/config.properties";
     public static String CLIENT_ID;
@@ -24,28 +23,26 @@ public class PayPalOAuth {
     private static String credUrl;
     private static String access_token;
 
-
     public static void main(String[] args) throws IOException {
 
-        credUrl = getProp("credUrl");
-        if(getCredentialsFromPasteBin(credUrl)==200)
-        {
-            setBaseURIForPayPal();
-            getTokenFromPayPal();
-            getInvoiceTemplateFromPayPal();
+        credUrl = getPropertyValue("credUrl");
+        if (fetchCredentialsFromPasteBin(credUrl) == 200) {
+            initializePayPalBaseURI();
+            fetchPayPalAccessToken();
+            fetchPayPalInvoiceTemplates();
         }
     }
 
-    private static String getProp(String prop) throws IOException {
+    private static String getPropertyValue(String prop) throws IOException {
         FileReader fr = new FileReader(configPropertyFile);
         Properties pr = new Properties();
         pr.load(fr);
         String temp = pr.getProperty(prop);
-        System.out.println("Property value for prop: "+prop+" returned as: "+temp);
+        System.out.println("Property value for prop: " + prop + " returned as: " + temp);
         return temp;
     }
 
-    private static int getCredentialsFromPasteBin(String url) {
+    private static int fetchCredentialsFromPasteBin(String url) {
         System.out.println("Fetching credentials from PastBin...");
         int statusCode;
         // Make the HTTP GET request using RestAssured
@@ -54,7 +51,7 @@ public class PayPalOAuth {
         // Send a GET request using RestAssured
         Response response = RestAssured.given().get(url);
         statusCode = response.statusCode();
-        if(statusCode==200){
+        if (statusCode == 200) {
             // Get the response body as a string
             String htmlContent = response.getBody().asString();
 
@@ -74,43 +71,48 @@ public class PayPalOAuth {
             } else {
                 System.out.println("Element with class 'de1' not found.");
             }
+        } else {
+            System.out.println("ERROR in request to paste bin, status code is: " + statusCode);
         }
-        else
-            System.out.println("ERROR in request to paste bin, status code is: "+statusCode);
         return statusCode;
     }
 
-
-    private static void setBaseURIForPayPal() throws IOException {
-        String temp = getProp("paypalBaseUrl");
-        System.out.println("pay pal base URI set to: "+temp);
+    private static void initializePayPalBaseURI() throws IOException {
+        String temp = getPropertyValue("paypalBaseUrl");
+        System.out.println("pay pal base URI set to: " + temp);
         RestAssured.baseURI = temp;
     }
 
-    private static void getTokenFromPayPal() {
+    private static void fetchPayPalAccessToken() {
 
         //------ get access token
 
-        Response tokenResponse = given().header("Content-Type", "application/x-www-form-urlencoded").auth().preemptive().basic(CLIENT_ID, CLIENT_SECRET).param("grant_type", "client_credentials").post("/v1/oauth2/token");
+        Response tokenResponse = given()
+                .header("Content-Type", "application/x-www-form-urlencoded")
+                .auth().preemptive().basic(CLIENT_ID, CLIENT_SECRET)
+                .param("grant_type", "client_credentials")
+                .post("/v1/oauth2/token");
         access_token = new JsonPath(tokenResponse.asString()).getString("access_token");
-        System.out.println("Token request success?: "+(tokenResponse.statusCode()==200));
-        System.out.println("Token fetched: "+(access_token.length()>10));
+        System.out.println("Token request success?: " + (tokenResponse.statusCode() == 200));
+        System.out.println("Token fetched: " + (access_token.length() > 10));
     }
 
-    private static void getInvoiceTemplateFromPayPal() {
+    private static void fetchPayPalInvoiceTemplates() {
 
         System.out.println("Requesting Invoicing templates.");
         //------ get invoice templates
 
-        Response invTemplateResponse = given().header("Content-Type", "application/json").header("Authorization", "Bearer " + access_token).get("/v2/invoicing/templates");
+        Response invTemplateResponse = given()
+                .header("Content-Type", "application/json")
+                .header("Authorization", "Bearer " + access_token)
+                .get("/v2/invoicing/templates");
 
-        System.out.println("Invoicing Templates response success? :"+(invTemplateResponse.statusCode()==200));
+        System.out.println("Invoicing Templates response success? :" + (invTemplateResponse.statusCode() == 200));
 
         System.out.println("First address: " + (new JsonPath(invTemplateResponse.asString()).getString("addresses[0]")));
 
         System.out.println("Second address: " + (new JsonPath(invTemplateResponse.asString()).getString("addresses[1]")));
 
     }
-
 
 }
