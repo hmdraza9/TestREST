@@ -28,10 +28,12 @@ public class PayPalOAuth {
     public static void main(String[] args) throws IOException {
 
         credUrl = getProp("credUrl");
-        getCredentialsFromPasteBin(credUrl);
-        setBaseURIForPayPal();
-        getTokenFromPayPal();
-        getInvoiceTemplateFromPayPal();
+        if(getCredentialsFromPasteBin(credUrl)==200)
+        {
+            setBaseURIForPayPal();
+            getTokenFromPayPal();
+            getInvoiceTemplateFromPayPal();
+        }
     }
 
     private static String getProp(String prop) throws IOException {
@@ -43,33 +45,39 @@ public class PayPalOAuth {
         return temp;
     }
 
-    private static void getCredentialsFromPasteBin(String url) {
+    private static int getCredentialsFromPasteBin(String url) {
         System.out.println("Fetching credentials from PastBin...");
+        int statusCode;
         // Make the HTTP GET request using RestAssured
         // The URL of the page to fetch
 
         // Send a GET request using RestAssured
         Response response = RestAssured.given().get(url);
+        statusCode = response.statusCode();
+        if(statusCode==200){
+            // Get the response body as a string
+            String htmlContent = response.getBody().asString();
 
-        // Get the response body as a string
-        String htmlContent = response.getBody().asString();
+            // Parse the HTML using Jsoup
+            Document document = Jsoup.parse(htmlContent);
 
-        // Parse the HTML using Jsoup
-        Document document = Jsoup.parse(htmlContent);
+            // Find the element with class 'de1'
+            Element de1Element = document.select(".de1").first();
 
-        // Find the element with class 'de1'
-        Element de1Element = document.select(".de1").first();
-
-        // Extract and print the text from the element
-        if (de1Element != null) {
-            String dataText = de1Element.text();
-            creds = dataText.split(" ");
-            CLIENT_ID = PasswordEncryption.decrypt(creds[0], creds[1]);
-            CLIENT_SECRET = PasswordEncryption.decrypt(creds[2], creds[1]);
-            System.out.println("Credentials fetched from PasteBin...");
-        } else {
-            System.out.println("Element with class 'de1' not found.");
+            // Extract and print the text from the element
+            if (de1Element != null) {
+                String dataText = de1Element.text();
+                creds = dataText.split(" ");
+                CLIENT_ID = PasswordEncryption.decrypt(creds[0], creds[1]);
+                CLIENT_SECRET = PasswordEncryption.decrypt(creds[2], creds[1]);
+                System.out.println("Credentials fetched from PasteBin...");
+            } else {
+                System.out.println("Element with class 'de1' not found.");
+            }
         }
+        else
+            System.out.println("ERROR in request to paste bin, status code is: "+statusCode);
+        return statusCode;
     }
 
 
