@@ -16,11 +16,11 @@ public class TestRunner {
 		ec.ecomGetAllProducts();
 		System.out.println("4. Task03RESTAutomation.createPet();");
 		Task03RESTAutomation.createPet();
-//		Task03RESTAutomation.validateSchemaFroPetApi();
-//		System.out.println("5. Task03RESTAutomation.typicodeUser();");
-//		Task03RESTAutomation.typicodeUser();
-//		System.out.println("6. Task03RESTAutomation.openWeatherMap();");
-//		Task03RESTAutomation.openWeatherMap();// API Not ready, method yet to complete
+		Task03RESTAutomation.validateSchemaFroPetApi();
+		System.out.println("5. Task03RESTAutomation.typicodeUser();");
+		Task03RESTAutomation.typicodeUser();
+		System.out.println("6. Task03RESTAutomation.openWeatherMap();");
+		Task03RESTAutomation.openWeatherMap();// API Not ready, method yet to complete
 
 	}
 
