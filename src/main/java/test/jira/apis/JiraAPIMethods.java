@@ -12,7 +12,7 @@ import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 
 import com.restassured.payloads.Payloads;
-import com.restassured.payloads.StatusCode;
+import com.restassured.payloads.HTTPCode;
 import com.restassured.payloads.URIs;
 import com.restassured.payloads.URLs;
 import com.restassures.utils.UtilMethods;
@@ -102,7 +102,7 @@ public class JiraAPIMethods {
 		Response attachJIRAResp = attachJIRAReqSpec.multiPart("file", file).filter(session).when()
 				.post(objURI.uriJIRAIssueAttachment);
 
-		String response = attachJIRAResp.then().log().all().assertThat().statusCode(StatusCode.OK200).extract()
+		String response = attachJIRAResp.then().log().all().assertThat().statusCode(HTTPCode.OK200).extract()
 				.asString();
 
 		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
@@ -136,7 +136,7 @@ public class JiraAPIMethods {
 		response = getJIRAJSessionResp.then()
 				// .log()
 				// .all()
-				.assertThat().statusCode(StatusCode.OK201).extract().asString();
+				.assertThat().statusCode(HTTPCode.OK201).extract().asString();
 
 		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
 
@@ -160,7 +160,7 @@ public class JiraAPIMethods {
 		Response getJIRAJSessionResp = getJIRAJSessionReqSpec.body(objPayLoad.JIRAJSessionReqBody).when()
 				.post(objURI.uriJIRAGetJSession);
 
-		response = getJIRAJSessionResp.then().assertThat().statusCode(StatusCode.OK200).extract().asString();
+		response = getJIRAJSessionResp.then().assertThat().statusCode(HTTPCode.OK200).extract().asString();
 
 		jiraJSession = utils.rawToJson(response).getString("session.value");
 
@@ -188,7 +188,7 @@ public class JiraAPIMethods {
 		response = getJIRAJSessionResp.then()
 				// .log()
 				// .all()
-				.assertThat().statusCode(StatusCode.OK201).extract().asString();
+				.assertThat().statusCode(HTTPCode.OK201).extract().asString();
 
 		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
 
@@ -211,7 +211,7 @@ public class JiraAPIMethods {
 
 		Response getJIRAJSessionResp = getJIRAReqSpec.when().pathParam("key", jiraIssue).get(objURI.uriJIRAGetIssue);
 
-		response = getJIRAJSessionResp.then().log().all().assertThat().statusCode(StatusCode.OK200).extract()
+		response = getJIRAJSessionResp.then().log().all().assertThat().statusCode(HTTPCode.OK200).extract()
 				.asString();
 
 		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
@@ -232,7 +232,7 @@ public class JiraAPIMethods {
 		response = getJIRAJSessionResp.then()
 //					 .log()
 //					 .all()
-				.assertThat().statusCode(StatusCode.OK200).extract().asString();
+				.assertThat().statusCode(HTTPCode.OK200).extract().asString();
 
 		int commentSize = utils.rawToJson(response).getInt("fields.comment.comments.size()");
 		boolean isCommFound = false;
@@ -280,7 +280,7 @@ public class JiraAPIMethods {
 		response = deleteJIRAJSessionResp.then()
 //				 .log()
 //				 .all()
-				.assertThat().statusCode(StatusCode.OK204).extract().asString();
+				.assertThat().statusCode(HTTPCode.OK204).extract().asString();
 
 		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
 
@@ -304,7 +304,7 @@ public class JiraAPIMethods {
 		response = commentJIRAResp.then()
 //				 .log()
 //				 .all()
-				.assertThat().statusCode(StatusCode.OK201).extract().asString();
+				.assertThat().statusCode(HTTPCode.OK201).extract().asString();
 
 		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
 
@@ -331,7 +331,7 @@ public class JiraAPIMethods {
 		response = commentJIRAResp.then()
 //				 .log()
 //				 .all()
-				.assertThat().statusCode(StatusCode.OK200).extract().asString();
+				.assertThat().statusCode(HTTPCode.OK200).extract().asString();
 
 		log.info("Response: \n@@@@@@@@@@@@@@\n" + response + "\n@@@@@@@@@@@@@@\n");
 

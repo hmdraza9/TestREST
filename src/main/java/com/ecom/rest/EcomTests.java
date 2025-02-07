@@ -9,7 +9,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.restassured.payloads.Payloads;
-import com.restassured.payloads.StatusCode;
+import com.restassured.payloads.HTTPCode;
 import com.restassured.payloads.URLs;
 import com.restassures.utils.UtilMethods;
 
@@ -83,7 +83,7 @@ public class EcomTests {
 				.log()
 				.all();
 
-		vResponse.assertThat().statusCode(StatusCode.OK200);
+		vResponse.assertThat().statusCode(HTTPCode.OK200);
 		System.out.println("Message: " + vResponse.extract().path("message"));
 
 		log.info("Product Added To Cart: " + (new UtilMethods().rawToJson(vResponse.extract().response().asString())
@@ -144,7 +144,7 @@ public class EcomTests {
 
 		}
 
-		vResponse.assertThat().statusCode(StatusCode.OK200);
+		vResponse.assertThat().statusCode(HTTPCode.OK200);
 
 	}
 }

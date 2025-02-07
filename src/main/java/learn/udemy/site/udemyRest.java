@@ -3,7 +3,6 @@ package learn.udemy.site;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -16,7 +15,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.restassured.payloads.Payloads;
-import com.restassured.payloads.StatusCode;
+import com.restassured.payloads.HTTPCode;
 import com.restassured.payloads.URIs;
 import com.restassured.payloads.URLs;
 import com.restassures.utils.UtilMethods;
@@ -25,7 +24,6 @@ import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import test.oauth.REST.TestOAuthRestAPI;
 import test.pojo.googleMap.AddPlace;
 import test.pojo.googleMap.Location;
 
@@ -117,12 +115,12 @@ public class udemyRest {
 			log.info("Iteration: " + i);
 
 			objRest.addPlace("OK", "123");
-			objRest.getPlace(StatusCode.OK200);
+			objRest.getPlace(HTTPCode.OK200);
 			objRest.deletePlace("OK");
-			objRest.getPlace(StatusCode.ClientError404);
+			objRest.getPlace(HTTPCode.ClientError404);
 			objRest.addPlace("OK", "234");
 			objRest.updatePlace("123, Street");
-			objRest.getPlace(StatusCode.OK200);
+			objRest.getPlace(HTTPCode.OK200);
 		}
 		endTime = System.currentTimeMillis();
 
@@ -159,7 +157,7 @@ public class udemyRest {
 
 		log.info("###########Response starts###########");
 
-		addPlaceResp.then().log().all().assertThat().statusCode(StatusCode.OK200).body("scope", equalTo("APP"))
+		addPlaceResp.then().log().all().assertThat().statusCode(HTTPCode.OK200).body("scope", equalTo("APP"))
 				.body("status", equalTo(toVerify));
 
 		placeID = addPlaceResp.getBody().path("place_id");
@@ -167,7 +165,7 @@ public class udemyRest {
 		placeSet = new HashSet<>();
 		placeSet.add(placeID);
 
-		String response = addPlaceResp.then().assertThat().statusCode(StatusCode.OK200).body("scope", equalTo("APP"))
+		String response = addPlaceResp.then().assertThat().statusCode(HTTPCode.OK200).body("scope", equalTo("APP"))
 				.header("Server", "Apache/2.4.52 (Ubuntu)").extract().response().asString();
 
 		log.info("Place ID(using JsonPath): " + utils.rawToJson(response).getString("place_id"));
@@ -179,7 +177,7 @@ public class udemyRest {
 
 	public void getPlace(String placeID) {
 		udemyRest.placeID = placeID;
-		getPlace(StatusCode.OK200);
+		getPlace(HTTPCode.OK200);
 	}
 
 	public void getPlace(int toVerify) {
@@ -231,7 +229,7 @@ public class udemyRest {
 		response.then()
 				// .log()
 				// .all()
-				.assertThat().statusCode(StatusCode.OK200).body("status", equalTo(toVerify));
+				.assertThat().statusCode(HTTPCode.OK200).body("status", equalTo(toVerify));
 
 		log.info("###########Place deleted successfully!###########");
 
@@ -256,7 +254,7 @@ public class udemyRest {
 
 		log.info("getPlaceResp.asString: " + response.asString());
 
-		response.then().assertThat().statusCode(StatusCode.OK200).body("msg", equalTo("Address successfully updated"))
+		response.then().assertThat().statusCode(HTTPCode.OK200).body("msg", equalTo("Address successfully updated"))
 				.extract().response().asString();
 
 		log.info("Update Place Response: " + response);

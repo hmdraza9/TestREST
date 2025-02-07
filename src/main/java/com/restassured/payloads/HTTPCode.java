@@ -1,6 +1,6 @@
 package com.restassured.payloads;
 
-public class StatusCode {
+public class HTTPCode {
 
 	public static final int OK200 = 200;
 
@@ -10,7 +10,7 @@ public class StatusCode {
 
 	public static final int ClientError404 = 404;
 
-	private StatusCode() {
+	private HTTPCode() {
 
 	}
 
