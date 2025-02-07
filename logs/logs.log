@@ -13359,3 +13359,122 @@ created issue: AHR-57
 [INFO ] 2025-01-15 01:16:47.691 [main] UtilMethods - In rawToJson
 [INFO ] 2025-01-15 01:16:47.693 [main] UtilMethods - In rawToJson
 [INFO ] 2025-01-15 01:16:47.695 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 20:56:39.310 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 20:56:41.529 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 20:56:41.531 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 20:56:41.534 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 20:57:59.315 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 20:58:01.170 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 20:58:01.172 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 20:58:01.175 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 20:58:51.449 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 20:58:53.296 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 20:58:53.298 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 20:58:53.301 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:01:00.358 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:03:07.336 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:03:09.315 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:03:09.317 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:03:09.320 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:03:22.574 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:03:24.568 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:03:24.570 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:03:24.573 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:06:59.685 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:07:01.685 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:07:01.687 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:07:01.690 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:08:38.488 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:08:40.387 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:08:40.389 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:19:35.911 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:19:37.652 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:19:37.655 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:19:37.659 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:19:37.663 [main] Task03RESTAutomation - Schema validation started...
+[ERROR] 2025-02-07 21:19:37.805 [main] Task03RESTAutomation - Schema validation failed!!!
+[INFO ] 2025-02-07 21:20:03.710 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:20:05.553 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:20:05.557 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:20:05.562 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:20:05.567 [main] Task03RESTAutomation - Schema validation started...
+[ERROR] 2025-02-07 21:20:05.712 [main] Task03RESTAutomation - Schema validation failed!!!
+[INFO ] 2025-02-07 21:22:02.860 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:22:05.008 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:22:05.011 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:22:40.238 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:22:42.075 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:22:42.078 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:22:42.082 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:22:42.086 [main] Task03RESTAutomation - Schema validation started...
+[ERROR] 2025-02-07 21:22:42.216 [main] Task03RESTAutomation - Schema validation failed!!!
+[INFO ] 2025-02-07 21:26:29.102 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:26:31.060 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:26:31.063 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:26:31.067 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:26:31.071 [main] Task03RESTAutomation - Schema validation started...
+[ERROR] 2025-02-07 21:26:31.212 [main] Task03RESTAutomation - Schema validation failed!!!
+[INFO ] 2025-02-07 21:27:09.663 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:27:11.698 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:27:11.701 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:27:31.910 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:27:34.120 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:27:34.124 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:28:09.769 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:28:11.399 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:28:11.402 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:30:14.296 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:30:16.328 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:30:16.331 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:30:16.334 [main] UtilMethods - In rawToJson
+[INFO ] 2025-02-07 21:30:16.339 [main] Task03RESTAutomation - Schema validation started...
+[ERROR] 2025-02-07 21:30:16.480 [main] Task03RESTAutomation - 123 [Ljava.lang.StackTraceElement;@20d19f2c
+[ERROR] 2025-02-07 21:30:16.480 [main] Task03RESTAutomation - 234 com.github.fge.jsonschema.core.exceptions.InvalidSchemaException: fatal: invalid JSON Schema, cannot continue
+Syntax errors:
+[ {
+  "level" : "error",
+  "message" : "\"stringaa\" is not a valid primitive type (valid values are: [array, boolean, integer, null, number, object, string])",
+  "domain" : "syntax",
+  "schema" : {
+    "loadingURI" : "#",
+    "pointer" : "/properties/status"
+  },
+  "keyword" : "type",
+  "found" : "stringaa",
+  "valid" : [ "array", "boolean", "integer", "null", "number", "object", "string" ]
+} ]
+    level: "fatal"
+
+[ERROR] 2025-02-07 21:30:16.480 [main] Task03RESTAutomation - 345 com.github.fge.jsonschema.core.exceptions.InvalidSchemaException: fatal: invalid JSON Schema, cannot continue
+Syntax errors:
+[ {
+  "level" : "error",
+  "message" : "\"stringaa\" is not a valid primitive type (valid values are: [array, boolean, integer, null, number, object, string])",
+  "domain" : "syntax",
+  "schema" : {
+    "loadingURI" : "#",
+    "pointer" : "/properties/status"
+  },
+  "keyword" : "type",
+  "found" : "stringaa",
+  "valid" : [ "array", "boolean", "integer", "null", "number", "object", "string" ]
+} ]
+    level: "fatal"
+
+[ERROR] 2025-02-07 21:30:16.480 [main] Task03RESTAutomation - 456 io.restassured.module.jsv.JsonSchemaValidationException: com.github.fge.jsonschema.core.exceptions.InvalidSchemaException: fatal: invalid JSON Schema, cannot continue
+Syntax errors:
+[ {
+  "level" : "error",
+  "message" : "\"stringaa\" is not a valid primitive type (valid values are: [array, boolean, integer, null, number, object, string])",
+  "domain" : "syntax",
+  "schema" : {
+    "loadingURI" : "#",
+    "pointer" : "/properties/status"
+  },
+  "keyword" : "type",
+  "found" : "stringaa",
+  "valid" : [ "array", "boolean", "integer", "null", "number", "object", "string" ]
+} ]
+    level: "fatal"
+
+[ERROR] 2025-02-07 21:30:16.481 [main] Task03RESTAutomation - Schema validation failed!!!
