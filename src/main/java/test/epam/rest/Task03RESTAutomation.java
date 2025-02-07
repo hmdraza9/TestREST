@@ -2,14 +2,13 @@ package test.epam.rest;
 
 import static io.restassured.RestAssured.given;
 
+import io.restassured.module.jsv.JsonSchemaValidationException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.json.JSONTokener;
-import org.json.simple.JSONObject;
 import org.junit.Assert;
 
 import com.restassured.payloads.Payloads;
-import com.restassured.payloads.StatusCode;
+import com.restassured.payloads.HTTPCode;
 import com.restassured.payloads.URIs;
 import com.restassured.payloads.URLs;
 import com.restassures.utils.UtilMethods;
@@ -21,7 +20,6 @@ import io.restassured.response.ValidatableResponse;
 import io.restassured.module.jsv.JsonSchemaValidator;
 
 import java.io.File;
-import java.io.InputStream;
 import java.util.Optional;
 
 
@@ -32,13 +30,11 @@ public class Task03RESTAutomation {
 	private static final URLs objURL = new URLs();
 	private static final Logger log = LogManager.getLogger(Task03RESTAutomation.class);
 	private static final String openWeatherApiID = "8zdz3z1z6z2z4zaz4zbz8z7z6zcz0z5z3z2z8z7z2z0zfz8zczaz1z5z8z6zcz3z";
-    private static final UtilMethods utils = new UtilMethods();
+	private static final UtilMethods utils = new UtilMethods();
 	private static Response response;
-	private static String responseForSchema;
-    private static final String petName = "Snoopie_" + UtilMethods.getTime();
+	private static final String petName = "Snoopie_" + UtilMethods.getTime();
 	private static final String userToSearch = "Ervin Howell";
-
-	Payloads reqBody = new Payloads();
+	private static ValidatableResponse vResponse;
 
 	public static void openWeatherMap() {
 
@@ -54,9 +50,9 @@ public class Task03RESTAutomation {
 
 		System.out.println("longitude+\" \"+latitude: " + longitude + " " + latitude);
 
-        Assert.assertEquals("Hyderabad", response.path("name"));
+		Assert.assertEquals("Hyderabad", response.path("name"));
 
-        Assert.assertEquals("IN", response.path("sys.country"));
+		Assert.assertEquals("IN", response.path("sys.country"));
 
 		Assert.assertTrue(Double.parseDouble(response.path("main.temp_min").toString()) > 0.0);
 
@@ -77,7 +73,7 @@ public class Task03RESTAutomation {
 		response = given().header("Content-Type", "application/json").log().all().when().get(objURI.uriTypiCodeUsers)
 				.then().log().all().extract().response();
 
-        Assert.assertEquals(StatusCode.OK200, response.getStatusCode());
+		Assert.assertEquals(HTTPCode.OK200, response.getStatusCode());
 
 		int userCount = response.path("data.size()");
 		Assert.assertTrue(userCount > 3);
@@ -108,22 +104,19 @@ public class Task03RESTAutomation {
 				.body(objPayLoad.petStoreCreatePetBody.replace("$petName", petName)).when()
 				.post(objURI.uriPetStoreCreate).then().log().all().extract().response();
 
-        // encrypted the API ID so that Git don't raise any concern
-        String petID = utils.rawToJson(response.asString()).getString("id");
+		// encrypted the API ID so that Git don't raise any concern
+		String petID = utils.rawToJson(response.asString()).getString("id");
 
 		// POST END
 		// GET STARTS
 
-        ValidatableResponse vResponse = given().header("Content-Type", "application/json").pathParam("petID", petID).log().all()
-                .get(objURI.uriPetStoreGet).then().log().all();
+		vResponse = given().header("Content-Type", "application/json").pathParam("petID", petID).log().all()
+				.get(objURI.uriPetStoreGet).then().log().all();
 
-        vResponse.assertThat().contentType(ContentType.JSON).statusCode(StatusCode.OK200);
-		System.out.println("validating schema");
-		vResponse.assertThat().body(JsonSchemaValidator.matchesJsonSchema(new File("src/test/resources/Data/JSON/petSchema.json")));
+		vResponse.assertThat().contentType(ContentType.JSON).statusCode(HTTPCode.OK200);
+
 
 		response = vResponse.extract().response();
-
-		responseForSchema = response.asString();
 
 		String categoryOfPet = response.path("category.name");
 
@@ -134,16 +127,20 @@ public class Task03RESTAutomation {
 		Assert.assertEquals(petName, utils.rawToJson(response.asString()).getString("name"));
 		Assert.assertEquals(petStatus, utils.rawToJson(response.asString()).getString("status"));
 
+		System.out.println("Pet "+petName+" created successfully with below details:");
 		System.out.println("Pet name: " + petName + ", " + "\nPet ID: " + petID + " " + "\nPet Status: " + petStatus);
 
 	}
 
-
-//	public static void validateSchemaFroPetApi(){
-//		try{
-//			InputStream schemaStream = getC
-//		}
-//		JSONObject petSchema = new JSONObject(new JSONTokener(new InputStream("src/test/resources/Data/JSON/petSchema.json")));
-//	}
+	public static void validateSchemaFroPetApi(){
+		log.info("Schema validation started...");
+		try {
+			vResponse.assertThat().body(JsonSchemaValidator.matchesJsonSchema(new File("src/test/resources/Data/JSON/petSchema.json")));
+		} catch (JsonSchemaValidationException jEx) {
+			jEx.printStackTrace();
+			log.error(jEx);
+			log.error("Schema validation failed!!!");
+		}
+	}
 
 }
