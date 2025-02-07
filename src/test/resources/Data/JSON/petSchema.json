@@ -3,15 +3,13 @@
   "type": "object",
   "properties": {
     "id": {
-      "type": "integer",
-      "minimum": 0
+      "type": "number"
     },
     "category": {
       "type": "object",
       "properties": {
         "id": {
-          "type": "integer",
-          "minimum": 0
+          "type": "integer"
         },
         "name": {
           "type": "string"
@@ -34,19 +32,18 @@
         "type": "object",
         "properties": {
           "id": {
-            "type": "integer",
-            "minimum": 0
+            "type": "integer"
           },
-          "naame": {
-            "twwype": "strfrvrvrrving"
+          "name": {
+            "type": "string"
           }
         },
         "required": ["id", "name"]
       }
     },
     "status": {
-      "type": "string",
-      "enum": ["pending", "available", "sold"]
+      "type": "stringaa",
+      "enum": ["available", "pending", "sold"]
     }
   },
   "required": ["id", "category", "name", "photoUrls", "tags", "status"]
